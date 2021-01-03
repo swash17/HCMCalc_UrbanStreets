@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.IntersectionData
+  commentId: T:HCMCalc_UrbanStreets.IntersectionData
+  id: IntersectionData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.IntersectionData.#ctor
+  - HCMCalc_UrbanStreets.IntersectionData.#ctor(System.Int32,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData},HCMCalc_UrbanStreets.SignalCycleData,HCMCalc_UrbanStreets.AnalysisMode,System.Int32)
+  - HCMCalc_UrbanStreets.IntersectionData.Approaches
+  - HCMCalc_UrbanStreets.IntersectionData.CrossStreetName
+  - HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth
+  - HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr
+  - HCMCalc_UrbanStreets.IntersectionData.DetectorLength
+  - HCMCalc_UrbanStreets.IntersectionData.Id
+  - HCMCalc_UrbanStreets.IntersectionData.Label
+  - HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors
+  - HCMCalc_UrbanStreets.IntersectionData.Results
+  - HCMCalc_UrbanStreets.IntersectionData.Signal
+  - HCMCalc_UrbanStreets.IntersectionData.SpeedLimit
+  langs:
+  - csharp
+  - vb
+  name: IntersectionData
+  nameWithType: IntersectionData
+  fullName: HCMCalc_UrbanStreets.IntersectionData
+  type: Class
+  source:
+    id: IntersectionData
+    path: ''
+    startLine: 5110
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters required for making an intersection.\n"
+  example: []
+  syntax:
+    content: public class IntersectionData
+    content.vb: Public Class IntersectionData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.IntersectionData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.IntersectionData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: IntersectionData()
+  nameWithType: IntersectionData.IntersectionData()
+  fullName: HCMCalc_UrbanStreets.IntersectionData.IntersectionData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5134
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameterless constructor needed for XML de/serialization.\n"
+  example: []
+  syntax:
+    content: public IntersectionData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.IntersectionData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.#ctor(System.Int32,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData},HCMCalc_UrbanStreets.SignalCycleData,HCMCalc_UrbanStreets.AnalysisMode,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.IntersectionData.#ctor(System.Int32,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData},HCMCalc_UrbanStreets.SignalCycleData,HCMCalc_UrbanStreets.AnalysisMode,System.Int32)
+  id: '#ctor(System.Int32,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData},HCMCalc_UrbanStreets.SignalCycleData,HCMCalc_UrbanStreets.AnalysisMode,System.Int32)'
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: IntersectionData(Int32, AreaType, ArterialClass, List<ApproachData>, SignalCycleData, AnalysisMode, Int32)
+  nameWithType: IntersectionData.IntersectionData(Int32, AreaType, ArterialClass, List<ApproachData>, SignalCycleData, AnalysisMode, Int32)
+  fullName: HCMCalc_UrbanStreets.IntersectionData.IntersectionData(System.Int32, HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.ArterialClass, System.Collections.Generic.List<HCMCalc_UrbanStreets.ApproachData>, HCMCalc_UrbanStreets.SignalCycleData, HCMCalc_UrbanStreets.AnalysisMode, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5147
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor for creating an intersection.\n"
+  example: []
+  syntax:
+    content: public IntersectionData(int id, AreaType area, ArterialClass artClass, List<ApproachData> approaches, SignalCycleData signalData, AnalysisMode ProjAnalMode = AnalysisMode.Planning, int crossStreetWidth = 0)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    - id: area
+      type: HCMCalc_UrbanStreets.AreaType
+      description: ''
+    - id: artClass
+      type: HCMCalc_UrbanStreets.ArterialClass
+      description: ''
+    - id: approaches
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData}
+      description: ''
+    - id: signalData
+      type: HCMCalc_UrbanStreets.SignalCycleData
+      description: ''
+    - id: ProjAnalMode
+      type: HCMCalc_UrbanStreets.AnalysisMode
+    - id: crossStreetWidth
+      type: System.Int32
+    content.vb: Public Sub New(id As Integer, area As AreaType, artClass As ArterialClass, approaches As List(Of ApproachData), signalData As SignalCycleData, ProjAnalMode As AnalysisMode = AnalysisMode.Planning, crossStreetWidth As Integer = 0)
+  overload: HCMCalc_UrbanStreets.IntersectionData.#ctor*
+  nameWithType.vb: IntersectionData.IntersectionData(Int32, AreaType, ArterialClass, List(Of ApproachData), SignalCycleData, AnalysisMode, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HCMCalc_UrbanStreets.IntersectionData.IntersectionData(System.Int32, HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.ArterialClass, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.ApproachData), HCMCalc_UrbanStreets.SignalCycleData, HCMCalc_UrbanStreets.AnalysisMode, System.Int32)
+  name.vb: IntersectionData(Int32, AreaType, ArterialClass, List(Of ApproachData), SignalCycleData, AnalysisMode, Int32)
+- uid: HCMCalc_UrbanStreets.IntersectionData.Id
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.Id
+  id: Id
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IntersectionData.Id
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 5174
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: HCMCalc_UrbanStreets.IntersectionData.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.Label
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.Label
+  id: Label
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: IntersectionData.Label
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Label
+  type: Property
+  source:
+    id: Label
+    path: ''
+    startLine: 5176
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Label As String
+  overload: HCMCalc_UrbanStreets.IntersectionData.Label*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.CrossStreetName
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.CrossStreetName
+  id: CrossStreetName
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: CrossStreetName
+  nameWithType: IntersectionData.CrossStreetName
+  fullName: HCMCalc_UrbanStreets.IntersectionData.CrossStreetName
+  type: Property
+  source:
+    id: CrossStreetName
+    path: ''
+    startLine: 5177
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string CrossStreetName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CrossStreetName As String
+  overload: HCMCalc_UrbanStreets.IntersectionData.CrossStreetName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth
+  id: CrossStreetWidth
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: CrossStreetWidth
+  nameWithType: IntersectionData.CrossStreetWidth
+  fullName: HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth
+  type: Property
+  source:
+    id: CrossStreetWidth
+    path: ''
+    startLine: 5178
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int CrossStreetWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CrossStreetWidth As Integer
+  overload: HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.Signal
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.Signal
+  id: Signal
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: Signal
+  nameWithType: IntersectionData.Signal
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Signal
+  type: Property
+  source:
+    id: Signal
+    path: ''
+    startLine: 5179
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalCycleData Signal { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SignalCycleData
+    content.vb: Public Property Signal As SignalCycleData
+  overload: HCMCalc_UrbanStreets.IntersectionData.Signal*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.Approaches
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.Approaches
+  id: Approaches
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: Approaches
+  nameWithType: IntersectionData.Approaches
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Approaches
+  type: Property
+  source:
+    id: Approaches
+    path: ''
+    startLine: 5180
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public List<ApproachData> Approaches { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData}
+    content.vb: Public Property Approaches As List(Of ApproachData)
+  overload: HCMCalc_UrbanStreets.IntersectionData.Approaches*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr
+  id: DemandVolumeVehPerHr
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: DemandVolumeVehPerHr
+  nameWithType: IntersectionData.DemandVolumeVehPerHr
+  fullName: HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr
+  type: Property
+  source:
+    id: DemandVolumeVehPerHr
+    path: ''
+    startLine: 5181
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DemandVolumeVehPerHr { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DemandVolumeVehPerHr As Single
+  overload: HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.Results
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.Results
+  id: Results
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: Results
+  nameWithType: IntersectionData.Results
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Results
+  type: Property
+  source:
+    id: Results
+    path: ''
+    startLine: 5182
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ResultsIntersectionData Results { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ResultsIntersectionData
+    content.vb: Public Property Results As ResultsIntersectionData
+  overload: HCMCalc_UrbanStreets.IntersectionData.Results*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.SpeedLimit
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.SpeedLimit
+  id: SpeedLimit
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: SpeedLimit
+  nameWithType: IntersectionData.SpeedLimit
+  fullName: HCMCalc_UrbanStreets.IntersectionData.SpeedLimit
+  type: Property
+  source:
+    id: SpeedLimit
+    path: ''
+    startLine: 5183
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SpeedLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SpeedLimit As Single
+  overload: HCMCalc_UrbanStreets.IntersectionData.SpeedLimit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.DetectorLength
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.DetectorLength
+  id: DetectorLength
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: DetectorLength
+  nameWithType: IntersectionData.DetectorLength
+  fullName: HCMCalc_UrbanStreets.IntersectionData.DetectorLength
+  type: Property
+  source:
+    id: DetectorLength
+    path: ''
+    startLine: 5184
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DetectorLength { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DetectorLength As Single
+  overload: HCMCalc_UrbanStreets.IntersectionData.DetectorLength*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors
+  commentId: P:HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors
+  id: LaneGradeHVAreaFactors
+  parent: HCMCalc_UrbanStreets.IntersectionData
+  langs:
+  - csharp
+  - vb
+  name: LaneGradeHVAreaFactors
+  nameWithType: IntersectionData.LaneGradeHVAreaFactors
+  fullName: HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors
+  type: Property
+  source:
+    id: LaneGradeHVAreaFactors
+    path: ''
+    startLine: 5185
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LaneGradeHVAreaFactors { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LaneGradeHVAreaFactors As Single
+  overload: HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.IntersectionData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.#ctor
+  name: IntersectionData
+  nameWithType: IntersectionData.IntersectionData
+  fullName: HCMCalc_UrbanStreets.IntersectionData.IntersectionData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.AreaType
+  commentId: T:HCMCalc_UrbanStreets.AreaType
+  parent: HCMCalc_UrbanStreets
+  name: AreaType
+  nameWithType: AreaType
+  fullName: HCMCalc_UrbanStreets.AreaType
+- uid: HCMCalc_UrbanStreets.ArterialClass
+  commentId: T:HCMCalc_UrbanStreets.ArterialClass
+  parent: HCMCalc_UrbanStreets
+  name: ArterialClass
+  nameWithType: ArterialClass
+  fullName: HCMCalc_UrbanStreets.ArterialClass
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.ApproachData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ApproachData>
+  nameWithType: List<ApproachData>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.ApproachData>
+  nameWithType.vb: List(Of ApproachData)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.ApproachData)
+  name.vb: List(Of ApproachData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.ApproachData
+    name: ApproachData
+    nameWithType: ApproachData
+    fullName: HCMCalc_UrbanStreets.ApproachData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.ApproachData
+    name: ApproachData
+    nameWithType: ApproachData
+    fullName: HCMCalc_UrbanStreets.ApproachData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HCMCalc_UrbanStreets.SignalCycleData
+  commentId: T:HCMCalc_UrbanStreets.SignalCycleData
+  parent: HCMCalc_UrbanStreets
+  name: SignalCycleData
+  nameWithType: SignalCycleData
+  fullName: HCMCalc_UrbanStreets.SignalCycleData
+- uid: HCMCalc_UrbanStreets.AnalysisMode
+  commentId: T:HCMCalc_UrbanStreets.AnalysisMode
+  parent: HCMCalc_UrbanStreets
+  name: AnalysisMode
+  nameWithType: AnalysisMode
+  fullName: HCMCalc_UrbanStreets.AnalysisMode
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HCMCalc_UrbanStreets.IntersectionData.Id*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.Id
+  name: Id
+  nameWithType: IntersectionData.Id
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Id
+- uid: HCMCalc_UrbanStreets.IntersectionData.Label*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.Label
+  name: Label
+  nameWithType: IntersectionData.Label
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.IntersectionData.CrossStreetName*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.CrossStreetName
+  name: CrossStreetName
+  nameWithType: IntersectionData.CrossStreetName
+  fullName: HCMCalc_UrbanStreets.IntersectionData.CrossStreetName
+- uid: HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth
+  name: CrossStreetWidth
+  nameWithType: IntersectionData.CrossStreetWidth
+  fullName: HCMCalc_UrbanStreets.IntersectionData.CrossStreetWidth
+- uid: HCMCalc_UrbanStreets.IntersectionData.Signal*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.Signal
+  name: Signal
+  nameWithType: IntersectionData.Signal
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Signal
+- uid: HCMCalc_UrbanStreets.IntersectionData.Approaches*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.Approaches
+  name: Approaches
+  nameWithType: IntersectionData.Approaches
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Approaches
+- uid: HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr
+  name: DemandVolumeVehPerHr
+  nameWithType: IntersectionData.DemandVolumeVehPerHr
+  fullName: HCMCalc_UrbanStreets.IntersectionData.DemandVolumeVehPerHr
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.IntersectionData.Results*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.Results
+  name: Results
+  nameWithType: IntersectionData.Results
+  fullName: HCMCalc_UrbanStreets.IntersectionData.Results
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionData
+  commentId: T:HCMCalc_UrbanStreets.ResultsIntersectionData
+  parent: HCMCalc_UrbanStreets
+  name: ResultsIntersectionData
+  nameWithType: ResultsIntersectionData
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionData
+- uid: HCMCalc_UrbanStreets.IntersectionData.SpeedLimit*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.SpeedLimit
+  name: SpeedLimit
+  nameWithType: IntersectionData.SpeedLimit
+  fullName: HCMCalc_UrbanStreets.IntersectionData.SpeedLimit
+- uid: HCMCalc_UrbanStreets.IntersectionData.DetectorLength*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.DetectorLength
+  name: DetectorLength
+  nameWithType: IntersectionData.DetectorLength
+  fullName: HCMCalc_UrbanStreets.IntersectionData.DetectorLength
+- uid: HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors*
+  commentId: Overload:HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors
+  name: LaneGradeHVAreaFactors
+  nameWithType: IntersectionData.LaneGradeHVAreaFactors
+  fullName: HCMCalc_UrbanStreets.IntersectionData.LaneGradeHVAreaFactors

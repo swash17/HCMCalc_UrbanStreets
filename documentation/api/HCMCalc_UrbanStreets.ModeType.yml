@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ModeType
+  commentId: T:HCMCalc_UrbanStreets.ModeType
+  id: ModeType
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ModeType.AutoOnly
+  - HCMCalc_UrbanStreets.ModeType.Multimodal
+  - HCMCalc_UrbanStreets.ModeType.SignalOnly
+  langs:
+  - csharp
+  - vb
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMCalc_UrbanStreets.ModeType
+  type: Enum
+  source:
+    id: ModeType
+    path: ''
+    startLine: 5342
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe type of mode for a project.\n"
+  example: []
+  syntax:
+    content: public enum ModeType
+    content.vb: Public Enum ModeType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.ModeType.AutoOnly
+  commentId: F:HCMCalc_UrbanStreets.ModeType.AutoOnly
+  id: AutoOnly
+  parent: HCMCalc_UrbanStreets.ModeType
+  langs:
+  - csharp
+  - vb
+  name: AutoOnly
+  nameWithType: ModeType.AutoOnly
+  fullName: HCMCalc_UrbanStreets.ModeType.AutoOnly
+  type: Field
+  source:
+    id: AutoOnly
+    path: ''
+    startLine: 5344
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: AutoOnly = 0
+    return:
+      type: HCMCalc_UrbanStreets.ModeType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.ModeType.Multimodal
+  commentId: F:HCMCalc_UrbanStreets.ModeType.Multimodal
+  id: Multimodal
+  parent: HCMCalc_UrbanStreets.ModeType
+  langs:
+  - csharp
+  - vb
+  name: Multimodal
+  nameWithType: ModeType.Multimodal
+  fullName: HCMCalc_UrbanStreets.ModeType.Multimodal
+  type: Field
+  source:
+    id: Multimodal
+    path: ''
+    startLine: 5345
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Multimodal = 1
+    return:
+      type: HCMCalc_UrbanStreets.ModeType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.ModeType.SignalOnly
+  commentId: F:HCMCalc_UrbanStreets.ModeType.SignalOnly
+  id: SignalOnly
+  parent: HCMCalc_UrbanStreets.ModeType
+  langs:
+  - csharp
+  - vb
+  name: SignalOnly
+  nameWithType: ModeType.SignalOnly
+  fullName: HCMCalc_UrbanStreets.ModeType.SignalOnly
+  type: Field
+  source:
+    id: SignalOnly
+    path: ''
+    startLine: 5346
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: SignalOnly = 2
+    return:
+      type: HCMCalc_UrbanStreets.ModeType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.ModeType
+  commentId: T:HCMCalc_UrbanStreets.ModeType
+  parent: HCMCalc_UrbanStreets
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMCalc_UrbanStreets.ModeType

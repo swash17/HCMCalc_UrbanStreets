@@ -1,0 +1,955 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SignalPhaseData
+  commentId: T:HCMCalc_UrbanStreets.SignalPhaseData
+  id: SignalPhaseData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SignalPhaseData.#ctor
+  - HCMCalc_UrbanStreets.SignalPhaseData.#ctor(System.Byte,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.PhasingType,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.TimerData)
+  - HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec
+  - HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup
+  - HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode
+  - HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode
+  - HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec
+  - HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode
+  - HCMCalc_UrbanStreets.SignalPhaseData.gC
+  - HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec
+  - HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec
+  - HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId
+  - HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId
+  - HCMCalc_UrbanStreets.SignalPhaseData.PassTime
+  - HCMCalc_UrbanStreets.SignalPhaseData.Phasing
+  - HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode
+  - HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode
+  - HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec
+  - HCMCalc_UrbanStreets.SignalPhaseData.Sequence
+  - HCMCalc_UrbanStreets.SignalPhaseData.Splits
+  - HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec
+  - HCMCalc_UrbanStreets.SignalPhaseData.Timer
+  - HCMCalc_UrbanStreets.SignalPhaseData.YellowSec
+  langs:
+  - csharp
+  - vb
+  name: SignalPhaseData
+  nameWithType: SignalPhaseData
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData
+  type: Class
+  source:
+    id: SignalPhaseData
+    path: ''
+    startLine: 7137
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class SignalPhaseData
+    content.vb: Public Class SignalPhaseData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.SignalPhaseData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: SignalPhaseData()
+  nameWithType: SignalPhaseData.SignalPhaseData()
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.SignalPhaseData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 7164
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalPhaseData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.#ctor(System.Byte,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.PhasingType,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.TimerData)
+  commentId: M:HCMCalc_UrbanStreets.SignalPhaseData.#ctor(System.Byte,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.PhasingType,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.TimerData)
+  id: '#ctor(System.Byte,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.PhasingType,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.TimerData)'
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: SignalPhaseData(Byte, NemaMovementNumbers, PhasingType, Single, Single, Single, Single, TimerData)
+  nameWithType: SignalPhaseData.SignalPhaseData(Byte, NemaMovementNumbers, PhasingType, Single, Single, Single, Single, TimerData)
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.SignalPhaseData(System.Byte, HCMCalc_UrbanStreets.NemaMovementNumbers, HCMCalc_UrbanStreets.PhasingType, System.Single, System.Single, System.Single, System.Single, HCMCalc_UrbanStreets.TimerData)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 7169
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalPhaseData(byte nemaPhaseId, NemaMovementNumbers nemaMvmtId, PhasingType phaseType, float greenTime, float yellowTime, float allRedTime, float startUpLostTime, TimerData timer)
+    parameters:
+    - id: nemaPhaseId
+      type: System.Byte
+    - id: nemaMvmtId
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    - id: phaseType
+      type: HCMCalc_UrbanStreets.PhasingType
+    - id: greenTime
+      type: System.Single
+    - id: yellowTime
+      type: System.Single
+    - id: allRedTime
+      type: System.Single
+    - id: startUpLostTime
+      type: System.Single
+    - id: timer
+      type: HCMCalc_UrbanStreets.TimerData
+    content.vb: Public Sub New(nemaPhaseId As Byte, nemaMvmtId As NemaMovementNumbers, phaseType As PhasingType, greenTime As Single, yellowTime As Single, allRedTime As Single, startUpLostTime As Single, timer As TimerData)
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId
+  id: NemaPhaseId
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: NemaPhaseId
+  nameWithType: SignalPhaseData.NemaPhaseId
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId
+  type: Property
+  source:
+    id: NemaPhaseId
+    path: ''
+    startLine: 7181
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public byte NemaPhaseId { get; set; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public Property NemaPhaseId As Byte
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Phasing
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.Phasing
+  id: Phasing
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: Phasing
+  nameWithType: SignalPhaseData.Phasing
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Phasing
+  type: Property
+  source:
+    id: Phasing
+    path: ''
+    startLine: 7182
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public PhasingType Phasing { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+    content.vb: Public Property Phasing As PhasingType
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.Phasing*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.YellowSec
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.YellowSec
+  id: YellowSec
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: YellowSec
+  nameWithType: SignalPhaseData.YellowSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.YellowSec
+  type: Property
+  source:
+    id: YellowSec
+    path: ''
+    startLine: 7183
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float YellowSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property YellowSec As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.YellowSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec
+  id: AllRedSec
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: AllRedSec
+  nameWithType: SignalPhaseData.AllRedSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec
+  type: Property
+  source:
+    id: AllRedSec
+    path: ''
+    startLine: 7184
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AllRedSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AllRedSec As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec
+  id: GreenEffectiveSec
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: GreenEffectiveSec
+  nameWithType: SignalPhaseData.GreenEffectiveSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec
+  type: Property
+  source:
+    id: GreenEffectiveSec
+    path: ''
+    startLine: 7185
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GreenEffectiveSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GreenEffectiveSec As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.gC
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.gC
+  id: gC
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: gC
+  nameWithType: SignalPhaseData.gC
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.gC
+  type: Property
+  source:
+    id: gC
+    path: ''
+    startLine: 7186
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float gC { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property gC As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.gC*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Sequence
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.Sequence
+  id: Sequence
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: Sequence
+  nameWithType: SignalPhaseData.Sequence
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Sequence
+  type: Property
+  source:
+    id: Sequence
+    path: ''
+    startLine: 7187
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SequenceType Sequence { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SequenceType
+    content.vb: Public Property Sequence As SequenceType
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.Sequence*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode
+  id: RecallMinMode
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: RecallMinMode
+  nameWithType: SignalPhaseData.RecallMinMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode
+  type: Property
+  source:
+    id: RecallMinMode
+    path: ''
+    startLine: 7188
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool RecallMinMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RecallMinMode As Boolean
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode
+  id: RecallMaxMode
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: RecallMaxMode
+  nameWithType: SignalPhaseData.RecallMaxMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode
+  type: Property
+  source:
+    id: RecallMaxMode
+    path: ''
+    startLine: 7189
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool RecallMaxMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RecallMaxMode As Boolean
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode
+  id: GapOutMode
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: GapOutMode
+  nameWithType: SignalPhaseData.GapOutMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode
+  type: Property
+  source:
+    id: GapOutMode
+    path: ''
+    startLine: 7190
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool GapOutMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property GapOutMode As Boolean
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode
+  id: DualEntryMode
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: DualEntryMode
+  nameWithType: SignalPhaseData.DualEntryMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode
+  type: Property
+  source:
+    id: DualEntryMode
+    path: ''
+    startLine: 7191
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool DualEntryMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DualEntryMode As Boolean
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode
+  id: DallasPhasingMode
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: DallasPhasingMode
+  nameWithType: SignalPhaseData.DallasPhasingMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode
+  type: Property
+  source:
+    id: DallasPhasingMode
+    path: ''
+    startLine: 7192
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool DallasPhasingMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DallasPhasingMode As Boolean
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec
+  id: MinGreenIntervalSec
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: MinGreenIntervalSec
+  nameWithType: SignalPhaseData.MinGreenIntervalSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec
+  type: Property
+  source:
+    id: MinGreenIntervalSec
+    path: ''
+    startLine: 7193
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float MinGreenIntervalSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MinGreenIntervalSec As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec
+  id: StartUpLostTimeSec
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: StartUpLostTimeSec
+  nameWithType: SignalPhaseData.StartUpLostTimeSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec
+  type: Property
+  source:
+    id: StartUpLostTimeSec
+    path: ''
+    startLine: 7194
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float StartUpLostTimeSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property StartUpLostTimeSec As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec
+  id: EndUseSec
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: EndUseSec
+  nameWithType: SignalPhaseData.EndUseSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec
+  type: Property
+  source:
+    id: EndUseSec
+    path: ''
+    startLine: 7195
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float EndUseSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property EndUseSec As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Splits
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.Splits
+  id: Splits
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: Splits
+  nameWithType: SignalPhaseData.Splits
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Splits
+  type: Property
+  source:
+    id: Splits
+    path: ''
+    startLine: 7196
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Splits { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Splits As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.Splits*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Timer
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.Timer
+  id: Timer
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: Timer
+  nameWithType: SignalPhaseData.Timer
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Timer
+  type: Property
+  source:
+    id: Timer
+    path: ''
+    startLine: 7197
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public TimerData Timer { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.TimerData
+    content.vb: Public Property Timer As TimerData
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.Timer*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.PassTime
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.PassTime
+  id: PassTime
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: PassTime
+  nameWithType: SignalPhaseData.PassTime
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.PassTime
+  type: Property
+  source:
+    id: PassTime
+    path: ''
+    startLine: 7198
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PassTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PassTime As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.PassTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec
+  id: RedEffectiveSec
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: RedEffectiveSec
+  nameWithType: SignalPhaseData.RedEffectiveSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec
+  type: Property
+  source:
+    id: RedEffectiveSec
+    path: ''
+    startLine: 7199
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RedEffectiveSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RedEffectiveSec As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup
+  id: AssociatedLaneGroup
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: AssociatedLaneGroup
+  nameWithType: SignalPhaseData.AssociatedLaneGroup
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup
+  type: Property
+  source:
+    id: AssociatedLaneGroup
+    path: ''
+    startLine: 7200
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LaneGroupData AssociatedLaneGroup { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.LaneGroupData
+    content.vb: Public Property AssociatedLaneGroup As LaneGroupData
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId
+  id: NemaMvmtId
+  parent: HCMCalc_UrbanStreets.SignalPhaseData
+  langs:
+  - csharp
+  - vb
+  name: NemaMvmtId
+  nameWithType: SignalPhaseData.NemaMvmtId
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId
+  type: Property
+  source:
+    id: NemaMvmtId
+    path: ''
+    startLine: 7202
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public NemaMovementNumbers NemaMvmtId { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    content.vb: Public Property NemaMvmtId As NemaMovementNumbers
+  overload: HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.#ctor
+  name: SignalPhaseData
+  nameWithType: SignalPhaseData.SignalPhaseData
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.SignalPhaseData
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+  commentId: T:HCMCalc_UrbanStreets.NemaMovementNumbers
+  parent: HCMCalc_UrbanStreets
+  name: NemaMovementNumbers
+  nameWithType: NemaMovementNumbers
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers
+- uid: HCMCalc_UrbanStreets.PhasingType
+  commentId: T:HCMCalc_UrbanStreets.PhasingType
+  parent: HCMCalc_UrbanStreets
+  name: PhasingType
+  nameWithType: PhasingType
+  fullName: HCMCalc_UrbanStreets.PhasingType
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.TimerData
+  commentId: T:HCMCalc_UrbanStreets.TimerData
+  parent: HCMCalc_UrbanStreets
+  name: TimerData
+  nameWithType: TimerData
+  fullName: HCMCalc_UrbanStreets.TimerData
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId
+  name: NemaPhaseId
+  nameWithType: SignalPhaseData.NemaPhaseId
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.NemaPhaseId
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Phasing*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.Phasing
+  name: Phasing
+  nameWithType: SignalPhaseData.Phasing
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Phasing
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.YellowSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.YellowSec
+  name: YellowSec
+  nameWithType: SignalPhaseData.YellowSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.YellowSec
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec
+  name: AllRedSec
+  nameWithType: SignalPhaseData.AllRedSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.AllRedSec
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec
+  name: GreenEffectiveSec
+  nameWithType: SignalPhaseData.GreenEffectiveSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.GreenEffectiveSec
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.gC*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.gC
+  name: gC
+  nameWithType: SignalPhaseData.gC
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.gC
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Sequence*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.Sequence
+  name: Sequence
+  nameWithType: SignalPhaseData.Sequence
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Sequence
+- uid: HCMCalc_UrbanStreets.SequenceType
+  commentId: T:HCMCalc_UrbanStreets.SequenceType
+  parent: HCMCalc_UrbanStreets
+  name: SequenceType
+  nameWithType: SequenceType
+  fullName: HCMCalc_UrbanStreets.SequenceType
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode
+  name: RecallMinMode
+  nameWithType: SignalPhaseData.RecallMinMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.RecallMinMode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode
+  name: RecallMaxMode
+  nameWithType: SignalPhaseData.RecallMaxMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.RecallMaxMode
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode
+  name: GapOutMode
+  nameWithType: SignalPhaseData.GapOutMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.GapOutMode
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode
+  name: DualEntryMode
+  nameWithType: SignalPhaseData.DualEntryMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.DualEntryMode
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode
+  name: DallasPhasingMode
+  nameWithType: SignalPhaseData.DallasPhasingMode
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.DallasPhasingMode
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec
+  name: MinGreenIntervalSec
+  nameWithType: SignalPhaseData.MinGreenIntervalSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.MinGreenIntervalSec
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec
+  name: StartUpLostTimeSec
+  nameWithType: SignalPhaseData.StartUpLostTimeSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.StartUpLostTimeSec
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec
+  name: EndUseSec
+  nameWithType: SignalPhaseData.EndUseSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.EndUseSec
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Splits*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.Splits
+  name: Splits
+  nameWithType: SignalPhaseData.Splits
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Splits
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.Timer*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.Timer
+  name: Timer
+  nameWithType: SignalPhaseData.Timer
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.Timer
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.PassTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.PassTime
+  name: PassTime
+  nameWithType: SignalPhaseData.PassTime
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.PassTime
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec
+  name: RedEffectiveSec
+  nameWithType: SignalPhaseData.RedEffectiveSec
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.RedEffectiveSec
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup
+  name: AssociatedLaneGroup
+  nameWithType: SignalPhaseData.AssociatedLaneGroup
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.AssociatedLaneGroup
+- uid: HCMCalc_UrbanStreets.LaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.LaneGroupData
+  parent: HCMCalc_UrbanStreets
+  name: LaneGroupData
+  nameWithType: LaneGroupData
+  fullName: HCMCalc_UrbanStreets.LaneGroupData
+- uid: HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId
+  name: NemaMvmtId
+  nameWithType: SignalPhaseData.NemaMvmtId
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData.NemaMvmtId

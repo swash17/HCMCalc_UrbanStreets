@@ -1,0 +1,1426 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.LaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.LaneGroupData
+  id: LaneGroupData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.LaneGroupData.#ctor
+  - HCMCalc_UrbanStreets.LaneGroupData.#ctor(System.Int32,System.String,HCMCalc_UrbanStreets.LaneMovementsAllowed,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData},HCMCalc_UrbanStreets.SignalPhaseData,System.Single,System.Single,System.Int32)
+  - HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate
+  - HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults
+  - HCMCalc_UrbanStreets.LaneGroupData.ArvType
+  - HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow
+  - HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate(System.Single,System.Single)
+  - HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr
+  - HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit
+  - HCMCalc_UrbanStreets.LaneGroupData.DetectorLength
+  - HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume
+  - HCMCalc_UrbanStreets.LaneGroupData.Id
+  - HCMCalc_UrbanStreets.LaneGroupData.InitialQue
+  - HCMCalc_UrbanStreets.LaneGroupData.Label
+  - HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor
+  - HCMCalc_UrbanStreets.LaneGroupData.Lanes
+  - HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID
+  - HCMCalc_UrbanStreets.LaneGroupData.NumLanes
+  - HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes
+  - HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles
+  - HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns
+  - HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns
+  - HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane
+  - HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor
+  - HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio
+  - HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen
+  - HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane
+  - HCMCalc_UrbanStreets.LaneGroupData.SignalPhase
+  - HCMCalc_UrbanStreets.LaneGroupData.TravelDir
+  - HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet
+  - HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet
+  - HCMCalc_UrbanStreets.LaneGroupData.Type
+  langs:
+  - csharp
+  - vb
+  name: LaneGroupData
+  nameWithType: LaneGroupData
+  fullName: HCMCalc_UrbanStreets.LaneGroupData
+  type: Class
+  source:
+    id: LaneGroupData
+    path: ''
+    startLine: 4926
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters for creation of a lane group.\n"
+  example: []
+  syntax:
+    content: public class LaneGroupData
+    content.vb: Public Class LaneGroupData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.LaneGroupData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.LaneGroupData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: LaneGroupData()
+  nameWithType: LaneGroupData.LaneGroupData()
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.LaneGroupData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4965
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameterless constructor needed for XML de/serialization. Do not use\n"
+  example: []
+  syntax:
+    content: public LaneGroupData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.LaneGroupData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.#ctor(System.Int32,System.String,HCMCalc_UrbanStreets.LaneMovementsAllowed,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData},HCMCalc_UrbanStreets.SignalPhaseData,System.Single,System.Single,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.LaneGroupData.#ctor(System.Int32,System.String,HCMCalc_UrbanStreets.LaneMovementsAllowed,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData},HCMCalc_UrbanStreets.SignalPhaseData,System.Single,System.Single,System.Int32)
+  id: '#ctor(System.Int32,System.String,HCMCalc_UrbanStreets.LaneMovementsAllowed,HCMCalc_UrbanStreets.NemaMovementNumbers,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData},HCMCalc_UrbanStreets.SignalPhaseData,System.Single,System.Single,System.Int32)'
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: LaneGroupData(Int32, String, LaneMovementsAllowed, NemaMovementNumbers, TravelDirection, List<LaneData>, SignalPhaseData, Single, Single, Int32)
+  nameWithType: LaneGroupData.LaneGroupData(Int32, String, LaneMovementsAllowed, NemaMovementNumbers, TravelDirection, List<LaneData>, SignalPhaseData, Single, Single, Int32)
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.LaneGroupData(System.Int32, System.String, HCMCalc_UrbanStreets.LaneMovementsAllowed, HCMCalc_UrbanStreets.NemaMovementNumbers, HCMCalc_UrbanStreets.TravelDirection, System.Collections.Generic.List<HCMCalc_UrbanStreets.LaneData>, HCMCalc_UrbanStreets.SignalPhaseData, System.Single, System.Single, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4985
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCreates a lane group for an approach.\n"
+  example: []
+  syntax:
+    content: public LaneGroupData(int id, string label, LaneMovementsAllowed type, NemaMovementNumbers nemaMvmtId, TravelDirection travDir, List<LaneData> lanes, SignalPhaseData signalPhasing, float pctLeftTurns = 0F, float pctRightTurns = 0F, int arvType = 3)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    - id: label
+      type: System.String
+      description: ''
+    - id: type
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+      description: ''
+    - id: nemaMvmtId
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+      description: ''
+    - id: travDir
+      type: HCMCalc_UrbanStreets.TravelDirection
+      description: ''
+    - id: lanes
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData}
+      description: ''
+    - id: signalPhasing
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+      description: ''
+    - id: pctLeftTurns
+      type: System.Single
+      description: ''
+    - id: pctRightTurns
+      type: System.Single
+      description: ''
+    - id: arvType
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(id As Integer, label As String, type As LaneMovementsAllowed, nemaMvmtId As NemaMovementNumbers, travDir As TravelDirection, lanes As List(Of LaneData), signalPhasing As SignalPhaseData, pctLeftTurns As Single = 0F, pctRightTurns As Single = 0F, arvType As Integer = 3)
+  overload: HCMCalc_UrbanStreets.LaneGroupData.#ctor*
+  nameWithType.vb: LaneGroupData.LaneGroupData(Int32, String, LaneMovementsAllowed, NemaMovementNumbers, TravelDirection, List(Of LaneData), SignalPhaseData, Single, Single, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HCMCalc_UrbanStreets.LaneGroupData.LaneGroupData(System.Int32, System.String, HCMCalc_UrbanStreets.LaneMovementsAllowed, HCMCalc_UrbanStreets.NemaMovementNumbers, HCMCalc_UrbanStreets.TravelDirection, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.LaneData), HCMCalc_UrbanStreets.SignalPhaseData, System.Single, System.Single, System.Int32)
+  name.vb: LaneGroupData(Int32, String, LaneMovementsAllowed, NemaMovementNumbers, TravelDirection, List(Of LaneData), SignalPhaseData, Single, Single, Int32)
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Type
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.Type
+  id: Type
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: LaneGroupData.Type
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Type
+  type: Property
+  source:
+    id: Type
+    path: ''
+    startLine: 5010
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LaneMovementsAllowed Type { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+    content.vb: Public Property Type As LaneMovementsAllowed
+  overload: HCMCalc_UrbanStreets.LaneGroupData.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Id
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.Id
+  id: Id
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: LaneGroupData.Id
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 5014
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: HCMCalc_UrbanStreets.LaneGroupData.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Label
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.Label
+  id: Label
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: LaneGroupData.Label
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Label
+  type: Property
+  source:
+    id: Label
+    path: ''
+    startLine: 5015
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Label As String
+  overload: HCMCalc_UrbanStreets.LaneGroupData.Label*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.TravelDir
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.TravelDir
+  id: TravelDir
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: TravelDir
+  nameWithType: LaneGroupData.TravelDir
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.TravelDir
+  type: Property
+  source:
+    id: TravelDir
+    path: ''
+    startLine: 5016
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public TravelDirection TravelDir { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.TravelDirection
+    content.vb: Public Property TravelDir As TravelDirection
+  overload: HCMCalc_UrbanStreets.LaneGroupData.TravelDir*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr
+  id: DemandVolumeVehPerHr
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: DemandVolumeVehPerHr
+  nameWithType: LaneGroupData.DemandVolumeVehPerHr
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr
+  type: Property
+  source:
+    id: DemandVolumeVehPerHr
+    path: ''
+    startLine: 5017
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DemandVolumeVehPerHr { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DemandVolumeVehPerHr As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor
+  id: PeakHourFactor
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PeakHourFactor
+  nameWithType: LaneGroupData.PeakHourFactor
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor
+  type: Property
+  source:
+    id: PeakHourFactor
+    path: ''
+    startLine: 5018
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PeakHourFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PeakHourFactor As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate
+  id: AnalysisFlowRate
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: AnalysisFlowRate
+  nameWithType: LaneGroupData.AnalysisFlowRate
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate
+  type: Property
+  source:
+    id: AnalysisFlowRate
+    path: ''
+    startLine: 5019
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AnalysisFlowRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AnalysisFlowRate As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles
+  id: PctHeavyVehicles
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PctHeavyVehicles
+  nameWithType: LaneGroupData.PctHeavyVehicles
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles
+  type: Property
+  source:
+    id: PctHeavyVehicles
+    path: ''
+    startLine: 5020
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctHeavyVehicles { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctHeavyVehicles As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Lanes
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.Lanes
+  id: Lanes
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: Lanes
+  nameWithType: LaneGroupData.Lanes
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Lanes
+  type: Property
+  source:
+    id: Lanes
+    path: ''
+    startLine: 5021
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public List<LaneData> Lanes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData}
+    content.vb: Public Property Lanes As List(Of LaneData)
+  overload: HCMCalc_UrbanStreets.LaneGroupData.Lanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.NumLanes
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.NumLanes
+  id: NumLanes
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: NumLanes
+  nameWithType: LaneGroupData.NumLanes
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.NumLanes
+  type: Property
+  source:
+    id: NumLanes
+    path: ''
+    startLine: 5022
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int NumLanes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumLanes As Integer
+  overload: HCMCalc_UrbanStreets.LaneGroupData.NumLanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet
+  id: TurnBayLeftLengthFeet
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: TurnBayLeftLengthFeet
+  nameWithType: LaneGroupData.TurnBayLeftLengthFeet
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet
+  type: Property
+  source:
+    id: TurnBayLeftLengthFeet
+    path: ''
+    startLine: 5023
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int TurnBayLeftLengthFeet { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TurnBayLeftLengthFeet As Integer
+  overload: HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet
+  id: TurnBayRightLengthFeet
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: TurnBayRightLengthFeet
+  nameWithType: LaneGroupData.TurnBayRightLengthFeet
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet
+  type: Property
+  source:
+    id: TurnBayRightLengthFeet
+    path: ''
+    startLine: 5024
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int TurnBayRightLengthFeet { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TurnBayRightLengthFeet As Integer
+  overload: HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns
+  id: PctLeftTurns
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PctLeftTurns
+  nameWithType: LaneGroupData.PctLeftTurns
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns
+  type: Property
+  source:
+    id: PctLeftTurns
+    path: ''
+    startLine: 5025
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctLeftTurns { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctLeftTurns As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns
+  id: PctRightTurns
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PctRightTurns
+  nameWithType: LaneGroupData.PctRightTurns
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns
+  type: Property
+  source:
+    id: PctRightTurns
+    path: ''
+    startLine: 5026
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctRightTurns { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctRightTurns As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.ArvType
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.ArvType
+  id: ArvType
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: ArvType
+  nameWithType: LaneGroupData.ArvType
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.ArvType
+  type: Property
+  source:
+    id: ArvType
+    path: ''
+    startLine: 5027
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int ArvType { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ArvType As Integer
+  overload: HCMCalc_UrbanStreets.LaneGroupData.ArvType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.SignalPhase
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.SignalPhase
+  id: SignalPhase
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: SignalPhase
+  nameWithType: LaneGroupData.SignalPhase
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.SignalPhase
+  type: Property
+  source:
+    id: SignalPhase
+    path: ''
+    startLine: 5028
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalPhaseData SignalPhase { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    content.vb: Public Property SignalPhase As SignalPhaseData
+  overload: HCMCalc_UrbanStreets.LaneGroupData.SignalPhase*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults
+  id: AnalysisResults
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: AnalysisResults
+  nameWithType: LaneGroupData.AnalysisResults
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults
+  type: Property
+  source:
+    id: AnalysisResults
+    path: ''
+    startLine: 5029
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ResultsIntersectionLaneGroupData AnalysisResults { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+    content.vb: Public Property AnalysisResults As ResultsIntersectionLaneGroupData
+  overload: HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.InitialQue
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.InitialQue
+  id: InitialQue
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: InitialQue
+  nameWithType: LaneGroupData.InitialQue
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.InitialQue
+  type: Property
+  source:
+    id: InitialQue
+    path: ''
+    startLine: 5030
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float InitialQue { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InitialQue As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.InitialQue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio
+  id: PlatoonRatio
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PlatoonRatio
+  nameWithType: LaneGroupData.PlatoonRatio
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio
+  type: Property
+  source:
+    id: PlatoonRatio
+    path: ''
+    startLine: 5031
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PlatoonRatio { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PlatoonRatio As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen
+  id: PortionOnGreen
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PortionOnGreen
+  nameWithType: LaneGroupData.PortionOnGreen
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen
+  type: Property
+  source:
+    id: PortionOnGreen
+    path: ''
+    startLine: 5032
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PortionOnGreen { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PortionOnGreen As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor
+  id: LaneFilterFactor
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: LaneFilterFactor
+  nameWithType: LaneGroupData.LaneFilterFactor
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor
+  type: Property
+  source:
+    id: LaneFilterFactor
+    path: ''
+    startLine: 5033
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LaneFilterFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LaneFilterFactor As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume
+  id: DischargeVolume
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: DischargeVolume
+  nameWithType: LaneGroupData.DischargeVolume
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume
+  type: Property
+  source:
+    id: DischargeVolume
+    path: ''
+    startLine: 5034
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DischargeVolume { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DischargeVolume As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes
+  id: NumLeftLanes
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: NumLeftLanes
+  nameWithType: LaneGroupData.NumLeftLanes
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes
+  type: Property
+  source:
+    id: NumLeftLanes
+    path: ''
+    startLine: 5035
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int NumLeftLanes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumLeftLanes As Integer
+  overload: HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID
+  id: NemaMvmtID
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: NemaMvmtID
+  nameWithType: LaneGroupData.NemaMvmtID
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID
+  type: Property
+  source:
+    id: NemaMvmtID
+    path: ''
+    startLine: 5036
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public NemaMovementNumbers NemaMvmtID { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    content.vb: Public Property NemaMvmtID As NemaMovementNumbers
+  overload: HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane
+  id: PortionOnGreenOfSharedLane
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PortionOnGreenOfSharedLane
+  nameWithType: LaneGroupData.PortionOnGreenOfSharedLane
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane
+  type: Property
+  source:
+    id: PortionOnGreenOfSharedLane
+    path: ''
+    startLine: 5037
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PortionOnGreenOfSharedLane { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PortionOnGreenOfSharedLane As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane
+  id: PctTurnsExcLane
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: PctTurnsExcLane
+  nameWithType: LaneGroupData.PctTurnsExcLane
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane
+  type: Property
+  source:
+    id: PctTurnsExcLane
+    path: ''
+    startLine: 5038
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctTurnsExcLane { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctTurnsExcLane As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow
+  id: BaseSatFlow
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: BaseSatFlow
+  nameWithType: LaneGroupData.BaseSatFlow
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow
+  type: Property
+  source:
+    id: BaseSatFlow
+    path: ''
+    startLine: 5039
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int BaseSatFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BaseSatFlow As Integer
+  overload: HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DetectorLength
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.DetectorLength
+  id: DetectorLength
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: DetectorLength
+  nameWithType: LaneGroupData.DetectorLength
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DetectorLength
+  type: Property
+  source:
+    id: DetectorLength
+    path: ''
+    startLine: 5040
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DetectorLength { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DetectorLength As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.DetectorLength*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit
+  commentId: P:HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit
+  id: DemandVolumeVehPerHrSplit
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: DemandVolumeVehPerHrSplit
+  nameWithType: LaneGroupData.DemandVolumeVehPerHrSplit
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit
+  type: Property
+  source:
+    id: DemandVolumeVehPerHrSplit
+    path: ''
+    startLine: 5041
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] DemandVolumeVehPerHrSplit { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property DemandVolumeVehPerHrSplit As Single()
+  overload: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate(System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate(System.Single,System.Single)
+  id: CalcAnalysisFlowRate(System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.LaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: CalcAnalysisFlowRate(Single, Single)
+  nameWithType: LaneGroupData.CalcAnalysisFlowRate(Single, Single)
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate(System.Single, System.Single)
+  type: Method
+  source:
+    id: CalcAnalysisFlowRate
+    path: ''
+    startLine: 5043
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float CalcAnalysisFlowRate(float demandVolume, float peakHourFactor)
+    parameters:
+    - id: demandVolume
+      type: System.Single
+    - id: peakHourFactor
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function CalcAnalysisFlowRate(demandVolume As Single, peakHourFactor As Single) As Single
+  overload: HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.LaneGroupData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.#ctor
+  name: LaneGroupData
+  nameWithType: LaneGroupData.LaneGroupData
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.LaneGroupData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  commentId: T:HCMCalc_UrbanStreets.LaneMovementsAllowed
+  parent: HCMCalc_UrbanStreets
+  name: LaneMovementsAllowed
+  nameWithType: LaneMovementsAllowed
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+  commentId: T:HCMCalc_UrbanStreets.NemaMovementNumbers
+  parent: HCMCalc_UrbanStreets
+  name: NemaMovementNumbers
+  nameWithType: NemaMovementNumbers
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers
+- uid: HCMCalc_UrbanStreets.TravelDirection
+  commentId: T:HCMCalc_UrbanStreets.TravelDirection
+  parent: HCMCalc_UrbanStreets
+  name: TravelDirection
+  nameWithType: TravelDirection
+  fullName: HCMCalc_UrbanStreets.TravelDirection
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.LaneData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<LaneData>
+  nameWithType: List<LaneData>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.LaneData>
+  nameWithType.vb: List(Of LaneData)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.LaneData)
+  name.vb: List(Of LaneData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.LaneData
+    name: LaneData
+    nameWithType: LaneData
+    fullName: HCMCalc_UrbanStreets.LaneData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.LaneData
+    name: LaneData
+    nameWithType: LaneData
+    fullName: HCMCalc_UrbanStreets.LaneData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HCMCalc_UrbanStreets.SignalPhaseData
+  commentId: T:HCMCalc_UrbanStreets.SignalPhaseData
+  parent: HCMCalc_UrbanStreets
+  name: SignalPhaseData
+  nameWithType: SignalPhaseData
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Type*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.Type
+  name: Type
+  nameWithType: LaneGroupData.Type
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Type
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Id*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.Id
+  name: Id
+  nameWithType: LaneGroupData.Id
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Id
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Label*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.Label
+  name: Label
+  nameWithType: LaneGroupData.Label
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Label
+- uid: HCMCalc_UrbanStreets.LaneGroupData.TravelDir*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.TravelDir
+  name: TravelDir
+  nameWithType: LaneGroupData.TravelDir
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.TravelDir
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr
+  name: DemandVolumeVehPerHr
+  nameWithType: LaneGroupData.DemandVolumeVehPerHr
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHr
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor
+  name: PeakHourFactor
+  nameWithType: LaneGroupData.PeakHourFactor
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PeakHourFactor
+- uid: HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate
+  name: AnalysisFlowRate
+  nameWithType: LaneGroupData.AnalysisFlowRate
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.AnalysisFlowRate
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles
+  name: PctHeavyVehicles
+  nameWithType: LaneGroupData.PctHeavyVehicles
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctHeavyVehicles
+- uid: HCMCalc_UrbanStreets.LaneGroupData.Lanes*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.Lanes
+  name: Lanes
+  nameWithType: LaneGroupData.Lanes
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.Lanes
+- uid: HCMCalc_UrbanStreets.LaneGroupData.NumLanes*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.NumLanes
+  name: NumLanes
+  nameWithType: LaneGroupData.NumLanes
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.NumLanes
+- uid: HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet
+  name: TurnBayLeftLengthFeet
+  nameWithType: LaneGroupData.TurnBayLeftLengthFeet
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.TurnBayLeftLengthFeet
+- uid: HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet
+  name: TurnBayRightLengthFeet
+  nameWithType: LaneGroupData.TurnBayRightLengthFeet
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.TurnBayRightLengthFeet
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns
+  name: PctLeftTurns
+  nameWithType: LaneGroupData.PctLeftTurns
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctLeftTurns
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns
+  name: PctRightTurns
+  nameWithType: LaneGroupData.PctRightTurns
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctRightTurns
+- uid: HCMCalc_UrbanStreets.LaneGroupData.ArvType*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.ArvType
+  name: ArvType
+  nameWithType: LaneGroupData.ArvType
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.ArvType
+- uid: HCMCalc_UrbanStreets.LaneGroupData.SignalPhase*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.SignalPhase
+  name: SignalPhase
+  nameWithType: LaneGroupData.SignalPhase
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.SignalPhase
+- uid: HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults
+  name: AnalysisResults
+  nameWithType: LaneGroupData.AnalysisResults
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.AnalysisResults
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  parent: HCMCalc_UrbanStreets
+  name: ResultsIntersectionLaneGroupData
+  nameWithType: ResultsIntersectionLaneGroupData
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+- uid: HCMCalc_UrbanStreets.LaneGroupData.InitialQue*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.InitialQue
+  name: InitialQue
+  nameWithType: LaneGroupData.InitialQue
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.InitialQue
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio
+  name: PlatoonRatio
+  nameWithType: LaneGroupData.PlatoonRatio
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PlatoonRatio
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen
+  name: PortionOnGreen
+  nameWithType: LaneGroupData.PortionOnGreen
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreen
+- uid: HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor
+  name: LaneFilterFactor
+  nameWithType: LaneGroupData.LaneFilterFactor
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.LaneFilterFactor
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume
+  name: DischargeVolume
+  nameWithType: LaneGroupData.DischargeVolume
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DischargeVolume
+- uid: HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes
+  name: NumLeftLanes
+  nameWithType: LaneGroupData.NumLeftLanes
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.NumLeftLanes
+- uid: HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID
+  name: NemaMvmtID
+  nameWithType: LaneGroupData.NemaMvmtID
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.NemaMvmtID
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane
+  name: PortionOnGreenOfSharedLane
+  nameWithType: LaneGroupData.PortionOnGreenOfSharedLane
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PortionOnGreenOfSharedLane
+- uid: HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane
+  name: PctTurnsExcLane
+  nameWithType: LaneGroupData.PctTurnsExcLane
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.PctTurnsExcLane
+- uid: HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow
+  name: BaseSatFlow
+  nameWithType: LaneGroupData.BaseSatFlow
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.BaseSatFlow
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DetectorLength*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.DetectorLength
+  name: DetectorLength
+  nameWithType: LaneGroupData.DetectorLength
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DetectorLength
+- uid: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit
+  name: DemandVolumeVehPerHrSplit
+  nameWithType: LaneGroupData.DemandVolumeVehPerHrSplit
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.DemandVolumeVehPerHrSplit
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate
+  name: CalcAnalysisFlowRate
+  nameWithType: LaneGroupData.CalcAnalysisFlowRate
+  fullName: HCMCalc_UrbanStreets.LaneGroupData.CalcAnalysisFlowRate

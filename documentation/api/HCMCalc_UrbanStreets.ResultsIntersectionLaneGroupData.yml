@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  id: ResultsIntersectionLaneGroupData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.#ctor
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms
+  - HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio
+  langs:
+  - csharp
+  - vb
+  name: ResultsIntersectionLaneGroupData
+  nameWithType: ResultsIntersectionLaneGroupData
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  type: Class
+  source:
+    id: ResultsIntersectionLaneGroupData
+    path: ''
+    startLine: 4834
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters for lane group results.\n"
+  example: []
+  syntax:
+    content: public class ResultsIntersectionLaneGroupData
+    content.vb: Public Class ResultsIntersectionLaneGroupData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: ResultsIntersectionLaneGroupData()
+  nameWithType: ResultsIntersectionLaneGroupData.ResultsIntersectionLaneGroupData()
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.ResultsIntersectionLaneGroupData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4848
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nEmpty constructor for creating lane group resoults.\n"
+  example: []
+  syntax:
+    content: public ResultsIntersectionLaneGroupData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate
+  id: SatFlowRate
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: SatFlowRate
+  nameWithType: ResultsIntersectionLaneGroupData.SatFlowRate
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate
+  type: Property
+  source:
+    id: SatFlowRate
+    path: ''
+    startLine: 4853
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SaturationFlowRateValues SatFlowRate { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SaturationFlowRateValues
+    content.vb: Public Property SatFlowRate As SaturationFlowRateValues
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms
+  id: SignalControlParms
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: SignalControlParms
+  nameWithType: ResultsIntersectionLaneGroupData.SignalControlParms
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms
+  type: Property
+  source:
+    id: SignalControlParms
+    path: ''
+    startLine: 4854
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalControlParameters SignalControlParms { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SignalControlParameters
+    content.vb: Public Property SignalControlParms As SignalControlParameters
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane
+  id: CapacityPerLane
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: CapacityPerLane
+  nameWithType: ResultsIntersectionLaneGroupData.CapacityPerLane
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane
+  type: Property
+  source:
+    id: CapacityPerLane
+    path: ''
+    startLine: 4855
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float CapacityPerLane { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property CapacityPerLane As Single
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio
+  id: vcRatio
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: vcRatio
+  nameWithType: ResultsIntersectionLaneGroupData.vcRatio
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio
+  type: Property
+  source:
+    id: vcRatio
+    path: ''
+    startLine: 4856
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float vcRatio { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property vcRatio As Single
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap
+  id: OverCap
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: OverCap
+  nameWithType: ResultsIntersectionLaneGroupData.OverCap
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap
+  type: Property
+  source:
+    id: OverCap
+    path: ''
+    startLine: 4857
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool OverCap { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property OverCap As Boolean
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio
+  id: QueStorageRatio
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: QueStorageRatio
+  nameWithType: ResultsIntersectionLaneGroupData.QueStorageRatio
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio
+  type: Property
+  source:
+    id: QueStorageRatio
+    path: ''
+    startLine: 4858
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float QueStorageRatio { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property QueStorageRatio As Single
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS
+  id: LOS
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: LOS
+  nameWithType: ResultsIntersectionLaneGroupData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS
+  type: Property
+  source:
+    id: LOS
+    path: ''
+    startLine: 4859
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string LOS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LOS As String
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume
+  id: DischargeVolume
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+  langs:
+  - csharp
+  - vb
+  name: DischargeVolume
+  nameWithType: ResultsIntersectionLaneGroupData.DischargeVolume
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume
+  type: Property
+  source:
+    id: DischargeVolume
+    path: ''
+    startLine: 4860
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DischargeVolume { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DischargeVolume As Single
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.#ctor
+  name: ResultsIntersectionLaneGroupData
+  nameWithType: ResultsIntersectionLaneGroupData.ResultsIntersectionLaneGroupData
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.ResultsIntersectionLaneGroupData
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate
+  name: SatFlowRate
+  nameWithType: ResultsIntersectionLaneGroupData.SatFlowRate
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SatFlowRate
+- uid: HCMCalc_UrbanStreets.SaturationFlowRateValues
+  commentId: T:HCMCalc_UrbanStreets.SaturationFlowRateValues
+  parent: HCMCalc_UrbanStreets
+  name: SaturationFlowRateValues
+  nameWithType: SaturationFlowRateValues
+  fullName: HCMCalc_UrbanStreets.SaturationFlowRateValues
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms
+  name: SignalControlParms
+  nameWithType: ResultsIntersectionLaneGroupData.SignalControlParms
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.SignalControlParms
+- uid: HCMCalc_UrbanStreets.SignalControlParameters
+  commentId: T:HCMCalc_UrbanStreets.SignalControlParameters
+  parent: HCMCalc_UrbanStreets
+  name: SignalControlParameters
+  nameWithType: SignalControlParameters
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane
+  name: CapacityPerLane
+  nameWithType: ResultsIntersectionLaneGroupData.CapacityPerLane
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.CapacityPerLane
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio
+  name: vcRatio
+  nameWithType: ResultsIntersectionLaneGroupData.vcRatio
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.vcRatio
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap
+  name: OverCap
+  nameWithType: ResultsIntersectionLaneGroupData.OverCap
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.OverCap
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio
+  name: QueStorageRatio
+  nameWithType: ResultsIntersectionLaneGroupData.QueStorageRatio
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.QueStorageRatio
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS
+  name: LOS
+  nameWithType: ResultsIntersectionLaneGroupData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.LOS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume
+  name: DischargeVolume
+  nameWithType: ResultsIntersectionLaneGroupData.DischargeVolume
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.DischargeVolume

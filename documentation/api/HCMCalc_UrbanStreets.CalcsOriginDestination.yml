@@ -1,0 +1,327 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination
+  commentId: T:HCMCalc_UrbanStreets.CalcsOriginDestination
+  id: CalcsOriginDestination
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  - HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  - HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs(HCMCalc_UrbanStreets.ArterialData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,System.Int32,System.Single[],System.Single[],HCMCalc_UrbanStreets.OriginDestinationData)
+  - HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix(HCMCalc_UrbanStreets.ArterialData)
+  langs:
+  - csharp
+  - vb
+  name: CalcsOriginDestination
+  nameWithType: CalcsOriginDestination
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination
+  type: Class
+  source:
+    id: CalcsOriginDestination
+    path: ''
+    startLine: 1206
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nHandles calculations related to the creation of an OD matrix.\n"
+  example: []
+  syntax:
+    content: public class CalcsOriginDestination
+    content.vb: Public Class CalcsOriginDestination
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix(HCMCalc_UrbanStreets.ArterialData)
+  commentId: M:HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix(HCMCalc_UrbanStreets.ArterialData)
+  id: DefineODmatrix(HCMCalc_UrbanStreets.ArterialData)
+  parent: HCMCalc_UrbanStreets.CalcsOriginDestination
+  langs:
+  - csharp
+  - vb
+  name: DefineODmatrix(ArterialData)
+  nameWithType: CalcsOriginDestination.DefineODmatrix(ArterialData)
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix(HCMCalc_UrbanStreets.ArterialData)
+  type: Method
+  source:
+    id: DefineODmatrix
+    path: ''
+    startLine: 1213
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCreates the OD matrix using demands taken from an input <param name=\"ArterialData\" />.\n"
+  example: []
+  syntax:
+    content: public static OriginDestinationData DefineODmatrix(ArterialData analysisArterial)
+    parameters:
+    - id: analysisArterial
+      type: HCMCalc_UrbanStreets.ArterialData
+      description: ''
+    return:
+      type: HCMCalc_UrbanStreets.OriginDestinationData
+      description: ''
+    content.vb: Public Shared Function DefineODmatrix(analysisArterial As ArterialData) As OriginDestinationData
+  overload: HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  commentId: M:HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  id: ComputeDischargeVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  parent: HCMCalc_UrbanStreets.CalcsOriginDestination
+  langs:
+  - csharp
+  - vb
+  name: ComputeDischargeVolume(Single[], LaneGroupData, LaneGroupData, LaneGroupData)
+  nameWithType: CalcsOriginDestination.ComputeDischargeVolume(Single[], LaneGroupData, LaneGroupData, LaneGroupData)
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume(System.Single[], HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData)
+  type: Method
+  source:
+    id: ComputeDischargeVolume
+    path: ''
+    startLine: 1321
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns adjusted discharge volumes based off of the turning percentages.\n"
+  example: []
+  syntax:
+    content: public static float[] ComputeDischargeVolume(float[] volume, LaneGroupData LaneGroupLeft, LaneGroupData LaneGroupThru, LaneGroupData LaneGroupRight)
+    parameters:
+    - id: volume
+      type: System.Single[]
+      description: ''
+    - id: LaneGroupLeft
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    - id: LaneGroupThru
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    - id: LaneGroupRight
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    return:
+      type: System.Single[]
+      description: ''
+    content.vb: Public Shared Function ComputeDischargeVolume(volume As Single(), LaneGroupLeft As LaneGroupData, LaneGroupThru As LaneGroupData, LaneGroupRight As LaneGroupData) As Single()
+  overload: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume*
+  nameWithType.vb: CalcsOriginDestination.ComputeDischargeVolume(Single(), LaneGroupData, LaneGroupData, LaneGroupData)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume(System.Single(), HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData)
+  name.vb: ComputeDischargeVolume(Single(), LaneGroupData, LaneGroupData, LaneGroupData)
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  commentId: M:HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  id: ComputeDemandVolume(System.Single[],HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData,HCMCalc_UrbanStreets.LaneGroupData)
+  parent: HCMCalc_UrbanStreets.CalcsOriginDestination
+  langs:
+  - csharp
+  - vb
+  name: ComputeDemandVolume(Single[], LaneGroupData, LaneGroupData, LaneGroupData)
+  nameWithType: CalcsOriginDestination.ComputeDemandVolume(Single[], LaneGroupData, LaneGroupData, LaneGroupData)
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume(System.Single[], HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData)
+  type: Method
+  source:
+    id: ComputeDemandVolume
+    path: ''
+    startLine: 1352
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns adjusted demand volumes based off of the turning percentages.\n"
+  example: []
+  syntax:
+    content: public static float[] ComputeDemandVolume(float[] volume, LaneGroupData LaneGroupLeft, LaneGroupData LaneGroupThru, LaneGroupData LaneGroupRight)
+    parameters:
+    - id: volume
+      type: System.Single[]
+      description: ''
+    - id: LaneGroupLeft
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    - id: LaneGroupThru
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    - id: LaneGroupRight
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    return:
+      type: System.Single[]
+      description: ''
+    content.vb: Public Shared Function ComputeDemandVolume(volume As Single(), LaneGroupLeft As LaneGroupData, LaneGroupThru As LaneGroupData, LaneGroupRight As LaneGroupData) As Single()
+  overload: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume*
+  nameWithType.vb: CalcsOriginDestination.ComputeDemandVolume(Single(), LaneGroupData, LaneGroupData, LaneGroupData)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume(System.Single(), HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData, HCMCalc_UrbanStreets.LaneGroupData)
+  name.vb: ComputeDemandVolume(Single(), LaneGroupData, LaneGroupData, LaneGroupData)
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs(HCMCalc_UrbanStreets.ArterialData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,System.Int32,System.Single[],System.Single[],HCMCalc_UrbanStreets.OriginDestinationData)
+  commentId: M:HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs(HCMCalc_UrbanStreets.ArterialData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,System.Int32,System.Single[],System.Single[],HCMCalc_UrbanStreets.OriginDestinationData)
+  id: ComputeODs(HCMCalc_UrbanStreets.ArterialData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,System.Int32,System.Single[],System.Single[],HCMCalc_UrbanStreets.OriginDestinationData)
+  parent: HCMCalc_UrbanStreets.CalcsOriginDestination
+  langs:
+  - csharp
+  - vb
+  name: ComputeODs(ArterialData, Int32, SegmentDirection, Int32, Single[], Single[], OriginDestinationData)
+  nameWithType: CalcsOriginDestination.ComputeODs(ArterialData, Int32, SegmentDirection, Int32, Single[], Single[], OriginDestinationData)
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs(HCMCalc_UrbanStreets.ArterialData, System.Int32, HCMCalc_UrbanStreets.SegmentDirection, System.Int32, System.Single[], System.Single[], HCMCalc_UrbanStreets.OriginDestinationData)
+  type: Method
+  source:
+    id: ComputeODs
+    path: ''
+    startLine: 1387
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nComputes the ODS for the matrix based off of the origin and destination volumes.\n"
+  example: []
+  syntax:
+    content: public static OriginDestinationData ComputeODs(ArterialData analysisArterial, int segmentIndex, SegmentDirection segDirection, int junctionNo, float[] originVol, float[] destinationVol, OriginDestinationData ODdata)
+    parameters:
+    - id: analysisArterial
+      type: HCMCalc_UrbanStreets.ArterialData
+      description: ''
+    - id: segmentIndex
+      type: System.Int32
+      description: ''
+    - id: segDirection
+      type: HCMCalc_UrbanStreets.SegmentDirection
+      description: ''
+    - id: junctionNo
+      type: System.Int32
+      description: ''
+    - id: originVol
+      type: System.Single[]
+      description: ''
+    - id: destinationVol
+      type: System.Single[]
+      description: ''
+    - id: ODdata
+      type: HCMCalc_UrbanStreets.OriginDestinationData
+      description: ''
+    return:
+      type: HCMCalc_UrbanStreets.OriginDestinationData
+      description: ''
+    content.vb: Public Shared Function ComputeODs(analysisArterial As ArterialData, segmentIndex As Integer, segDirection As SegmentDirection, junctionNo As Integer, originVol As Single(), destinationVol As Single(), ODdata As OriginDestinationData) As OriginDestinationData
+  overload: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs*
+  nameWithType.vb: CalcsOriginDestination.ComputeODs(ArterialData, Int32, SegmentDirection, Int32, Single(), Single(), OriginDestinationData)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs(HCMCalc_UrbanStreets.ArterialData, System.Int32, HCMCalc_UrbanStreets.SegmentDirection, System.Int32, System.Single(), System.Single(), HCMCalc_UrbanStreets.OriginDestinationData)
+  name.vb: ComputeODs(ArterialData, Int32, SegmentDirection, Int32, Single(), Single(), OriginDestinationData)
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix
+  name: DefineODmatrix
+  nameWithType: CalcsOriginDestination.DefineODmatrix
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.DefineODmatrix
+- uid: HCMCalc_UrbanStreets.ArterialData
+  commentId: T:HCMCalc_UrbanStreets.ArterialData
+  parent: HCMCalc_UrbanStreets
+  name: ArterialData
+  nameWithType: ArterialData
+  fullName: HCMCalc_UrbanStreets.ArterialData
+- uid: HCMCalc_UrbanStreets.OriginDestinationData
+  commentId: T:HCMCalc_UrbanStreets.OriginDestinationData
+  parent: HCMCalc_UrbanStreets
+  name: OriginDestinationData
+  nameWithType: OriginDestinationData
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume
+  name: ComputeDischargeVolume
+  nameWithType: CalcsOriginDestination.ComputeDischargeVolume
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDischargeVolume
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.LaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.LaneGroupData
+  parent: HCMCalc_UrbanStreets
+  name: LaneGroupData
+  nameWithType: LaneGroupData
+  fullName: HCMCalc_UrbanStreets.LaneGroupData
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume
+  name: ComputeDemandVolume
+  nameWithType: CalcsOriginDestination.ComputeDemandVolume
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeDemandVolume
+- uid: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs
+  name: ComputeODs
+  nameWithType: CalcsOriginDestination.ComputeODs
+  fullName: HCMCalc_UrbanStreets.CalcsOriginDestination.ComputeODs
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.SegmentDirection
+  commentId: T:HCMCalc_UrbanStreets.SegmentDirection
+  parent: HCMCalc_UrbanStreets
+  name: SegmentDirection
+  nameWithType: SegmentDirection
+  fullName: HCMCalc_UrbanStreets.SegmentDirection

@@ -1,0 +1,953 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  commentId: T:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  id: ServiceVolumeArterialInputs
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.#ctor(System.Boolean,System.String,System.Single)
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues(System.String)
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+  - HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+  langs:
+  - csharp
+  - vb
+  name: ServiceVolumeArterialInputs
+  nameWithType: ServiceVolumeArterialInputs
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  type: Class
+  source:
+    id: ServiceVolumeArterialInputs
+    path: ''
+    startLine: 6768
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nVariables for creating an arterial for service volume calculations. The variables may dynamically change depending on the chosen test parameter.\n"
+  example: []
+  syntax:
+    content: public class ServiceVolumeArterialInputs
+    content.vb: Public Class ServiceVolumeArterialInputs
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.#ctor(System.Boolean,System.String,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.#ctor(System.Boolean,System.String,System.Single)
+  id: '#ctor(System.Boolean,System.String,System.Single)'
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: ServiceVolumeArterialInputs(Boolean, String, Single)
+  nameWithType: ServiceVolumeArterialInputs.ServiceVolumeArterialInputs(Boolean, String, Single)
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ServiceVolumeArterialInputs(System.Boolean, System.String, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6792
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ServiceVolumeArterialInputs(bool isMultiLane, string testParameter, float testParameterValue)
+    parameters:
+    - id: isMultiLane
+      type: System.Boolean
+    - id: testParameter
+      type: System.String
+    - id: testParameterValue
+      type: System.Single
+    content.vb: Public Sub New(isMultiLane As Boolean, testParameter As String, testParameterValue As Single)
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues(System.String)
+  commentId: M:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues(System.String)
+  id: GetTestParameterValues(System.String)
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: GetTestParameterValues(String)
+  nameWithType: ServiceVolumeArterialInputs.GetTestParameterValues(String)
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues(System.String)
+  type: Method
+  source:
+    id: GetTestParameterValues
+    path: ''
+    startLine: 6841
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns a float array based on an input parameter. For the float array, the first index is minimum, the second index is maximum, and the third index is the step.\n"
+  example: []
+  syntax:
+    content: public static float[] GetTestParameterValues(string testParameter)
+    parameters:
+    - id: testParameter
+      type: System.String
+      description: ''
+    return:
+      type: System.Single[]
+      description: ''
+    content.vb: Public Shared Function GetTestParameterValues(testParameter As String) As Single()
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections
+  id: NumIntersections
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: NumIntersections
+  nameWithType: ServiceVolumeArterialInputs.NumIntersections
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections
+  type: Property
+  source:
+    id: NumIntersections
+    path: ''
+    startLine: 6857
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int NumIntersections { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumIntersections As Integer
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet
+  id: ArterialLengthFeet
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: ArterialLengthFeet
+  nameWithType: ServiceVolumeArterialInputs.ArterialLengthFeet
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet
+  type: Property
+  source:
+    id: ArterialLengthFeet
+    path: ''
+    startLine: 6858
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ArterialLengthFeet { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ArterialLengthFeet As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH
+  id: PostSpeedMPH
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: PostSpeedMPH
+  nameWithType: ServiceVolumeArterialInputs.PostSpeedMPH
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH
+  type: Property
+  source:
+    id: PostSpeedMPH
+    path: ''
+    startLine: 6859
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int PostSpeedMPH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PostSpeedMPH As Integer
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec
+  id: CycleLengthSec
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: CycleLengthSec
+  nameWithType: ServiceVolumeArterialInputs.CycleLengthSec
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec
+  type: Property
+  source:
+    id: CycleLengthSec
+    path: ''
+    startLine: 6860
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int CycleLengthSec { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CycleLengthSec As Integer
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor
+  id: KFactor
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: KFactor
+  nameWithType: ServiceVolumeArterialInputs.KFactor
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor
+  type: Property
+  source:
+    id: KFactor
+    path: ''
+    startLine: 6861
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float KFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property KFactor As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor
+  id: DFactor
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: DFactor
+  nameWithType: ServiceVolumeArterialInputs.DFactor
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor
+  type: Property
+  source:
+    id: DFactor
+    path: ''
+    startLine: 6862
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DFactor As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen
+  id: EffGreen
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: EffGreen
+  nameWithType: ServiceVolumeArterialInputs.EffGreen
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen
+  type: Property
+  source:
+    id: EffGreen
+    path: ''
+    startLine: 6863
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float EffGreen { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property EffGreen As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft
+  id: EffGreenLeft
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: EffGreenLeft
+  nameWithType: ServiceVolumeArterialInputs.EffGreenLeft
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft
+  type: Property
+  source:
+    id: EffGreenLeft
+    path: ''
+    startLine: 6864
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float EffGreenLeft { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property EffGreenLeft As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType
+  id: MedType
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: MedType
+  nameWithType: ServiceVolumeArterialInputs.MedType
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType
+  type: Property
+  source:
+    id: MedType
+    path: ''
+    startLine: 6865
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public MedianType MedType { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.MedianType
+    content.vb: Public Property MedType As MedianType
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles
+  id: PctHeavyVehicles
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: PctHeavyVehicles
+  nameWithType: ServiceVolumeArterialInputs.PctHeavyVehicles
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles
+  type: Property
+  source:
+    id: PctHeavyVehicles
+    path: ''
+    startLine: 6866
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctHeavyVehicles { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctHeavyVehicles As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+  id: TurnBayLeftLengthFeet
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: TurnBayLeftLengthFeet
+  nameWithType: ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+  type: Property
+  source:
+    id: TurnBayLeftLengthFeet
+    path: ''
+    startLine: 6867
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int TurnBayLeftLengthFeet { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TurnBayLeftLengthFeet As Integer
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+  id: TurnBayRightLengthFeet
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: TurnBayRightLengthFeet
+  nameWithType: ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+  type: Property
+  source:
+    id: TurnBayRightLengthFeet
+    path: ''
+    startLine: 6868
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int TurnBayRightLengthFeet { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TurnBayRightLengthFeet As Integer
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass
+  id: ArterialClass
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: ArterialClass
+  nameWithType: ServiceVolumeArterialInputs.ArterialClass
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass
+  type: Property
+  source:
+    id: ArterialClass
+    path: ''
+    startLine: 6869
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ArterialClass ArterialClass { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ArterialClass
+    content.vb: Public Property ArterialClass As ArterialClass
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir
+  id: AnalysisTravelDir
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: AnalysisTravelDir
+  nameWithType: ServiceVolumeArterialInputs.AnalysisTravelDir
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir
+  type: Property
+  source:
+    id: AnalysisTravelDir
+    path: ''
+    startLine: 6870
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public TravelDirection AnalysisTravelDir { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.TravelDirection
+    content.vb: Public Property AnalysisTravelDir As TravelDirection
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType
+  id: AreaType
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: AreaType
+  nameWithType: ServiceVolumeArterialInputs.AreaType
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType
+  type: Property
+  source:
+    id: AreaType
+    path: ''
+    startLine: 6871
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public AreaType AreaType { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.AreaType
+    content.vb: Public Property AreaType As AreaType
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide
+  id: PropCurbRightSide
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: PropCurbRightSide
+  nameWithType: ServiceVolumeArterialInputs.PropCurbRightSide
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide
+  type: Property
+  source:
+    id: PropCurbRightSide
+    path: ''
+    startLine: 6872
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PropCurbRightSide { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PropCurbRightSide As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC
+  id: GC
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: GC
+  nameWithType: ServiceVolumeArterialInputs.GC
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC
+  type: Property
+  source:
+    id: GC
+    path: ''
+    startLine: 6873
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GC { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GC As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft
+  id: GCLeft
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: GCLeft
+  nameWithType: ServiceVolumeArterialInputs.GCLeft
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft
+  type: Property
+  source:
+    id: GCLeft
+    path: ''
+    startLine: 6874
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GCLeft { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GCLeft As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow
+  id: BaseSatFlow
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: BaseSatFlow
+  nameWithType: ServiceVolumeArterialInputs.BaseSatFlow
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow
+  type: Property
+  source:
+    id: BaseSatFlow
+    path: ''
+    startLine: 6875
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int BaseSatFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BaseSatFlow As Integer
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength
+  id: SegmentLength
+  parent: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+  langs:
+  - csharp
+  - vb
+  name: SegmentLength
+  nameWithType: ServiceVolumeArterialInputs.SegmentLength
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength
+  type: Property
+  source:
+    id: SegmentLength
+    path: ''
+    startLine: 6876
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int SegmentLength { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SegmentLength As Integer
+  overload: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.#ctor
+  name: ServiceVolumeArterialInputs
+  nameWithType: ServiceVolumeArterialInputs.ServiceVolumeArterialInputs
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ServiceVolumeArterialInputs
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues
+  name: GetTestParameterValues
+  nameWithType: ServiceVolumeArterialInputs.GetTestParameterValues
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GetTestParameterValues
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections
+  name: NumIntersections
+  nameWithType: ServiceVolumeArterialInputs.NumIntersections
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.NumIntersections
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet
+  name: ArterialLengthFeet
+  nameWithType: ServiceVolumeArterialInputs.ArterialLengthFeet
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialLengthFeet
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH
+  name: PostSpeedMPH
+  nameWithType: ServiceVolumeArterialInputs.PostSpeedMPH
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PostSpeedMPH
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec
+  name: CycleLengthSec
+  nameWithType: ServiceVolumeArterialInputs.CycleLengthSec
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.CycleLengthSec
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor
+  name: KFactor
+  nameWithType: ServiceVolumeArterialInputs.KFactor
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.KFactor
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor
+  name: DFactor
+  nameWithType: ServiceVolumeArterialInputs.DFactor
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.DFactor
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen
+  name: EffGreen
+  nameWithType: ServiceVolumeArterialInputs.EffGreen
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreen
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft
+  name: EffGreenLeft
+  nameWithType: ServiceVolumeArterialInputs.EffGreenLeft
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.EffGreenLeft
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType
+  name: MedType
+  nameWithType: ServiceVolumeArterialInputs.MedType
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.MedType
+- uid: HCMCalc_UrbanStreets.MedianType
+  commentId: T:HCMCalc_UrbanStreets.MedianType
+  parent: HCMCalc_UrbanStreets
+  name: MedianType
+  nameWithType: MedianType
+  fullName: HCMCalc_UrbanStreets.MedianType
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles
+  name: PctHeavyVehicles
+  nameWithType: ServiceVolumeArterialInputs.PctHeavyVehicles
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PctHeavyVehicles
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+  name: TurnBayLeftLengthFeet
+  nameWithType: ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayLeftLengthFeet
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+  name: TurnBayRightLengthFeet
+  nameWithType: ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.TurnBayRightLengthFeet
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass
+  name: ArterialClass
+  nameWithType: ServiceVolumeArterialInputs.ArterialClass
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.ArterialClass
+- uid: HCMCalc_UrbanStreets.ArterialClass
+  commentId: T:HCMCalc_UrbanStreets.ArterialClass
+  parent: HCMCalc_UrbanStreets
+  name: ArterialClass
+  nameWithType: ArterialClass
+  fullName: HCMCalc_UrbanStreets.ArterialClass
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir
+  name: AnalysisTravelDir
+  nameWithType: ServiceVolumeArterialInputs.AnalysisTravelDir
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AnalysisTravelDir
+- uid: HCMCalc_UrbanStreets.TravelDirection
+  commentId: T:HCMCalc_UrbanStreets.TravelDirection
+  parent: HCMCalc_UrbanStreets
+  name: TravelDirection
+  nameWithType: TravelDirection
+  fullName: HCMCalc_UrbanStreets.TravelDirection
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType
+  name: AreaType
+  nameWithType: ServiceVolumeArterialInputs.AreaType
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.AreaType
+- uid: HCMCalc_UrbanStreets.AreaType
+  commentId: T:HCMCalc_UrbanStreets.AreaType
+  parent: HCMCalc_UrbanStreets
+  name: AreaType
+  nameWithType: AreaType
+  fullName: HCMCalc_UrbanStreets.AreaType
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide
+  name: PropCurbRightSide
+  nameWithType: ServiceVolumeArterialInputs.PropCurbRightSide
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.PropCurbRightSide
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC
+  name: GC
+  nameWithType: ServiceVolumeArterialInputs.GC
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GC
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft
+  name: GCLeft
+  nameWithType: ServiceVolumeArterialInputs.GCLeft
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.GCLeft
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow
+  name: BaseSatFlow
+  nameWithType: ServiceVolumeArterialInputs.BaseSatFlow
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.BaseSatFlow
+- uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength
+  name: SegmentLength
+  nameWithType: ServiceVolumeArterialInputs.SegmentLength
+  fullName: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.SegmentLength

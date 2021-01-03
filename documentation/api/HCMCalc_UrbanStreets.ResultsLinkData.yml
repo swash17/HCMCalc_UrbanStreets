@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ResultsLinkData
+  commentId: T:HCMCalc_UrbanStreets.ResultsLinkData
+  id: ResultsLinkData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ResultsLinkData.#ctor
+  - HCMCalc_UrbanStreets.ResultsLinkData.#ctor(System.Int32)
+  - HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed
+  - HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime
+  - HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile
+  - HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH
+  - HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime
+  - HCMCalc_UrbanStreets.ResultsLinkData.LOS
+  - HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime
+  - HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile
+  - HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms
+  - HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH
+  - HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec
+  - HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor
+  - HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio
+  langs:
+  - csharp
+  - vb
+  name: ResultsLinkData
+  nameWithType: ResultsLinkData
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData
+  type: Class
+  source:
+    id: ResultsLinkData
+    path: ''
+    startLine: 5525
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters for creating the results for a link.\n"
+  example: []
+  syntax:
+    content: public class ResultsLinkData
+    content.vb: Public Class ResultsLinkData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.#ctor(System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.ResultsLinkData.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: ResultsLinkData(Int32)
+  nameWithType: ResultsLinkData.ResultsLinkData(Int32)
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.ResultsLinkData(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5547
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor required for creating the results for a link.\n"
+  example: []
+  syntax:
+    content: public ResultsLinkData(int cycleLength)
+    parameters:
+    - id: cycleLength
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(cycleLength As Integer)
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ResultsLinkData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: ResultsLinkData()
+  nameWithType: ResultsLinkData.ResultsLinkData()
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.ResultsLinkData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5561
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nEmpty constructor required for XML de/serialization. Do not use.\n"
+  example: []
+  syntax:
+    content: public ResultsLinkData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms
+  id: RunningTimeCalcParms
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: RunningTimeCalcParms
+  nameWithType: ResultsLinkData.RunningTimeCalcParms
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms
+  type: Property
+  source:
+    id: RunningTimeCalcParms
+    path: ''
+    startLine: 5573
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LinkRunningTimeCalcParameters RunningTimeCalcParms { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+    content.vb: Public Property RunningTimeCalcParms As LinkRunningTimeCalcParameters
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec
+  id: RunTimeSec
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: RunTimeSec
+  nameWithType: ResultsLinkData.RunTimeSec
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec
+  type: Property
+  source:
+    id: RunTimeSec
+    path: ''
+    startLine: 5574
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RunTimeSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RunTimeSec As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed
+  id: BaseFreeFlowSpeed
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: BaseFreeFlowSpeed
+  nameWithType: ResultsLinkData.BaseFreeFlowSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed
+  type: Property
+  source:
+    id: BaseFreeFlowSpeed
+    path: ''
+    startLine: 5575
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float BaseFreeFlowSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property BaseFreeFlowSpeed As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH
+  id: FreeFlowSpeedMPH
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: FreeFlowSpeedMPH
+  nameWithType: ResultsLinkData.FreeFlowSpeedMPH
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH
+  type: Property
+  source:
+    id: FreeFlowSpeedMPH
+    path: ''
+    startLine: 5576
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float FreeFlowSpeedMPH { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FreeFlowSpeedMPH As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime
+  id: BaseFreeFlowTravelTime
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: BaseFreeFlowTravelTime
+  nameWithType: ResultsLinkData.BaseFreeFlowTravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime
+  type: Property
+  source:
+    id: BaseFreeFlowTravelTime
+    path: ''
+    startLine: 5577
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float BaseFreeFlowTravelTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property BaseFreeFlowTravelTime As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime
+  id: FreeFlowTravelTime
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: FreeFlowTravelTime
+  nameWithType: ResultsLinkData.FreeFlowTravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime
+  type: Property
+  source:
+    id: FreeFlowTravelTime
+    path: ''
+    startLine: 5578
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float FreeFlowTravelTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FreeFlowTravelTime As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio
+  id: SpeedRatio
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: SpeedRatio
+  nameWithType: ResultsLinkData.SpeedRatio
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio
+  type: Property
+  source:
+    id: SpeedRatio
+    path: ''
+    startLine: 5579
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SpeedRatio { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SpeedRatio As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH
+  id: RunSpeedMPH
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: RunSpeedMPH
+  nameWithType: ResultsLinkData.RunSpeedMPH
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH
+  type: Property
+  source:
+    id: RunSpeedMPH
+    path: ''
+    startLine: 5580
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RunSpeedMPH { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RunSpeedMPH As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.LOS
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.LOS
+  id: LOS
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: LOS
+  nameWithType: ResultsLinkData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.LOS
+  type: Property
+  source:
+    id: LOS
+    path: ''
+    startLine: 5581
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string LOS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LOS As String
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.LOS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile
+  id: DischargeFlowProfile
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: DischargeFlowProfile
+  nameWithType: ResultsLinkData.DischargeFlowProfile
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile
+  type: Property
+  source:
+    id: DischargeFlowProfile
+    path: ''
+    startLine: 5582
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[, ] DischargeFlowProfile { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,]
+    content.vb: Public Property DischargeFlowProfile As Single(,)
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile
+  id: ProjectedFlowProfile
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: ProjectedFlowProfile
+  nameWithType: ResultsLinkData.ProjectedFlowProfile
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile
+  type: Property
+  source:
+    id: ProjectedFlowProfile
+    path: ''
+    startLine: 5584
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[, ] ProjectedFlowProfile { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,]
+    content.vb: Public Property ProjectedFlowProfile As Single(,)
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor
+  id: SmoothingFactor
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: SmoothingFactor
+  nameWithType: ResultsLinkData.SmoothingFactor
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor
+  type: Property
+  source:
+    id: SmoothingFactor
+    path: ''
+    startLine: 5586
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SmoothingFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SmoothingFactor As Single
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime
+  id: PlatoonArrivalTime
+  parent: HCMCalc_UrbanStreets.ResultsLinkData
+  langs:
+  - csharp
+  - vb
+  name: PlatoonArrivalTime
+  nameWithType: ResultsLinkData.PlatoonArrivalTime
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime
+  type: Property
+  source:
+    id: PlatoonArrivalTime
+    path: ''
+    startLine: 5587
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int PlatoonArrivalTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PlatoonArrivalTime As Integer
+  overload: HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.#ctor
+  name: ResultsLinkData
+  nameWithType: ResultsLinkData.ResultsLinkData
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.ResultsLinkData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms
+  name: RunningTimeCalcParms
+  nameWithType: ResultsLinkData.RunningTimeCalcParms
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.RunningTimeCalcParms
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  commentId: T:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  parent: HCMCalc_UrbanStreets
+  name: LinkRunningTimeCalcParameters
+  nameWithType: LinkRunningTimeCalcParameters
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec
+  name: RunTimeSec
+  nameWithType: ResultsLinkData.RunTimeSec
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.RunTimeSec
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed
+  name: BaseFreeFlowSpeed
+  nameWithType: ResultsLinkData.BaseFreeFlowSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowSpeed
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH
+  name: FreeFlowSpeedMPH
+  nameWithType: ResultsLinkData.FreeFlowSpeedMPH
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowSpeedMPH
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime
+  name: BaseFreeFlowTravelTime
+  nameWithType: ResultsLinkData.BaseFreeFlowTravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.BaseFreeFlowTravelTime
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime
+  name: FreeFlowTravelTime
+  nameWithType: ResultsLinkData.FreeFlowTravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.FreeFlowTravelTime
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio
+  name: SpeedRatio
+  nameWithType: ResultsLinkData.SpeedRatio
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.SpeedRatio
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH
+  name: RunSpeedMPH
+  nameWithType: ResultsLinkData.RunSpeedMPH
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.RunSpeedMPH
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.LOS*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.LOS
+  name: LOS
+  nameWithType: ResultsLinkData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.LOS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile
+  name: DischargeFlowProfile
+  nameWithType: ResultsLinkData.DischargeFlowProfile
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.DischargeFlowProfile
+- uid: System.Single[,]
+  isExternal: true
+  name: Single[,]
+  nameWithType: Single[,]
+  fullName: System.Single[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: System.Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile
+  name: ProjectedFlowProfile
+  nameWithType: ResultsLinkData.ProjectedFlowProfile
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.ProjectedFlowProfile
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor
+  name: SmoothingFactor
+  nameWithType: ResultsLinkData.SmoothingFactor
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.SmoothingFactor
+- uid: HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime
+  name: PlatoonArrivalTime
+  nameWithType: ResultsLinkData.PlatoonArrivalTime
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData.PlatoonArrivalTime

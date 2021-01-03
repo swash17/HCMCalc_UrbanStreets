@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData
+  commentId: T:HCMCalc_UrbanStreets.ResultsSegmentData
+  id: ResultsSegmentData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ResultsSegmentData.#ctor
+  - HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed
+  - HCMCalc_UrbanStreets.ResultsSegmentData.LOS
+  - HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime
+  - HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime
+  langs:
+  - csharp
+  - vb
+  name: ResultsSegmentData
+  nameWithType: ResultsSegmentData
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData
+  type: Class
+  source:
+    id: ResultsSegmentData
+    path: ''
+    startLine: 5466
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters for creating the results for a segment.\n"
+  example: []
+  syntax:
+    content: public class ResultsSegmentData
+    content.vb: Public Class ResultsSegmentData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ResultsSegmentData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ResultsSegmentData
+  langs:
+  - csharp
+  - vb
+  name: ResultsSegmentData()
+  nameWithType: ResultsSegmentData.ResultsSegmentData()
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.ResultsSegmentData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5477
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor for creating the results for a segment.\n"
+  example: []
+  syntax:
+    content: public ResultsSegmentData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ResultsSegmentData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime
+  id: TravelTime
+  parent: HCMCalc_UrbanStreets.ResultsSegmentData
+  langs:
+  - csharp
+  - vb
+  name: TravelTime
+  nameWithType: ResultsSegmentData.TravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime
+  type: Property
+  source:
+    id: TravelTime
+    path: ''
+    startLine: 5485
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TravelTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TravelTime As Single
+  overload: HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed
+  commentId: P:HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed
+  id: AverageSpeed
+  parent: HCMCalc_UrbanStreets.ResultsSegmentData
+  langs:
+  - csharp
+  - vb
+  name: AverageSpeed
+  nameWithType: ResultsSegmentData.AverageSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed
+  type: Property
+  source:
+    id: AverageSpeed
+    path: ''
+    startLine: 5486
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AverageSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AverageSpeed As Single
+  overload: HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.LOS
+  commentId: P:HCMCalc_UrbanStreets.ResultsSegmentData.LOS
+  id: LOS
+  parent: HCMCalc_UrbanStreets.ResultsSegmentData
+  langs:
+  - csharp
+  - vb
+  name: LOS
+  nameWithType: ResultsSegmentData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.LOS
+  type: Property
+  source:
+    id: LOS
+    path: ''
+    startLine: 5487
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string LOS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LOS As String
+  overload: HCMCalc_UrbanStreets.ResultsSegmentData.LOS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime
+  id: TotalRunningTime
+  parent: HCMCalc_UrbanStreets.ResultsSegmentData
+  langs:
+  - csharp
+  - vb
+  name: TotalRunningTime
+  nameWithType: ResultsSegmentData.TotalRunningTime
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime
+  type: Property
+  source:
+    id: TotalRunningTime
+    path: ''
+    startLine: 5488
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TotalRunningTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TotalRunningTime As Single
+  overload: HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsSegmentData.#ctor
+  name: ResultsSegmentData
+  nameWithType: ResultsSegmentData.ResultsSegmentData
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.ResultsSegmentData
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime
+  name: TravelTime
+  nameWithType: ResultsSegmentData.TravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.TravelTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed
+  name: AverageSpeed
+  nameWithType: ResultsSegmentData.AverageSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.AverageSpeed
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.LOS*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsSegmentData.LOS
+  name: LOS
+  nameWithType: ResultsSegmentData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.LOS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime
+  name: TotalRunningTime
+  nameWithType: ResultsSegmentData.TotalRunningTime
+  fullName: HCMCalc_UrbanStreets.ResultsSegmentData.TotalRunningTime

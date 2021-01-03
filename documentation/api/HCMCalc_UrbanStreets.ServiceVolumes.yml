@@ -1,0 +1,495 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ServiceVolumes
+  commentId: T:HCMCalc_UrbanStreets.ServiceVolumes
+  id: ServiceVolumes
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ServiceVolumes.#ctor
+  - HCMCalc_UrbanStreets.ServiceVolumes.#ctor(System.Single,System.String,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass)
+  - HCMCalc_UrbanStreets.ServiceVolumes.AADT
+  - HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol
+  - HCMCalc_UrbanStreets.ServiceVolumes.Class
+  - HCMCalc_UrbanStreets.ServiceVolumes.Found
+  - HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol
+  - HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType
+  - HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel
+  - HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue
+  langs:
+  - csharp
+  - vb
+  name: ServiceVolumes
+  nameWithType: ServiceVolumes
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes
+  type: Class
+  source:
+    id: ServiceVolumes
+    path: ''
+    startLine: 6711
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nContains the volume, in both directions or the peak direction, and the AADT for all LOS levels and number of lanes for an arterial.\n"
+  example: []
+  syntax:
+    content: public class ServiceVolumes
+    content.vb: Public Class ServiceVolumes
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ServiceVolumes.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: ServiceVolumes()
+  nameWithType: ServiceVolumes.ServiceVolumes()
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.ServiceVolumes()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6724
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ServiceVolumes()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.#ctor(System.Single,System.String,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass)
+  commentId: M:HCMCalc_UrbanStreets.ServiceVolumes.#ctor(System.Single,System.String,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass)
+  id: '#ctor(System.Single,System.String,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass)'
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: ServiceVolumes(Single, String, AreaType, ArterialClass)
+  nameWithType: ServiceVolumes.ServiceVolumes(Single, String, AreaType, ArterialClass)
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.ServiceVolumes(System.Single, System.String, HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.ArterialClass)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6729
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ServiceVolumes(float testParameterValue, string testParameterLabel, AreaType serVolAreaType, ArterialClass artClass)
+    parameters:
+    - id: testParameterValue
+      type: System.Single
+    - id: testParameterLabel
+      type: System.String
+    - id: serVolAreaType
+      type: HCMCalc_UrbanStreets.AreaType
+    - id: artClass
+      type: HCMCalc_UrbanStreets.ArterialClass
+    content.vb: Public Sub New(testParameterValue As Single, testParameterLabel As String, serVolAreaType As AreaType, artClass As ArterialClass)
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol
+  id: PkDirVol
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: PkDirVol
+  nameWithType: ServiceVolumes.PkDirVol
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol
+  type: Property
+  source:
+    id: PkDirVol
+    path: ''
+    startLine: 6738
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[, ] PkDirVol { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[,]
+    content.vb: Public Property PkDirVol As Integer(,)
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol
+  id: BothDirVol
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: BothDirVol
+  nameWithType: ServiceVolumes.BothDirVol
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol
+  type: Property
+  source:
+    id: BothDirVol
+    path: ''
+    startLine: 6743
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[, ] BothDirVol { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[,]
+    content.vb: Public Property BothDirVol As Integer(,)
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.AADT
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.AADT
+  id: AADT
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: AADT
+  nameWithType: ServiceVolumes.AADT
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.AADT
+  type: Property
+  source:
+    id: AADT
+    path: ''
+    startLine: 6748
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[, ] AADT { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[,]
+    content.vb: Public Property AADT As Integer(,)
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.AADT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.Found
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.Found
+  id: Found
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: Found
+  nameWithType: ServiceVolumes.Found
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.Found
+  type: Property
+  source:
+    id: Found
+    path: ''
+    startLine: 6753
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool[, ] Found { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean[,]
+    content.vb: Public Property Found As Boolean(,)
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.Found*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue
+  id: TestParameterValue
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: TestParameterValue
+  nameWithType: ServiceVolumes.TestParameterValue
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue
+  type: Property
+  source:
+    id: TestParameterValue
+    path: ''
+    startLine: 6759
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TestParameterValue { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TestParameterValue As Single
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel
+  id: TestParameterLabel
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: TestParameterLabel
+  nameWithType: ServiceVolumes.TestParameterLabel
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel
+  type: Property
+  source:
+    id: TestParameterLabel
+    path: ''
+    startLine: 6760
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string TestParameterLabel { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TestParameterLabel As String
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType
+  id: SerVolAreaType
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: SerVolAreaType
+  nameWithType: ServiceVolumes.SerVolAreaType
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType
+  type: Property
+  source:
+    id: SerVolAreaType
+    path: ''
+    startLine: 6761
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public AreaType SerVolAreaType { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.AreaType
+    content.vb: Public Property SerVolAreaType As AreaType
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.Class
+  commentId: P:HCMCalc_UrbanStreets.ServiceVolumes.Class
+  id: Class
+  parent: HCMCalc_UrbanStreets.ServiceVolumes
+  langs:
+  - csharp
+  - vb
+  name: Class
+  nameWithType: ServiceVolumes.Class
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.Class
+  type: Property
+  source:
+    id: Class
+    path: ''
+    startLine: 6762
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ArterialClass Class { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ArterialClass
+    content.vb: Public Property Class As ArterialClass
+  overload: HCMCalc_UrbanStreets.ServiceVolumes.Class*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.#ctor
+  name: ServiceVolumes
+  nameWithType: ServiceVolumes.ServiceVolumes
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.ServiceVolumes
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.AreaType
+  commentId: T:HCMCalc_UrbanStreets.AreaType
+  parent: HCMCalc_UrbanStreets
+  name: AreaType
+  nameWithType: AreaType
+  fullName: HCMCalc_UrbanStreets.AreaType
+- uid: HCMCalc_UrbanStreets.ArterialClass
+  commentId: T:HCMCalc_UrbanStreets.ArterialClass
+  parent: HCMCalc_UrbanStreets
+  name: ArterialClass
+  nameWithType: ArterialClass
+  fullName: HCMCalc_UrbanStreets.ArterialClass
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol
+  name: PkDirVol
+  nameWithType: ServiceVolumes.PkDirVol
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.PkDirVol
+- uid: System.Int32[,]
+  isExternal: true
+  name: Int32[,]
+  nameWithType: Int32[,]
+  fullName: System.Int32[,]
+  nameWithType.vb: Int32(,)
+  fullName.vb: System.Int32(,)
+  name.vb: Int32(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol
+  name: BothDirVol
+  nameWithType: ServiceVolumes.BothDirVol
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.BothDirVol
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.AADT*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.AADT
+  name: AADT
+  nameWithType: ServiceVolumes.AADT
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.AADT
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.Found*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.Found
+  name: Found
+  nameWithType: ServiceVolumes.Found
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.Found
+- uid: System.Boolean[,]
+  isExternal: true
+  name: Boolean[,]
+  nameWithType: Boolean[,]
+  fullName: System.Boolean[,]
+  nameWithType.vb: Boolean(,)
+  fullName.vb: System.Boolean(,)
+  name.vb: Boolean(,)
+  spec.csharp:
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue
+  name: TestParameterValue
+  nameWithType: ServiceVolumes.TestParameterValue
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterValue
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel
+  name: TestParameterLabel
+  nameWithType: ServiceVolumes.TestParameterLabel
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.TestParameterLabel
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType
+  name: SerVolAreaType
+  nameWithType: ServiceVolumes.SerVolAreaType
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.SerVolAreaType
+- uid: HCMCalc_UrbanStreets.ServiceVolumes.Class*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolumes.Class
+  name: Class
+  nameWithType: ServiceVolumes.Class
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes.Class

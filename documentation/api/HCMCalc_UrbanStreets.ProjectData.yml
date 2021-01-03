@@ -1,0 +1,614 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ProjectData
+  commentId: T:HCMCalc_UrbanStreets.ProjectData
+  id: ProjectData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ProjectData.#ctor
+  - HCMCalc_UrbanStreets.ProjectData.#ctor(HCMCalc_UrbanStreets.AnalysisMode)
+  - HCMCalc_UrbanStreets.ProjectData.Agency
+  - HCMCalc_UrbanStreets.ProjectData.AnalMode
+  - HCMCalc_UrbanStreets.ProjectData.AnalysisDate
+  - HCMCalc_UrbanStreets.ProjectData.AnalystName
+  - HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode
+  - HCMCalc_UrbanStreets.ProjectData.FFSCalc
+  - HCMCalc_UrbanStreets.ProjectData.FileName
+  - HCMCalc_UrbanStreets.ProjectData.FilePath
+  - HCMCalc_UrbanStreets.ProjectData.LOScriteria
+  - HCMCalc_UrbanStreets.ProjectData.Mode
+  - HCMCalc_UrbanStreets.ProjectData.Period
+  - HCMCalc_UrbanStreets.ProjectData.UserNotes
+  langs:
+  - csharp
+  - vb
+  name: ProjectData
+  nameWithType: ProjectData
+  fullName: HCMCalc_UrbanStreets.ProjectData
+  type: Class
+  source:
+    id: ProjectData
+    path: ''
+    startLine: 5391
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters necessary for creating a project.\n"
+  example: []
+  syntax:
+    content: public class ProjectData
+    content.vb: Public Class ProjectData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ProjectData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ProjectData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: ProjectData()
+  nameWithType: ProjectData.ProjectData()
+  fullName: HCMCalc_UrbanStreets.ProjectData.ProjectData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5413
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nEmpty constructor required for XML de/serialization.\n"
+  example: []
+  syntax:
+    content: public ProjectData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ProjectData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.#ctor(HCMCalc_UrbanStreets.AnalysisMode)
+  commentId: M:HCMCalc_UrbanStreets.ProjectData.#ctor(HCMCalc_UrbanStreets.AnalysisMode)
+  id: '#ctor(HCMCalc_UrbanStreets.AnalysisMode)'
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: ProjectData(AnalysisMode)
+  nameWithType: ProjectData.ProjectData(AnalysisMode)
+  fullName: HCMCalc_UrbanStreets.ProjectData.ProjectData(HCMCalc_UrbanStreets.AnalysisMode)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5422
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor required for creating a project.\n"
+  example: []
+  syntax:
+    content: public ProjectData(AnalysisMode analMode)
+    parameters:
+    - id: analMode
+      type: HCMCalc_UrbanStreets.AnalysisMode
+      description: ''
+    content.vb: Public Sub New(analMode As AnalysisMode)
+  overload: HCMCalc_UrbanStreets.ProjectData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.FilePath
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.FilePath
+  id: FilePath
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: FilePath
+  nameWithType: ProjectData.FilePath
+  fullName: HCMCalc_UrbanStreets.ProjectData.FilePath
+  type: Property
+  source:
+    id: FilePath
+    path: ''
+    startLine: 5441
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string FilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FilePath As String
+  overload: HCMCalc_UrbanStreets.ProjectData.FilePath*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.FileName
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.FileName
+  id: FileName
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: ProjectData.FileName
+  fullName: HCMCalc_UrbanStreets.ProjectData.FileName
+  type: Property
+  source:
+    id: FileName
+    path: ''
+    startLine: 5442
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileName As String
+  overload: HCMCalc_UrbanStreets.ProjectData.FileName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.AnalysisDate
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.AnalysisDate
+  id: AnalysisDate
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: AnalysisDate
+  nameWithType: ProjectData.AnalysisDate
+  fullName: HCMCalc_UrbanStreets.ProjectData.AnalysisDate
+  type: Property
+  source:
+    id: AnalysisDate
+    path: ''
+    startLine: 5443
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public DateTime AnalysisDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property AnalysisDate As Date
+  overload: HCMCalc_UrbanStreets.ProjectData.AnalysisDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.AnalystName
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.AnalystName
+  id: AnalystName
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: AnalystName
+  nameWithType: ProjectData.AnalystName
+  fullName: HCMCalc_UrbanStreets.ProjectData.AnalystName
+  type: Property
+  source:
+    id: AnalystName
+    path: ''
+    startLine: 5444
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string AnalystName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AnalystName As String
+  overload: HCMCalc_UrbanStreets.ProjectData.AnalystName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.Agency
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.Agency
+  id: Agency
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: Agency
+  nameWithType: ProjectData.Agency
+  fullName: HCMCalc_UrbanStreets.ProjectData.Agency
+  type: Property
+  source:
+    id: Agency
+    path: ''
+    startLine: 5445
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string Agency { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Agency As String
+  overload: HCMCalc_UrbanStreets.ProjectData.Agency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.UserNotes
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.UserNotes
+  id: UserNotes
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: UserNotes
+  nameWithType: ProjectData.UserNotes
+  fullName: HCMCalc_UrbanStreets.ProjectData.UserNotes
+  type: Property
+  source:
+    id: UserNotes
+    path: ''
+    startLine: 5446
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string UserNotes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserNotes As String
+  overload: HCMCalc_UrbanStreets.ProjectData.UserNotes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.AnalMode
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.AnalMode
+  id: AnalMode
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: AnalMode
+  nameWithType: ProjectData.AnalMode
+  fullName: HCMCalc_UrbanStreets.ProjectData.AnalMode
+  type: Property
+  source:
+    id: AnalMode
+    path: ''
+    startLine: 5447
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public AnalysisMode AnalMode { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.AnalysisMode
+    content.vb: Public Property AnalMode As AnalysisMode
+  overload: HCMCalc_UrbanStreets.ProjectData.AnalMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode
+  id: DirectionAnalysisMode
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: DirectionAnalysisMode
+  nameWithType: ProjectData.DirectionAnalysisMode
+  fullName: HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode
+  type: Property
+  source:
+    id: DirectionAnalysisMode
+    path: ''
+    startLine: 5448
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public DirectionType DirectionAnalysisMode { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.DirectionType
+    content.vb: Public Property DirectionAnalysisMode As DirectionType
+  overload: HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.Mode
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.Mode
+  id: Mode
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: ProjectData.Mode
+  fullName: HCMCalc_UrbanStreets.ProjectData.Mode
+  type: Property
+  source:
+    id: Mode
+    path: ''
+    startLine: 5449
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ModeType Mode { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ModeType
+    content.vb: Public Property Mode As ModeType
+  overload: HCMCalc_UrbanStreets.ProjectData.Mode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.Period
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.Period
+  id: Period
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: ProjectData.Period
+  fullName: HCMCalc_UrbanStreets.ProjectData.Period
+  type: Property
+  source:
+    id: Period
+    path: ''
+    startLine: 5450
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public StudyPeriod Period { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.StudyPeriod
+    content.vb: Public Property Period As StudyPeriod
+  overload: HCMCalc_UrbanStreets.ProjectData.Period*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.FFSCalc
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.FFSCalc
+  id: FFSCalc
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: FFSCalc
+  nameWithType: ProjectData.FFSCalc
+  fullName: HCMCalc_UrbanStreets.ProjectData.FFSCalc
+  type: Property
+  source:
+    id: FFSCalc
+    path: ''
+    startLine: 5451
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public FFSCalcMethod FFSCalc { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.FFSCalcMethod
+    content.vb: Public Property FFSCalc As FFSCalcMethod
+  overload: HCMCalc_UrbanStreets.ProjectData.FFSCalc*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ProjectData.LOScriteria
+  commentId: P:HCMCalc_UrbanStreets.ProjectData.LOScriteria
+  id: LOScriteria
+  parent: HCMCalc_UrbanStreets.ProjectData
+  langs:
+  - csharp
+  - vb
+  name: LOScriteria
+  nameWithType: ProjectData.LOScriteria
+  fullName: HCMCalc_UrbanStreets.ProjectData.LOScriteria
+  type: Property
+  source:
+    id: LOScriteria
+    path: ''
+    startLine: 5452
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LevelServiceCriteria LOScriteria { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.LevelServiceCriteria
+    content.vb: Public Property LOScriteria As LevelServiceCriteria
+  overload: HCMCalc_UrbanStreets.ProjectData.LOScriteria*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ProjectData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.#ctor
+  name: ProjectData
+  nameWithType: ProjectData.ProjectData
+  fullName: HCMCalc_UrbanStreets.ProjectData.ProjectData
+- uid: HCMCalc_UrbanStreets.AnalysisMode
+  commentId: T:HCMCalc_UrbanStreets.AnalysisMode
+  parent: HCMCalc_UrbanStreets
+  name: AnalysisMode
+  nameWithType: AnalysisMode
+  fullName: HCMCalc_UrbanStreets.AnalysisMode
+- uid: HCMCalc_UrbanStreets.ProjectData.FilePath*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.FilePath
+  name: FilePath
+  nameWithType: ProjectData.FilePath
+  fullName: HCMCalc_UrbanStreets.ProjectData.FilePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.ProjectData.FileName*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.FileName
+  name: FileName
+  nameWithType: ProjectData.FileName
+  fullName: HCMCalc_UrbanStreets.ProjectData.FileName
+- uid: HCMCalc_UrbanStreets.ProjectData.AnalysisDate*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.AnalysisDate
+  name: AnalysisDate
+  nameWithType: ProjectData.AnalysisDate
+  fullName: HCMCalc_UrbanStreets.ProjectData.AnalysisDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: HCMCalc_UrbanStreets.ProjectData.AnalystName*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.AnalystName
+  name: AnalystName
+  nameWithType: ProjectData.AnalystName
+  fullName: HCMCalc_UrbanStreets.ProjectData.AnalystName
+- uid: HCMCalc_UrbanStreets.ProjectData.Agency*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.Agency
+  name: Agency
+  nameWithType: ProjectData.Agency
+  fullName: HCMCalc_UrbanStreets.ProjectData.Agency
+- uid: HCMCalc_UrbanStreets.ProjectData.UserNotes*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.UserNotes
+  name: UserNotes
+  nameWithType: ProjectData.UserNotes
+  fullName: HCMCalc_UrbanStreets.ProjectData.UserNotes
+- uid: HCMCalc_UrbanStreets.ProjectData.AnalMode*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.AnalMode
+  name: AnalMode
+  nameWithType: ProjectData.AnalMode
+  fullName: HCMCalc_UrbanStreets.ProjectData.AnalMode
+- uid: HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode
+  name: DirectionAnalysisMode
+  nameWithType: ProjectData.DirectionAnalysisMode
+  fullName: HCMCalc_UrbanStreets.ProjectData.DirectionAnalysisMode
+- uid: HCMCalc_UrbanStreets.DirectionType
+  commentId: T:HCMCalc_UrbanStreets.DirectionType
+  parent: HCMCalc_UrbanStreets
+  name: DirectionType
+  nameWithType: DirectionType
+  fullName: HCMCalc_UrbanStreets.DirectionType
+- uid: HCMCalc_UrbanStreets.ProjectData.Mode*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.Mode
+  name: Mode
+  nameWithType: ProjectData.Mode
+  fullName: HCMCalc_UrbanStreets.ProjectData.Mode
+- uid: HCMCalc_UrbanStreets.ModeType
+  commentId: T:HCMCalc_UrbanStreets.ModeType
+  parent: HCMCalc_UrbanStreets
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMCalc_UrbanStreets.ModeType
+- uid: HCMCalc_UrbanStreets.ProjectData.Period*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.Period
+  name: Period
+  nameWithType: ProjectData.Period
+  fullName: HCMCalc_UrbanStreets.ProjectData.Period
+- uid: HCMCalc_UrbanStreets.StudyPeriod
+  commentId: T:HCMCalc_UrbanStreets.StudyPeriod
+  parent: HCMCalc_UrbanStreets
+  name: StudyPeriod
+  nameWithType: StudyPeriod
+  fullName: HCMCalc_UrbanStreets.StudyPeriod
+- uid: HCMCalc_UrbanStreets.ProjectData.FFSCalc*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.FFSCalc
+  name: FFSCalc
+  nameWithType: ProjectData.FFSCalc
+  fullName: HCMCalc_UrbanStreets.ProjectData.FFSCalc
+- uid: HCMCalc_UrbanStreets.FFSCalcMethod
+  commentId: T:HCMCalc_UrbanStreets.FFSCalcMethod
+  parent: HCMCalc_UrbanStreets
+  name: FFSCalcMethod
+  nameWithType: FFSCalcMethod
+  fullName: HCMCalc_UrbanStreets.FFSCalcMethod
+- uid: HCMCalc_UrbanStreets.ProjectData.LOScriteria*
+  commentId: Overload:HCMCalc_UrbanStreets.ProjectData.LOScriteria
+  name: LOScriteria
+  nameWithType: ProjectData.LOScriteria
+  fullName: HCMCalc_UrbanStreets.ProjectData.LOScriteria
+- uid: HCMCalc_UrbanStreets.LevelServiceCriteria
+  commentId: T:HCMCalc_UrbanStreets.LevelServiceCriteria
+  parent: HCMCalc_UrbanStreets
+  name: LevelServiceCriteria
+  nameWithType: LevelServiceCriteria
+  fullName: HCMCalc_UrbanStreets.LevelServiceCriteria

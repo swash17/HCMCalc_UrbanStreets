@@ -1,0 +1,955 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ArterialData
+  commentId: T:HCMCalc_UrbanStreets.ArterialData
+  id: ArterialData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ArterialData.#ctor
+  - HCMCalc_UrbanStreets.ArterialData.#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})
+  - HCMCalc_UrbanStreets.ArterialData.#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData},System.Single,System.Single)
+  - HCMCalc_UrbanStreets.ArterialData.#ctor(ServiceVolumeTableFDOT,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})
+  - HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir
+  - HCMCalc_UrbanStreets.ArterialData.Area
+  - HCMCalc_UrbanStreets.ArterialData.ArtName
+  - HCMCalc_UrbanStreets.ArterialData.Classification
+  - HCMCalc_UrbanStreets.ArterialData.Dfactor
+  - HCMCalc_UrbanStreets.ArterialData.From
+  - HCMCalc_UrbanStreets.ArterialData.Kfactor
+  - HCMCalc_UrbanStreets.ArterialData.LengthMiles
+  - HCMCalc_UrbanStreets.ArterialData.MaxSerVol
+  - HCMCalc_UrbanStreets.ArterialData.OverCapacity
+  - HCMCalc_UrbanStreets.ArterialData.Results
+  - HCMCalc_UrbanStreets.ArterialData.Segments
+  - HCMCalc_UrbanStreets.ArterialData.TestSerVol
+  - HCMCalc_UrbanStreets.ArterialData.To
+  - HCMCalc_UrbanStreets.ArterialData.TotalInts
+  - HCMCalc_UrbanStreets.ArterialData.TotalSegs
+  langs:
+  - csharp
+  - vb
+  name: ArterialData
+  nameWithType: ArterialData
+  fullName: HCMCalc_UrbanStreets.ArterialData
+  type: Class
+  source:
+    id: ArterialData
+    path: ''
+    startLine: 67
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nHandles the parameters for an arterial.\n"
+  example: []
+  syntax:
+    content: public class ArterialData
+    content.vb: Public Class ArterialData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ArterialData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ArterialData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: ArterialData()
+  nameWithType: ArterialData.ArterialData()
+  fullName: HCMCalc_UrbanStreets.ArterialData.ArterialData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 94
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameterless constructor needed for XML de/serialization. Do not use.\n"
+  example: []
+  syntax:
+    content: public ArterialData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ArterialData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})
+  commentId: M:HCMCalc_UrbanStreets.ArterialData.#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})
+  id: '#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})'
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: ArterialData(AreaType, ArterialClass, TravelDirection, List<SegmentData>)
+  nameWithType: ArterialData.ArterialData(AreaType, ArterialClass, TravelDirection, List<SegmentData>)
+  fullName: HCMCalc_UrbanStreets.ArterialData.ArterialData(HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.ArterialClass, HCMCalc_UrbanStreets.TravelDirection, System.Collections.Generic.List<HCMCalc_UrbanStreets.SegmentData>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 106
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor for creating an Arterial without using Service Volumes.\n"
+  example: []
+  syntax:
+    content: public ArterialData(AreaType area, ArterialClass classification, TravelDirection analysisTravelDir, List<SegmentData> segments)
+    parameters:
+    - id: area
+      type: HCMCalc_UrbanStreets.AreaType
+      description: ''
+    - id: classification
+      type: HCMCalc_UrbanStreets.ArterialClass
+      description: ''
+    - id: analysisTravelDir
+      type: HCMCalc_UrbanStreets.TravelDirection
+      description: ''
+    - id: segments
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData}
+      description: ''
+    content.vb: Public Sub New(area As AreaType, classification As ArterialClass, analysisTravelDir As TravelDirection, segments As List(Of SegmentData))
+  overload: HCMCalc_UrbanStreets.ArterialData.#ctor*
+  nameWithType.vb: ArterialData.ArterialData(AreaType, ArterialClass, TravelDirection, List(Of SegmentData))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HCMCalc_UrbanStreets.ArterialData.ArterialData(HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.ArterialClass, HCMCalc_UrbanStreets.TravelDirection, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SegmentData))
+  name.vb: ArterialData(AreaType, ArterialClass, TravelDirection, List(Of SegmentData))
+- uid: HCMCalc_UrbanStreets.ArterialData.#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData},System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.ArterialData.#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData},System.Single,System.Single)
+  id: '#ctor(HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.ArterialClass,HCMCalc_UrbanStreets.TravelDirection,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData},System.Single,System.Single)'
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: ArterialData(AreaType, ArterialClass, TravelDirection, List<SegmentData>, Single, Single)
+  nameWithType: ArterialData.ArterialData(AreaType, ArterialClass, TravelDirection, List<SegmentData>, Single, Single)
+  fullName: HCMCalc_UrbanStreets.ArterialData.ArterialData(HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.ArterialClass, HCMCalc_UrbanStreets.TravelDirection, System.Collections.Generic.List<HCMCalc_UrbanStreets.SegmentData>, System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 140
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor for creating an Arterial for use with Service Volumes.\n"
+  example: []
+  syntax:
+    content: public ArterialData(AreaType area, ArterialClass classification, TravelDirection analysisTravelDir, List<SegmentData> segments, float KFactor, float DFactor)
+    parameters:
+    - id: area
+      type: HCMCalc_UrbanStreets.AreaType
+      description: ''
+    - id: classification
+      type: HCMCalc_UrbanStreets.ArterialClass
+      description: ''
+    - id: analysisTravelDir
+      type: HCMCalc_UrbanStreets.TravelDirection
+      description: ''
+    - id: segments
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData}
+      description: ''
+    - id: KFactor
+      type: System.Single
+      description: ''
+    - id: DFactor
+      type: System.Single
+      description: ''
+    content.vb: Public Sub New(area As AreaType, classification As ArterialClass, analysisTravelDir As TravelDirection, segments As List(Of SegmentData), KFactor As Single, DFactor As Single)
+  overload: HCMCalc_UrbanStreets.ArterialData.#ctor*
+  nameWithType.vb: ArterialData.ArterialData(AreaType, ArterialClass, TravelDirection, List(Of SegmentData), Single, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HCMCalc_UrbanStreets.ArterialData.ArterialData(HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.ArterialClass, HCMCalc_UrbanStreets.TravelDirection, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SegmentData), System.Single, System.Single)
+  name.vb: ArterialData(AreaType, ArterialClass, TravelDirection, List(Of SegmentData), Single, Single)
+- uid: HCMCalc_UrbanStreets.ArterialData.#ctor(ServiceVolumeTableFDOT,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})
+  commentId: M:HCMCalc_UrbanStreets.ArterialData.#ctor(ServiceVolumeTableFDOT,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})
+  id: '#ctor(ServiceVolumeTableFDOT,System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData})'
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: ArterialData(ServiceVolumeTableFDOT, List<SegmentData>)
+  nameWithType: ArterialData.ArterialData(ServiceVolumeTableFDOT, List<SegmentData>)
+  fullName: HCMCalc_UrbanStreets.ArterialData.ArterialData(ServiceVolumeTableFDOT, System.Collections.Generic.List<HCMCalc_UrbanStreets.SegmentData>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 160
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ArterialData(ServiceVolumeTableFDOT Inputs, List<SegmentData> segments)
+    parameters:
+    - id: Inputs
+      type: ServiceVolumeTableFDOT
+    - id: segments
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData}
+    content.vb: Public Sub New(Inputs As ServiceVolumeTableFDOT, segments As List(Of SegmentData))
+  overload: HCMCalc_UrbanStreets.ArterialData.#ctor*
+  nameWithType.vb: ArterialData.ArterialData(ServiceVolumeTableFDOT, List(Of SegmentData))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HCMCalc_UrbanStreets.ArterialData.ArterialData(ServiceVolumeTableFDOT, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SegmentData))
+  name.vb: ArterialData(ServiceVolumeTableFDOT, List(Of SegmentData))
+- uid: HCMCalc_UrbanStreets.ArterialData.TotalInts
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.TotalInts
+  id: TotalInts
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: TotalInts
+  nameWithType: ArterialData.TotalInts
+  fullName: HCMCalc_UrbanStreets.ArterialData.TotalInts
+  type: Property
+  source:
+    id: TotalInts
+    path: ''
+    startLine: 178
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int TotalInts { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TotalInts As Integer
+  overload: HCMCalc_UrbanStreets.ArterialData.TotalInts*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.TotalSegs
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.TotalSegs
+  id: TotalSegs
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: TotalSegs
+  nameWithType: ArterialData.TotalSegs
+  fullName: HCMCalc_UrbanStreets.ArterialData.TotalSegs
+  type: Property
+  source:
+    id: TotalSegs
+    path: ''
+    startLine: 179
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int TotalSegs { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TotalSegs As Integer
+  overload: HCMCalc_UrbanStreets.ArterialData.TotalSegs*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.ArtName
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.ArtName
+  id: ArtName
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: ArtName
+  nameWithType: ArterialData.ArtName
+  fullName: HCMCalc_UrbanStreets.ArterialData.ArtName
+  type: Property
+  source:
+    id: ArtName
+    path: ''
+    startLine: 180
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string ArtName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ArtName As String
+  overload: HCMCalc_UrbanStreets.ArterialData.ArtName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.From
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.From
+  id: From
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: From
+  nameWithType: ArterialData.From
+  fullName: HCMCalc_UrbanStreets.ArterialData.From
+  type: Property
+  source:
+    id: From
+    path: ''
+    startLine: 181
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string From { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property From As String
+  overload: HCMCalc_UrbanStreets.ArterialData.From*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.To
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.To
+  id: To
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: ArterialData.To
+  fullName: HCMCalc_UrbanStreets.ArterialData.To
+  type: Property
+  source:
+    id: To
+    path: ''
+    startLine: 182
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string To { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property To As String
+  overload: HCMCalc_UrbanStreets.ArterialData.To*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.LengthMiles
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.LengthMiles
+  id: LengthMiles
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: LengthMiles
+  nameWithType: ArterialData.LengthMiles
+  fullName: HCMCalc_UrbanStreets.ArterialData.LengthMiles
+  type: Property
+  source:
+    id: LengthMiles
+    path: ''
+    startLine: 183
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LengthMiles { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LengthMiles As Single
+  overload: HCMCalc_UrbanStreets.ArterialData.LengthMiles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir
+  id: AnalysisTravelDir
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: AnalysisTravelDir
+  nameWithType: ArterialData.AnalysisTravelDir
+  fullName: HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir
+  type: Property
+  source:
+    id: AnalysisTravelDir
+    path: ''
+    startLine: 184
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public TravelDirection AnalysisTravelDir { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.TravelDirection
+    content.vb: Public Property AnalysisTravelDir As TravelDirection
+  overload: HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.Area
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.Area
+  id: Area
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: Area
+  nameWithType: ArterialData.Area
+  fullName: HCMCalc_UrbanStreets.ArterialData.Area
+  type: Property
+  source:
+    id: Area
+    path: ''
+    startLine: 185
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public AreaType Area { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.AreaType
+    content.vb: Public Property Area As AreaType
+  overload: HCMCalc_UrbanStreets.ArterialData.Area*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.Classification
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.Classification
+  id: Classification
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: Classification
+  nameWithType: ArterialData.Classification
+  fullName: HCMCalc_UrbanStreets.ArterialData.Classification
+  type: Property
+  source:
+    id: Classification
+    path: ''
+    startLine: 186
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ArterialClass Classification { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ArterialClass
+    content.vb: Public Property Classification As ArterialClass
+  overload: HCMCalc_UrbanStreets.ArterialData.Classification*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.Kfactor
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.Kfactor
+  id: Kfactor
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: Kfactor
+  nameWithType: ArterialData.Kfactor
+  fullName: HCMCalc_UrbanStreets.ArterialData.Kfactor
+  type: Property
+  source:
+    id: Kfactor
+    path: ''
+    startLine: 187
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Kfactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Kfactor As Single
+  overload: HCMCalc_UrbanStreets.ArterialData.Kfactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.Dfactor
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.Dfactor
+  id: Dfactor
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: Dfactor
+  nameWithType: ArterialData.Dfactor
+  fullName: HCMCalc_UrbanStreets.ArterialData.Dfactor
+  type: Property
+  source:
+    id: Dfactor
+    path: ''
+    startLine: 188
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Dfactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Dfactor As Single
+  overload: HCMCalc_UrbanStreets.ArterialData.Dfactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.MaxSerVol
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.MaxSerVol
+  id: MaxSerVol
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: MaxSerVol
+  nameWithType: ArterialData.MaxSerVol
+  fullName: HCMCalc_UrbanStreets.ArterialData.MaxSerVol
+  type: Property
+  source:
+    id: MaxSerVol
+    path: ''
+    startLine: 189
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int MaxSerVol { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxSerVol As Integer
+  overload: HCMCalc_UrbanStreets.ArterialData.MaxSerVol*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.Results
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.Results
+  id: Results
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: Results
+  nameWithType: ArterialData.Results
+  fullName: HCMCalc_UrbanStreets.ArterialData.Results
+  type: Property
+  source:
+    id: Results
+    path: ''
+    startLine: 190
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public ResultsArterialData Results { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ResultsArterialData
+    content.vb: Public Property Results As ResultsArterialData
+  overload: HCMCalc_UrbanStreets.ArterialData.Results*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.Segments
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.Segments
+  id: Segments
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: Segments
+  nameWithType: ArterialData.Segments
+  fullName: HCMCalc_UrbanStreets.ArterialData.Segments
+  type: Property
+  source:
+    id: Segments
+    path: ''
+    startLine: 191
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public List<SegmentData> Segments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData}
+    content.vb: Public Property Segments As List(Of SegmentData)
+  overload: HCMCalc_UrbanStreets.ArterialData.Segments*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.OverCapacity
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.OverCapacity
+  id: OverCapacity
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: OverCapacity
+  nameWithType: ArterialData.OverCapacity
+  fullName: HCMCalc_UrbanStreets.ArterialData.OverCapacity
+  type: Property
+  source:
+    id: OverCapacity
+    path: ''
+    startLine: 192
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool OverCapacity { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property OverCapacity As Boolean
+  overload: HCMCalc_UrbanStreets.ArterialData.OverCapacity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ArterialData.TestSerVol
+  commentId: P:HCMCalc_UrbanStreets.ArterialData.TestSerVol
+  id: TestSerVol
+  parent: HCMCalc_UrbanStreets.ArterialData
+  langs:
+  - csharp
+  - vb
+  name: TestSerVol
+  nameWithType: ArterialData.TestSerVol
+  fullName: HCMCalc_UrbanStreets.ArterialData.TestSerVol
+  type: Property
+  source:
+    id: TestSerVol
+    path: ''
+    startLine: 193
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int TestSerVol { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TestSerVol As Integer
+  overload: HCMCalc_UrbanStreets.ArterialData.TestSerVol*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ArterialData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.#ctor
+  name: ArterialData
+  nameWithType: ArterialData.ArterialData
+  fullName: HCMCalc_UrbanStreets.ArterialData.ArterialData
+- uid: HCMCalc_UrbanStreets.AreaType
+  commentId: T:HCMCalc_UrbanStreets.AreaType
+  parent: HCMCalc_UrbanStreets
+  name: AreaType
+  nameWithType: AreaType
+  fullName: HCMCalc_UrbanStreets.AreaType
+- uid: HCMCalc_UrbanStreets.ArterialClass
+  commentId: T:HCMCalc_UrbanStreets.ArterialClass
+  parent: HCMCalc_UrbanStreets
+  name: ArterialClass
+  nameWithType: ArterialClass
+  fullName: HCMCalc_UrbanStreets.ArterialClass
+- uid: HCMCalc_UrbanStreets.TravelDirection
+  commentId: T:HCMCalc_UrbanStreets.TravelDirection
+  parent: HCMCalc_UrbanStreets
+  name: TravelDirection
+  nameWithType: TravelDirection
+  fullName: HCMCalc_UrbanStreets.TravelDirection
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.SegmentData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<SegmentData>
+  nameWithType: List<SegmentData>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.SegmentData>
+  nameWithType.vb: List(Of SegmentData)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SegmentData)
+  name.vb: List(Of SegmentData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.SegmentData
+    name: SegmentData
+    nameWithType: SegmentData
+    fullName: HCMCalc_UrbanStreets.SegmentData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.SegmentData
+    name: SegmentData
+    nameWithType: SegmentData
+    fullName: HCMCalc_UrbanStreets.SegmentData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: ServiceVolumeTableFDOT
+  commentId: '!:ServiceVolumeTableFDOT'
+  isExternal: true
+  name: ServiceVolumeTableFDOT
+  nameWithType: ServiceVolumeTableFDOT
+  fullName: ServiceVolumeTableFDOT
+- uid: HCMCalc_UrbanStreets.ArterialData.TotalInts*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.TotalInts
+  name: TotalInts
+  nameWithType: ArterialData.TotalInts
+  fullName: HCMCalc_UrbanStreets.ArterialData.TotalInts
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.ArterialData.TotalSegs*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.TotalSegs
+  name: TotalSegs
+  nameWithType: ArterialData.TotalSegs
+  fullName: HCMCalc_UrbanStreets.ArterialData.TotalSegs
+- uid: HCMCalc_UrbanStreets.ArterialData.ArtName*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.ArtName
+  name: ArtName
+  nameWithType: ArterialData.ArtName
+  fullName: HCMCalc_UrbanStreets.ArterialData.ArtName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.ArterialData.From*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.From
+  name: From
+  nameWithType: ArterialData.From
+  fullName: HCMCalc_UrbanStreets.ArterialData.From
+- uid: HCMCalc_UrbanStreets.ArterialData.To*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.To
+  name: To
+  nameWithType: ArterialData.To
+  fullName: HCMCalc_UrbanStreets.ArterialData.To
+- uid: HCMCalc_UrbanStreets.ArterialData.LengthMiles*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.LengthMiles
+  name: LengthMiles
+  nameWithType: ArterialData.LengthMiles
+  fullName: HCMCalc_UrbanStreets.ArterialData.LengthMiles
+- uid: HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir
+  name: AnalysisTravelDir
+  nameWithType: ArterialData.AnalysisTravelDir
+  fullName: HCMCalc_UrbanStreets.ArterialData.AnalysisTravelDir
+- uid: HCMCalc_UrbanStreets.ArterialData.Area*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.Area
+  name: Area
+  nameWithType: ArterialData.Area
+  fullName: HCMCalc_UrbanStreets.ArterialData.Area
+- uid: HCMCalc_UrbanStreets.ArterialData.Classification*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.Classification
+  name: Classification
+  nameWithType: ArterialData.Classification
+  fullName: HCMCalc_UrbanStreets.ArterialData.Classification
+- uid: HCMCalc_UrbanStreets.ArterialData.Kfactor*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.Kfactor
+  name: Kfactor
+  nameWithType: ArterialData.Kfactor
+  fullName: HCMCalc_UrbanStreets.ArterialData.Kfactor
+- uid: HCMCalc_UrbanStreets.ArterialData.Dfactor*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.Dfactor
+  name: Dfactor
+  nameWithType: ArterialData.Dfactor
+  fullName: HCMCalc_UrbanStreets.ArterialData.Dfactor
+- uid: HCMCalc_UrbanStreets.ArterialData.MaxSerVol*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.MaxSerVol
+  name: MaxSerVol
+  nameWithType: ArterialData.MaxSerVol
+  fullName: HCMCalc_UrbanStreets.ArterialData.MaxSerVol
+- uid: HCMCalc_UrbanStreets.ArterialData.Results*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.Results
+  name: Results
+  nameWithType: ArterialData.Results
+  fullName: HCMCalc_UrbanStreets.ArterialData.Results
+- uid: HCMCalc_UrbanStreets.ResultsArterialData
+  commentId: T:HCMCalc_UrbanStreets.ResultsArterialData
+  parent: HCMCalc_UrbanStreets
+  name: ResultsArterialData
+  nameWithType: ResultsArterialData
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData
+- uid: HCMCalc_UrbanStreets.ArterialData.Segments*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.Segments
+  name: Segments
+  nameWithType: ArterialData.Segments
+  fullName: HCMCalc_UrbanStreets.ArterialData.Segments
+- uid: HCMCalc_UrbanStreets.ArterialData.OverCapacity*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.OverCapacity
+  name: OverCapacity
+  nameWithType: ArterialData.OverCapacity
+  fullName: HCMCalc_UrbanStreets.ArterialData.OverCapacity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.ArterialData.TestSerVol*
+  commentId: Overload:HCMCalc_UrbanStreets.ArterialData.TestSerVol
+  name: TestSerVol
+  nameWithType: ArterialData.TestSerVol
+  fullName: HCMCalc_UrbanStreets.ArterialData.TestSerVol

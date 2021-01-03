@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.FFSCalcMethod
+  commentId: T:HCMCalc_UrbanStreets.FFSCalcMethod
+  id: FFSCalcMethod
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.FFSCalcMethod.HCM2010
+  - HCMCalc_UrbanStreets.FFSCalcMethod.PostSpeed
+  langs:
+  - csharp
+  - vb
+  name: FFSCalcMethod
+  nameWithType: FFSCalcMethod
+  fullName: HCMCalc_UrbanStreets.FFSCalcMethod
+  type: Enum
+  source:
+    id: FFSCalcMethod
+    path: ''
+    startLine: 5371
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe type of FFS calculation method to use for a project.\n"
+  example: []
+  syntax:
+    content: public enum FFSCalcMethod
+    content.vb: Public Enum FFSCalcMethod
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.FFSCalcMethod.HCM2010
+  commentId: F:HCMCalc_UrbanStreets.FFSCalcMethod.HCM2010
+  id: HCM2010
+  parent: HCMCalc_UrbanStreets.FFSCalcMethod
+  langs:
+  - csharp
+  - vb
+  name: HCM2010
+  nameWithType: FFSCalcMethod.HCM2010
+  fullName: HCMCalc_UrbanStreets.FFSCalcMethod.HCM2010
+  type: Field
+  source:
+    id: HCM2010
+    path: ''
+    startLine: 5373
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: HCM2010 = 0
+    return:
+      type: HCMCalc_UrbanStreets.FFSCalcMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FFSCalcMethod.PostSpeed
+  commentId: F:HCMCalc_UrbanStreets.FFSCalcMethod.PostSpeed
+  id: PostSpeed
+  parent: HCMCalc_UrbanStreets.FFSCalcMethod
+  langs:
+  - csharp
+  - vb
+  name: PostSpeed
+  nameWithType: FFSCalcMethod.PostSpeed
+  fullName: HCMCalc_UrbanStreets.FFSCalcMethod.PostSpeed
+  type: Field
+  source:
+    id: PostSpeed
+    path: ''
+    startLine: 5374
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: PostSpeed = 1
+    return:
+      type: HCMCalc_UrbanStreets.FFSCalcMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.FFSCalcMethod
+  commentId: T:HCMCalc_UrbanStreets.FFSCalcMethod
+  parent: HCMCalc_UrbanStreets
+  name: FFSCalcMethod
+  nameWithType: FFSCalcMethod
+  fullName: HCMCalc_UrbanStreets.FFSCalcMethod

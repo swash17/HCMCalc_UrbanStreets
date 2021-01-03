@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ResultsArterialData
+  commentId: T:HCMCalc_UrbanStreets.ResultsArterialData
+  id: ResultsArterialData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ResultsArterialData.#ctor
+  - HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed
+  - HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed
+  - HCMCalc_UrbanStreets.ResultsArterialData.LOS
+  - HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime
+  - HCMCalc_UrbanStreets.ResultsArterialData.TravelTime
+  langs:
+  - csharp
+  - vb
+  name: ResultsArterialData
+  nameWithType: ResultsArterialData
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData
+  type: Class
+  source:
+    id: ResultsArterialData
+    path: ''
+    startLine: 5494
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters for creating the results for an arterial.\n"
+  example: []
+  syntax:
+    content: public class ResultsArterialData
+    content.vb: Public Class ResultsArterialData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ResultsArterialData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ResultsArterialData
+  langs:
+  - csharp
+  - vb
+  name: ResultsArterialData()
+  nameWithType: ResultsArterialData.ResultsArterialData()
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.ResultsArterialData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5506
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor for creating the results for an arterial.\n"
+  example: []
+  syntax:
+    content: public ResultsArterialData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ResultsArterialData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.TravelTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsArterialData.TravelTime
+  id: TravelTime
+  parent: HCMCalc_UrbanStreets.ResultsArterialData
+  langs:
+  - csharp
+  - vb
+  name: TravelTime
+  nameWithType: ResultsArterialData.TravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.TravelTime
+  type: Property
+  source:
+    id: TravelTime
+    path: ''
+    startLine: 5515
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TravelTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TravelTime As Single
+  overload: HCMCalc_UrbanStreets.ResultsArterialData.TravelTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed
+  commentId: P:HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed
+  id: AverageSpeed
+  parent: HCMCalc_UrbanStreets.ResultsArterialData
+  langs:
+  - csharp
+  - vb
+  name: AverageSpeed
+  nameWithType: ResultsArterialData.AverageSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed
+  type: Property
+  source:
+    id: AverageSpeed
+    path: ''
+    startLine: 5516
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AverageSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AverageSpeed As Single
+  overload: HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.LOS
+  commentId: P:HCMCalc_UrbanStreets.ResultsArterialData.LOS
+  id: LOS
+  parent: HCMCalc_UrbanStreets.ResultsArterialData
+  langs:
+  - csharp
+  - vb
+  name: LOS
+  nameWithType: ResultsArterialData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.LOS
+  type: Property
+  source:
+    id: LOS
+    path: ''
+    startLine: 5517
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string LOS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LOS As String
+  overload: HCMCalc_UrbanStreets.ResultsArterialData.LOS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime
+  id: TotalRunningTime
+  parent: HCMCalc_UrbanStreets.ResultsArterialData
+  langs:
+  - csharp
+  - vb
+  name: TotalRunningTime
+  nameWithType: ResultsArterialData.TotalRunningTime
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime
+  type: Property
+  source:
+    id: TotalRunningTime
+    path: ''
+    startLine: 5518
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TotalRunningTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TotalRunningTime As Single
+  overload: HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed
+  commentId: P:HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed
+  id: CritSpeed
+  parent: HCMCalc_UrbanStreets.ResultsArterialData
+  langs:
+  - csharp
+  - vb
+  name: CritSpeed
+  nameWithType: ResultsArterialData.CritSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed
+  type: Property
+  source:
+    id: CritSpeed
+    path: ''
+    startLine: 5519
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float CritSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property CritSpeed As Single
+  overload: HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsArterialData.#ctor
+  name: ResultsArterialData
+  nameWithType: ResultsArterialData.ResultsArterialData
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.ResultsArterialData
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.TravelTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsArterialData.TravelTime
+  name: TravelTime
+  nameWithType: ResultsArterialData.TravelTime
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.TravelTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed
+  name: AverageSpeed
+  nameWithType: ResultsArterialData.AverageSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.AverageSpeed
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.LOS*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsArterialData.LOS
+  name: LOS
+  nameWithType: ResultsArterialData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.LOS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime
+  name: TotalRunningTime
+  nameWithType: ResultsArterialData.TotalRunningTime
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.TotalRunningTime
+- uid: HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed
+  name: CritSpeed
+  nameWithType: ResultsArterialData.CritSpeed
+  fullName: HCMCalc_UrbanStreets.ResultsArterialData.CritSpeed

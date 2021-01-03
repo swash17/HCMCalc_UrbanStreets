@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  commentId: T:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  id: BaseFreeFlowSpeedCalcParameters
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.#ctor
+  - HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+  - HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+  - HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+  - HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+  - HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact
+  - HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant
+  langs:
+  - csharp
+  - vb
+  name: BaseFreeFlowSpeedCalcParameters
+  nameWithType: BaseFreeFlowSpeedCalcParameters
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  type: Class
+  source:
+    id: BaseFreeFlowSpeedCalcParameters
+    path: ''
+    startLine: 885
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class BaseFreeFlowSpeedCalcParameters
+    content.vb: Public Class BaseFreeFlowSpeedCalcParameters
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.#ctor
+  commentId: M:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: BaseFreeFlowSpeedCalcParameters()
+  nameWithType: BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeedCalcParameters()
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeedCalcParameters()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 894
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public BaseFreeFlowSpeedCalcParameters()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+  commentId: P:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+  id: BaseFreeFlowSpeed
+  parent: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: BaseFreeFlowSpeed
+  nameWithType: BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+  type: Property
+  source:
+    id: BaseFreeFlowSpeed
+    path: ''
+    startLine: 899
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float BaseFreeFlowSpeed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property BaseFreeFlowSpeed As Single
+  overload: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+  commentId: P:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+  id: BaseFFScalibFactor
+  parent: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: BaseFFScalibFactor
+  nameWithType: BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+  type: Property
+  source:
+    id: BaseFFScalibFactor
+    path: ''
+    startLine: 900
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float BaseFFScalibFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property BaseFFScalibFactor As Single
+  overload: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant
+  commentId: P:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant
+  id: SpeedConstant
+  parent: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: SpeedConstant
+  nameWithType: BaseFreeFlowSpeedCalcParameters.SpeedConstant
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant
+  type: Property
+  source:
+    id: SpeedConstant
+    path: ''
+    startLine: 901
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SpeedConstant { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SpeedConstant As Single
+  overload: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+  commentId: P:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+  id: CrossSectAdjFact
+  parent: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: CrossSectAdjFact
+  nameWithType: BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+  type: Property
+  source:
+    id: CrossSectAdjFact
+    path: ''
+    startLine: 902
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float CrossSectAdjFact { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property CrossSectAdjFact As Single
+  overload: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+  commentId: P:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+  id: AccessPointsAdjFact
+  parent: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: AccessPointsAdjFact
+  nameWithType: BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+  type: Property
+  source:
+    id: AccessPointsAdjFact
+    path: ''
+    startLine: 903
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AccessPointsAdjFact { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AccessPointsAdjFact As Single
+  overload: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact
+  commentId: P:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact
+  id: OnStreetParkingAdjFact
+  parent: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: OnStreetParkingAdjFact
+  nameWithType: BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact
+  type: Property
+  source:
+    id: OnStreetParkingAdjFact
+    path: ''
+    startLine: 904
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float OnStreetParkingAdjFact { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property OnStreetParkingAdjFact As Single
+  overload: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.#ctor
+  name: BaseFreeFlowSpeedCalcParameters
+  nameWithType: BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeedCalcParameters
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeedCalcParameters
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+  name: BaseFreeFlowSpeed
+  nameWithType: BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFreeFlowSpeed
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor*
+  commentId: Overload:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+  name: BaseFFScalibFactor
+  nameWithType: BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.BaseFFScalibFactor
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant*
+  commentId: Overload:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant
+  name: SpeedConstant
+  nameWithType: BaseFreeFlowSpeedCalcParameters.SpeedConstant
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.SpeedConstant
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact*
+  commentId: Overload:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+  name: CrossSectAdjFact
+  nameWithType: BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.CrossSectAdjFact
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact*
+  commentId: Overload:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+  name: AccessPointsAdjFact
+  nameWithType: BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.AccessPointsAdjFact
+- uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact*
+  commentId: Overload:HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact
+  name: OnStreetParkingAdjFact
+  nameWithType: BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact
+  fullName: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.OnStreetParkingAdjFact

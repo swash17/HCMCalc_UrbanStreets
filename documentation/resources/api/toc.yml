@@ -1,0 +1,138 @@
+### YamlMime:TableOfContent
+- uid: HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  items:
+  - uid: Classes
+    name: Classes
+    items:
+      - uid: HCMCalc_UrbanStreets.AccessPointData
+        name: AccessPointData
+      - uid: HCMCalc_UrbanStreets.ApproachData
+        name: ApproachData
+      - uid: HCMCalc_UrbanStreets.ArterialData
+        name: ArterialData
+      - uid: HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters
+        name: BaseFreeFlowSpeedCalcParameters
+      - uid: HCMCalc_UrbanStreets.CalcsArterial
+        name: CalcsArterial
+      - uid: HCMCalc_UrbanStreets.CalcsFlowProfiles
+        name: CalcsFlowProfiles
+      - uid: HCMCalc_UrbanStreets.CalcsOriginDestination
+        name: CalcsOriginDestination
+      - uid: HCMCalc_UrbanStreets.CreateArterial_FDOTSerVols
+        name: CreateArterial_FDOTSerVols
+      - uid: HCMCalc_UrbanStreets.CreateArterial_HCMExample1
+        name: CreateArterial_HCMExample1
+      - uid: HCMCalc_UrbanStreets.DefaultValues
+        name: DefaultValues
+      - uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+        name: FDOTplanning_ParmRanges
+      - uid: HCMCalc_UrbanStreets.FileInputOutput2
+        name: FileInputOutput2
+      - uid: HCMCalc_UrbanStreets.FlowProfileParms
+        name: FlowProfileParms
+      - uid: HCMCalc_UrbanStreets.IntersectionData
+        name: IntersectionData
+      - uid: HCMCalc_UrbanStreets.LaneData
+        name: LaneData
+      - uid: HCMCalc_UrbanStreets.LaneGroupData
+        name: LaneGroupData
+      - uid: HCMCalc_UrbanStreets.LinkData
+        name: LinkData
+      - uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+        name: LinkRunningTimeCalcParameters
+      - uid: HCMCalc_UrbanStreets.MovementData
+        name: MovementData
+      - uid: HCMCalc_UrbanStreets.OriginDestinationData
+        name: OriginDestinationData
+      - uid: HCMCalc_UrbanStreets.ProjectData
+        name: ProjectData
+      - uid: HCMCalc_UrbanStreets.ResultsArterialData
+        name: ResultsArterialData
+      - uid: HCMCalc_UrbanStreets.ResultsAutoArtPlan
+        name: ResultsAutoArtPlan
+      - uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+        name: ResultsIntersectionApproachData
+      - uid: HCMCalc_UrbanStreets.ResultsIntersectionData
+        name: ResultsIntersectionData
+      - uid: HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData
+        name: ResultsIntersectionLaneGroupData
+      - uid: HCMCalc_UrbanStreets.ResultsLinkData
+        name: ResultsLinkData
+      - uid: HCMCalc_UrbanStreets.ResultsMultimodalData
+        name: ResultsMultimodalData
+      - uid: HCMCalc_UrbanStreets.ResultsSegmentData
+        name: ResultsSegmentData
+      - uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+        name: SatFlowRateAdjFactors
+      - uid: HCMCalc_UrbanStreets.SatFlowRateCalculations
+        name: SatFlowRateCalculations
+      - uid: HCMCalc_UrbanStreets.SaturationFlowRateValues
+        name: SaturationFlowRateValues
+      - uid: HCMCalc_UrbanStreets.SegmentCalcs
+        name: SegmentCalcs
+      - uid: HCMCalc_UrbanStreets.SegmentData
+        name: SegmentData
+      - uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput
+        name: ServiceVolResultsOutput
+      - uid: HCMCalc_UrbanStreets.ServiceVolumeArterialInputs
+        name: ServiceVolumeArterialInputs
+      - uid: HCMCalc_UrbanStreets.ServiceVolumes
+        name: ServiceVolumes
+      - uid: HCMCalc_UrbanStreets.SignalCalcs
+        name: SignalCalcs
+      - uid: HCMCalc_UrbanStreets.SignalControlParameters
+        name: SignalControlParameters
+      - uid: HCMCalc_UrbanStreets.SignalCycleData
+        name: SignalCycleData
+      - uid: HCMCalc_UrbanStreets.SignalPhaseData
+        name: SignalPhaseData
+      - uid: HCMCalc_UrbanStreets.TimerData
+        name: TimerData
+      - uid: HCMCalc_UrbanStreets.TimerData.TimerResults
+        name: TimerData.TimerResults
+  - uid: Enums
+    name: Enums
+    items:
+      - uid: HCMCalc_UrbanStreets.AnalysisMode
+        name: AnalysisMode
+      - uid: HCMCalc_UrbanStreets.AreaType
+        name: AreaType
+      - uid: HCMCalc_UrbanStreets.DirectionType
+        name: DirectionType
+      - uid: HCMCalc_UrbanStreets.FFSCalcMethod
+        name: FFSCalcMethod
+      - uid: HCMCalc_UrbanStreets.LaneMovementsAllowed
+        name: LaneMovementsAllowed
+      - uid: HCMCalc_UrbanStreets.LOSCcriteria
+        name: LOSCcriteria
+      - uid: HCMCalc_UrbanStreets.MedianType
+        name: MedianType
+      - uid: HCMCalc_UrbanStreets.ModeType
+        name: ModeType
+      - uid: HCMCalc_UrbanStreets.MovementData.SegmentDirection
+        name: MovementData.SegmentDirection
+      - uid: HCMCalc_UrbanStreets.MovementDirection
+        name: MovementDirection
+      - uid: HCMCalc_UrbanStreets.MovementDirectionWithMidBlock
+        name: MovementDirectionWithMidBlock
+      - uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+        name: NemaMovementNumbers
+      - uid: HCMCalc_UrbanStreets.OutLaneWidth
+        name: OutLaneWidth
+      - uid: HCMCalc_UrbanStreets.ParkingActivityLevel
+        name: ParkingActivityLevel
+      - uid: HCMCalc_UrbanStreets.PhaseColor
+        name: PhaseColor
+      - uid: HCMCalc_UrbanStreets.PhasingType
+        name: PhasingType
+      - uid: HCMCalc_UrbanStreets.SequenceType
+        name: SequenceType
+      - uid: HCMCalc_UrbanStreets.SigControlType
+        name: SigControlType
+      - uid: HCMCalc_UrbanStreets.StudyPeriod
+        name: StudyPeriod
+      - uid: HCMCalc_UrbanStreets.TravelDirection
+        name: TravelDirection
+      - uid: HCMCalc_UrbanStreets.UnsignalControlType
+        name: UnsignalControlType

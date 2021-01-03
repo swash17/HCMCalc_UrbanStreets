@@ -1,0 +1,607 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  commentId: T:HCMCalc_UrbanStreets.CalcsFlowProfiles
+  id: CalcsFlowProfiles
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile(HCMCalc_UrbanStreets.SegmentData,System.Int32,HCMCalc_UrbanStreets.ApproachData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,HCMCalc_UrbanStreets.OriginDestinationData)
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.NemaMovementNumbers[],HCMCalc_UrbanStreets.SegmentDirection)
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.NemaMovementNumbers[])
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.LaneGroupData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection)
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile(HCMCalc_UrbanStreets.SegmentData,System.Single)
+  - HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume(HCMCalc_UrbanStreets.LaneGroupData,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CalcsFlowProfiles
+  nameWithType: CalcsFlowProfiles
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  type: Class
+  source:
+    id: CalcsFlowProfiles
+    path: ''
+    startLine: 541
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class CalcsFlowProfiles
+    content.vb: Public Class CalcsFlowProfiles
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.NemaMovementNumbers[])
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.NemaMovementNumbers[])
+  id: ComputeDischargeFlowProfile(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.NemaMovementNumbers[])
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: ComputeDischargeFlowProfile(SegmentData, NemaMovementNumbers[])
+  nameWithType: CalcsFlowProfiles.ComputeDischargeFlowProfile(SegmentData, NemaMovementNumbers[])
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile(HCMCalc_UrbanStreets.SegmentData, HCMCalc_UrbanStreets.NemaMovementNumbers[])
+  type: Method
+  source:
+    id: ComputeDischargeFlowProfile
+    path: ''
+    startLine: 549
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nComputes the Discharge Flow Profile for a segment based on the three left, through, and right discharge volumes.\n"
+  example: []
+  syntax:
+    content: public static float[, ] ComputeDischargeFlowProfile(SegmentData analysisSegment, NemaMovementNumbers[] dischargeMovementsArray)
+    parameters:
+    - id: analysisSegment
+      type: HCMCalc_UrbanStreets.SegmentData
+      description: ''
+    - id: dischargeMovementsArray
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers[]
+      description: ''
+    return:
+      type: System.Single[,]
+      description: ''
+    content.vb: Public Shared Function ComputeDischargeFlowProfile(analysisSegment As SegmentData, dischargeMovementsArray As NemaMovementNumbers()) As Single(,)
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile*
+  nameWithType.vb: CalcsFlowProfiles.ComputeDischargeFlowProfile(SegmentData, NemaMovementNumbers())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile(HCMCalc_UrbanStreets.SegmentData, HCMCalc_UrbanStreets.NemaMovementNumbers())
+  name.vb: ComputeDischargeFlowProfile(SegmentData, NemaMovementNumbers())
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile(HCMCalc_UrbanStreets.SegmentData,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile(HCMCalc_UrbanStreets.SegmentData,System.Single)
+  id: ComputeProjectedProfile(HCMCalc_UrbanStreets.SegmentData,System.Single)
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: ComputeProjectedProfile(SegmentData, Single)
+  nameWithType: CalcsFlowProfiles.ComputeProjectedProfile(SegmentData, Single)
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile(HCMCalc_UrbanStreets.SegmentData, System.Single)
+  type: Method
+  source:
+    id: ComputeProjectedProfile
+    path: ''
+    startLine: 614
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nComputes the Projected Flow Profile for a segment, and smooths it a set amount of times by recalculating (default loops = 5)\n"
+  example: []
+  syntax:
+    content: public static float[, ] ComputeProjectedProfile(SegmentData analysisSegment, float RunTime)
+    parameters:
+    - id: analysisSegment
+      type: HCMCalc_UrbanStreets.SegmentData
+      description: ''
+    - id: RunTime
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single[,]
+      description: ''
+    content.vb: Public Shared Function ComputeProjectedProfile(analysisSegment As SegmentData, RunTime As Single) As Single(,)
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume(HCMCalc_UrbanStreets.LaneGroupData,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume(HCMCalc_UrbanStreets.LaneGroupData,System.Int32)
+  id: GetDischargeVolume(HCMCalc_UrbanStreets.LaneGroupData,System.Int32)
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: GetDischargeVolume(LaneGroupData, Int32)
+  nameWithType: CalcsFlowProfiles.GetDischargeVolume(LaneGroupData, Int32)
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume(HCMCalc_UrbanStreets.LaneGroupData, System.Int32)
+  type: Method
+  source:
+    id: GetDischargeVolume
+    path: ''
+    startLine: 643
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the adjusted Discharge Volume for a lane group based on turning percents and the lane group&apos;s movement type.\n"
+  example: []
+  syntax:
+    content: public static float GetDischargeVolume(LaneGroupData analysisLaneGroup, int moveDir)
+    parameters:
+    - id: analysisLaneGroup
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    - id: moveDir
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function GetDischargeVolume(analysisLaneGroup As LaneGroupData, moveDir As Integer) As Single
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  id: ComputePortionTimeBlocked(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: ComputePortionTimeBlocked(SegmentData, AccessPointData)
+  nameWithType: CalcsFlowProfiles.ComputePortionTimeBlocked(SegmentData, AccessPointData)
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked(HCMCalc_UrbanStreets.SegmentData, HCMCalc_UrbanStreets.AccessPointData)
+  type: Method
+  source:
+    id: ComputePortionTimeBlocked
+    path: ''
+    startLine: 674
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the portion of time blocked using block times for an access point.\n"
+  example: []
+  syntax:
+    content: public static float[] ComputePortionTimeBlocked(SegmentData Segment, AccessPointData AccessPoint)
+    parameters:
+    - id: Segment
+      type: HCMCalc_UrbanStreets.SegmentData
+      description: ''
+    - id: AccessPoint
+      type: HCMCalc_UrbanStreets.AccessPointData
+      description: ''
+    return:
+      type: System.Single[]
+      description: ''
+    content.vb: Public Shared Function ComputePortionTimeBlocked(Segment As SegmentData, AccessPoint As AccessPointData) As Single()
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  id: ComputeBlockTime(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData)
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: ComputeBlockTime(SegmentData, AccessPointData)
+  nameWithType: CalcsFlowProfiles.ComputeBlockTime(SegmentData, AccessPointData)
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime(HCMCalc_UrbanStreets.SegmentData, HCMCalc_UrbanStreets.AccessPointData)
+  type: Method
+  source:
+    id: ComputeBlockTime
+    path: ''
+    startLine: 702
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nComputes the block time for an access point.\n"
+  example: []
+  syntax:
+    content: public static int[] ComputeBlockTime(SegmentData Segment, AccessPointData AccessPoint)
+    parameters:
+    - id: Segment
+      type: HCMCalc_UrbanStreets.SegmentData
+      description: ''
+    - id: AccessPoint
+      type: HCMCalc_UrbanStreets.AccessPointData
+      description: ''
+    return:
+      type: System.Int32[]
+      description: ''
+    content.vb: Public Shared Function ComputeBlockTime(Segment As SegmentData, AccessPoint As AccessPointData) As Integer()
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile(HCMCalc_UrbanStreets.SegmentData,System.Int32,HCMCalc_UrbanStreets.ApproachData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,HCMCalc_UrbanStreets.OriginDestinationData)
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile(HCMCalc_UrbanStreets.SegmentData,System.Int32,HCMCalc_UrbanStreets.ApproachData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,HCMCalc_UrbanStreets.OriginDestinationData)
+  id: ComputeArrivalFlowProfile(HCMCalc_UrbanStreets.SegmentData,System.Int32,HCMCalc_UrbanStreets.ApproachData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection,HCMCalc_UrbanStreets.OriginDestinationData)
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: ComputeArrivalFlowProfile(SegmentData, Int32, ApproachData, Int32, SegmentDirection, OriginDestinationData)
+  nameWithType: CalcsFlowProfiles.ComputeArrivalFlowProfile(SegmentData, Int32, ApproachData, Int32, SegmentDirection, OriginDestinationData)
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile(HCMCalc_UrbanStreets.SegmentData, System.Int32, HCMCalc_UrbanStreets.ApproachData, System.Int32, HCMCalc_UrbanStreets.SegmentDirection, HCMCalc_UrbanStreets.OriginDestinationData)
+  type: Method
+  source:
+    id: ComputeArrivalFlowProfile
+    path: ''
+    startLine: 736
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nComputes the Arrival Flow Profile for an approach using the projected flow profile and the upstream demands.\n"
+  example: []
+  syntax:
+    content: public static float[, ] ComputeArrivalFlowProfile(SegmentData analysisSegment, int upstreamSegmentIndex, ApproachData analysisApproach, int accessPointIndex, SegmentDirection segDirection, OriginDestinationData ODdata)
+    parameters:
+    - id: analysisSegment
+      type: HCMCalc_UrbanStreets.SegmentData
+      description: ''
+    - id: upstreamSegmentIndex
+      type: System.Int32
+      description: ''
+    - id: analysisApproach
+      type: HCMCalc_UrbanStreets.ApproachData
+      description: ''
+    - id: accessPointIndex
+      type: System.Int32
+      description: ''
+    - id: segDirection
+      type: HCMCalc_UrbanStreets.SegmentDirection
+      description: ''
+    - id: ODdata
+      type: HCMCalc_UrbanStreets.OriginDestinationData
+      description: ''
+    return:
+      type: System.Single[,]
+      description: ''
+    content.vb: Public Shared Function ComputeArrivalFlowProfile(analysisSegment As SegmentData, upstreamSegmentIndex As Integer, analysisApproach As ApproachData, accessPointIndex As Integer, segDirection As SegmentDirection, ODdata As OriginDestinationData) As Single(,)
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.NemaMovementNumbers[],HCMCalc_UrbanStreets.SegmentDirection)
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.NemaMovementNumbers[],HCMCalc_UrbanStreets.SegmentDirection)
+  id: ComputeConflictFlowRate(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.AccessPointData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.NemaMovementNumbers[],HCMCalc_UrbanStreets.SegmentDirection)
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: ComputeConflictFlowRate(SegmentData, AccessPointData, ApproachData, NemaMovementNumbers[], SegmentDirection)
+  nameWithType: CalcsFlowProfiles.ComputeConflictFlowRate(SegmentData, AccessPointData, ApproachData, NemaMovementNumbers[], SegmentDirection)
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate(HCMCalc_UrbanStreets.SegmentData, HCMCalc_UrbanStreets.AccessPointData, HCMCalc_UrbanStreets.ApproachData, HCMCalc_UrbanStreets.NemaMovementNumbers[], HCMCalc_UrbanStreets.SegmentDirection)
+  type: Method
+  source:
+    id: ComputeConflictFlowRate
+    path: ''
+    startLine: 797
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nComputes the conflict rate for an access point.\n"
+  example: []
+  syntax:
+    content: public static float[, ] ComputeConflictFlowRate(SegmentData analysisSegment, AccessPointData analysisAccessPoint, ApproachData analysisApproach, NemaMovementNumbers[] conflictingMovements, SegmentDirection segDirection)
+    parameters:
+    - id: analysisSegment
+      type: HCMCalc_UrbanStreets.SegmentData
+      description: ''
+    - id: analysisAccessPoint
+      type: HCMCalc_UrbanStreets.AccessPointData
+      description: ''
+    - id: analysisApproach
+      type: HCMCalc_UrbanStreets.ApproachData
+      description: ''
+    - id: conflictingMovements
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers[]
+      description: ''
+    - id: segDirection
+      type: HCMCalc_UrbanStreets.SegmentDirection
+      description: ''
+    return:
+      type: System.Single[,]
+      description: ''
+    content.vb: Public Shared Function ComputeConflictFlowRate(analysisSegment As SegmentData, analysisAccessPoint As AccessPointData, analysisApproach As ApproachData, conflictingMovements As NemaMovementNumbers(), segDirection As SegmentDirection) As Single(,)
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate*
+  nameWithType.vb: CalcsFlowProfiles.ComputeConflictFlowRate(SegmentData, AccessPointData, ApproachData, NemaMovementNumbers(), SegmentDirection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate(HCMCalc_UrbanStreets.SegmentData, HCMCalc_UrbanStreets.AccessPointData, HCMCalc_UrbanStreets.ApproachData, HCMCalc_UrbanStreets.NemaMovementNumbers(), HCMCalc_UrbanStreets.SegmentDirection)
+  name.vb: ComputeConflictFlowRate(SegmentData, AccessPointData, ApproachData, NemaMovementNumbers(), SegmentDirection)
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.LaneGroupData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection)
+  commentId: M:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.LaneGroupData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection)
+  id: ComputePortionOnGreen(HCMCalc_UrbanStreets.SegmentData,HCMCalc_UrbanStreets.ApproachData,HCMCalc_UrbanStreets.LaneGroupData,System.Int32,HCMCalc_UrbanStreets.SegmentDirection)
+  parent: HCMCalc_UrbanStreets.CalcsFlowProfiles
+  langs:
+  - csharp
+  - vb
+  name: ComputePortionOnGreen(SegmentData, ApproachData, LaneGroupData, Int32, SegmentDirection)
+  nameWithType: CalcsFlowProfiles.ComputePortionOnGreen(SegmentData, ApproachData, LaneGroupData, Int32, SegmentDirection)
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen(HCMCalc_UrbanStreets.SegmentData, HCMCalc_UrbanStreets.ApproachData, HCMCalc_UrbanStreets.LaneGroupData, System.Int32, HCMCalc_UrbanStreets.SegmentDirection)
+  type: Method
+  source:
+    id: ComputePortionOnGreen
+    path: ''
+    startLine: 825
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nComputes the portion on green, using the platoon dispersion method, for a lane group.\n"
+  example: []
+  syntax:
+    content: public static float ComputePortionOnGreen(SegmentData analysisSegment, ApproachData analysisApproach, LaneGroupData analysisLaneGroup, int downMvmt, SegmentDirection segDirection)
+    parameters:
+    - id: analysisSegment
+      type: HCMCalc_UrbanStreets.SegmentData
+      description: ''
+    - id: analysisApproach
+      type: HCMCalc_UrbanStreets.ApproachData
+      description: ''
+    - id: analysisLaneGroup
+      type: HCMCalc_UrbanStreets.LaneGroupData
+      description: ''
+    - id: downMvmt
+      type: System.Int32
+      description: ''
+    - id: segDirection
+      type: HCMCalc_UrbanStreets.SegmentDirection
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function ComputePortionOnGreen(analysisSegment As SegmentData, analysisApproach As ApproachData, analysisLaneGroup As LaneGroupData, downMvmt As Integer, segDirection As SegmentDirection) As Single
+  overload: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile
+  name: ComputeDischargeFlowProfile
+  nameWithType: CalcsFlowProfiles.ComputeDischargeFlowProfile
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeDischargeFlowProfile
+- uid: HCMCalc_UrbanStreets.SegmentData
+  commentId: T:HCMCalc_UrbanStreets.SegmentData
+  parent: HCMCalc_UrbanStreets
+  name: SegmentData
+  nameWithType: SegmentData
+  fullName: HCMCalc_UrbanStreets.SegmentData
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers[]
+  isExternal: true
+  name: NemaMovementNumbers[]
+  nameWithType: NemaMovementNumbers[]
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers[]
+  nameWithType.vb: NemaMovementNumbers()
+  fullName.vb: HCMCalc_UrbanStreets.NemaMovementNumbers()
+  name.vb: NemaMovementNumbers()
+  spec.csharp:
+  - uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+    name: NemaMovementNumbers
+    nameWithType: NemaMovementNumbers
+    fullName: HCMCalc_UrbanStreets.NemaMovementNumbers
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+    name: NemaMovementNumbers
+    nameWithType: NemaMovementNumbers
+    fullName: HCMCalc_UrbanStreets.NemaMovementNumbers
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single[,]
+  isExternal: true
+  name: Single[,]
+  nameWithType: Single[,]
+  fullName: System.Single[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: System.Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile
+  name: ComputeProjectedProfile
+  nameWithType: CalcsFlowProfiles.ComputeProjectedProfile
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeProjectedProfile
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume
+  name: GetDischargeVolume
+  nameWithType: CalcsFlowProfiles.GetDischargeVolume
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.GetDischargeVolume
+- uid: HCMCalc_UrbanStreets.LaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.LaneGroupData
+  parent: HCMCalc_UrbanStreets
+  name: LaneGroupData
+  nameWithType: LaneGroupData
+  fullName: HCMCalc_UrbanStreets.LaneGroupData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked
+  name: ComputePortionTimeBlocked
+  nameWithType: CalcsFlowProfiles.ComputePortionTimeBlocked
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionTimeBlocked
+- uid: HCMCalc_UrbanStreets.AccessPointData
+  commentId: T:HCMCalc_UrbanStreets.AccessPointData
+  parent: HCMCalc_UrbanStreets
+  name: AccessPointData
+  nameWithType: AccessPointData
+  fullName: HCMCalc_UrbanStreets.AccessPointData
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime
+  name: ComputeBlockTime
+  nameWithType: CalcsFlowProfiles.ComputeBlockTime
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeBlockTime
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile
+  name: ComputeArrivalFlowProfile
+  nameWithType: CalcsFlowProfiles.ComputeArrivalFlowProfile
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeArrivalFlowProfile
+- uid: HCMCalc_UrbanStreets.ApproachData
+  commentId: T:HCMCalc_UrbanStreets.ApproachData
+  parent: HCMCalc_UrbanStreets
+  name: ApproachData
+  nameWithType: ApproachData
+  fullName: HCMCalc_UrbanStreets.ApproachData
+- uid: HCMCalc_UrbanStreets.SegmentDirection
+  commentId: T:HCMCalc_UrbanStreets.SegmentDirection
+  parent: HCMCalc_UrbanStreets
+  name: SegmentDirection
+  nameWithType: SegmentDirection
+  fullName: HCMCalc_UrbanStreets.SegmentDirection
+- uid: HCMCalc_UrbanStreets.OriginDestinationData
+  commentId: T:HCMCalc_UrbanStreets.OriginDestinationData
+  parent: HCMCalc_UrbanStreets
+  name: OriginDestinationData
+  nameWithType: OriginDestinationData
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate
+  name: ComputeConflictFlowRate
+  nameWithType: CalcsFlowProfiles.ComputeConflictFlowRate
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputeConflictFlowRate
+- uid: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen
+  name: ComputePortionOnGreen
+  nameWithType: CalcsFlowProfiles.ComputePortionOnGreen
+  fullName: HCMCalc_UrbanStreets.CalcsFlowProfiles.ComputePortionOnGreen

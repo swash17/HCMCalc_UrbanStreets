@@ -1,0 +1,599 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.AccessPointData
+  commentId: T:HCMCalc_UrbanStreets.AccessPointData
+  id: AccessPointData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.AccessPointData.#ctor
+  - HCMCalc_UrbanStreets.AccessPointData.#ctor(System.Single,System.Single,System.Single[0:,0:],System.Int32[],System.Single[],System.Single,System.Single,System.Single)
+  - HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate
+  - HCMCalc_UrbanStreets.AccessPointData.BlockTime
+  - HCMCalc_UrbanStreets.AccessPointData.DecelRate
+  - HCMCalc_UrbanStreets.AccessPointData.Lanes
+  - HCMCalc_UrbanStreets.AccessPointData.Location
+  - HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked
+  - HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked
+  - HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency
+  - HCMCalc_UrbanStreets.AccessPointData.ThruDelay
+  - HCMCalc_UrbanStreets.AccessPointData.Volume
+  langs:
+  - csharp
+  - vb
+  name: AccessPointData
+  nameWithType: AccessPointData
+  fullName: HCMCalc_UrbanStreets.AccessPointData
+  type: Class
+  source:
+    id: AccessPointData
+    path: ''
+    startLine: 6296
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters required for creating an access point.\n"
+  example: []
+  syntax:
+    content: public class AccessPointData
+    content.vb: Public Class AccessPointData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.AccessPointData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.AccessPointData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: AccessPointData()
+  nameWithType: AccessPointData.AccessPointData()
+  fullName: HCMCalc_UrbanStreets.AccessPointData.AccessPointData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6314
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameterless constructor needed for XML de/serialization. Do not use.\n"
+  example: []
+  syntax:
+    content: public AccessPointData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.AccessPointData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.#ctor(System.Single,System.Single,System.Single[0:,0:],System.Int32[],System.Single[],System.Single,System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.AccessPointData.#ctor(System.Single,System.Single,System.Single[0:,0:],System.Int32[],System.Single[],System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single[0:,0:],System.Int32[],System.Single[],System.Single,System.Single,System.Single)'
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: AccessPointData(Single, Single, Single[,], Int32[], Single[], Single, Single, Single)
+  nameWithType: AccessPointData.AccessPointData(Single, Single, Single[,], Int32[], Single[], Single, Single, Single)
+  fullName: HCMCalc_UrbanStreets.AccessPointData.AccessPointData(System.Single, System.Single, System.Single[,], System.Int32[], System.Single[], System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6330
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor required for creating an access point.\n"
+  example: []
+  syntax:
+    content: public AccessPointData(float rightTurnEquivalency, float decelRate, float[, ] arrivalFlowRate, int[] blockTime, float[] portionTimeBlocked, float probInsideLaneBlocked, float thruDelay, float location)
+    parameters:
+    - id: rightTurnEquivalency
+      type: System.Single
+      description: ''
+    - id: decelRate
+      type: System.Single
+      description: ''
+    - id: arrivalFlowRate
+      type: System.Single[,]
+      description: ''
+    - id: blockTime
+      type: System.Int32[]
+      description: ''
+    - id: portionTimeBlocked
+      type: System.Single[]
+      description: ''
+    - id: probInsideLaneBlocked
+      type: System.Single
+      description: ''
+    - id: thruDelay
+      type: System.Single
+      description: ''
+    - id: location
+      type: System.Single
+      description: ''
+    content.vb: Public Sub New(rightTurnEquivalency As Single, decelRate As Single, arrivalFlowRate As Single(,), blockTime As Integer(), portionTimeBlocked As Single(), probInsideLaneBlocked As Single, thruDelay As Single, location As Single)
+  overload: HCMCalc_UrbanStreets.AccessPointData.#ctor*
+  nameWithType.vb: AccessPointData.AccessPointData(Single, Single, Single(,), Int32(), Single(), Single, Single, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HCMCalc_UrbanStreets.AccessPointData.AccessPointData(System.Single, System.Single, System.Single(,), System.Int32(), System.Single(), System.Single, System.Single, System.Single)
+  name.vb: AccessPointData(Single, Single, Single(,), Int32(), Single(), Single, Single, Single)
+- uid: HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency
+  id: RightTurnEquivalency
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: RightTurnEquivalency
+  nameWithType: AccessPointData.RightTurnEquivalency
+  fullName: HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency
+  type: Property
+  source:
+    id: RightTurnEquivalency
+    path: ''
+    startLine: 6342
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RightTurnEquivalency { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RightTurnEquivalency As Single
+  overload: HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.DecelRate
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.DecelRate
+  id: DecelRate
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: DecelRate
+  nameWithType: AccessPointData.DecelRate
+  fullName: HCMCalc_UrbanStreets.AccessPointData.DecelRate
+  type: Property
+  source:
+    id: DecelRate
+    path: ''
+    startLine: 6343
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DecelRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DecelRate As Single
+  overload: HCMCalc_UrbanStreets.AccessPointData.DecelRate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate
+  id: ArrivalFlowRate
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: ArrivalFlowRate
+  nameWithType: AccessPointData.ArrivalFlowRate
+  fullName: HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate
+  type: Property
+  source:
+    id: ArrivalFlowRate
+    path: ''
+    startLine: 6344
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[, ] ArrivalFlowRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,]
+    content.vb: Public Property ArrivalFlowRate As Single(,)
+  overload: HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked
+  id: PortionTimeBlocked
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: PortionTimeBlocked
+  nameWithType: AccessPointData.PortionTimeBlocked
+  fullName: HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked
+  type: Property
+  source:
+    id: PortionTimeBlocked
+    path: ''
+    startLine: 6346
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PortionTimeBlocked { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property PortionTimeBlocked As Single()
+  overload: HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked
+  id: ProbInsideLaneBlocked
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: ProbInsideLaneBlocked
+  nameWithType: AccessPointData.ProbInsideLaneBlocked
+  fullName: HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked
+  type: Property
+  source:
+    id: ProbInsideLaneBlocked
+    path: ''
+    startLine: 6347
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ProbInsideLaneBlocked { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ProbInsideLaneBlocked As Single
+  overload: HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.ThruDelay
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.ThruDelay
+  id: ThruDelay
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: ThruDelay
+  nameWithType: AccessPointData.ThruDelay
+  fullName: HCMCalc_UrbanStreets.AccessPointData.ThruDelay
+  type: Property
+  source:
+    id: ThruDelay
+    path: ''
+    startLine: 6348
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ThruDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ThruDelay As Single
+  overload: HCMCalc_UrbanStreets.AccessPointData.ThruDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.Volume
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.Volume
+  id: Volume
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: AccessPointData.Volume
+  fullName: HCMCalc_UrbanStreets.AccessPointData.Volume
+  type: Property
+  source:
+    id: Volume
+    path: ''
+    startLine: 6349
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] Volume { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property Volume As Single()
+  overload: HCMCalc_UrbanStreets.AccessPointData.Volume*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.Lanes
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.Lanes
+  id: Lanes
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: Lanes
+  nameWithType: AccessPointData.Lanes
+  fullName: HCMCalc_UrbanStreets.AccessPointData.Lanes
+  type: Property
+  source:
+    id: Lanes
+    path: ''
+    startLine: 6350
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] Lanes { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property Lanes As Single()
+  overload: HCMCalc_UrbanStreets.AccessPointData.Lanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.Location
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.Location
+  id: Location
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: AccessPointData.Location
+  fullName: HCMCalc_UrbanStreets.AccessPointData.Location
+  type: Property
+  source:
+    id: Location
+    path: ''
+    startLine: 6351
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Location { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Location As Single
+  overload: HCMCalc_UrbanStreets.AccessPointData.Location*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.AccessPointData.BlockTime
+  commentId: P:HCMCalc_UrbanStreets.AccessPointData.BlockTime
+  id: BlockTime
+  parent: HCMCalc_UrbanStreets.AccessPointData
+  langs:
+  - csharp
+  - vb
+  name: BlockTime
+  nameWithType: AccessPointData.BlockTime
+  fullName: HCMCalc_UrbanStreets.AccessPointData.BlockTime
+  type: Property
+  source:
+    id: BlockTime
+    path: ''
+    startLine: 6352
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] BlockTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public Property BlockTime As Integer()
+  overload: HCMCalc_UrbanStreets.AccessPointData.BlockTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.AccessPointData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.#ctor
+  name: AccessPointData
+  nameWithType: AccessPointData.AccessPointData
+  fullName: HCMCalc_UrbanStreets.AccessPointData.AccessPointData
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Single[,]
+  isExternal: true
+  name: Single[,]
+  nameWithType: Single[,]
+  fullName: System.Single[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: System.Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency
+  name: RightTurnEquivalency
+  nameWithType: AccessPointData.RightTurnEquivalency
+  fullName: HCMCalc_UrbanStreets.AccessPointData.RightTurnEquivalency
+- uid: HCMCalc_UrbanStreets.AccessPointData.DecelRate*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.DecelRate
+  name: DecelRate
+  nameWithType: AccessPointData.DecelRate
+  fullName: HCMCalc_UrbanStreets.AccessPointData.DecelRate
+- uid: HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate
+  name: ArrivalFlowRate
+  nameWithType: AccessPointData.ArrivalFlowRate
+  fullName: HCMCalc_UrbanStreets.AccessPointData.ArrivalFlowRate
+- uid: HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked
+  name: PortionTimeBlocked
+  nameWithType: AccessPointData.PortionTimeBlocked
+  fullName: HCMCalc_UrbanStreets.AccessPointData.PortionTimeBlocked
+- uid: HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked
+  name: ProbInsideLaneBlocked
+  nameWithType: AccessPointData.ProbInsideLaneBlocked
+  fullName: HCMCalc_UrbanStreets.AccessPointData.ProbInsideLaneBlocked
+- uid: HCMCalc_UrbanStreets.AccessPointData.ThruDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.ThruDelay
+  name: ThruDelay
+  nameWithType: AccessPointData.ThruDelay
+  fullName: HCMCalc_UrbanStreets.AccessPointData.ThruDelay
+- uid: HCMCalc_UrbanStreets.AccessPointData.Volume*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.Volume
+  name: Volume
+  nameWithType: AccessPointData.Volume
+  fullName: HCMCalc_UrbanStreets.AccessPointData.Volume
+- uid: HCMCalc_UrbanStreets.AccessPointData.Lanes*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.Lanes
+  name: Lanes
+  nameWithType: AccessPointData.Lanes
+  fullName: HCMCalc_UrbanStreets.AccessPointData.Lanes
+- uid: HCMCalc_UrbanStreets.AccessPointData.Location*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.Location
+  name: Location
+  nameWithType: AccessPointData.Location
+  fullName: HCMCalc_UrbanStreets.AccessPointData.Location
+- uid: HCMCalc_UrbanStreets.AccessPointData.BlockTime*
+  commentId: Overload:HCMCalc_UrbanStreets.AccessPointData.BlockTime
+  name: BlockTime
+  nameWithType: AccessPointData.BlockTime
+  fullName: HCMCalc_UrbanStreets.AccessPointData.BlockTime

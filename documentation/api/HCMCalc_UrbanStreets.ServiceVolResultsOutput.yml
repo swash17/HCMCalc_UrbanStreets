@@ -1,0 +1,332 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput
+  commentId: T:HCMCalc_UrbanStreets.ServiceVolResultsOutput
+  id: ServiceVolResultsOutput
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders(StreamWriter,HCMCalc_UrbanStreets.ServiceVolumes,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes})
+  - HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew(System.String,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes},System.Int32)
+  - HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues(StreamWriter,System.Int32[0:,0:],System.Int32,System.String,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: ServiceVolResultsOutput
+  nameWithType: ServiceVolResultsOutput
+  fullName: HCMCalc_UrbanStreets.ServiceVolResultsOutput
+  type: Class
+  source:
+    id: ServiceVolResultsOutput
+    path: ''
+    startLine: 6363
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class ServiceVolResultsOutput
+    content.vb: Public Class ServiceVolResultsOutput
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders(StreamWriter,HCMCalc_UrbanStreets.ServiceVolumes,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes})
+  commentId: M:HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders(StreamWriter,HCMCalc_UrbanStreets.ServiceVolumes,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes})
+  id: WriteLOSHeaders(StreamWriter,HCMCalc_UrbanStreets.ServiceVolumes,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes})
+  parent: HCMCalc_UrbanStreets.ServiceVolResultsOutput
+  langs:
+  - csharp
+  - vb
+  name: WriteLOSHeaders(StreamWriter, ServiceVolumes, List<ServiceVolumes>)
+  nameWithType: ServiceVolResultsOutput.WriteLOSHeaders(StreamWriter, ServiceVolumes, List<ServiceVolumes>)
+  fullName: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders(StreamWriter, HCMCalc_UrbanStreets.ServiceVolumes, System.Collections.Generic.List<HCMCalc_UrbanStreets.ServiceVolumes>)
+  type: Method
+  source:
+    id: WriteLOSHeaders
+    path: ''
+    startLine: 6493
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static void WriteLOSHeaders(StreamWriter swLinkResults, ServiceVolumes serVolResult, List<ServiceVolumes> serVolResults)
+    parameters:
+    - id: swLinkResults
+      type: StreamWriter
+    - id: serVolResult
+      type: HCMCalc_UrbanStreets.ServiceVolumes
+    - id: serVolResults
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes}
+    content.vb: Public Shared Sub WriteLOSHeaders(swLinkResults As StreamWriter, serVolResult As ServiceVolumes, serVolResults As List(Of ServiceVolumes))
+  overload: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders*
+  nameWithType.vb: ServiceVolResultsOutput.WriteLOSHeaders(StreamWriter, ServiceVolumes, List(Of ServiceVolumes))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders(StreamWriter, HCMCalc_UrbanStreets.ServiceVolumes, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.ServiceVolumes))
+  name.vb: WriteLOSHeaders(StreamWriter, ServiceVolumes, List(Of ServiceVolumes))
+- uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues(StreamWriter,System.Int32[0:,0:],System.Int32,System.String,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues(StreamWriter,System.Int32[0:,0:],System.Int32,System.String,System.Single)
+  id: WriteSerVolValues(StreamWriter,System.Int32[0:,0:],System.Int32,System.String,System.Single)
+  parent: HCMCalc_UrbanStreets.ServiceVolResultsOutput
+  langs:
+  - csharp
+  - vb
+  name: WriteSerVolValues(StreamWriter, Int32[,], Int32, String, Single)
+  nameWithType: ServiceVolResultsOutput.WriteSerVolValues(StreamWriter, Int32[,], Int32, String, Single)
+  fullName: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues(StreamWriter, System.Int32[,], System.Int32, System.String, System.Single)
+  type: Method
+  source:
+    id: WriteSerVolValues
+    path: ''
+    startLine: 6573
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static void WriteSerVolValues(StreamWriter swLinkResults, int[, ] analysisArray, int lanes, string testLabel, float testValue)
+    parameters:
+    - id: swLinkResults
+      type: StreamWriter
+    - id: analysisArray
+      type: System.Int32[,]
+    - id: lanes
+      type: System.Int32
+    - id: testLabel
+      type: System.String
+    - id: testValue
+      type: System.Single
+    content.vb: Public Shared Sub WriteSerVolValues(swLinkResults As StreamWriter, analysisArray As Integer(,), lanes As Integer, testLabel As String, testValue As Single)
+  overload: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues*
+  nameWithType.vb: ServiceVolResultsOutput.WriteSerVolValues(StreamWriter, Int32(,), Int32, String, Single)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues(StreamWriter, System.Int32(,), System.Int32, System.String, System.Single)
+  name.vb: WriteSerVolValues(StreamWriter, Int32(,), Int32, String, Single)
+- uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew(System.String,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes},System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew(System.String,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes},System.Int32)
+  id: WriteServiceVolResultsDataNew(System.String,System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes},System.Int32)
+  parent: HCMCalc_UrbanStreets.ServiceVolResultsOutput
+  langs:
+  - csharp
+  - vb
+  name: WriteServiceVolResultsDataNew(String, List<ServiceVolumes>, Int32)
+  nameWithType: ServiceVolResultsOutput.WriteServiceVolResultsDataNew(String, List<ServiceVolumes>, Int32)
+  fullName: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew(System.String, System.Collections.Generic.List<HCMCalc_UrbanStreets.ServiceVolumes>, System.Int32)
+  type: Method
+  source:
+    id: WriteServiceVolResultsDataNew
+    path: ''
+    startLine: 6596
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static void WriteServiceVolResultsDataNew(string filename, List<ServiceVolumes> serVolResults, int numberOfTestParmsPerTable)
+    parameters:
+    - id: filename
+      type: System.String
+    - id: serVolResults
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes}
+    - id: numberOfTestParmsPerTable
+      type: System.Int32
+    content.vb: Public Shared Sub WriteServiceVolResultsDataNew(filename As String, serVolResults As List(Of ServiceVolumes), numberOfTestParmsPerTable As Integer)
+  overload: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew*
+  nameWithType.vb: ServiceVolResultsOutput.WriteServiceVolResultsDataNew(String, List(Of ServiceVolumes), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew(System.String, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.ServiceVolumes), System.Int32)
+  name.vb: WriteServiceVolResultsDataNew(String, List(Of ServiceVolumes), Int32)
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders
+  name: WriteLOSHeaders
+  nameWithType: ServiceVolResultsOutput.WriteLOSHeaders
+  fullName: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteLOSHeaders
+- uid: StreamWriter
+  isExternal: true
+  name: StreamWriter
+  nameWithType: StreamWriter
+  fullName: StreamWriter
+- uid: HCMCalc_UrbanStreets.ServiceVolumes
+  commentId: T:HCMCalc_UrbanStreets.ServiceVolumes
+  parent: HCMCalc_UrbanStreets
+  name: ServiceVolumes
+  nameWithType: ServiceVolumes
+  fullName: HCMCalc_UrbanStreets.ServiceVolumes
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.ServiceVolumes}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ServiceVolumes>
+  nameWithType: List<ServiceVolumes>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.ServiceVolumes>
+  nameWithType.vb: List(Of ServiceVolumes)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.ServiceVolumes)
+  name.vb: List(Of ServiceVolumes)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.ServiceVolumes
+    name: ServiceVolumes
+    nameWithType: ServiceVolumes
+    fullName: HCMCalc_UrbanStreets.ServiceVolumes
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.ServiceVolumes
+    name: ServiceVolumes
+    nameWithType: ServiceVolumes
+    fullName: HCMCalc_UrbanStreets.ServiceVolumes
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues
+  name: WriteSerVolValues
+  nameWithType: ServiceVolResultsOutput.WriteSerVolValues
+  fullName: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteSerVolValues
+- uid: System.Int32[,]
+  isExternal: true
+  name: Int32[,]
+  nameWithType: Int32[,]
+  fullName: System.Int32[,]
+  nameWithType.vb: Int32(,)
+  fullName.vb: System.Int32(,)
+  name.vb: Int32(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew*
+  commentId: Overload:HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew
+  name: WriteServiceVolResultsDataNew
+  nameWithType: ServiceVolResultsOutput.WriteServiceVolResultsDataNew
+  fullName: HCMCalc_UrbanStreets.ServiceVolResultsOutput.WriteServiceVolResultsDataNew

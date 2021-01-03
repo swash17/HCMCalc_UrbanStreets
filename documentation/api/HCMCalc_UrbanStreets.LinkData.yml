@@ -1,0 +1,1200 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.LinkData
+  commentId: T:HCMCalc_UrbanStreets.LinkData
+  id: LinkData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.LinkData.#ctor
+  - HCMCalc_UrbanStreets.LinkData.#ctor(System.Single,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType)
+  - HCMCalc_UrbanStreets.LinkData.AADT
+  - HCMCalc_UrbanStreets.LinkData.AccessPoints
+  - HCMCalc_UrbanStreets.LinkData.AdjDDHV
+  - HCMCalc_UrbanStreets.LinkData.DDHV
+  - HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH
+  - HCMCalc_UrbanStreets.LinkData.Id
+  - HCMCalc_UrbanStreets.LinkData.LengthFt
+  - HCMCalc_UrbanStreets.LinkData.MedType
+  - HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr
+  - HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr
+  - HCMCalc_UrbanStreets.LinkData.NumAccessPts
+  - HCMCalc_UrbanStreets.LinkData.NumLanes
+  - HCMCalc_UrbanStreets.LinkData.NumThruLanes
+  - HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists
+  - HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth
+  - HCMCalc_UrbanStreets.LinkData.ParkingActivity
+  - HCMCalc_UrbanStreets.LinkData.PctGrade
+  - HCMCalc_UrbanStreets.LinkData.PctOnStreetParking
+  - HCMCalc_UrbanStreets.LinkData.PostSpeedMPH
+  - HCMCalc_UrbanStreets.LinkData.PropCurbRightSide
+  - HCMCalc_UrbanStreets.LinkData.PropRestrictMedian
+  - HCMCalc_UrbanStreets.LinkData.Results
+  - HCMCalc_UrbanStreets.LinkData.TravelDirection
+  langs:
+  - csharp
+  - vb
+  name: LinkData
+  nameWithType: LinkData
+  fullName: HCMCalc_UrbanStreets.LinkData
+  type: Class
+  source:
+    id: LinkData
+    path: ''
+    startLine: 6114
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters required for creating a link, which is a property of a Segment.\n"
+  example: []
+  syntax:
+    content: public class LinkData
+    content.vb: Public Class LinkData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.LinkData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.LinkData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: LinkData()
+  nameWithType: LinkData.LinkData()
+  fullName: HCMCalc_UrbanStreets.LinkData.LinkData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6151
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameterless constructor needed for XML de/serialization.\n"
+  example: []
+  syntax:
+    content: public LinkData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.LinkData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.#ctor(System.Single,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType)
+  commentId: M:HCMCalc_UrbanStreets.LinkData.#ctor(System.Single,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType)
+  id: '#ctor(System.Single,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType)'
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: LinkData(Single, Int32, Int32, Single, MedianType)
+  nameWithType: LinkData.LinkData(Single, Int32, Int32, Single, MedianType)
+  fullName: HCMCalc_UrbanStreets.LinkData.LinkData(System.Single, System.Int32, System.Int32, System.Single, HCMCalc_UrbanStreets.MedianType)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6173
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor required for creating a link.\n"
+  example: []
+  syntax:
+    content: public LinkData(float lengthFt, int numLanes, int postSpeed, float propCurbRightSide, MedianType medType)
+    parameters:
+    - id: lengthFt
+      type: System.Single
+      description: ''
+    - id: numLanes
+      type: System.Int32
+      description: ''
+    - id: postSpeed
+      type: System.Int32
+      description: ''
+    - id: propCurbRightSide
+      type: System.Single
+      description: ''
+    - id: medType
+      type: HCMCalc_UrbanStreets.MedianType
+      description: ''
+    content.vb: Public Sub New(lengthFt As Single, numLanes As Integer, postSpeed As Integer, propCurbRightSide As Single, medType As MedianType)
+  overload: HCMCalc_UrbanStreets.LinkData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.Id
+  commentId: P:HCMCalc_UrbanStreets.LinkData.Id
+  id: Id
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: LinkData.Id
+  fullName: HCMCalc_UrbanStreets.LinkData.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 6201
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe ID of the link.\n"
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: HCMCalc_UrbanStreets.LinkData.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.LengthFt
+  commentId: P:HCMCalc_UrbanStreets.LinkData.LengthFt
+  id: LengthFt
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: LengthFt
+  nameWithType: LinkData.LengthFt
+  fullName: HCMCalc_UrbanStreets.LinkData.LengthFt
+  type: Property
+  source:
+    id: LengthFt
+    path: ''
+    startLine: 6206
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe length in ft.\n"
+  example: []
+  syntax:
+    content: public float LengthFt { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LengthFt As Single
+  overload: HCMCalc_UrbanStreets.LinkData.LengthFt*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.AADT
+  commentId: P:HCMCalc_UrbanStreets.LinkData.AADT
+  id: AADT
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: AADT
+  nameWithType: LinkData.AADT
+  fullName: HCMCalc_UrbanStreets.LinkData.AADT
+  type: Property
+  source:
+    id: AADT
+    path: ''
+    startLine: 6210
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nAnnual average daily traffic in veh/day.\n"
+  example: []
+  syntax:
+    content: public long AADT { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property AADT As Long
+  overload: HCMCalc_UrbanStreets.LinkData.AADT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.DDHV
+  commentId: P:HCMCalc_UrbanStreets.LinkData.DDHV
+  id: DDHV
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: DDHV
+  nameWithType: LinkData.DDHV
+  fullName: HCMCalc_UrbanStreets.LinkData.DDHV
+  type: Property
+  source:
+    id: DDHV
+    path: ''
+    startLine: 6214
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nDirectional design hourly volume in veh/h.\n"
+  example: []
+  syntax:
+    content: public float DDHV { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DDHV As Single
+  overload: HCMCalc_UrbanStreets.LinkData.DDHV*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.AdjDDHV
+  commentId: P:HCMCalc_UrbanStreets.LinkData.AdjDDHV
+  id: AdjDDHV
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: AdjDDHV
+  nameWithType: LinkData.AdjDDHV
+  fullName: HCMCalc_UrbanStreets.LinkData.AdjDDHV
+  type: Property
+  source:
+    id: AdjDDHV
+    path: ''
+    startLine: 6218
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nAdjusted directional design hourly volume in veh/h.\n"
+  example: []
+  syntax:
+    content: public float AdjDDHV { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AdjDDHV As Single
+  overload: HCMCalc_UrbanStreets.LinkData.AdjDDHV*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.NumLanes
+  commentId: P:HCMCalc_UrbanStreets.LinkData.NumLanes
+  id: NumLanes
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: NumLanes
+  nameWithType: LinkData.NumLanes
+  fullName: HCMCalc_UrbanStreets.LinkData.NumLanes
+  type: Property
+  source:
+    id: NumLanes
+    path: ''
+    startLine: 6222
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe number of lanes in the link.\n"
+  example: []
+  syntax:
+    content: public int NumLanes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumLanes As Integer
+  overload: HCMCalc_UrbanStreets.LinkData.NumLanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.PostSpeedMPH
+  commentId: P:HCMCalc_UrbanStreets.LinkData.PostSpeedMPH
+  id: PostSpeedMPH
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: PostSpeedMPH
+  nameWithType: LinkData.PostSpeedMPH
+  fullName: HCMCalc_UrbanStreets.LinkData.PostSpeedMPH
+  type: Property
+  source:
+    id: PostSpeedMPH
+    path: ''
+    startLine: 6226
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nPosted speed of the roadway in mi/h.\n"
+  example: []
+  syntax:
+    content: public int PostSpeedMPH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PostSpeedMPH As Integer
+  overload: HCMCalc_UrbanStreets.LinkData.PostSpeedMPH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH
+  commentId: P:HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH
+  id: FreeFlowSpeedMPH
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: FreeFlowSpeedMPH
+  nameWithType: LinkData.FreeFlowSpeedMPH
+  fullName: HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH
+  type: Property
+  source:
+    id: FreeFlowSpeedMPH
+    path: ''
+    startLine: 6230
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nFree flow speed in mi/h.\n"
+  example: []
+  syntax:
+    content: public float FreeFlowSpeedMPH { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FreeFlowSpeedMPH As Single
+  overload: HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.PropCurbRightSide
+  commentId: P:HCMCalc_UrbanStreets.LinkData.PropCurbRightSide
+  id: PropCurbRightSide
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: PropCurbRightSide
+  nameWithType: LinkData.PropCurbRightSide
+  fullName: HCMCalc_UrbanStreets.LinkData.PropCurbRightSide
+  type: Property
+  source:
+    id: PropCurbRightSide
+    path: ''
+    startLine: 6234
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nProportion of curb that uses the right side, entered as a decimal (0.0-1.0).\n"
+  example: []
+  syntax:
+    content: public float PropCurbRightSide { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PropCurbRightSide As Single
+  overload: HCMCalc_UrbanStreets.LinkData.PropCurbRightSide*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.MedType
+  commentId: P:HCMCalc_UrbanStreets.LinkData.MedType
+  id: MedType
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: MedType
+  nameWithType: LinkData.MedType
+  fullName: HCMCalc_UrbanStreets.LinkData.MedType
+  type: Property
+  source:
+    id: MedType
+    path: ''
+    startLine: 6238
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nType of median for the segment, using the enumeration <a href=\"https://swash17.github.io/HCMCalc_UrbanStreets/api/HCMCalc_UrbanStreets.MedianType.html\">MedianType</a>.\n"
+  example: []
+  syntax:
+    content: public MedianType MedType { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.MedianType
+    content.vb: Public Property MedType As MedianType
+  overload: HCMCalc_UrbanStreets.LinkData.MedType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.PropRestrictMedian
+  commentId: P:HCMCalc_UrbanStreets.LinkData.PropRestrictMedian
+  id: PropRestrictMedian
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: PropRestrictMedian
+  nameWithType: LinkData.PropRestrictMedian
+  fullName: HCMCalc_UrbanStreets.LinkData.PropRestrictMedian
+  type: Property
+  source:
+    id: PropRestrictMedian
+    path: ''
+    startLine: 6242
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe proportion of the road with a restricted median, entered as a decimal (0.0-1.0).\n"
+  example: []
+  syntax:
+    content: public float PropRestrictMedian { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PropRestrictMedian As Single
+  overload: HCMCalc_UrbanStreets.LinkData.PropRestrictMedian*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists
+  commentId: P:HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists
+  id: OnStreetParkingExists
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: OnStreetParkingExists
+  nameWithType: LinkData.OnStreetParkingExists
+  fullName: HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists
+  type: Property
+  source:
+    id: OnStreetParkingExists
+    path: ''
+    startLine: 6246
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nWhether or not on street parking exists.\n"
+  example: []
+  syntax:
+    content: public bool OnStreetParkingExists { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property OnStreetParkingExists As Boolean
+  overload: HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.ParkingActivity
+  commentId: P:HCMCalc_UrbanStreets.LinkData.ParkingActivity
+  id: ParkingActivity
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: ParkingActivity
+  nameWithType: LinkData.ParkingActivity
+  fullName: HCMCalc_UrbanStreets.LinkData.ParkingActivity
+  type: Property
+  source:
+    id: ParkingActivity
+    path: ''
+    startLine: 6250
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nLevel of parking activity, using the enumeration <a href=\"https://swash17.github.io/HCMCalc_UrbanStreets/api/HCMCalc_UrbanStreets.ParkingActivityLevel.html\">ParkingActivityLevel</a>.\n"
+  example: []
+  syntax:
+    content: public ParkingActivityLevel ParkingActivity { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ParkingActivityLevel
+    content.vb: Public Property ParkingActivity As ParkingActivityLevel
+  overload: HCMCalc_UrbanStreets.LinkData.ParkingActivity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.PctOnStreetParking
+  commentId: P:HCMCalc_UrbanStreets.LinkData.PctOnStreetParking
+  id: PctOnStreetParking
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: PctOnStreetParking
+  nameWithType: LinkData.PctOnStreetParking
+  fullName: HCMCalc_UrbanStreets.LinkData.PctOnStreetParking
+  type: Property
+  source:
+    id: PctOnStreetParking
+    path: ''
+    startLine: 6254
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nPercentage of on street parking, entered as a percentage (0-100).\n"
+  example: []
+  syntax:
+    content: public float PctOnStreetParking { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctOnStreetParking As Single
+  overload: HCMCalc_UrbanStreets.LinkData.PctOnStreetParking*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth
+  commentId: P:HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth
+  id: OutsideLaneWidth
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: OutsideLaneWidth
+  nameWithType: LinkData.OutsideLaneWidth
+  fullName: HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth
+  type: Property
+  source:
+    id: OutsideLaneWidth
+    path: ''
+    startLine: 6258
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe classification of width for the outer-lane design, using the enumeration <a href=\"https://swash17.github.io/HCMCalc_UrbanStreets/api/HCMCalc_UrbanStreets.OutLaneWidth.html\">OutLaneWidth</a>.\n"
+  example: []
+  syntax:
+    content: public OutLaneWidth OutsideLaneWidth { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.OutLaneWidth
+    content.vb: Public Property OutsideLaneWidth As OutLaneWidth
+  overload: HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.PctGrade
+  commentId: P:HCMCalc_UrbanStreets.LinkData.PctGrade
+  id: PctGrade
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: PctGrade
+  nameWithType: LinkData.PctGrade
+  fullName: HCMCalc_UrbanStreets.LinkData.PctGrade
+  type: Property
+  source:
+    id: PctGrade
+    path: ''
+    startLine: 6262
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe incline of the link, entered as a percentage (+/- 0-100).\n"
+  example: []
+  syntax:
+    content: public float PctGrade { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctGrade As Single
+  overload: HCMCalc_UrbanStreets.LinkData.PctGrade*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr
+  commentId: P:HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr
+  id: MidblockEnteringVolVehPerHr
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: MidblockEnteringVolVehPerHr
+  nameWithType: LinkData.MidblockEnteringVolVehPerHr
+  fullName: HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr
+  type: Property
+  source:
+    id: MidblockEnteringVolVehPerHr
+    path: ''
+    startLine: 6266
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe volume entering the midblock, in veh/h.\n"
+  example: []
+  syntax:
+    content: public float MidblockEnteringVolVehPerHr { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MidblockEnteringVolVehPerHr As Single
+  overload: HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr
+  commentId: P:HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr
+  id: MidblockExitingVolVehPerHr
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: MidblockExitingVolVehPerHr
+  nameWithType: LinkData.MidblockExitingVolVehPerHr
+  fullName: HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr
+  type: Property
+  source:
+    id: MidblockExitingVolVehPerHr
+    path: ''
+    startLine: 6270
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe volume exiting the midblock, in veh/h.\n"
+  example: []
+  syntax:
+    content: public float MidblockExitingVolVehPerHr { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MidblockExitingVolVehPerHr As Single
+  overload: HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.NumAccessPts
+  commentId: P:HCMCalc_UrbanStreets.LinkData.NumAccessPts
+  id: NumAccessPts
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: NumAccessPts
+  nameWithType: LinkData.NumAccessPts
+  fullName: HCMCalc_UrbanStreets.LinkData.NumAccessPts
+  type: Property
+  source:
+    id: NumAccessPts
+    path: ''
+    startLine: 6274
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe amount of access points, with the first bound [0] being the analysis direction and the second bound [1] being the opposing direction.\n"
+  example: []
+  syntax:
+    content: public int[] NumAccessPts { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public Property NumAccessPts As Integer()
+  overload: HCMCalc_UrbanStreets.LinkData.NumAccessPts*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.AccessPoints
+  commentId: P:HCMCalc_UrbanStreets.LinkData.AccessPoints
+  id: AccessPoints
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: AccessPoints
+  nameWithType: LinkData.AccessPoints
+  fullName: HCMCalc_UrbanStreets.LinkData.AccessPoints
+  type: Property
+  source:
+    id: AccessPoints
+    path: ''
+    startLine: 6278
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe access points of the segment, using a list of <a href=\"https://swash17.github.io/HCMCalc_UrbanStreets/api/HCMCalc_UrbanStreets.AccessPointData.html\">AccessPointData</a>.\n"
+  example: []
+  syntax:
+    content: public List<AccessPointData> AccessPoints { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.AccessPointData}
+    content.vb: Public Property AccessPoints As List(Of AccessPointData)
+  overload: HCMCalc_UrbanStreets.LinkData.AccessPoints*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.Results
+  commentId: P:HCMCalc_UrbanStreets.LinkData.Results
+  id: Results
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: Results
+  nameWithType: LinkData.Results
+  fullName: HCMCalc_UrbanStreets.LinkData.Results
+  type: Property
+  source:
+    id: Results
+    path: ''
+    startLine: 6282
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nResults for the link, using the class <a href=\"https://swash17.github.io/HCMCalc_UrbanStreets/api/HCMCalc_UrbanStreets.ResultsLinkData.html\">ResultsLinkData</a>.\n"
+  example: []
+  syntax:
+    content: public ResultsLinkData Results { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.ResultsLinkData
+    content.vb: Public Property Results As ResultsLinkData
+  overload: HCMCalc_UrbanStreets.LinkData.Results*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.TravelDirection
+  commentId: P:HCMCalc_UrbanStreets.LinkData.TravelDirection
+  id: TravelDirection
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: TravelDirection
+  nameWithType: LinkData.TravelDirection
+  fullName: HCMCalc_UrbanStreets.LinkData.TravelDirection
+  type: Property
+  source:
+    id: TravelDirection
+    path: ''
+    startLine: 6286
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nTravel direction, using the enumeration <a href=\"https://swash17.github.io/HCMCalc_UrbanStreets/api/HCMCalc_UrbanStreets.SegmentDirection.html\">TravelDirection</a>.\n"
+  example: []
+  syntax:
+    content: public SegmentDirection TravelDirection { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SegmentDirection
+    content.vb: Public Property TravelDirection As SegmentDirection
+  overload: HCMCalc_UrbanStreets.LinkData.TravelDirection*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkData.NumThruLanes
+  commentId: P:HCMCalc_UrbanStreets.LinkData.NumThruLanes
+  id: NumThruLanes
+  parent: HCMCalc_UrbanStreets.LinkData
+  langs:
+  - csharp
+  - vb
+  name: NumThruLanes
+  nameWithType: LinkData.NumThruLanes
+  fullName: HCMCalc_UrbanStreets.LinkData.NumThruLanes
+  type: Property
+  source:
+    id: NumThruLanes
+    path: ''
+    startLine: 6290
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe number of lanes with a through movement.\n"
+  example: []
+  syntax:
+    content: public int NumThruLanes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NumThruLanes As Integer
+  overload: HCMCalc_UrbanStreets.LinkData.NumThruLanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.LinkData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.#ctor
+  name: LinkData
+  nameWithType: LinkData.LinkData
+  fullName: HCMCalc_UrbanStreets.LinkData.LinkData
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.MedianType
+  commentId: T:HCMCalc_UrbanStreets.MedianType
+  parent: HCMCalc_UrbanStreets
+  name: MedianType
+  nameWithType: MedianType
+  fullName: HCMCalc_UrbanStreets.MedianType
+- uid: HCMCalc_UrbanStreets.LinkData.Id*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.Id
+  name: Id
+  nameWithType: LinkData.Id
+  fullName: HCMCalc_UrbanStreets.LinkData.Id
+- uid: HCMCalc_UrbanStreets.LinkData.LengthFt*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.LengthFt
+  name: LengthFt
+  nameWithType: LinkData.LengthFt
+  fullName: HCMCalc_UrbanStreets.LinkData.LengthFt
+- uid: HCMCalc_UrbanStreets.LinkData.AADT*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.AADT
+  name: AADT
+  nameWithType: LinkData.AADT
+  fullName: HCMCalc_UrbanStreets.LinkData.AADT
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: HCMCalc_UrbanStreets.LinkData.DDHV*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.DDHV
+  name: DDHV
+  nameWithType: LinkData.DDHV
+  fullName: HCMCalc_UrbanStreets.LinkData.DDHV
+- uid: HCMCalc_UrbanStreets.LinkData.AdjDDHV*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.AdjDDHV
+  name: AdjDDHV
+  nameWithType: LinkData.AdjDDHV
+  fullName: HCMCalc_UrbanStreets.LinkData.AdjDDHV
+- uid: HCMCalc_UrbanStreets.LinkData.NumLanes*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.NumLanes
+  name: NumLanes
+  nameWithType: LinkData.NumLanes
+  fullName: HCMCalc_UrbanStreets.LinkData.NumLanes
+- uid: HCMCalc_UrbanStreets.LinkData.PostSpeedMPH*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.PostSpeedMPH
+  name: PostSpeedMPH
+  nameWithType: LinkData.PostSpeedMPH
+  fullName: HCMCalc_UrbanStreets.LinkData.PostSpeedMPH
+- uid: HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH
+  name: FreeFlowSpeedMPH
+  nameWithType: LinkData.FreeFlowSpeedMPH
+  fullName: HCMCalc_UrbanStreets.LinkData.FreeFlowSpeedMPH
+- uid: HCMCalc_UrbanStreets.LinkData.PropCurbRightSide*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.PropCurbRightSide
+  name: PropCurbRightSide
+  nameWithType: LinkData.PropCurbRightSide
+  fullName: HCMCalc_UrbanStreets.LinkData.PropCurbRightSide
+- uid: HCMCalc_UrbanStreets.LinkData.MedType*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.MedType
+  name: MedType
+  nameWithType: LinkData.MedType
+  fullName: HCMCalc_UrbanStreets.LinkData.MedType
+- uid: HCMCalc_UrbanStreets.LinkData.PropRestrictMedian*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.PropRestrictMedian
+  name: PropRestrictMedian
+  nameWithType: LinkData.PropRestrictMedian
+  fullName: HCMCalc_UrbanStreets.LinkData.PropRestrictMedian
+- uid: HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists
+  name: OnStreetParkingExists
+  nameWithType: LinkData.OnStreetParkingExists
+  fullName: HCMCalc_UrbanStreets.LinkData.OnStreetParkingExists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.LinkData.ParkingActivity*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.ParkingActivity
+  name: ParkingActivity
+  nameWithType: LinkData.ParkingActivity
+  fullName: HCMCalc_UrbanStreets.LinkData.ParkingActivity
+- uid: HCMCalc_UrbanStreets.ParkingActivityLevel
+  commentId: T:HCMCalc_UrbanStreets.ParkingActivityLevel
+  parent: HCMCalc_UrbanStreets
+  name: ParkingActivityLevel
+  nameWithType: ParkingActivityLevel
+  fullName: HCMCalc_UrbanStreets.ParkingActivityLevel
+- uid: HCMCalc_UrbanStreets.LinkData.PctOnStreetParking*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.PctOnStreetParking
+  name: PctOnStreetParking
+  nameWithType: LinkData.PctOnStreetParking
+  fullName: HCMCalc_UrbanStreets.LinkData.PctOnStreetParking
+- uid: HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth
+  name: OutsideLaneWidth
+  nameWithType: LinkData.OutsideLaneWidth
+  fullName: HCMCalc_UrbanStreets.LinkData.OutsideLaneWidth
+- uid: HCMCalc_UrbanStreets.OutLaneWidth
+  commentId: T:HCMCalc_UrbanStreets.OutLaneWidth
+  parent: HCMCalc_UrbanStreets
+  name: OutLaneWidth
+  nameWithType: OutLaneWidth
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth
+- uid: HCMCalc_UrbanStreets.LinkData.PctGrade*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.PctGrade
+  name: PctGrade
+  nameWithType: LinkData.PctGrade
+  fullName: HCMCalc_UrbanStreets.LinkData.PctGrade
+- uid: HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr
+  name: MidblockEnteringVolVehPerHr
+  nameWithType: LinkData.MidblockEnteringVolVehPerHr
+  fullName: HCMCalc_UrbanStreets.LinkData.MidblockEnteringVolVehPerHr
+- uid: HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr
+  name: MidblockExitingVolVehPerHr
+  nameWithType: LinkData.MidblockExitingVolVehPerHr
+  fullName: HCMCalc_UrbanStreets.LinkData.MidblockExitingVolVehPerHr
+- uid: HCMCalc_UrbanStreets.LinkData.NumAccessPts*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.NumAccessPts
+  name: NumAccessPts
+  nameWithType: LinkData.NumAccessPts
+  fullName: HCMCalc_UrbanStreets.LinkData.NumAccessPts
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.LinkData.AccessPoints*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.AccessPoints
+  name: AccessPoints
+  nameWithType: LinkData.AccessPoints
+  fullName: HCMCalc_UrbanStreets.LinkData.AccessPoints
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.AccessPointData}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.AccessPointData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AccessPointData>
+  nameWithType: List<AccessPointData>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.AccessPointData>
+  nameWithType.vb: List(Of AccessPointData)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.AccessPointData)
+  name.vb: List(Of AccessPointData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.AccessPointData
+    name: AccessPointData
+    nameWithType: AccessPointData
+    fullName: HCMCalc_UrbanStreets.AccessPointData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.AccessPointData
+    name: AccessPointData
+    nameWithType: AccessPointData
+    fullName: HCMCalc_UrbanStreets.AccessPointData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HCMCalc_UrbanStreets.LinkData.Results*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.Results
+  name: Results
+  nameWithType: LinkData.Results
+  fullName: HCMCalc_UrbanStreets.LinkData.Results
+- uid: HCMCalc_UrbanStreets.ResultsLinkData
+  commentId: T:HCMCalc_UrbanStreets.ResultsLinkData
+  parent: HCMCalc_UrbanStreets
+  name: ResultsLinkData
+  nameWithType: ResultsLinkData
+  fullName: HCMCalc_UrbanStreets.ResultsLinkData
+- uid: HCMCalc_UrbanStreets.LinkData.TravelDirection*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.TravelDirection
+  name: TravelDirection
+  nameWithType: LinkData.TravelDirection
+  fullName: HCMCalc_UrbanStreets.LinkData.TravelDirection
+- uid: HCMCalc_UrbanStreets.SegmentDirection
+  commentId: T:HCMCalc_UrbanStreets.SegmentDirection
+  parent: HCMCalc_UrbanStreets
+  name: SegmentDirection
+  nameWithType: SegmentDirection
+  fullName: HCMCalc_UrbanStreets.SegmentDirection
+- uid: HCMCalc_UrbanStreets.LinkData.NumThruLanes*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkData.NumThruLanes
+  name: NumThruLanes
+  nameWithType: LinkData.NumThruLanes
+  fullName: HCMCalc_UrbanStreets.LinkData.NumThruLanes

@@ -1,0 +1,1640 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.TimerData
+  commentId: T:HCMCalc_UrbanStreets.TimerData
+  id: TimerData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.TimerData.#ctor
+  - HCMCalc_UrbanStreets.TimerData.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - HCMCalc_UrbanStreets.TimerData.BunchFactor
+  - HCMCalc_UrbanStreets.TimerData.CallingFlow
+  - HCMCalc_UrbanStreets.TimerData.Delta
+  - HCMCalc_UrbanStreets.TimerData.Duration
+  - HCMCalc_UrbanStreets.TimerData.EndTime
+  - HCMCalc_UrbanStreets.TimerData.EndWindow
+  - HCMCalc_UrbanStreets.TimerData.GetStandardTimers
+  - HCMCalc_UrbanStreets.TimerData.GreenExtension
+  - HCMCalc_UrbanStreets.TimerData.GreenFlow
+  - HCMCalc_UrbanStreets.TimerData.GreenTime
+  - HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec
+  - HCMCalc_UrbanStreets.TimerData.IsPermittedTimer
+  - HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy
+  - HCMCalc_UrbanStreets.TimerData.MaxGreen
+  - HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime
+  - HCMCalc_UrbanStreets.TimerData.MvmtSatFlow
+  - HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane
+  - HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane
+  - HCMCalc_UrbanStreets.TimerData.PermEffGreen
+  - HCMCalc_UrbanStreets.TimerData.PermEU_LT
+  - HCMCalc_UrbanStreets.TimerData.PermL1_LT
+  - HCMCalc_UrbanStreets.TimerData.PermQueServeTime
+  - HCMCalc_UrbanStreets.TimerData.PermServeTime
+  - HCMCalc_UrbanStreets.TimerData.PhaseFlowRate
+  - HCMCalc_UrbanStreets.TimerData.PhaseParms
+  - HCMCalc_UrbanStreets.TimerData.PortionFree
+  - HCMCalc_UrbanStreets.TimerData.ProbMaxOut
+  - HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall
+  - HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk
+  - HCMCalc_UrbanStreets.TimerData.QueueClearTime
+  - HCMCalc_UrbanStreets.TimerData.QueueServeTime
+  - HCMCalc_UrbanStreets.TimerData.RedFlow
+  - HCMCalc_UrbanStreets.TimerData.Results
+  - HCMCalc_UrbanStreets.TimerData.StartTime
+  - HCMCalc_UrbanStreets.TimerData.StartWindow
+  - HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk
+  - HCMCalc_UrbanStreets.TimerData.UnbunchedFlow
+  langs:
+  - csharp
+  - vb
+  name: TimerData
+  nameWithType: TimerData
+  fullName: HCMCalc_UrbanStreets.TimerData
+  type: Class
+  source:
+    id: TimerData
+    path: ''
+    startLine: 6885
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class TimerData
+    content.vb: Public Class TimerData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.TimerData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.TimerData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: TimerData()
+  nameWithType: TimerData.TimerData()
+  fullName: HCMCalc_UrbanStreets.TimerData.TimerData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6927
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public TimerData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.TimerData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.TimerData.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)'
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: TimerData(Single, Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  nameWithType: TimerData.TimerData(Single, Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  fullName: HCMCalc_UrbanStreets.TimerData.TimerData(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 6932
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public TimerData(float duration, float changePeriod, float startTime, float endTime, float maxHdwy, float maxGreen, float maxQueueClear, float greenExtension, float probPhaseCall, float probMaxOut)
+    parameters:
+    - id: duration
+      type: System.Single
+    - id: changePeriod
+      type: System.Single
+    - id: startTime
+      type: System.Single
+    - id: endTime
+      type: System.Single
+    - id: maxHdwy
+      type: System.Single
+    - id: maxGreen
+      type: System.Single
+    - id: maxQueueClear
+      type: System.Single
+    - id: greenExtension
+      type: System.Single
+    - id: probPhaseCall
+      type: System.Single
+    - id: probMaxOut
+      type: System.Single
+    content.vb: Public Sub New(duration As Single, changePeriod As Single, startTime As Single, endTime As Single, maxHdwy As Single, maxGreen As Single, maxQueueClear As Single, greenExtension As Single, probPhaseCall As Single, probMaxOut As Single)
+  overload: HCMCalc_UrbanStreets.TimerData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.MaxGreen
+  commentId: P:HCMCalc_UrbanStreets.TimerData.MaxGreen
+  id: MaxGreen
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: MaxGreen
+  nameWithType: TimerData.MaxGreen
+  fullName: HCMCalc_UrbanStreets.TimerData.MaxGreen
+  type: Property
+  source:
+    id: MaxGreen
+    path: ''
+    startLine: 6947
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float MaxGreen { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MaxGreen As Single
+  overload: HCMCalc_UrbanStreets.TimerData.MaxGreen*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.GreenExtension
+  commentId: P:HCMCalc_UrbanStreets.TimerData.GreenExtension
+  id: GreenExtension
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: GreenExtension
+  nameWithType: TimerData.GreenExtension
+  fullName: HCMCalc_UrbanStreets.TimerData.GreenExtension
+  type: Property
+  source:
+    id: GreenExtension
+    path: ''
+    startLine: 6948
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GreenExtension { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GreenExtension As Single
+  overload: HCMCalc_UrbanStreets.TimerData.GreenExtension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall
+  commentId: P:HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall
+  id: ProbOfPhaseCall
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: ProbOfPhaseCall
+  nameWithType: TimerData.ProbOfPhaseCall
+  fullName: HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall
+  type: Property
+  source:
+    id: ProbOfPhaseCall
+    path: ''
+    startLine: 6949
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ProbOfPhaseCall { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ProbOfPhaseCall As Single
+  overload: HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.ProbMaxOut
+  commentId: P:HCMCalc_UrbanStreets.TimerData.ProbMaxOut
+  id: ProbMaxOut
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: ProbMaxOut
+  nameWithType: TimerData.ProbMaxOut
+  fullName: HCMCalc_UrbanStreets.TimerData.ProbMaxOut
+  type: Property
+  source:
+    id: ProbMaxOut
+    path: ''
+    startLine: 6950
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ProbMaxOut { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ProbMaxOut As Single
+  overload: HCMCalc_UrbanStreets.TimerData.ProbMaxOut*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PermEffGreen
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PermEffGreen
+  id: PermEffGreen
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PermEffGreen
+  nameWithType: TimerData.PermEffGreen
+  fullName: HCMCalc_UrbanStreets.TimerData.PermEffGreen
+  type: Property
+  source:
+    id: PermEffGreen
+    path: ''
+    startLine: 6951
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PermEffGreen { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PermEffGreen As Single
+  overload: HCMCalc_UrbanStreets.TimerData.PermEffGreen*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PermServeTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PermServeTime
+  id: PermServeTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PermServeTime
+  nameWithType: TimerData.PermServeTime
+  fullName: HCMCalc_UrbanStreets.TimerData.PermServeTime
+  type: Property
+  source:
+    id: PermServeTime
+    path: ''
+    startLine: 6952
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PermServeTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PermServeTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.PermServeTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PermL1_LT
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PermL1_LT
+  id: PermL1_LT
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PermL1_LT
+  nameWithType: TimerData.PermL1_LT
+  fullName: HCMCalc_UrbanStreets.TimerData.PermL1_LT
+  type: Property
+  source:
+    id: PermL1_LT
+    path: ''
+    startLine: 6953
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PermL1_LT { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PermL1_LT As Single
+  overload: HCMCalc_UrbanStreets.TimerData.PermL1_LT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PermEU_LT
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PermEU_LT
+  id: PermEU_LT
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PermEU_LT
+  nameWithType: TimerData.PermEU_LT
+  fullName: HCMCalc_UrbanStreets.TimerData.PermEU_LT
+  type: Property
+  source:
+    id: PermEU_LT
+    path: ''
+    startLine: 6954
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PermEU_LT { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PermEU_LT As Single
+  overload: HCMCalc_UrbanStreets.TimerData.PermEU_LT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PermQueServeTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PermQueServeTime
+  id: PermQueServeTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PermQueServeTime
+  nameWithType: TimerData.PermQueServeTime
+  fullName: HCMCalc_UrbanStreets.TimerData.PermQueServeTime
+  type: Property
+  source:
+    id: PermQueServeTime
+    path: ''
+    startLine: 6955
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PermQueServeTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PermQueServeTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.PermQueServeTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk
+  commentId: P:HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk
+  id: TimeToFirstBlk
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: TimeToFirstBlk
+  nameWithType: TimerData.TimeToFirstBlk
+  fullName: HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk
+  type: Property
+  source:
+    id: TimeToFirstBlk
+    path: ''
+    startLine: 6956
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TimeToFirstBlk { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TimeToFirstBlk As Single
+  overload: HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk
+  commentId: P:HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk
+  id: QueServeTimeBeforeBlk
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: QueServeTimeBeforeBlk
+  nameWithType: TimerData.QueServeTimeBeforeBlk
+  fullName: HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk
+  type: Property
+  source:
+    id: QueServeTimeBeforeBlk
+    path: ''
+    startLine: 6957
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float QueServeTimeBeforeBlk { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property QueServeTimeBeforeBlk As Single
+  overload: HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.StartTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.StartTime
+  id: StartTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: TimerData.StartTime
+  fullName: HCMCalc_UrbanStreets.TimerData.StartTime
+  type: Property
+  source:
+    id: StartTime
+    path: ''
+    startLine: 6958
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float StartTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property StartTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.StartTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.EndTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.EndTime
+  id: EndTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: EndTime
+  nameWithType: TimerData.EndTime
+  fullName: HCMCalc_UrbanStreets.TimerData.EndTime
+  type: Property
+  source:
+    id: EndTime
+    path: ''
+    startLine: 6959
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float EndTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property EndTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.EndTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy
+  commentId: P:HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy
+  id: MaxAllowHdwy
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: MaxAllowHdwy
+  nameWithType: TimerData.MaxAllowHdwy
+  fullName: HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy
+  type: Property
+  source:
+    id: MaxAllowHdwy
+    path: ''
+    startLine: 6960
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float MaxAllowHdwy { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MaxAllowHdwy As Single
+  overload: HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.MvmtSatFlow
+  commentId: P:HCMCalc_UrbanStreets.TimerData.MvmtSatFlow
+  id: MvmtSatFlow
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: MvmtSatFlow
+  nameWithType: TimerData.MvmtSatFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.MvmtSatFlow
+  type: Property
+  source:
+    id: MvmtSatFlow
+    path: ''
+    startLine: 6961
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] MvmtSatFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property MvmtSatFlow As Single()
+  overload: HCMCalc_UrbanStreets.TimerData.MvmtSatFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane
+  id: PctLeftsInsideLane
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PctLeftsInsideLane
+  nameWithType: TimerData.PctLeftsInsideLane
+  fullName: HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane
+  type: Property
+  source:
+    id: PctLeftsInsideLane
+    path: ''
+    startLine: 6962
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctLeftsInsideLane { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctLeftsInsideLane As Single
+  overload: HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane
+  id: PctRightsOutsideLane
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PctRightsOutsideLane
+  nameWithType: TimerData.PctRightsOutsideLane
+  fullName: HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane
+  type: Property
+  source:
+    id: PctRightsOutsideLane
+    path: ''
+    startLine: 6963
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctRightsOutsideLane { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctRightsOutsideLane As Single
+  overload: HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.Duration
+  commentId: P:HCMCalc_UrbanStreets.TimerData.Duration
+  id: Duration
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: TimerData.Duration
+  fullName: HCMCalc_UrbanStreets.TimerData.Duration
+  type: Property
+  source:
+    id: Duration
+    path: ''
+    startLine: 6964
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Duration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Duration As Single
+  overload: HCMCalc_UrbanStreets.TimerData.Duration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime
+  id: MaxQueueClearTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: MaxQueueClearTime
+  nameWithType: TimerData.MaxQueueClearTime
+  fullName: HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime
+  type: Property
+  source:
+    id: MaxQueueClearTime
+    path: ''
+    startLine: 6965
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float MaxQueueClearTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MaxQueueClearTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec
+  commentId: P:HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec
+  id: IntergreenTimeSec
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: IntergreenTimeSec
+  nameWithType: TimerData.IntergreenTimeSec
+  fullName: HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec
+  type: Property
+  source:
+    id: IntergreenTimeSec
+    path: ''
+    startLine: 6966
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float IntergreenTimeSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property IntergreenTimeSec As Single
+  overload: HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.IsPermittedTimer
+  commentId: P:HCMCalc_UrbanStreets.TimerData.IsPermittedTimer
+  id: IsPermittedTimer
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: IsPermittedTimer
+  nameWithType: TimerData.IsPermittedTimer
+  fullName: HCMCalc_UrbanStreets.TimerData.IsPermittedTimer
+  type: Property
+  source:
+    id: IsPermittedTimer
+    path: ''
+    startLine: 6967
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool IsPermittedTimer { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPermittedTimer As Boolean
+  overload: HCMCalc_UrbanStreets.TimerData.IsPermittedTimer*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.QueueServeTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.QueueServeTime
+  id: QueueServeTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: QueueServeTime
+  nameWithType: TimerData.QueueServeTime
+  fullName: HCMCalc_UrbanStreets.TimerData.QueueServeTime
+  type: Property
+  source:
+    id: QueueServeTime
+    path: ''
+    startLine: 6968
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float QueueServeTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property QueueServeTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.QueueServeTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.Results
+  commentId: P:HCMCalc_UrbanStreets.TimerData.Results
+  id: Results
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: Results
+  nameWithType: TimerData.Results
+  fullName: HCMCalc_UrbanStreets.TimerData.Results
+  type: Property
+  source:
+    id: Results
+    path: ''
+    startLine: 6969
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public TimerData.TimerResults Results { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.TimerData.TimerResults
+    content.vb: Public Property Results As TimerData.TimerResults
+  overload: HCMCalc_UrbanStreets.TimerData.Results*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.EndWindow
+  commentId: P:HCMCalc_UrbanStreets.TimerData.EndWindow
+  id: EndWindow
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: EndWindow
+  nameWithType: TimerData.EndWindow
+  fullName: HCMCalc_UrbanStreets.TimerData.EndWindow
+  type: Property
+  source:
+    id: EndWindow
+    path: ''
+    startLine: 6970
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float EndWindow { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property EndWindow As Single
+  overload: HCMCalc_UrbanStreets.TimerData.EndWindow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.StartWindow
+  commentId: P:HCMCalc_UrbanStreets.TimerData.StartWindow
+  id: StartWindow
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: StartWindow
+  nameWithType: TimerData.StartWindow
+  fullName: HCMCalc_UrbanStreets.TimerData.StartWindow
+  type: Property
+  source:
+    id: StartWindow
+    path: ''
+    startLine: 6971
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float StartWindow { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property StartWindow As Single
+  overload: HCMCalc_UrbanStreets.TimerData.StartWindow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.CallingFlow
+  commentId: P:HCMCalc_UrbanStreets.TimerData.CallingFlow
+  id: CallingFlow
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: CallingFlow
+  nameWithType: TimerData.CallingFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.CallingFlow
+  type: Property
+  source:
+    id: CallingFlow
+    path: ''
+    startLine: 6972
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float CallingFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property CallingFlow As Single
+  overload: HCMCalc_UrbanStreets.TimerData.CallingFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PortionFree
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PortionFree
+  id: PortionFree
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PortionFree
+  nameWithType: TimerData.PortionFree
+  fullName: HCMCalc_UrbanStreets.TimerData.PortionFree
+  type: Property
+  source:
+    id: PortionFree
+    path: ''
+    startLine: 6973
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PortionFree { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property PortionFree As Single()
+  overload: HCMCalc_UrbanStreets.TimerData.PortionFree*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.UnbunchedFlow
+  commentId: P:HCMCalc_UrbanStreets.TimerData.UnbunchedFlow
+  id: UnbunchedFlow
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: UnbunchedFlow
+  nameWithType: TimerData.UnbunchedFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.UnbunchedFlow
+  type: Property
+  source:
+    id: UnbunchedFlow
+    path: ''
+    startLine: 6974
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] UnbunchedFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property UnbunchedFlow As Single()
+  overload: HCMCalc_UrbanStreets.TimerData.UnbunchedFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.Delta
+  commentId: P:HCMCalc_UrbanStreets.TimerData.Delta
+  id: Delta
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: Delta
+  nameWithType: TimerData.Delta
+  fullName: HCMCalc_UrbanStreets.TimerData.Delta
+  type: Property
+  source:
+    id: Delta
+    path: ''
+    startLine: 6975
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] Delta { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property Delta As Single()
+  overload: HCMCalc_UrbanStreets.TimerData.Delta*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PhaseFlowRate
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PhaseFlowRate
+  id: PhaseFlowRate
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PhaseFlowRate
+  nameWithType: TimerData.PhaseFlowRate
+  fullName: HCMCalc_UrbanStreets.TimerData.PhaseFlowRate
+  type: Property
+  source:
+    id: PhaseFlowRate
+    path: ''
+    startLine: 6976
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PhaseFlowRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property PhaseFlowRate As Single()
+  overload: HCMCalc_UrbanStreets.TimerData.PhaseFlowRate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.BunchFactor
+  commentId: P:HCMCalc_UrbanStreets.TimerData.BunchFactor
+  id: BunchFactor
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: BunchFactor
+  nameWithType: TimerData.BunchFactor
+  fullName: HCMCalc_UrbanStreets.TimerData.BunchFactor
+  type: Property
+  source:
+    id: BunchFactor
+    path: ''
+    startLine: 6977
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] BunchFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property BunchFactor As Single()
+  overload: HCMCalc_UrbanStreets.TimerData.BunchFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.GreenFlow
+  commentId: P:HCMCalc_UrbanStreets.TimerData.GreenFlow
+  id: GreenFlow
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: GreenFlow
+  nameWithType: TimerData.GreenFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.GreenFlow
+  type: Property
+  source:
+    id: GreenFlow
+    path: ''
+    startLine: 6978
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GreenFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GreenFlow As Single
+  overload: HCMCalc_UrbanStreets.TimerData.GreenFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.RedFlow
+  commentId: P:HCMCalc_UrbanStreets.TimerData.RedFlow
+  id: RedFlow
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: RedFlow
+  nameWithType: TimerData.RedFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.RedFlow
+  type: Property
+  source:
+    id: RedFlow
+    path: ''
+    startLine: 6979
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RedFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RedFlow As Single
+  overload: HCMCalc_UrbanStreets.TimerData.RedFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.GreenTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.GreenTime
+  id: GreenTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: GreenTime
+  nameWithType: TimerData.GreenTime
+  fullName: HCMCalc_UrbanStreets.TimerData.GreenTime
+  type: Property
+  source:
+    id: GreenTime
+    path: ''
+    startLine: 6980
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GreenTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GreenTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.GreenTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.QueueClearTime
+  commentId: P:HCMCalc_UrbanStreets.TimerData.QueueClearTime
+  id: QueueClearTime
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: QueueClearTime
+  nameWithType: TimerData.QueueClearTime
+  fullName: HCMCalc_UrbanStreets.TimerData.QueueClearTime
+  type: Property
+  source:
+    id: QueueClearTime
+    path: ''
+    startLine: 6981
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float QueueClearTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property QueueClearTime As Single
+  overload: HCMCalc_UrbanStreets.TimerData.QueueClearTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.PhaseParms
+  commentId: P:HCMCalc_UrbanStreets.TimerData.PhaseParms
+  id: PhaseParms
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: PhaseParms
+  nameWithType: TimerData.PhaseParms
+  fullName: HCMCalc_UrbanStreets.TimerData.PhaseParms
+  type: Property
+  source:
+    id: PhaseParms
+    path: ''
+    startLine: 6982
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalPhaseParms PhaseParms { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SignalPhaseParms
+    content.vb: Public Property PhaseParms As SignalPhaseParms
+  overload: HCMCalc_UrbanStreets.TimerData.PhaseParms*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.TimerData.GetStandardTimers
+  commentId: M:HCMCalc_UrbanStreets.TimerData.GetStandardTimers
+  id: GetStandardTimers
+  parent: HCMCalc_UrbanStreets.TimerData
+  langs:
+  - csharp
+  - vb
+  name: GetStandardTimers()
+  nameWithType: TimerData.GetStandardTimers()
+  fullName: HCMCalc_UrbanStreets.TimerData.GetStandardTimers()
+  type: Method
+  source:
+    id: GetStandardTimers
+    path: ''
+    startLine: 6987
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns standard TimerDatas for a signal with 8 phases. \n"
+  example: []
+  syntax:
+    content: public static List<TimerData> GetStandardTimers()
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.TimerData}
+    content.vb: Public Shared Function GetStandardTimers As List(Of TimerData)
+  overload: HCMCalc_UrbanStreets.TimerData.GetStandardTimers*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.TimerData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.#ctor
+  name: TimerData
+  nameWithType: TimerData.TimerData
+  fullName: HCMCalc_UrbanStreets.TimerData.TimerData
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.TimerData.MaxGreen*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.MaxGreen
+  name: MaxGreen
+  nameWithType: TimerData.MaxGreen
+  fullName: HCMCalc_UrbanStreets.TimerData.MaxGreen
+- uid: HCMCalc_UrbanStreets.TimerData.GreenExtension*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.GreenExtension
+  name: GreenExtension
+  nameWithType: TimerData.GreenExtension
+  fullName: HCMCalc_UrbanStreets.TimerData.GreenExtension
+- uid: HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall
+  name: ProbOfPhaseCall
+  nameWithType: TimerData.ProbOfPhaseCall
+  fullName: HCMCalc_UrbanStreets.TimerData.ProbOfPhaseCall
+- uid: HCMCalc_UrbanStreets.TimerData.ProbMaxOut*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.ProbMaxOut
+  name: ProbMaxOut
+  nameWithType: TimerData.ProbMaxOut
+  fullName: HCMCalc_UrbanStreets.TimerData.ProbMaxOut
+- uid: HCMCalc_UrbanStreets.TimerData.PermEffGreen*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PermEffGreen
+  name: PermEffGreen
+  nameWithType: TimerData.PermEffGreen
+  fullName: HCMCalc_UrbanStreets.TimerData.PermEffGreen
+- uid: HCMCalc_UrbanStreets.TimerData.PermServeTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PermServeTime
+  name: PermServeTime
+  nameWithType: TimerData.PermServeTime
+  fullName: HCMCalc_UrbanStreets.TimerData.PermServeTime
+- uid: HCMCalc_UrbanStreets.TimerData.PermL1_LT*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PermL1_LT
+  name: PermL1_LT
+  nameWithType: TimerData.PermL1_LT
+  fullName: HCMCalc_UrbanStreets.TimerData.PermL1_LT
+- uid: HCMCalc_UrbanStreets.TimerData.PermEU_LT*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PermEU_LT
+  name: PermEU_LT
+  nameWithType: TimerData.PermEU_LT
+  fullName: HCMCalc_UrbanStreets.TimerData.PermEU_LT
+- uid: HCMCalc_UrbanStreets.TimerData.PermQueServeTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PermQueServeTime
+  name: PermQueServeTime
+  nameWithType: TimerData.PermQueServeTime
+  fullName: HCMCalc_UrbanStreets.TimerData.PermQueServeTime
+- uid: HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk
+  name: TimeToFirstBlk
+  nameWithType: TimerData.TimeToFirstBlk
+  fullName: HCMCalc_UrbanStreets.TimerData.TimeToFirstBlk
+- uid: HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk
+  name: QueServeTimeBeforeBlk
+  nameWithType: TimerData.QueServeTimeBeforeBlk
+  fullName: HCMCalc_UrbanStreets.TimerData.QueServeTimeBeforeBlk
+- uid: HCMCalc_UrbanStreets.TimerData.StartTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.StartTime
+  name: StartTime
+  nameWithType: TimerData.StartTime
+  fullName: HCMCalc_UrbanStreets.TimerData.StartTime
+- uid: HCMCalc_UrbanStreets.TimerData.EndTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.EndTime
+  name: EndTime
+  nameWithType: TimerData.EndTime
+  fullName: HCMCalc_UrbanStreets.TimerData.EndTime
+- uid: HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy
+  name: MaxAllowHdwy
+  nameWithType: TimerData.MaxAllowHdwy
+  fullName: HCMCalc_UrbanStreets.TimerData.MaxAllowHdwy
+- uid: HCMCalc_UrbanStreets.TimerData.MvmtSatFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.MvmtSatFlow
+  name: MvmtSatFlow
+  nameWithType: TimerData.MvmtSatFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.MvmtSatFlow
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane
+  name: PctLeftsInsideLane
+  nameWithType: TimerData.PctLeftsInsideLane
+  fullName: HCMCalc_UrbanStreets.TimerData.PctLeftsInsideLane
+- uid: HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane
+  name: PctRightsOutsideLane
+  nameWithType: TimerData.PctRightsOutsideLane
+  fullName: HCMCalc_UrbanStreets.TimerData.PctRightsOutsideLane
+- uid: HCMCalc_UrbanStreets.TimerData.Duration*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.Duration
+  name: Duration
+  nameWithType: TimerData.Duration
+  fullName: HCMCalc_UrbanStreets.TimerData.Duration
+- uid: HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime
+  name: MaxQueueClearTime
+  nameWithType: TimerData.MaxQueueClearTime
+  fullName: HCMCalc_UrbanStreets.TimerData.MaxQueueClearTime
+- uid: HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec
+  name: IntergreenTimeSec
+  nameWithType: TimerData.IntergreenTimeSec
+  fullName: HCMCalc_UrbanStreets.TimerData.IntergreenTimeSec
+- uid: HCMCalc_UrbanStreets.TimerData.IsPermittedTimer*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.IsPermittedTimer
+  name: IsPermittedTimer
+  nameWithType: TimerData.IsPermittedTimer
+  fullName: HCMCalc_UrbanStreets.TimerData.IsPermittedTimer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.TimerData.QueueServeTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.QueueServeTime
+  name: QueueServeTime
+  nameWithType: TimerData.QueueServeTime
+  fullName: HCMCalc_UrbanStreets.TimerData.QueueServeTime
+- uid: HCMCalc_UrbanStreets.TimerData.Results*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.Results
+  name: Results
+  nameWithType: TimerData.Results
+  fullName: HCMCalc_UrbanStreets.TimerData.Results
+- uid: HCMCalc_UrbanStreets.TimerData.TimerResults
+  commentId: T:HCMCalc_UrbanStreets.TimerData.TimerResults
+  parent: HCMCalc_UrbanStreets
+  name: TimerData.TimerResults
+  nameWithType: TimerData.TimerResults
+  fullName: HCMCalc_UrbanStreets.TimerData.TimerResults
+- uid: HCMCalc_UrbanStreets.TimerData.EndWindow*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.EndWindow
+  name: EndWindow
+  nameWithType: TimerData.EndWindow
+  fullName: HCMCalc_UrbanStreets.TimerData.EndWindow
+- uid: HCMCalc_UrbanStreets.TimerData.StartWindow*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.StartWindow
+  name: StartWindow
+  nameWithType: TimerData.StartWindow
+  fullName: HCMCalc_UrbanStreets.TimerData.StartWindow
+- uid: HCMCalc_UrbanStreets.TimerData.CallingFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.CallingFlow
+  name: CallingFlow
+  nameWithType: TimerData.CallingFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.CallingFlow
+- uid: HCMCalc_UrbanStreets.TimerData.PortionFree*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PortionFree
+  name: PortionFree
+  nameWithType: TimerData.PortionFree
+  fullName: HCMCalc_UrbanStreets.TimerData.PortionFree
+- uid: HCMCalc_UrbanStreets.TimerData.UnbunchedFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.UnbunchedFlow
+  name: UnbunchedFlow
+  nameWithType: TimerData.UnbunchedFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.UnbunchedFlow
+- uid: HCMCalc_UrbanStreets.TimerData.Delta*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.Delta
+  name: Delta
+  nameWithType: TimerData.Delta
+  fullName: HCMCalc_UrbanStreets.TimerData.Delta
+- uid: HCMCalc_UrbanStreets.TimerData.PhaseFlowRate*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PhaseFlowRate
+  name: PhaseFlowRate
+  nameWithType: TimerData.PhaseFlowRate
+  fullName: HCMCalc_UrbanStreets.TimerData.PhaseFlowRate
+- uid: HCMCalc_UrbanStreets.TimerData.BunchFactor*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.BunchFactor
+  name: BunchFactor
+  nameWithType: TimerData.BunchFactor
+  fullName: HCMCalc_UrbanStreets.TimerData.BunchFactor
+- uid: HCMCalc_UrbanStreets.TimerData.GreenFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.GreenFlow
+  name: GreenFlow
+  nameWithType: TimerData.GreenFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.GreenFlow
+- uid: HCMCalc_UrbanStreets.TimerData.RedFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.RedFlow
+  name: RedFlow
+  nameWithType: TimerData.RedFlow
+  fullName: HCMCalc_UrbanStreets.TimerData.RedFlow
+- uid: HCMCalc_UrbanStreets.TimerData.GreenTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.GreenTime
+  name: GreenTime
+  nameWithType: TimerData.GreenTime
+  fullName: HCMCalc_UrbanStreets.TimerData.GreenTime
+- uid: HCMCalc_UrbanStreets.TimerData.QueueClearTime*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.QueueClearTime
+  name: QueueClearTime
+  nameWithType: TimerData.QueueClearTime
+  fullName: HCMCalc_UrbanStreets.TimerData.QueueClearTime
+- uid: HCMCalc_UrbanStreets.TimerData.PhaseParms*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.PhaseParms
+  name: PhaseParms
+  nameWithType: TimerData.PhaseParms
+  fullName: HCMCalc_UrbanStreets.TimerData.PhaseParms
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms
+  commentId: T:HCMCalc_UrbanStreets.SignalPhaseParms
+  parent: HCMCalc_UrbanStreets
+  name: SignalPhaseParms
+  nameWithType: SignalPhaseParms
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms
+- uid: HCMCalc_UrbanStreets.TimerData.GetStandardTimers*
+  commentId: Overload:HCMCalc_UrbanStreets.TimerData.GetStandardTimers
+  name: GetStandardTimers
+  nameWithType: TimerData.GetStandardTimers
+  fullName: HCMCalc_UrbanStreets.TimerData.GetStandardTimers
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.TimerData}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.TimerData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TimerData>
+  nameWithType: List<TimerData>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.TimerData>
+  nameWithType.vb: List(Of TimerData)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.TimerData)
+  name.vb: List(Of TimerData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.TimerData
+    name: TimerData
+    nameWithType: TimerData
+    fullName: HCMCalc_UrbanStreets.TimerData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.TimerData
+    name: TimerData
+    nameWithType: TimerData
+    fullName: HCMCalc_UrbanStreets.TimerData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

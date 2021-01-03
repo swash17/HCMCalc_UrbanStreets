@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.MovementDirection
+  commentId: T:HCMCalc_UrbanStreets.MovementDirection
+  id: MovementDirection
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.MovementDirection.Left
+  - HCMCalc_UrbanStreets.MovementDirection.Right
+  - HCMCalc_UrbanStreets.MovementDirection.Through
+  langs:
+  - csharp
+  - vb
+  name: MovementDirection
+  nameWithType: MovementDirection
+  fullName: HCMCalc_UrbanStreets.MovementDirection
+  type: Enum
+  source:
+    id: MovementDirection
+    path: ''
+    startLine: 7054
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public enum MovementDirection
+    content.vb: Public Enum MovementDirection
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.MovementDirection.Left
+  commentId: F:HCMCalc_UrbanStreets.MovementDirection.Left
+  id: Left
+  parent: HCMCalc_UrbanStreets.MovementDirection
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: MovementDirection.Left
+  fullName: HCMCalc_UrbanStreets.MovementDirection.Left
+  type: Field
+  source:
+    id: Left
+    path: ''
+    startLine: 7056
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Left = 0
+    return:
+      type: HCMCalc_UrbanStreets.MovementDirection
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.MovementDirection.Through
+  commentId: F:HCMCalc_UrbanStreets.MovementDirection.Through
+  id: Through
+  parent: HCMCalc_UrbanStreets.MovementDirection
+  langs:
+  - csharp
+  - vb
+  name: Through
+  nameWithType: MovementDirection.Through
+  fullName: HCMCalc_UrbanStreets.MovementDirection.Through
+  type: Field
+  source:
+    id: Through
+    path: ''
+    startLine: 7057
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Through = 1
+    return:
+      type: HCMCalc_UrbanStreets.MovementDirection
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.MovementDirection.Right
+  commentId: F:HCMCalc_UrbanStreets.MovementDirection.Right
+  id: Right
+  parent: HCMCalc_UrbanStreets.MovementDirection
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: MovementDirection.Right
+  fullName: HCMCalc_UrbanStreets.MovementDirection.Right
+  type: Field
+  source:
+    id: Right
+    path: ''
+    startLine: 7058
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Right = 2
+    return:
+      type: HCMCalc_UrbanStreets.MovementDirection
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.MovementDirection
+  commentId: T:HCMCalc_UrbanStreets.MovementDirection
+  parent: HCMCalc_UrbanStreets
+  name: MovementDirection
+  nameWithType: MovementDirection
+  fullName: HCMCalc_UrbanStreets.MovementDirection

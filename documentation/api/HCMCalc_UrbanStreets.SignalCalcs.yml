@@ -1,0 +1,969 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SignalCalcs
+  commentId: T:HCMCalc_UrbanStreets.SignalCalcs
+  id: SignalCalcs
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SignalCalcs.Capacity(System.Single,System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  - HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen(HCMCalc_UrbanStreets.IntersectionData)
+  - HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  - HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway(System.Int32,HCMCalc_UrbanStreets.LaneGroupData)
+  - HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},HCMCalc_UrbanStreets.NemaMovementNumbers)
+  - HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  - HCMCalc_UrbanStreets.SignalCalcs.LOSintersection(System.Single,System.Int32[])
+  - HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  - HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck(System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane(System.Int32,System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  - HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane(System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  - HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange(System.Single,System.Single,System.Single,System.Single@,System.Single@)
+  - HCMCalc_UrbanStreets.SignalCalcs.SigDelay(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  - HCMCalc_UrbanStreets.SignalCalcs.vcRatio(System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})
+  langs:
+  - csharp
+  - vb
+  name: SignalCalcs
+  nameWithType: SignalCalcs
+  fullName: HCMCalc_UrbanStreets.SignalCalcs
+  type: Class
+  source:
+    id: SignalCalcs
+    path: ''
+    startLine: 1991
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCalculations related to signalization.\n"
+  example: []
+  syntax:
+    content: public class SignalCalcs
+    content.vb: Public Class SignalCalcs
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.SignalCalcs.Capacity(System.Single,System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.Capacity(System.Single,System.Single,System.Single)
+  id: Capacity(System.Single,System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: Capacity(Single, Single, Single)
+  nameWithType: SignalCalcs.Capacity(Single, Single, Single)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.Capacity(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: Capacity
+    path: ''
+    startLine: 2000
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCalculates capacity (per lane) for a lane group.\n"
+  example: []
+  syntax:
+    content: public static float Capacity(float adjSatFlow, float gCratio, float numLanes)
+    parameters:
+    - id: adjSatFlow
+      type: System.Single
+      description: ''
+    - id: gCratio
+      type: System.Single
+      description: ''
+    - id: numLanes
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function Capacity(adjSatFlow As Single, gCratio As Single, numLanes As Single) As Single
+  overload: HCMCalc_UrbanStreets.SignalCalcs.Capacity*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.vcRatio(System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.vcRatio(System.Single,System.Single)
+  id: vcRatio(System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: vcRatio(Single, Single)
+  nameWithType: SignalCalcs.vcRatio(Single, Single)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.vcRatio(System.Single, System.Single)
+  type: Method
+  source:
+    id: vcRatio
+    path: ''
+    startLine: 2011
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCalculates the v/c ratio for a lane group.\n"
+  example: []
+  syntax:
+    content: public static float vcRatio(float volume, float capacity)
+    parameters:
+    - id: volume
+      type: System.Single
+      description: ''
+    - id: capacity
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function vcRatio(volume As Single, capacity As Single) As Single
+  overload: HCMCalc_UrbanStreets.SignalCalcs.vcRatio*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck(System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck(System.Single,System.Single)
+  id: OverCapacityCheck(System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: OverCapacityCheck(Single, Single)
+  nameWithType: SignalCalcs.OverCapacityCheck(Single, Single)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck(System.Single, System.Single)
+  type: Method
+  source:
+    id: OverCapacityCheck
+    path: ''
+    startLine: 2022
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns true if the v/c ratio is greater than the inverse of the PHF.\n"
+  example: []
+  syntax:
+    content: public static bool OverCapacityCheck(float vcRatio, float PHF)
+    parameters:
+    - id: vcRatio
+      type: System.Single
+      description: ''
+    - id: PHF
+      type: System.Single
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function OverCapacityCheck(vcRatio As Single, PHF As Single) As Boolean
+  overload: HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.SigDelay(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.SigDelay(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  id: SigDelay(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: SigDelay(SigControlType, Int32, Single, Int32, Single, Single, Single, Single, Single, Single, Single, NemaMovementNumbers)
+  nameWithType: SignalCalcs.SigDelay(SigControlType, Int32, Single, Int32, Single, Single, Single, Single, Single, Single, Single, NemaMovementNumbers)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.SigDelay(HCMCalc_UrbanStreets.SigControlType, System.Int32, System.Single, System.Int32, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, HCMCalc_UrbanStreets.NemaMovementNumbers)
+  type: Method
+  source:
+    id: SigDelay
+    path: ''
+    startLine: 2050
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nHandles all calculations related to signal delay, returning a <param name=\"SignalControlParameters\" />\n"
+  example: []
+  syntax:
+    content: public static SignalControlParameters SigDelay(SigControlType control, int cycle, float gC, int arvType, float volume, float adjSatFlowRatePerLane, float numLanes, float capacity, float vc, float prevVC, float portionOnGreen, NemaMovementNumbers NemaMvmtID)
+    parameters:
+    - id: control
+      type: HCMCalc_UrbanStreets.SigControlType
+      description: ''
+    - id: cycle
+      type: System.Int32
+      description: ''
+    - id: gC
+      type: System.Single
+      description: ''
+    - id: arvType
+      type: System.Int32
+      description: ''
+    - id: volume
+      type: System.Single
+      description: ''
+    - id: adjSatFlowRatePerLane
+      type: System.Single
+      description: ''
+    - id: numLanes
+      type: System.Single
+      description: ''
+    - id: capacity
+      type: System.Single
+      description: ''
+    - id: vc
+      type: System.Single
+      description: ''
+    - id: prevVC
+      type: System.Single
+      description: ''
+    - id: portionOnGreen
+      type: System.Single
+      description: ''
+    - id: NemaMvmtID
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+      description: ''
+    return:
+      type: HCMCalc_UrbanStreets.SignalControlParameters
+      description: ''
+    content.vb: Public Shared Function SigDelay(control As SigControlType, cycle As Integer, gC As Single, arvType As Integer, volume As Single, adjSatFlowRatePerLane As Single, numLanes As Single, capacity As Single, vc As Single, prevVC As Single, portionOnGreen As Single, NemaMvmtID As NemaMovementNumbers) As SignalControlParameters
+  overload: HCMCalc_UrbanStreets.SignalCalcs.SigDelay*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.LOSintersection(System.Single,System.Int32[])
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.LOSintersection(System.Single,System.Int32[])
+  id: LOSintersection(System.Single,System.Int32[])
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: LOSintersection(Single, Int32[])
+  nameWithType: SignalCalcs.LOSintersection(Single, Int32[])
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.LOSintersection(System.Single, System.Int32[])
+  type: Method
+  source:
+    id: LOSintersection
+    path: ''
+    startLine: 2111
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCalculates LOS for an intersection based off of the threshold delays.\n"
+  example: []
+  syntax:
+    content: public static string LOSintersection(float delay, int[] ThreshDelay)
+    parameters:
+    - id: delay
+      type: System.Single
+      description: ''
+    - id: ThreshDelay
+      type: System.Int32[]
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function LOSintersection(delay As Single, ThreshDelay As Integer()) As String
+  overload: HCMCalc_UrbanStreets.SignalCalcs.LOSintersection*
+  nameWithType.vb: SignalCalcs.LOSintersection(Single, Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.LOSintersection(System.Single, System.Int32())
+  name.vb: LOSintersection(Single, Int32())
+- uid: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane(System.Int32,System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane(System.Int32,System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  id: QAP_ProtectedLane(System.Int32,System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: QAP_ProtectedLane(Int32, Int32, SignalPhaseData)
+  nameWithType: SignalCalcs.QAP_ProtectedLane(Int32, Int32, SignalPhaseData)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane(System.Int32, System.Int32, HCMCalc_UrbanStreets.SignalPhaseData)
+  type: Method
+  source:
+    id: QAP_ProtectedLane
+    path: ''
+    startLine: 2133
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static SignalPhaseData QAP_ProtectedLane(int CycleLengthSec, int Movement, SignalPhaseData Phase)
+    parameters:
+    - id: CycleLengthSec
+      type: System.Int32
+    - id: Movement
+      type: System.Int32
+    - id: Phase
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    return:
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    content.vb: Public Shared Function QAP_ProtectedLane(CycleLengthSec As Integer, Movement As Integer, Phase As SignalPhaseData) As SignalPhaseData
+  overload: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane(System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane(System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  id: QAP_ProtectedSharedLane(System.Int32,HCMCalc_UrbanStreets.SignalPhaseData)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: QAP_ProtectedSharedLane(Int32, SignalPhaseData)
+  nameWithType: SignalCalcs.QAP_ProtectedSharedLane(Int32, SignalPhaseData)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane(System.Int32, HCMCalc_UrbanStreets.SignalPhaseData)
+  type: Method
+  source:
+    id: QAP_ProtectedSharedLane
+    path: ''
+    startLine: 2168
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static SignalPhaseData QAP_ProtectedSharedLane(int CycleLengthSec, SignalPhaseData Phase)
+    parameters:
+    - id: CycleLengthSec
+      type: System.Int32
+    - id: Phase
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    return:
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    content.vb: Public Shared Function QAP_ProtectedSharedLane(CycleLengthSec As Integer, Phase As SignalPhaseData) As SignalPhaseData
+  overload: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  id: ComputeQAPolygon(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: ComputeQAPolygon(List<SignalPhaseData>, Int32)
+  nameWithType: SignalCalcs.ComputeQAPolygon(List<SignalPhaseData>, Int32)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon(System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>, System.Int32)
+  type: Method
+  source:
+    id: ComputeQAPolygon
+    path: ''
+    startLine: 2236
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static List<SignalPhaseData> ComputeQAPolygon(List<SignalPhaseData> Phases, int CycleLengthSec)
+    parameters:
+    - id: Phases
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    - id: CycleLengthSec
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    content.vb: Public Shared Function ComputeQAPolygon(Phases As List(Of SignalPhaseData), CycleLengthSec As Integer) As List(Of SignalPhaseData)
+  overload: HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon*
+  nameWithType.vb: SignalCalcs.ComputeQAPolygon(List(Of SignalPhaseData), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon(System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData), System.Int32)
+  name.vb: ComputeQAPolygon(List(Of SignalPhaseData), Int32)
+- uid: HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange(System.Single,System.Single,System.Single,System.Single@,System.Single@)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange(System.Single,System.Single,System.Single,System.Single@,System.Single@)
+  id: QueueStatusChange(System.Single,System.Single,System.Single,System.Single@,System.Single@)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: QueueStatusChange(Single, Single, Single, ref Single, ref Single)
+  nameWithType: SignalCalcs.QueueStatusChange(Single, Single, Single, ref Single, ref Single)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange(System.Single, System.Single, System.Single, ref System.Single, ref System.Single)
+  type: Method
+  source:
+    id: QueueStatusChange
+    path: ''
+    startLine: 2273
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static void QueueStatusChange(float QueAtStart, float QueChangeRate, float QueChangeDuration, ref float QueAtEnd, ref float TimeToClear)
+    parameters:
+    - id: QueAtStart
+      type: System.Single
+    - id: QueChangeRate
+      type: System.Single
+    - id: QueChangeDuration
+      type: System.Single
+    - id: QueAtEnd
+      type: System.Single
+    - id: TimeToClear
+      type: System.Single
+    content.vb: Public Shared Sub QueueStatusChange(QueAtStart As Single, QueChangeRate As Single, QueChangeDuration As Single, ByRef QueAtEnd As Single, ByRef TimeToClear As Single)
+  overload: HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange*
+  nameWithType.vb: SignalCalcs.QueueStatusChange(Single, Single, Single, ByRef Single, ByRef Single)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange(System.Single, System.Single, System.Single, ByRef System.Single, ByRef System.Single)
+  name.vb: QueueStatusChange(Single, Single, Single, ByRef Single, ByRef Single)
+- uid: HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})
+  id: VolumeComputations(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: VolumeComputations(List<SignalPhaseData>)
+  nameWithType: SignalCalcs.VolumeComputations(List<SignalPhaseData>)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations(System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>)
+  type: Method
+  source:
+    id: VolumeComputations
+    path: ''
+    startLine: 2286
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static List<SignalPhaseData> VolumeComputations(List<SignalPhaseData> Phases)
+    parameters:
+    - id: Phases
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    content.vb: Public Shared Function VolumeComputations(Phases As List(Of SignalPhaseData)) As List(Of SignalPhaseData)
+  overload: HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations*
+  nameWithType.vb: SignalCalcs.VolumeComputations(List(Of SignalPhaseData))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations(System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData))
+  name.vb: VolumeComputations(List(Of SignalPhaseData))
+- uid: HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  id: MaximumAllowableHeadway(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: MaximumAllowableHeadway(List<SignalPhaseData>, Int32)
+  nameWithType: SignalCalcs.MaximumAllowableHeadway(List<SignalPhaseData>, Int32)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway(System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>, System.Int32)
+  type: Method
+  source:
+    id: MaximumAllowableHeadway
+    path: ''
+    startLine: 2424
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static List<SignalPhaseData> MaximumAllowableHeadway(List<SignalPhaseData> Phases, int PostedSpeed)
+    parameters:
+    - id: Phases
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    - id: PostedSpeed
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    content.vb: Public Shared Function MaximumAllowableHeadway(Phases As List(Of SignalPhaseData), PostedSpeed As Integer) As List(Of SignalPhaseData)
+  overload: HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway*
+  nameWithType.vb: SignalCalcs.MaximumAllowableHeadway(List(Of SignalPhaseData), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway(System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData), System.Int32)
+  name.vb: MaximumAllowableHeadway(List(Of SignalPhaseData), Int32)
+- uid: HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway(System.Int32,HCMCalc_UrbanStreets.LaneGroupData)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway(System.Int32,HCMCalc_UrbanStreets.LaneGroupData)
+  id: GetMaxAllowableHeadway(System.Int32,HCMCalc_UrbanStreets.LaneGroupData)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: GetMaxAllowableHeadway(Int32, LaneGroupData)
+  nameWithType: SignalCalcs.GetMaxAllowableHeadway(Int32, LaneGroupData)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway(System.Int32, HCMCalc_UrbanStreets.LaneGroupData)
+  type: Method
+  source:
+    id: GetMaxAllowableHeadway
+    path: ''
+    startLine: 2474
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static float GetMaxAllowableHeadway(int PostedSpeed, LaneGroupData LaneGroup)
+    parameters:
+    - id: PostedSpeed
+      type: System.Int32
+    - id: LaneGroup
+      type: HCMCalc_UrbanStreets.LaneGroupData
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetMaxAllowableHeadway(PostedSpeed As Integer, LaneGroup As LaneGroupData) As Single
+  overload: HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen(HCMCalc_UrbanStreets.IntersectionData)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen(HCMCalc_UrbanStreets.IntersectionData)
+  id: ComputeEquivalentMaxGreen(HCMCalc_UrbanStreets.IntersectionData)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: ComputeEquivalentMaxGreen(IntersectionData)
+  nameWithType: SignalCalcs.ComputeEquivalentMaxGreen(IntersectionData)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen(HCMCalc_UrbanStreets.IntersectionData)
+  type: Method
+  source:
+    id: ComputeEquivalentMaxGreen
+    path: ''
+    startLine: 2489
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static List<SignalPhaseData> ComputeEquivalentMaxGreen(IntersectionData Intersection)
+    parameters:
+    - id: Intersection
+      type: HCMCalc_UrbanStreets.IntersectionData
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    content.vb: Public Shared Function ComputeEquivalentMaxGreen(Intersection As IntersectionData) As List(Of SignalPhaseData)
+  overload: HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  id: ComputeAveragePhaseDuration(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: ComputeAveragePhaseDuration(List<SignalPhaseData>, Int32)
+  nameWithType: SignalCalcs.ComputeAveragePhaseDuration(List<SignalPhaseData>, Int32)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration(System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>, System.Int32)
+  type: Method
+  source:
+    id: ComputeAveragePhaseDuration
+    path: ''
+    startLine: 2604
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static List<SignalPhaseData> ComputeAveragePhaseDuration(List<SignalPhaseData> Phases, int CycleLengthSec)
+    parameters:
+    - id: Phases
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    - id: CycleLengthSec
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    content.vb: Public Shared Function ComputeAveragePhaseDuration(Phases As List(Of SignalPhaseData), CycleLengthSec As Integer) As List(Of SignalPhaseData)
+  overload: HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration*
+  nameWithType.vb: SignalCalcs.ComputeAveragePhaseDuration(List(Of SignalPhaseData), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration(System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData), System.Int32)
+  name.vb: ComputeAveragePhaseDuration(List(Of SignalPhaseData), Int32)
+- uid: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  id: GetPhaseFromPhaseNumber(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},System.Int32)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: GetPhaseFromPhaseNumber(List<SignalPhaseData>, Int32)
+  nameWithType: SignalCalcs.GetPhaseFromPhaseNumber(List<SignalPhaseData>, Int32)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber(System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>, System.Int32)
+  type: Method
+  source:
+    id: GetPhaseFromPhaseNumber
+    path: ''
+    startLine: 2803
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static SignalPhaseData GetPhaseFromPhaseNumber(List<SignalPhaseData> Phases, int PhaseNumber)
+    parameters:
+    - id: Phases
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    - id: PhaseNumber
+      type: System.Int32
+    return:
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    content.vb: Public Shared Function GetPhaseFromPhaseNumber(Phases As List(Of SignalPhaseData), PhaseNumber As Integer) As SignalPhaseData
+  overload: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber*
+  nameWithType.vb: SignalCalcs.GetPhaseFromPhaseNumber(List(Of SignalPhaseData), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber(System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData), System.Int32)
+  name.vb: GetPhaseFromPhaseNumber(List(Of SignalPhaseData), Int32)
+- uid: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},HCMCalc_UrbanStreets.NemaMovementNumbers)
+  commentId: M:HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},HCMCalc_UrbanStreets.NemaMovementNumbers)
+  id: GetPhaseFromMovement(System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData},HCMCalc_UrbanStreets.NemaMovementNumbers)
+  parent: HCMCalc_UrbanStreets.SignalCalcs
+  langs:
+  - csharp
+  - vb
+  name: GetPhaseFromMovement(List<SignalPhaseData>, NemaMovementNumbers)
+  nameWithType: SignalCalcs.GetPhaseFromMovement(List<SignalPhaseData>, NemaMovementNumbers)
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement(System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>, HCMCalc_UrbanStreets.NemaMovementNumbers)
+  type: Method
+  source:
+    id: GetPhaseFromMovement
+    path: ''
+    startLine: 2812
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static SignalPhaseData GetPhaseFromMovement(List<SignalPhaseData> Phases, NemaMovementNumbers NemaMoveNum)
+    parameters:
+    - id: Phases
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    - id: NemaMoveNum
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    return:
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    content.vb: Public Shared Function GetPhaseFromMovement(Phases As List(Of SignalPhaseData), NemaMoveNum As NemaMovementNumbers) As SignalPhaseData
+  overload: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement*
+  nameWithType.vb: SignalCalcs.GetPhaseFromMovement(List(Of SignalPhaseData), NemaMovementNumbers)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement(System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData), HCMCalc_UrbanStreets.NemaMovementNumbers)
+  name.vb: GetPhaseFromMovement(List(Of SignalPhaseData), NemaMovementNumbers)
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SignalCalcs.Capacity*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.Capacity
+  name: Capacity
+  nameWithType: SignalCalcs.Capacity
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.Capacity
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.SignalCalcs.vcRatio*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.vcRatio
+  name: vcRatio
+  nameWithType: SignalCalcs.vcRatio
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.vcRatio
+- uid: HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck
+  name: OverCapacityCheck
+  nameWithType: SignalCalcs.OverCapacityCheck
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.OverCapacityCheck
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.SignalCalcs.SigDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.SigDelay
+  name: SigDelay
+  nameWithType: SignalCalcs.SigDelay
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.SigDelay
+- uid: HCMCalc_UrbanStreets.SigControlType
+  commentId: T:HCMCalc_UrbanStreets.SigControlType
+  parent: HCMCalc_UrbanStreets
+  name: SigControlType
+  nameWithType: SigControlType
+  fullName: HCMCalc_UrbanStreets.SigControlType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+  commentId: T:HCMCalc_UrbanStreets.NemaMovementNumbers
+  parent: HCMCalc_UrbanStreets
+  name: NemaMovementNumbers
+  nameWithType: NemaMovementNumbers
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers
+- uid: HCMCalc_UrbanStreets.SignalControlParameters
+  commentId: T:HCMCalc_UrbanStreets.SignalControlParameters
+  parent: HCMCalc_UrbanStreets
+  name: SignalControlParameters
+  nameWithType: SignalControlParameters
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters
+- uid: HCMCalc_UrbanStreets.SignalCalcs.LOSintersection*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.LOSintersection
+  name: LOSintersection
+  nameWithType: SignalCalcs.LOSintersection
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.LOSintersection
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane
+  name: QAP_ProtectedLane
+  nameWithType: SignalCalcs.QAP_ProtectedLane
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedLane
+- uid: HCMCalc_UrbanStreets.SignalPhaseData
+  commentId: T:HCMCalc_UrbanStreets.SignalPhaseData
+  parent: HCMCalc_UrbanStreets
+  name: SignalPhaseData
+  nameWithType: SignalPhaseData
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData
+- uid: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane
+  name: QAP_ProtectedSharedLane
+  nameWithType: SignalCalcs.QAP_ProtectedSharedLane
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.QAP_ProtectedSharedLane
+- uid: HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon
+  name: ComputeQAPolygon
+  nameWithType: SignalCalcs.ComputeQAPolygon
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.ComputeQAPolygon
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<SignalPhaseData>
+  nameWithType: List<SignalPhaseData>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>
+  nameWithType.vb: List(Of SignalPhaseData)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData)
+  name.vb: List(Of SignalPhaseData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.SignalPhaseData
+    name: SignalPhaseData
+    nameWithType: SignalPhaseData
+    fullName: HCMCalc_UrbanStreets.SignalPhaseData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.SignalPhaseData
+    name: SignalPhaseData
+    nameWithType: SignalPhaseData
+    fullName: HCMCalc_UrbanStreets.SignalPhaseData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange
+  name: QueueStatusChange
+  nameWithType: SignalCalcs.QueueStatusChange
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.QueueStatusChange
+- uid: HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations
+  name: VolumeComputations
+  nameWithType: SignalCalcs.VolumeComputations
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.VolumeComputations
+- uid: HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway
+  name: MaximumAllowableHeadway
+  nameWithType: SignalCalcs.MaximumAllowableHeadway
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.MaximumAllowableHeadway
+- uid: HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway
+  name: GetMaxAllowableHeadway
+  nameWithType: SignalCalcs.GetMaxAllowableHeadway
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.GetMaxAllowableHeadway
+- uid: HCMCalc_UrbanStreets.LaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.LaneGroupData
+  parent: HCMCalc_UrbanStreets
+  name: LaneGroupData
+  nameWithType: LaneGroupData
+  fullName: HCMCalc_UrbanStreets.LaneGroupData
+- uid: HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen
+  name: ComputeEquivalentMaxGreen
+  nameWithType: SignalCalcs.ComputeEquivalentMaxGreen
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.ComputeEquivalentMaxGreen
+- uid: HCMCalc_UrbanStreets.IntersectionData
+  commentId: T:HCMCalc_UrbanStreets.IntersectionData
+  parent: HCMCalc_UrbanStreets
+  name: IntersectionData
+  nameWithType: IntersectionData
+  fullName: HCMCalc_UrbanStreets.IntersectionData
+- uid: HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration
+  name: ComputeAveragePhaseDuration
+  nameWithType: SignalCalcs.ComputeAveragePhaseDuration
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.ComputeAveragePhaseDuration
+- uid: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber
+  name: GetPhaseFromPhaseNumber
+  nameWithType: SignalCalcs.GetPhaseFromPhaseNumber
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromPhaseNumber
+- uid: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement
+  name: GetPhaseFromMovement
+  nameWithType: SignalCalcs.GetPhaseFromMovement
+  fullName: HCMCalc_UrbanStreets.SignalCalcs.GetPhaseFromMovement

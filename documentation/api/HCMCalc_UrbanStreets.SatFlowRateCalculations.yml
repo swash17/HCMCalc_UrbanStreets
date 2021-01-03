@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SatFlowRateCalculations
+  commentId: T:HCMCalc_UrbanStreets.SatFlowRateCalculations
+  id: SatFlowRateCalculations
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016(HCMCalc_UrbanStreets.AreaType,System.Int32,System.Single,System.Single,HCMCalc_UrbanStreets.LaneMovementsAllowed,System.Single,System.Single,System.Single,System.Int32)
+  - HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning(HCMCalc_UrbanStreets.ModeType,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.OutLaneWidth,System.Int32,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Boolean,System.Boolean,System.Single,System.Single,System.Int32,System.Single,System.Int32)
+  - HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SatFlowRateCalculations
+  nameWithType: SatFlowRateCalculations
+  fullName: HCMCalc_UrbanStreets.SatFlowRateCalculations
+  type: Class
+  source:
+    id: SatFlowRateCalculations
+    path: ''
+    startLine: 5739
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nHandles calculations related to finding the adjusted saturation flow rate.\n"
+  example: []
+  syntax:
+    content: public static class SatFlowRateCalculations
+    content.vb: Public Module SatFlowRateCalculations
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016(HCMCalc_UrbanStreets.AreaType,System.Int32,System.Single,System.Single,HCMCalc_UrbanStreets.LaneMovementsAllowed,System.Single,System.Single,System.Single,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016(HCMCalc_UrbanStreets.AreaType,System.Int32,System.Single,System.Single,HCMCalc_UrbanStreets.LaneMovementsAllowed,System.Single,System.Single,System.Single,System.Int32)
+  id: HCM2016(HCMCalc_UrbanStreets.AreaType,System.Int32,System.Single,System.Single,HCMCalc_UrbanStreets.LaneMovementsAllowed,System.Single,System.Single,System.Single,System.Int32)
+  parent: HCMCalc_UrbanStreets.SatFlowRateCalculations
+  langs:
+  - csharp
+  - vb
+  name: HCM2016(AreaType, Int32, Single, Single, LaneMovementsAllowed, Single, Single, Single, Int32)
+  nameWithType: SatFlowRateCalculations.HCM2016(AreaType, Int32, Single, Single, LaneMovementsAllowed, Single, Single, Single, Int32)
+  fullName: HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016(HCMCalc_UrbanStreets.AreaType, System.Int32, System.Single, System.Single, HCMCalc_UrbanStreets.LaneMovementsAllowed, System.Single, System.Single, System.Single, System.Int32)
+  type: Method
+  source:
+    id: HCM2016
+    path: ''
+    startLine: 5754
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCalculates the adjusted saturation flow rate using the HCM 2016 methodology.\n"
+  example: []
+  syntax:
+    content: public static SaturationFlowRateValues HCM2016(AreaType Area, int numLanes, float laneWidth, float pctHeavyVeh, LaneMovementsAllowed type, float PctLeftTurns, float PctRightTurns, float PctGrade, int baseSatFlow)
+    parameters:
+    - id: Area
+      type: HCMCalc_UrbanStreets.AreaType
+      description: ''
+    - id: numLanes
+      type: System.Int32
+      description: ''
+    - id: laneWidth
+      type: System.Single
+      description: ''
+    - id: pctHeavyVeh
+      type: System.Single
+      description: ''
+    - id: type
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+      description: ''
+    - id: PctLeftTurns
+      type: System.Single
+      description: ''
+    - id: PctRightTurns
+      type: System.Single
+      description: ''
+    - id: PctGrade
+      type: System.Single
+      description: ''
+    - id: baseSatFlow
+      type: System.Int32
+      description: ''
+    return:
+      type: HCMCalc_UrbanStreets.SaturationFlowRateValues
+      description: ''
+    content.vb: Public Shared Function HCM2016(Area As AreaType, numLanes As Integer, laneWidth As Single, pctHeavyVeh As Single, type As LaneMovementsAllowed, PctLeftTurns As Single, PctRightTurns As Single, PctGrade As Single, baseSatFlow As Integer) As SaturationFlowRateValues
+  overload: HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning(HCMCalc_UrbanStreets.ModeType,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.OutLaneWidth,System.Int32,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Boolean,System.Boolean,System.Single,System.Single,System.Int32,System.Single,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning(HCMCalc_UrbanStreets.ModeType,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.OutLaneWidth,System.Int32,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Boolean,System.Boolean,System.Single,System.Single,System.Int32,System.Single,System.Int32)
+  id: Planning(HCMCalc_UrbanStreets.ModeType,HCMCalc_UrbanStreets.AreaType,HCMCalc_UrbanStreets.OutLaneWidth,System.Int32,System.Single,System.Single,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Boolean,System.Boolean,System.Single,System.Single,System.Int32,System.Single,System.Int32)
+  parent: HCMCalc_UrbanStreets.SatFlowRateCalculations
+  langs:
+  - csharp
+  - vb
+  name: Planning(ModeType, AreaType, OutLaneWidth, Int32, Single, Single, Single, MedianType, Single, Boolean, Boolean, Single, Single, Int32, Single, Int32)
+  nameWithType: SatFlowRateCalculations.Planning(ModeType, AreaType, OutLaneWidth, Int32, Single, Single, Single, MedianType, Single, Boolean, Boolean, Single, Single, Int32, Single, Int32)
+  fullName: HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning(HCMCalc_UrbanStreets.ModeType, HCMCalc_UrbanStreets.AreaType, HCMCalc_UrbanStreets.OutLaneWidth, System.Int32, System.Single, System.Single, System.Single, HCMCalc_UrbanStreets.MedianType, System.Single, System.Boolean, System.Boolean, System.Single, System.Single, System.Int32, System.Single, System.Int32)
+  type: Method
+  source:
+    id: Planning
+    path: ''
+    startLine: 5871
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nCalculates the adjusted saturation flow rate using the direct calculations.\n"
+  example: []
+  syntax:
+    content: public static SaturationFlowRateValues Planning(ModeType Mode, AreaType Area, OutLaneWidth OutsideLaneWidth, int NumOutsideLaneWidth, float ThruVol, float PctHeavyVeh, float NumLanes, MedianType Median, float PostSpeed, bool LTBayYN, bool RTBayYN, float PctLT, float PctRT, int CycleLengthSec, float PctGrade, int BaseSatFlow)
+    parameters:
+    - id: Mode
+      type: HCMCalc_UrbanStreets.ModeType
+      description: ''
+    - id: Area
+      type: HCMCalc_UrbanStreets.AreaType
+      description: ''
+    - id: OutsideLaneWidth
+      type: HCMCalc_UrbanStreets.OutLaneWidth
+      description: ''
+    - id: NumOutsideLaneWidth
+      type: System.Int32
+      description: ''
+    - id: ThruVol
+      type: System.Single
+      description: ''
+    - id: PctHeavyVeh
+      type: System.Single
+      description: ''
+    - id: NumLanes
+      type: System.Single
+      description: ''
+    - id: Median
+      type: HCMCalc_UrbanStreets.MedianType
+      description: ''
+    - id: PostSpeed
+      type: System.Single
+      description: ''
+    - id: LTBayYN
+      type: System.Boolean
+      description: ''
+    - id: RTBayYN
+      type: System.Boolean
+      description: ''
+    - id: PctLT
+      type: System.Single
+      description: ''
+    - id: PctRT
+      type: System.Single
+      description: ''
+    - id: CycleLengthSec
+      type: System.Int32
+      description: ''
+    - id: PctGrade
+      type: System.Single
+      description: ''
+    - id: BaseSatFlow
+      type: System.Int32
+      description: ''
+    return:
+      type: HCMCalc_UrbanStreets.SaturationFlowRateValues
+      description: ''
+    content.vb: Public Shared Function Planning(Mode As ModeType, Area As AreaType, OutsideLaneWidth As OutLaneWidth, NumOutsideLaneWidth As Integer, ThruVol As Single, PctHeavyVeh As Single, NumLanes As Single, Median As MedianType, PostSpeed As Single, LTBayYN As Boolean, RTBayYN As Boolean, PctLT As Single, PctRT As Single, CycleLengthSec As Integer, PctGrade As Single, BaseSatFlow As Integer) As SaturationFlowRateValues
+  overload: HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact(System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact(System.Int32)
+  id: SupplementalPlatoonAdjFact(System.Int32)
+  parent: HCMCalc_UrbanStreets.SatFlowRateCalculations
+  langs:
+  - csharp
+  - vb
+  name: SupplementalPlatoonAdjFact(Int32)
+  nameWithType: SatFlowRateCalculations.SupplementalPlatoonAdjFact(Int32)
+  fullName: HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact(System.Int32)
+  type: Method
+  source:
+    id: SupplementalPlatoonAdjFact
+    path: ''
+    startLine: 5988
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static float SupplementalPlatoonAdjFact(int arvtype)
+    parameters:
+    - id: arvtype
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function SupplementalPlatoonAdjFact(arvtype As Integer) As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016
+  name: HCM2016
+  nameWithType: SatFlowRateCalculations.HCM2016
+  fullName: HCMCalc_UrbanStreets.SatFlowRateCalculations.HCM2016
+- uid: HCMCalc_UrbanStreets.AreaType
+  commentId: T:HCMCalc_UrbanStreets.AreaType
+  parent: HCMCalc_UrbanStreets
+  name: AreaType
+  nameWithType: AreaType
+  fullName: HCMCalc_UrbanStreets.AreaType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  commentId: T:HCMCalc_UrbanStreets.LaneMovementsAllowed
+  parent: HCMCalc_UrbanStreets
+  name: LaneMovementsAllowed
+  nameWithType: LaneMovementsAllowed
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed
+- uid: HCMCalc_UrbanStreets.SaturationFlowRateValues
+  commentId: T:HCMCalc_UrbanStreets.SaturationFlowRateValues
+  parent: HCMCalc_UrbanStreets
+  name: SaturationFlowRateValues
+  nameWithType: SaturationFlowRateValues
+  fullName: HCMCalc_UrbanStreets.SaturationFlowRateValues
+- uid: HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning
+  name: Planning
+  nameWithType: SatFlowRateCalculations.Planning
+  fullName: HCMCalc_UrbanStreets.SatFlowRateCalculations.Planning
+- uid: HCMCalc_UrbanStreets.ModeType
+  commentId: T:HCMCalc_UrbanStreets.ModeType
+  parent: HCMCalc_UrbanStreets
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMCalc_UrbanStreets.ModeType
+- uid: HCMCalc_UrbanStreets.OutLaneWidth
+  commentId: T:HCMCalc_UrbanStreets.OutLaneWidth
+  parent: HCMCalc_UrbanStreets
+  name: OutLaneWidth
+  nameWithType: OutLaneWidth
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth
+- uid: HCMCalc_UrbanStreets.MedianType
+  commentId: T:HCMCalc_UrbanStreets.MedianType
+  parent: HCMCalc_UrbanStreets
+  name: MedianType
+  nameWithType: MedianType
+  fullName: HCMCalc_UrbanStreets.MedianType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact
+  name: SupplementalPlatoonAdjFact
+  nameWithType: SatFlowRateCalculations.SupplementalPlatoonAdjFact
+  fullName: HCMCalc_UrbanStreets.SatFlowRateCalculations.SupplementalPlatoonAdjFact

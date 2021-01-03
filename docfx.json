@@ -1,0 +1,99 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "*.cs"
+          ],
+          "cwd": ".",
+          "exclude": [
+            "**/ obj /**",
+            "**/ docfxsetup /**",
+            "**/ bin /**",
+            "docs/**",
+            "frmMain.cs",
+            "CreateArterial.cs"
+          ]
+        }
+      ],
+      "filter": "documentation/resources/filterConfig.yml",
+      "dest": "documentation/api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [ // This will pull all of the YML auto-generated files for the API documentation, but it will ignore the auto-generated TOC file.
+          "api/*.yml"
+        ],
+        "exclude": [
+          "api/toc.yml"
+        ],
+        "cwd": "documentation"
+      },
+      {
+        "files": [
+          "userguide/userguideMainPage.md", // This can be written as a YML or an MD file.
+          "userguide/toc.md", // Do not change this to a YML or the routing on the sidebar and the header will break.
+          "examples/examplesMainPage.md", // This can be written as a YML or an MD file.
+          "examples/toc.md" // Do not change this to a YML or the routing on the sidebar and the header will break.
+        ],
+        "cwd": "documentation"
+      },
+      {
+        "files": [ // This handles the manually-created sidebar TOC for the API documentation.
+          "api/toc.yml"
+        ],
+        "cwd": "documentation/resources"
+      },
+      {
+        "files": [ // This handles the top header TOC and the index page, both which need to be at the root level.
+          "index.md",
+          "toc.yml" // This is the header TOC. It does not seem possible to create a sidebar for the index page, since creating a second toc.yml or toc.md will overwrite the header.
+        ],
+        "cwd": "documentation/resources"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "exclude": [
+          "obj/**",
+          "docs/**"
+        ],
+        "cwd": "documentation"
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md",
+          "api/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "documentation/**",
+          "docs/**"
+        ]
+      }
+    ],
+    "dest": "docs",
+    "template": [
+      "statictoc",
+      "templateFolder"
+    ],
+    "globalMetadata": {
+      "_appTitle": "SwashWare",
+      "_appFooter": "Copyright 2020 Dr. Scott Washburn",
+      "_appLogoPath": "images/UrbanStreets.ico",
+      //"_appFaviconPath": "../UrbanStreets.ico",
+      "_gitContribute": {
+        "repo": "https://github.com/swash17/HCMCalc_UrbanStreets",
+        "branch": "master"
+      }
+    }
+  }
+}

@@ -1,0 +1,335 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.OriginDestinationData
+  commentId: T:HCMCalc_UrbanStreets.OriginDestinationData
+  id: OriginDestinationData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.OriginDestinationData.#ctor(System.Int32,System.Int32)
+  - HCMCalc_UrbanStreets.OriginDestinationData.Matrix
+  - HCMCalc_UrbanStreets.OriginDestinationData.Seeds
+  - HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol
+  - HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol
+  langs:
+  - csharp
+  - vb
+  name: OriginDestinationData
+  nameWithType: OriginDestinationData
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData
+  type: Class
+  source:
+    id: OriginDestinationData
+    path: ''
+    startLine: 1128
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nHandles origin-destination related parameters such as the HCM defined OD seeds, an OD matrix, and segment origin/destination volume.\n"
+  example: []
+  syntax:
+    content: public class OriginDestinationData
+    content.vb: Public Class OriginDestinationData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.#ctor(System.Int32,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.OriginDestinationData.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: HCMCalc_UrbanStreets.OriginDestinationData
+  langs:
+  - csharp
+  - vb
+  name: OriginDestinationData(Int32, Int32)
+  nameWithType: OriginDestinationData.OriginDestinationData(Int32, Int32)
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.OriginDestinationData(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1147
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nContains parameters necessary for creating an OD matrix.\n"
+  example: []
+  syntax:
+    content: public OriginDestinationData(int numSegments, int numAccessPointsWithinSegment)
+    parameters:
+    - id: numSegments
+      type: System.Int32
+      description: ''
+    - id: numAccessPointsWithinSegment
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(numSegments As Integer, numAccessPointsWithinSegment As Integer)
+  overload: HCMCalc_UrbanStreets.OriginDestinationData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.Seeds
+  commentId: P:HCMCalc_UrbanStreets.OriginDestinationData.Seeds
+  id: Seeds
+  parent: HCMCalc_UrbanStreets.OriginDestinationData
+  langs:
+  - csharp
+  - vb
+  name: Seeds
+  nameWithType: OriginDestinationData.Seeds
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.Seeds
+  type: Property
+  source:
+    id: Seeds
+    path: ''
+    startLine: 1175
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nSeeds defined by the HCM.\n"
+  example: []
+  syntax:
+    content: public float[, ] Seeds { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,]
+    content.vb: Public Property Seeds As Single(,)
+  overload: HCMCalc_UrbanStreets.OriginDestinationData.Seeds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.Matrix
+  commentId: P:HCMCalc_UrbanStreets.OriginDestinationData.Matrix
+  id: Matrix
+  parent: HCMCalc_UrbanStreets.OriginDestinationData
+  langs:
+  - csharp
+  - vb
+  name: Matrix
+  nameWithType: OriginDestinationData.Matrix
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.Matrix
+  type: Property
+  source:
+    id: Matrix
+    path: ''
+    startLine: 1184
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe O-D Matrix.\n\\nFirst index: Segment\n\\nSecond index: Direction\n\\nThird index: Access point\n\\nFourth index: Upstream movement\n\\nFifth index: Downstream movement\n"
+  example: []
+  syntax:
+    content: public float[,,,, ] Matrix { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,,,,]
+    content.vb: Public Property Matrix As Single(,,,,)
+  overload: HCMCalc_UrbanStreets.OriginDestinationData.Matrix*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol
+  commentId: P:HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol
+  id: SegOriginVol
+  parent: HCMCalc_UrbanStreets.OriginDestinationData
+  langs:
+  - csharp
+  - vb
+  name: SegOriginVol
+  nameWithType: OriginDestinationData.SegOriginVol
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol
+  type: Property
+  source:
+    id: SegOriginVol
+    path: ''
+    startLine: 1192
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe segment origin volume.\n\\nFirst index: Segment\n\\nSecond index: Direction\n\\nThird index: Access point\n\\nFourth index: Upstream movement\n"
+  example: []
+  syntax:
+    content: public float[,,, ] SegOriginVol { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,,,]
+    content.vb: Public Property SegOriginVol As Single(,,,)
+  overload: HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol
+  commentId: P:HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol
+  id: SegDestinationVol
+  parent: HCMCalc_UrbanStreets.OriginDestinationData
+  langs:
+  - csharp
+  - vb
+  name: SegDestinationVol
+  nameWithType: OriginDestinationData.SegDestinationVol
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol
+  type: Property
+  source:
+    id: SegDestinationVol
+    path: ''
+    startLine: 1200
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe segment destination volume.\n\\nFirst index: Segment\n\\nSecond index: Direction\n\\nThird index: Access point\n\\nFourth index: Downstream movement\n"
+  example: []
+  syntax:
+    content: public float[,,, ] SegDestinationVol { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,,,]
+    content.vb: Public Property SegDestinationVol As Single(,,,)
+  overload: HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.OriginDestinationData.#ctor
+  name: OriginDestinationData
+  nameWithType: OriginDestinationData.OriginDestinationData
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.OriginDestinationData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.Seeds*
+  commentId: Overload:HCMCalc_UrbanStreets.OriginDestinationData.Seeds
+  name: Seeds
+  nameWithType: OriginDestinationData.Seeds
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.Seeds
+- uid: System.Single[,]
+  isExternal: true
+  name: Single[,]
+  nameWithType: Single[,]
+  fullName: System.Single[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: System.Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.Matrix*
+  commentId: Overload:HCMCalc_UrbanStreets.OriginDestinationData.Matrix
+  name: Matrix
+  nameWithType: OriginDestinationData.Matrix
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.Matrix
+- uid: System.Single[,,,,]
+  isExternal: true
+  name: Single[,,,,]
+  nameWithType: Single[,,,,]
+  fullName: System.Single[,,,,]
+  nameWithType.vb: Single(,,,,)
+  fullName.vb: System.Single(,,,,)
+  name.vb: Single(,,,,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,,,,]'
+    nameWithType: '[,,,,]'
+    fullName: '[,,,,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,,,,)
+    nameWithType: (,,,,)
+    fullName: (,,,,)
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol*
+  commentId: Overload:HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol
+  name: SegOriginVol
+  nameWithType: OriginDestinationData.SegOriginVol
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.SegOriginVol
+- uid: System.Single[,,,]
+  isExternal: true
+  name: Single[,,,]
+  nameWithType: Single[,,,]
+  fullName: System.Single[,,,]
+  nameWithType.vb: Single(,,,)
+  fullName.vb: System.Single(,,,)
+  name.vb: Single(,,,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,,,]'
+    nameWithType: '[,,,]'
+    fullName: '[,,,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,,,)
+    nameWithType: (,,,)
+    fullName: (,,,)
+- uid: HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol*
+  commentId: Overload:HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol
+  name: SegDestinationVol
+  nameWithType: OriginDestinationData.SegDestinationVol
+  fullName: HCMCalc_UrbanStreets.OriginDestinationData.SegDestinationVol

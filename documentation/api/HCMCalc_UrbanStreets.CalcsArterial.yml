@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.CalcsArterial
+  commentId: T:HCMCalc_UrbanStreets.CalcsArterial
+  id: CalcsArterial
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.CalcsArterial.CalcResults(HCMCalc_UrbanStreets.ProjectData,HCMCalc_UrbanStreets.ArterialData@)
+  - HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial(HCMCalc_UrbanStreets.ArterialData@)
+  langs:
+  - csharp
+  - vb
+  name: CalcsArterial
+  nameWithType: CalcsArterial
+  fullName: HCMCalc_UrbanStreets.CalcsArterial
+  type: Class
+  source:
+    id: CalcsArterial
+    path: ''
+    startLine: 207
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nHandles methods related to assigning calculation-related properties to arterials.\n"
+  example: []
+  syntax:
+    content: public static class CalcsArterial
+    content.vb: Public Module CalcsArterial
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: HCMCalc_UrbanStreets.CalcsArterial.CalcResults(HCMCalc_UrbanStreets.ProjectData,HCMCalc_UrbanStreets.ArterialData@)
+  commentId: M:HCMCalc_UrbanStreets.CalcsArterial.CalcResults(HCMCalc_UrbanStreets.ProjectData,HCMCalc_UrbanStreets.ArterialData@)
+  id: CalcResults(HCMCalc_UrbanStreets.ProjectData,HCMCalc_UrbanStreets.ArterialData@)
+  parent: HCMCalc_UrbanStreets.CalcsArterial
+  langs:
+  - csharp
+  - vb
+  name: CalcResults(ProjectData, ref ArterialData)
+  nameWithType: CalcsArterial.CalcResults(ProjectData, ref ArterialData)
+  fullName: HCMCalc_UrbanStreets.CalcsArterial.CalcResults(HCMCalc_UrbanStreets.ProjectData, ref HCMCalc_UrbanStreets.ArterialData)
+  type: Method
+  source:
+    id: CalcResults
+    path: ''
+    startLine: 215
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nHandles the assignment of arterial properties that require calculations and cannot be straightly assigned.\n"
+  example: []
+  syntax:
+    content: public static void CalcResults(ProjectData Project, ref ArterialData Arterial)
+    parameters:
+    - id: Project
+      type: HCMCalc_UrbanStreets.ProjectData
+      description: ''
+    - id: Arterial
+      type: HCMCalc_UrbanStreets.ArterialData
+      description: ''
+    content.vb: Public Shared Sub CalcResults(Project As ProjectData, ByRef Arterial As ArterialData)
+  overload: HCMCalc_UrbanStreets.CalcsArterial.CalcResults*
+  nameWithType.vb: CalcsArterial.CalcResults(ProjectData, ByRef ArterialData)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.CalcsArterial.CalcResults(HCMCalc_UrbanStreets.ProjectData, ByRef HCMCalc_UrbanStreets.ArterialData)
+  name.vb: CalcResults(ProjectData, ByRef ArterialData)
+- uid: HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial(HCMCalc_UrbanStreets.ArterialData@)
+  commentId: M:HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial(HCMCalc_UrbanStreets.ArterialData@)
+  id: ReverseArterial(HCMCalc_UrbanStreets.ArterialData@)
+  parent: HCMCalc_UrbanStreets.CalcsArterial
+  langs:
+  - csharp
+  - vb
+  name: ReverseArterial(ref ArterialData)
+  nameWithType: CalcsArterial.ReverseArterial(ref ArterialData)
+  fullName: HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial(ref HCMCalc_UrbanStreets.ArterialData)
+  type: Method
+  source:
+    id: ReverseArterial
+    path: ''
+    startLine: 478
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReverses an arterial&apos;s direction by reversing the segments and access points lists, then manually changing their speeds, length, and access points locations.\n"
+  example: []
+  syntax:
+    content: public static void ReverseArterial(ref ArterialData Arterial)
+    parameters:
+    - id: Arterial
+      type: HCMCalc_UrbanStreets.ArterialData
+      description: ''
+    content.vb: Public Shared Sub ReverseArterial(ByRef Arterial As ArterialData)
+  overload: HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial*
+  nameWithType.vb: CalcsArterial.ReverseArterial(ByRef ArterialData)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial(ByRef HCMCalc_UrbanStreets.ArterialData)
+  name.vb: ReverseArterial(ByRef ArterialData)
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.CalcsArterial.CalcResults*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsArterial.CalcResults
+  name: CalcResults
+  nameWithType: CalcsArterial.CalcResults
+  fullName: HCMCalc_UrbanStreets.CalcsArterial.CalcResults
+- uid: HCMCalc_UrbanStreets.ProjectData
+  commentId: T:HCMCalc_UrbanStreets.ProjectData
+  parent: HCMCalc_UrbanStreets
+  name: ProjectData
+  nameWithType: ProjectData
+  fullName: HCMCalc_UrbanStreets.ProjectData
+- uid: HCMCalc_UrbanStreets.ArterialData
+  commentId: T:HCMCalc_UrbanStreets.ArterialData
+  parent: HCMCalc_UrbanStreets
+  name: ArterialData
+  nameWithType: ArterialData
+  fullName: HCMCalc_UrbanStreets.ArterialData
+- uid: HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial*
+  commentId: Overload:HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial
+  name: ReverseArterial
+  nameWithType: CalcsArterial.ReverseArterial
+  fullName: HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial

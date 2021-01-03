@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.PhasingType
+  commentId: T:HCMCalc_UrbanStreets.PhasingType
+  id: PhasingType
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.PhasingType.None
+  - HCMCalc_UrbanStreets.PhasingType.Permitted
+  - HCMCalc_UrbanStreets.PhasingType.Protected
+  - HCMCalc_UrbanStreets.PhasingType.ProtPerm
+  - HCMCalc_UrbanStreets.PhasingType.Split
+  - HCMCalc_UrbanStreets.PhasingType.ThruAndRight
+  langs:
+  - csharp
+  - vb
+  name: PhasingType
+  nameWithType: PhasingType
+  fullName: HCMCalc_UrbanStreets.PhasingType
+  type: Enum
+  source:
+    id: PhasingType
+    path: ''
+    startLine: 7067
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public enum PhasingType
+    content.vb: Public Enum PhasingType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.PhasingType.None
+  commentId: F:HCMCalc_UrbanStreets.PhasingType.None
+  id: None
+  parent: HCMCalc_UrbanStreets.PhasingType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PhasingType.None
+  fullName: HCMCalc_UrbanStreets.PhasingType.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 7069
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: None = 0
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.PhasingType.Protected
+  commentId: F:HCMCalc_UrbanStreets.PhasingType.Protected
+  id: Protected
+  parent: HCMCalc_UrbanStreets.PhasingType
+  langs:
+  - csharp
+  - vb
+  name: Protected
+  nameWithType: PhasingType.Protected
+  fullName: HCMCalc_UrbanStreets.PhasingType.Protected
+  type: Field
+  source:
+    id: Protected
+    path: ''
+    startLine: 7070
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Protected = 1
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.PhasingType.Permitted
+  commentId: F:HCMCalc_UrbanStreets.PhasingType.Permitted
+  id: Permitted
+  parent: HCMCalc_UrbanStreets.PhasingType
+  langs:
+  - csharp
+  - vb
+  name: Permitted
+  nameWithType: PhasingType.Permitted
+  fullName: HCMCalc_UrbanStreets.PhasingType.Permitted
+  type: Field
+  source:
+    id: Permitted
+    path: ''
+    startLine: 7071
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Permitted = 2
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.PhasingType.ProtPerm
+  commentId: F:HCMCalc_UrbanStreets.PhasingType.ProtPerm
+  id: ProtPerm
+  parent: HCMCalc_UrbanStreets.PhasingType
+  langs:
+  - csharp
+  - vb
+  name: ProtPerm
+  nameWithType: PhasingType.ProtPerm
+  fullName: HCMCalc_UrbanStreets.PhasingType.ProtPerm
+  type: Field
+  source:
+    id: ProtPerm
+    path: ''
+    startLine: 7072
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: ProtPerm = 3
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.PhasingType.Split
+  commentId: F:HCMCalc_UrbanStreets.PhasingType.Split
+  id: Split
+  parent: HCMCalc_UrbanStreets.PhasingType
+  langs:
+  - csharp
+  - vb
+  name: Split
+  nameWithType: PhasingType.Split
+  fullName: HCMCalc_UrbanStreets.PhasingType.Split
+  type: Field
+  source:
+    id: Split
+    path: ''
+    startLine: 7073
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Split = 4
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.PhasingType.ThruAndRight
+  commentId: F:HCMCalc_UrbanStreets.PhasingType.ThruAndRight
+  id: ThruAndRight
+  parent: HCMCalc_UrbanStreets.PhasingType
+  langs:
+  - csharp
+  - vb
+  name: ThruAndRight
+  nameWithType: PhasingType.ThruAndRight
+  fullName: HCMCalc_UrbanStreets.PhasingType.ThruAndRight
+  type: Field
+  source:
+    id: ThruAndRight
+    path: ''
+    startLine: 7074
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: ThruAndRight = 5
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.PhasingType
+  commentId: T:HCMCalc_UrbanStreets.PhasingType
+  parent: HCMCalc_UrbanStreets
+  name: PhasingType
+  nameWithType: PhasingType
+  fullName: HCMCalc_UrbanStreets.PhasingType

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HCMCalc_UrbanStreets</name>
+    </assembly>
+    <members>
+        <member name="T:HCMCalc_UrbanStreets.CalcsArterial">
+            <summary>
+            Handles methods related to assigning calculation-related properties to arterials.
+            </summary>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.CalcsArterial.CalcResults(HCMCalc_UrbanStreets.ProjectData,HCMCalc_UrbanStreets.ArterialData@)">
+            <summary>
+            Handles the assignment of arterial properties that require calculations and cannot be straightly assigned.
+            </summary>
+            <param name="Project"></param>
+            <param name="Arterial"></param>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.CalcsArterial.ReverseArterial(HCMCalc_UrbanStreets.ArterialData@)">
+            <summary>
+            Reverses an arterial's direction by reversing the segments and access points lists, then manually changing their speeds, length, and access points locations.
+            </summary>
+            <param name="Arterial"></param>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.CalcsArterial.WeightedgC(System.Int32,System.Single,System.Single)">
+            <summary>
+            Returns the weighted gC of the arterial.
+            </summary>
+            <param name="NumSegs"></param>
+            <param name="ArtTotgC"></param>
+            <param name="CritgC"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.CalcsArterial.FFSDelay(System.Single,System.Single)">
+            <summary>
+            Returns the FFS Delay as a function of the arterial travel time minus the arterial free flow travel time, both in units of seconds.
+            </summary>
+            <param name="ArtTravTimeSeconds"></param>
+            <param name="ArtFFTravTimeSeconds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.CalcsArterial.ThresholdDelay(HCMCalc_UrbanStreets.AreaType,System.Single,System.Single)">
+            <summary>
+            Returns the threshold delay of the arterial.
+            </summary>
+            <param name="Area"></param>
+            <param name="ArtTravTimeSeconds"></param>
+            <param name="ArtLengthMiles"></param>
+            <returns></returns>
+        </member>
+        <member name="F:HCMCalc_UrbanStreets.frmMain.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.frmMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.frmMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HCMCalc_UrbanStreets.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:HCMCalc_UrbanStreets.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HCMCalc_UrbanStreets.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HCMCalc_UrbanStreets.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

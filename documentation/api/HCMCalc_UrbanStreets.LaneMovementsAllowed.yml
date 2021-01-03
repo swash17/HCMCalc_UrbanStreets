@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  commentId: T:HCMCalc_UrbanStreets.LaneMovementsAllowed
+  id: LaneMovementsAllowed
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.All
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftOnly
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftRightShared
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.RightOnly
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndLeftTurnBay
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndRightTurnBay
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruLeftShared
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruOnly
+  - HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruRightShared
+  langs:
+  - csharp
+  - vb
+  name: LaneMovementsAllowed
+  nameWithType: LaneMovementsAllowed
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  type: Enum
+  source:
+    id: LaneMovementsAllowed
+    path: ''
+    startLine: 4885
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nAllowed movements for a lane.\n"
+  example: []
+  syntax:
+    content: public enum LaneMovementsAllowed
+    content.vb: Public Enum LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftOnly
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftOnly
+  id: LeftOnly
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: LeftOnly
+  nameWithType: LaneMovementsAllowed.LeftOnly
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftOnly
+  type: Field
+  source:
+    id: LeftOnly
+    path: ''
+    startLine: 4887
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: LeftOnly = 0
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruOnly
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruOnly
+  id: ThruOnly
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: ThruOnly
+  nameWithType: LaneMovementsAllowed.ThruOnly
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruOnly
+  type: Field
+  source:
+    id: ThruOnly
+    path: ''
+    startLine: 4888
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: ThruOnly = 1
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.RightOnly
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.RightOnly
+  id: RightOnly
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: RightOnly
+  nameWithType: LaneMovementsAllowed.RightOnly
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.RightOnly
+  type: Field
+  source:
+    id: RightOnly
+    path: ''
+    startLine: 4889
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: RightOnly = 2
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruLeftShared
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruLeftShared
+  id: ThruLeftShared
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: ThruLeftShared
+  nameWithType: LaneMovementsAllowed.ThruLeftShared
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruLeftShared
+  type: Field
+  source:
+    id: ThruLeftShared
+    path: ''
+    startLine: 4890
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: ThruLeftShared = 3
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruRightShared
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruRightShared
+  id: ThruRightShared
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: ThruRightShared
+  nameWithType: LaneMovementsAllowed.ThruRightShared
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruRightShared
+  type: Field
+  source:
+    id: ThruRightShared
+    path: ''
+    startLine: 4891
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: ThruRightShared = 4
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndLeftTurnBay
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndLeftTurnBay
+  id: ThruAndLeftTurnBay
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: ThruAndLeftTurnBay
+  nameWithType: LaneMovementsAllowed.ThruAndLeftTurnBay
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndLeftTurnBay
+  type: Field
+  source:
+    id: ThruAndLeftTurnBay
+    path: ''
+    startLine: 4892
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: ThruAndLeftTurnBay = 5
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndRightTurnBay
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndRightTurnBay
+  id: ThruAndRightTurnBay
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: ThruAndRightTurnBay
+  nameWithType: LaneMovementsAllowed.ThruAndRightTurnBay
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.ThruAndRightTurnBay
+  type: Field
+  source:
+    id: ThruAndRightTurnBay
+    path: ''
+    startLine: 4893
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: ThruAndRightTurnBay = 6
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftRightShared
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftRightShared
+  id: LeftRightShared
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: LeftRightShared
+  nameWithType: LaneMovementsAllowed.LeftRightShared
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.LeftRightShared
+  type: Field
+  source:
+    id: LeftRightShared
+    path: ''
+    startLine: 4894
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: LeftRightShared = 7
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed.All
+  commentId: F:HCMCalc_UrbanStreets.LaneMovementsAllowed.All
+  id: All
+  parent: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: LaneMovementsAllowed.All
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed.All
+  type: Field
+  source:
+    id: All
+    path: ''
+    startLine: 4895
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: All = 8
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  commentId: T:HCMCalc_UrbanStreets.LaneMovementsAllowed
+  parent: HCMCalc_UrbanStreets
+  name: LaneMovementsAllowed
+  nameWithType: LaneMovementsAllowed
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed

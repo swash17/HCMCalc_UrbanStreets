@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.OutLaneWidth
+  commentId: T:HCMCalc_UrbanStreets.OutLaneWidth
+  id: OutLaneWidth
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.OutLaneWidth.Custom
+  - HCMCalc_UrbanStreets.OutLaneWidth.Narrow
+  - HCMCalc_UrbanStreets.OutLaneWidth.Typical
+  - HCMCalc_UrbanStreets.OutLaneWidth.Wide
+  langs:
+  - csharp
+  - vb
+  name: OutLaneWidth
+  nameWithType: OutLaneWidth
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth
+  type: Enum
+  source:
+    id: OutLaneWidth
+    path: ''
+    startLine: 6014
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe type of outer lane width design.\n"
+  example: []
+  syntax:
+    content: public enum OutLaneWidth
+    content.vb: Public Enum OutLaneWidth
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.OutLaneWidth.Narrow
+  commentId: F:HCMCalc_UrbanStreets.OutLaneWidth.Narrow
+  id: Narrow
+  parent: HCMCalc_UrbanStreets.OutLaneWidth
+  langs:
+  - csharp
+  - vb
+  name: Narrow
+  nameWithType: OutLaneWidth.Narrow
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth.Narrow
+  type: Field
+  source:
+    id: Narrow
+    path: ''
+    startLine: 6016
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Narrow = 0
+    return:
+      type: HCMCalc_UrbanStreets.OutLaneWidth
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.OutLaneWidth.Typical
+  commentId: F:HCMCalc_UrbanStreets.OutLaneWidth.Typical
+  id: Typical
+  parent: HCMCalc_UrbanStreets.OutLaneWidth
+  langs:
+  - csharp
+  - vb
+  name: Typical
+  nameWithType: OutLaneWidth.Typical
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth.Typical
+  type: Field
+  source:
+    id: Typical
+    path: ''
+    startLine: 6017
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Typical = 1
+    return:
+      type: HCMCalc_UrbanStreets.OutLaneWidth
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.OutLaneWidth.Wide
+  commentId: F:HCMCalc_UrbanStreets.OutLaneWidth.Wide
+  id: Wide
+  parent: HCMCalc_UrbanStreets.OutLaneWidth
+  langs:
+  - csharp
+  - vb
+  name: Wide
+  nameWithType: OutLaneWidth.Wide
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth.Wide
+  type: Field
+  source:
+    id: Wide
+    path: ''
+    startLine: 6018
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Wide = 2
+    return:
+      type: HCMCalc_UrbanStreets.OutLaneWidth
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.OutLaneWidth.Custom
+  commentId: F:HCMCalc_UrbanStreets.OutLaneWidth.Custom
+  id: Custom
+  parent: HCMCalc_UrbanStreets.OutLaneWidth
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: OutLaneWidth.Custom
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth.Custom
+  type: Field
+  source:
+    id: Custom
+    path: ''
+    startLine: 6019
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Custom = 3
+    return:
+      type: HCMCalc_UrbanStreets.OutLaneWidth
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.OutLaneWidth
+  commentId: T:HCMCalc_UrbanStreets.OutLaneWidth
+  parent: HCMCalc_UrbanStreets
+  name: OutLaneWidth
+  nameWithType: OutLaneWidth
+  fullName: HCMCalc_UrbanStreets.OutLaneWidth

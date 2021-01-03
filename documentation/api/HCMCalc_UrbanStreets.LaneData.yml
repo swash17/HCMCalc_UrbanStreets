@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.LaneData
+  commentId: T:HCMCalc_UrbanStreets.LaneData
+  id: LaneData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.LaneData.#ctor
+  - HCMCalc_UrbanStreets.LaneData.#ctor(System.Int32,HCMCalc_UrbanStreets.LaneMovementsAllowed)
+  - HCMCalc_UrbanStreets.LaneData.AllowedMovements
+  - HCMCalc_UrbanStreets.LaneData.Id
+  langs:
+  - csharp
+  - vb
+  name: LaneData
+  nameWithType: LaneData
+  fullName: HCMCalc_UrbanStreets.LaneData
+  type: Class
+  source:
+    id: LaneData
+    path: ''
+    startLine: 4901
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters relevant to a lane.\n"
+  example: []
+  syntax:
+    content: public class LaneData
+    content.vb: Public Class LaneData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.LaneData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.LaneData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.LaneData
+  langs:
+  - csharp
+  - vb
+  name: LaneData()
+  nameWithType: LaneData.LaneData()
+  fullName: HCMCalc_UrbanStreets.LaneData.LaneData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4907
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LaneData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.LaneData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneData.#ctor(System.Int32,HCMCalc_UrbanStreets.LaneMovementsAllowed)
+  commentId: M:HCMCalc_UrbanStreets.LaneData.#ctor(System.Int32,HCMCalc_UrbanStreets.LaneMovementsAllowed)
+  id: '#ctor(System.Int32,HCMCalc_UrbanStreets.LaneMovementsAllowed)'
+  parent: HCMCalc_UrbanStreets.LaneData
+  langs:
+  - csharp
+  - vb
+  name: LaneData(Int32, LaneMovementsAllowed)
+  nameWithType: LaneData.LaneData(Int32, LaneMovementsAllowed)
+  fullName: HCMCalc_UrbanStreets.LaneData.LaneData(System.Int32, HCMCalc_UrbanStreets.LaneMovementsAllowed)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4912
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LaneData(int id, LaneMovementsAllowed allowedMvmts)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: allowedMvmts
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+    content.vb: Public Sub New(id As Integer, allowedMvmts As LaneMovementsAllowed)
+  overload: HCMCalc_UrbanStreets.LaneData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneData.Id
+  commentId: P:HCMCalc_UrbanStreets.LaneData.Id
+  id: Id
+  parent: HCMCalc_UrbanStreets.LaneData
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: LaneData.Id
+  fullName: HCMCalc_UrbanStreets.LaneData.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 4918
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: HCMCalc_UrbanStreets.LaneData.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LaneData.AllowedMovements
+  commentId: P:HCMCalc_UrbanStreets.LaneData.AllowedMovements
+  id: AllowedMovements
+  parent: HCMCalc_UrbanStreets.LaneData
+  langs:
+  - csharp
+  - vb
+  name: AllowedMovements
+  nameWithType: LaneData.AllowedMovements
+  fullName: HCMCalc_UrbanStreets.LaneData.AllowedMovements
+  type: Property
+  source:
+    id: AllowedMovements
+    path: ''
+    startLine: 4920
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LaneMovementsAllowed AllowedMovements { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.LaneMovementsAllowed
+    content.vb: Public Property AllowedMovements As LaneMovementsAllowed
+  overload: HCMCalc_UrbanStreets.LaneData.AllowedMovements*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.LaneData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneData.#ctor
+  name: LaneData
+  nameWithType: LaneData.LaneData
+  fullName: HCMCalc_UrbanStreets.LaneData.LaneData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.LaneMovementsAllowed
+  commentId: T:HCMCalc_UrbanStreets.LaneMovementsAllowed
+  parent: HCMCalc_UrbanStreets
+  name: LaneMovementsAllowed
+  nameWithType: LaneMovementsAllowed
+  fullName: HCMCalc_UrbanStreets.LaneMovementsAllowed
+- uid: HCMCalc_UrbanStreets.LaneData.Id*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneData.Id
+  name: Id
+  nameWithType: LaneData.Id
+  fullName: HCMCalc_UrbanStreets.LaneData.Id
+- uid: HCMCalc_UrbanStreets.LaneData.AllowedMovements*
+  commentId: Overload:HCMCalc_UrbanStreets.LaneData.AllowedMovements
+  name: AllowedMovements
+  nameWithType: LaneData.AllowedMovements
+  fullName: HCMCalc_UrbanStreets.LaneData.AllowedMovements

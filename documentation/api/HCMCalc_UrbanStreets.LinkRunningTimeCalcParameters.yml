@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  commentId: T:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  id: LinkRunningTimeCalcParameters
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.#ctor
+  - HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+  - HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay
+  - HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact
+  - HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime
+  - HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay
+  - HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess
+  langs:
+  - csharp
+  - vb
+  name: LinkRunningTimeCalcParameters
+  nameWithType: LinkRunningTimeCalcParameters
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  type: Class
+  source:
+    id: LinkRunningTimeCalcParameters
+    path: ''
+    startLine: 862
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class LinkRunningTimeCalcParameters
+    content.vb: Public Class LinkRunningTimeCalcParameters
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.#ctor
+  commentId: M:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: LinkRunningTimeCalcParameters()
+  nameWithType: LinkRunningTimeCalcParameters.LinkRunningTimeCalcParameters()
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.LinkRunningTimeCalcParameters()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 871
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public LinkRunningTimeCalcParameters()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime
+  commentId: P:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime
+  id: StartUpLostTime
+  parent: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: StartUpLostTime
+  nameWithType: LinkRunningTimeCalcParameters.StartUpLostTime
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime
+  type: Property
+  source:
+    id: StartUpLostTime
+    path: ''
+    startLine: 877
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float StartUpLostTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property StartUpLostTime As Single
+  overload: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact
+  commentId: P:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact
+  id: ProximityAdjFact
+  parent: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: ProximityAdjFact
+  nameWithType: LinkRunningTimeCalcParameters.ProximityAdjFact
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact
+  type: Property
+  source:
+    id: ProximityAdjFact
+    path: ''
+    startLine: 878
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ProximityAdjFact { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ProximityAdjFact As Single
+  overload: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess
+  commentId: P:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess
+  id: TurningDelayPerAccess
+  parent: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: TurningDelayPerAccess
+  nameWithType: LinkRunningTimeCalcParameters.TurningDelayPerAccess
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess
+  type: Property
+  source:
+    id: TurningDelayPerAccess
+    path: ''
+    startLine: 879
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TurningDelayPerAccess { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TurningDelayPerAccess As Single
+  overload: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay
+  commentId: P:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay
+  id: TotalTurningDelay
+  parent: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: TotalTurningDelay
+  nameWithType: LinkRunningTimeCalcParameters.TotalTurningDelay
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay
+  type: Property
+  source:
+    id: TotalTurningDelay
+    path: ''
+    startLine: 880
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TotalTurningDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TotalTurningDelay As Single
+  overload: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay
+  commentId: P:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay
+  id: OtherDelay
+  parent: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: OtherDelay
+  nameWithType: LinkRunningTimeCalcParameters.OtherDelay
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay
+  type: Property
+  source:
+    id: OtherDelay
+    path: ''
+    startLine: 881
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float OtherDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property OtherDelay As Single
+  overload: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+  commentId: P:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+  id: MidBlockPctTurnsDefault
+  parent: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  langs:
+  - csharp
+  - vb
+  name: MidBlockPctTurnsDefault
+  nameWithType: LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+  type: Property
+  source:
+    id: MidBlockPctTurnsDefault
+    path: ''
+    startLine: 882
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] MidBlockPctTurnsDefault { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Public Property MidBlockPctTurnsDefault As Integer()
+  overload: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.#ctor
+  name: LinkRunningTimeCalcParameters
+  nameWithType: LinkRunningTimeCalcParameters.LinkRunningTimeCalcParameters
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.LinkRunningTimeCalcParameters
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime
+  name: StartUpLostTime
+  nameWithType: LinkRunningTimeCalcParameters.StartUpLostTime
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.StartUpLostTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact
+  name: ProximityAdjFact
+  nameWithType: LinkRunningTimeCalcParameters.ProximityAdjFact
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.ProximityAdjFact
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess
+  name: TurningDelayPerAccess
+  nameWithType: LinkRunningTimeCalcParameters.TurningDelayPerAccess
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TurningDelayPerAccess
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay
+  name: TotalTurningDelay
+  nameWithType: LinkRunningTimeCalcParameters.TotalTurningDelay
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.TotalTurningDelay
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay
+  name: OtherDelay
+  nameWithType: LinkRunningTimeCalcParameters.OtherDelay
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.OtherDelay
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault*
+  commentId: Overload:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+  name: MidBlockPctTurnsDefault
+  nameWithType: LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.MidBlockPctTurnsDefault
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

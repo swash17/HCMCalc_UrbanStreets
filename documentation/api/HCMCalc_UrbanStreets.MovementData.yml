@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.MovementData
+  commentId: T:HCMCalc_UrbanStreets.MovementData
+  id: MovementData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  - HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement(HCMCalc_UrbanStreets.MovementDirection,HCMCalc_UrbanStreets.ApproachData)
+  - HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber(HCMCalc_UrbanStreets.IntersectionData,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  - HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  langs:
+  - csharp
+  - vb
+  name: MovementData
+  nameWithType: MovementData
+  fullName: HCMCalc_UrbanStreets.MovementData
+  type: Class
+  source:
+    id: MovementData
+    path: ''
+    startLine: 5196
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class MovementData
+    content.vb: Public Class MovementData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement(HCMCalc_UrbanStreets.MovementDirection,HCMCalc_UrbanStreets.ApproachData)
+  commentId: M:HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement(HCMCalc_UrbanStreets.MovementDirection,HCMCalc_UrbanStreets.ApproachData)
+  id: GetIntersectionMovement(HCMCalc_UrbanStreets.MovementDirection,HCMCalc_UrbanStreets.ApproachData)
+  parent: HCMCalc_UrbanStreets.MovementData
+  langs:
+  - csharp
+  - vb
+  name: GetIntersectionMovement(MovementDirection, ApproachData)
+  nameWithType: MovementData.GetIntersectionMovement(MovementDirection, ApproachData)
+  fullName: HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement(HCMCalc_UrbanStreets.MovementDirection, HCMCalc_UrbanStreets.ApproachData)
+  type: Method
+  source:
+    id: GetIntersectionMovement
+    path: ''
+    startLine: 5198
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static NemaMovementNumbers GetIntersectionMovement(MovementDirection movementDirection, ApproachData Approach)
+    parameters:
+    - id: movementDirection
+      type: HCMCalc_UrbanStreets.MovementDirection
+    - id: Approach
+      type: HCMCalc_UrbanStreets.ApproachData
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    content.vb: Public Shared Function GetIntersectionMovement(movementDirection As MovementDirection, Approach As ApproachData) As NemaMovementNumbers
+  overload: HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  commentId: M:HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  id: GetOpposingMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  parent: HCMCalc_UrbanStreets.MovementData
+  langs:
+  - csharp
+  - vb
+  name: GetOpposingMvmt(NemaMovementNumbers)
+  nameWithType: MovementData.GetOpposingMvmt(NemaMovementNumbers)
+  fullName: HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  type: Method
+  source:
+    id: GetOpposingMvmt
+    path: ''
+    startLine: 5232
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static NemaMovementNumbers GetOpposingMvmt(NemaMovementNumbers Movement)
+    parameters:
+    - id: Movement
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    content.vb: Public Shared Function GetOpposingMvmt(Movement As NemaMovementNumbers) As NemaMovementNumbers
+  overload: HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  commentId: M:HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  id: GetAdjLeftMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  parent: HCMCalc_UrbanStreets.MovementData
+  langs:
+  - csharp
+  - vb
+  name: GetAdjLeftMvmt(NemaMovementNumbers)
+  nameWithType: MovementData.GetAdjLeftMvmt(NemaMovementNumbers)
+  fullName: HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt(HCMCalc_UrbanStreets.NemaMovementNumbers)
+  type: Method
+  source:
+    id: GetAdjLeftMvmt
+    path: ''
+    startLine: 5257
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static NemaMovementNumbers GetAdjLeftMvmt(NemaMovementNumbers Movement)
+    parameters:
+    - id: Movement
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    content.vb: Public Shared Function GetAdjLeftMvmt(Movement As NemaMovementNumbers) As NemaMovementNumbers
+  overload: HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber(HCMCalc_UrbanStreets.IntersectionData,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  commentId: M:HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber(HCMCalc_UrbanStreets.IntersectionData,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  id: GetLaneGroupFromNemaMovementNumber(HCMCalc_UrbanStreets.IntersectionData,HCMCalc_UrbanStreets.NemaMovementNumbers)
+  parent: HCMCalc_UrbanStreets.MovementData
+  langs:
+  - csharp
+  - vb
+  name: GetLaneGroupFromNemaMovementNumber(IntersectionData, NemaMovementNumbers)
+  nameWithType: MovementData.GetLaneGroupFromNemaMovementNumber(IntersectionData, NemaMovementNumbers)
+  fullName: HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber(HCMCalc_UrbanStreets.IntersectionData, HCMCalc_UrbanStreets.NemaMovementNumbers)
+  type: Method
+  source:
+    id: GetLaneGroupFromNemaMovementNumber
+    path: ''
+    startLine: 5283
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static LaneGroupData GetLaneGroupFromNemaMovementNumber(IntersectionData analysisIntersection, NemaMovementNumbers Movement)
+    parameters:
+    - id: analysisIntersection
+      type: HCMCalc_UrbanStreets.IntersectionData
+    - id: Movement
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+    return:
+      type: HCMCalc_UrbanStreets.LaneGroupData
+    content.vb: Public Shared Function GetLaneGroupFromNemaMovementNumber(analysisIntersection As IntersectionData, Movement As NemaMovementNumbers) As LaneGroupData
+  overload: HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement*
+  commentId: Overload:HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement
+  name: GetIntersectionMovement
+  nameWithType: MovementData.GetIntersectionMovement
+  fullName: HCMCalc_UrbanStreets.MovementData.GetIntersectionMovement
+- uid: HCMCalc_UrbanStreets.MovementDirection
+  commentId: T:HCMCalc_UrbanStreets.MovementDirection
+  parent: HCMCalc_UrbanStreets
+  name: MovementDirection
+  nameWithType: MovementDirection
+  fullName: HCMCalc_UrbanStreets.MovementDirection
+- uid: HCMCalc_UrbanStreets.ApproachData
+  commentId: T:HCMCalc_UrbanStreets.ApproachData
+  parent: HCMCalc_UrbanStreets
+  name: ApproachData
+  nameWithType: ApproachData
+  fullName: HCMCalc_UrbanStreets.ApproachData
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+  commentId: T:HCMCalc_UrbanStreets.NemaMovementNumbers
+  parent: HCMCalc_UrbanStreets
+  name: NemaMovementNumbers
+  nameWithType: NemaMovementNumbers
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers
+- uid: HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt*
+  commentId: Overload:HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt
+  name: GetOpposingMvmt
+  nameWithType: MovementData.GetOpposingMvmt
+  fullName: HCMCalc_UrbanStreets.MovementData.GetOpposingMvmt
+- uid: HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt*
+  commentId: Overload:HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt
+  name: GetAdjLeftMvmt
+  nameWithType: MovementData.GetAdjLeftMvmt
+  fullName: HCMCalc_UrbanStreets.MovementData.GetAdjLeftMvmt
+- uid: HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber*
+  commentId: Overload:HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber
+  name: GetLaneGroupFromNemaMovementNumber
+  nameWithType: MovementData.GetLaneGroupFromNemaMovementNumber
+  fullName: HCMCalc_UrbanStreets.MovementData.GetLaneGroupFromNemaMovementNumber
+- uid: HCMCalc_UrbanStreets.IntersectionData
+  commentId: T:HCMCalc_UrbanStreets.IntersectionData
+  parent: HCMCalc_UrbanStreets
+  name: IntersectionData
+  nameWithType: IntersectionData
+  fullName: HCMCalc_UrbanStreets.IntersectionData
+- uid: HCMCalc_UrbanStreets.LaneGroupData
+  commentId: T:HCMCalc_UrbanStreets.LaneGroupData
+  parent: HCMCalc_UrbanStreets
+  name: LaneGroupData
+  nameWithType: LaneGroupData
+  fullName: HCMCalc_UrbanStreets.LaneGroupData

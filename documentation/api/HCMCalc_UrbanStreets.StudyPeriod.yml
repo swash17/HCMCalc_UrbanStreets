@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.StudyPeriod
+  commentId: T:HCMCalc_UrbanStreets.StudyPeriod
+  id: StudyPeriod
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.StudyPeriod.Kother
+  - HCMCalc_UrbanStreets.StudyPeriod.PeakHour
+  - HCMCalc_UrbanStreets.StudyPeriod.StandardK
+  langs:
+  - csharp
+  - vb
+  name: StudyPeriod
+  nameWithType: StudyPeriod
+  fullName: HCMCalc_UrbanStreets.StudyPeriod
+  type: Enum
+  source:
+    id: StudyPeriod
+    path: ''
+    startLine: 5361
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nThe study period for a project.\n"
+  example: []
+  syntax:
+    content: public enum StudyPeriod
+    content.vb: Public Enum StudyPeriod
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.StudyPeriod.StandardK
+  commentId: F:HCMCalc_UrbanStreets.StudyPeriod.StandardK
+  id: StandardK
+  parent: HCMCalc_UrbanStreets.StudyPeriod
+  langs:
+  - csharp
+  - vb
+  name: StandardK
+  nameWithType: StudyPeriod.StandardK
+  fullName: HCMCalc_UrbanStreets.StudyPeriod.StandardK
+  type: Field
+  source:
+    id: StandardK
+    path: ''
+    startLine: 5363
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: StandardK = 0
+    return:
+      type: HCMCalc_UrbanStreets.StudyPeriod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.StudyPeriod.Kother
+  commentId: F:HCMCalc_UrbanStreets.StudyPeriod.Kother
+  id: Kother
+  parent: HCMCalc_UrbanStreets.StudyPeriod
+  langs:
+  - csharp
+  - vb
+  name: Kother
+  nameWithType: StudyPeriod.Kother
+  fullName: HCMCalc_UrbanStreets.StudyPeriod.Kother
+  type: Field
+  source:
+    id: Kother
+    path: ''
+    startLine: 5364
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Kother = 1
+    return:
+      type: HCMCalc_UrbanStreets.StudyPeriod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.StudyPeriod.PeakHour
+  commentId: F:HCMCalc_UrbanStreets.StudyPeriod.PeakHour
+  id: PeakHour
+  parent: HCMCalc_UrbanStreets.StudyPeriod
+  langs:
+  - csharp
+  - vb
+  name: PeakHour
+  nameWithType: StudyPeriod.PeakHour
+  fullName: HCMCalc_UrbanStreets.StudyPeriod.PeakHour
+  type: Field
+  source:
+    id: PeakHour
+    path: ''
+    startLine: 5365
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: PeakHour = 2
+    return:
+      type: HCMCalc_UrbanStreets.StudyPeriod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.StudyPeriod
+  commentId: T:HCMCalc_UrbanStreets.StudyPeriod
+  parent: HCMCalc_UrbanStreets
+  name: StudyPeriod
+  nameWithType: StudyPeriod
+  fullName: HCMCalc_UrbanStreets.StudyPeriod

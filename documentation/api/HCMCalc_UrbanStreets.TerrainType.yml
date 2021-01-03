@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.TerrainType
+  commentId: T:HCMCalc_UrbanStreets.TerrainType
+  id: TerrainType
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.TerrainType.Level
+  - HCMCalc_UrbanStreets.TerrainType.Rolling
+  langs:
+  - csharp
+  - vb
+  name: TerrainType
+  nameWithType: TerrainType
+  fullName: HCMCalc_UrbanStreets.TerrainType
+  type: Enum
+  source:
+    id: TerrainType
+    path: ''
+    startLine: 57
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public enum TerrainType
+    content.vb: Public Enum TerrainType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.TerrainType.Level
+  commentId: F:HCMCalc_UrbanStreets.TerrainType.Level
+  id: Level
+  parent: HCMCalc_UrbanStreets.TerrainType
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: TerrainType.Level
+  fullName: HCMCalc_UrbanStreets.TerrainType.Level
+  type: Field
+  source:
+    id: Level
+    path: ''
+    startLine: 59
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Level = 0
+    return:
+      type: HCMCalc_UrbanStreets.TerrainType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.TerrainType.Rolling
+  commentId: F:HCMCalc_UrbanStreets.TerrainType.Rolling
+  id: Rolling
+  parent: HCMCalc_UrbanStreets.TerrainType
+  langs:
+  - csharp
+  - vb
+  name: Rolling
+  nameWithType: TerrainType.Rolling
+  fullName: HCMCalc_UrbanStreets.TerrainType.Rolling
+  type: Field
+  source:
+    id: Rolling
+    path: ''
+    startLine: 60
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Rolling = 1
+    return:
+      type: HCMCalc_UrbanStreets.TerrainType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.TerrainType
+  commentId: T:HCMCalc_UrbanStreets.TerrainType
+  parent: HCMCalc_UrbanStreets
+  name: TerrainType
+  nameWithType: TerrainType
+  fullName: HCMCalc_UrbanStreets.TerrainType

@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.AnalysisMode
+  commentId: T:HCMCalc_UrbanStreets.AnalysisMode
+  id: AnalysisMode
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.AnalysisMode.Operations
+  - HCMCalc_UrbanStreets.AnalysisMode.Planning
+  langs:
+  - csharp
+  - vb
+  name: AnalysisMode
+  nameWithType: AnalysisMode
+  fullName: HCMCalc_UrbanStreets.AnalysisMode
+  type: Enum
+  source:
+    id: AnalysisMode
+    path: ''
+    startLine: 5331
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nType of analysis mode for an arterial. &quot;Operations&quot; uses full calculation such as platoon dispersion while &quot;Planning&quot; uses simple calculations.\n"
+  example: []
+  syntax:
+    content: public enum AnalysisMode
+    content.vb: Public Enum AnalysisMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.AnalysisMode.Operations
+  commentId: F:HCMCalc_UrbanStreets.AnalysisMode.Operations
+  id: Operations
+  parent: HCMCalc_UrbanStreets.AnalysisMode
+  langs:
+  - csharp
+  - vb
+  name: Operations
+  nameWithType: AnalysisMode.Operations
+  fullName: HCMCalc_UrbanStreets.AnalysisMode.Operations
+  type: Field
+  source:
+    id: Operations
+    path: ''
+    startLine: 5333
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Operations = 0
+    return:
+      type: HCMCalc_UrbanStreets.AnalysisMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.AnalysisMode.Planning
+  commentId: F:HCMCalc_UrbanStreets.AnalysisMode.Planning
+  id: Planning
+  parent: HCMCalc_UrbanStreets.AnalysisMode
+  langs:
+  - csharp
+  - vb
+  name: Planning
+  nameWithType: AnalysisMode.Planning
+  fullName: HCMCalc_UrbanStreets.AnalysisMode.Planning
+  type: Field
+  source:
+    id: Planning
+    path: ''
+    startLine: 5334
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Planning = 1
+    return:
+      type: HCMCalc_UrbanStreets.AnalysisMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.AnalysisMode
+  commentId: T:HCMCalc_UrbanStreets.AnalysisMode
+  parent: HCMCalc_UrbanStreets
+  name: AnalysisMode
+  nameWithType: AnalysisMode
+  fullName: HCMCalc_UrbanStreets.AnalysisMode

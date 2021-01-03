@@ -1,0 +1,392 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+  commentId: T:HCMCalc_UrbanStreets.NemaMovementNumbers
+  id: NemaMovementNumbers
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.EBLeft
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.EBRight
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.EBThru
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.NBLeft
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.NBRight
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.NBThru
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.SBLeft
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.SBRight
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.SBThru
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.WBLeft
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.WBRight
+  - HCMCalc_UrbanStreets.NemaMovementNumbers.WBThru
+  langs:
+  - csharp
+  - vb
+  name: NemaMovementNumbers
+  nameWithType: NemaMovementNumbers
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers
+  type: Enum
+  source:
+    id: NemaMovementNumbers
+    path: ''
+    startLine: 4866
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nNEMA movement numbers for each approach plus movement combination.\n"
+  example: []
+  syntax:
+    content: public enum NemaMovementNumbers
+    content.vb: Public Enum NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.EBLeft
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.EBLeft
+  id: EBLeft
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: EBLeft
+  nameWithType: NemaMovementNumbers.EBLeft
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.EBLeft
+  type: Field
+  source:
+    id: EBLeft
+    path: ''
+    startLine: 4868
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: EBLeft = 5
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.EBThru
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.EBThru
+  id: EBThru
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: EBThru
+  nameWithType: NemaMovementNumbers.EBThru
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.EBThru
+  type: Field
+  source:
+    id: EBThru
+    path: ''
+    startLine: 4869
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: EBThru = 2
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.EBRight
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.EBRight
+  id: EBRight
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: EBRight
+  nameWithType: NemaMovementNumbers.EBRight
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.EBRight
+  type: Field
+  source:
+    id: EBRight
+    path: ''
+    startLine: 4870
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: EBRight = 12
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.WBLeft
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.WBLeft
+  id: WBLeft
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: WBLeft
+  nameWithType: NemaMovementNumbers.WBLeft
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.WBLeft
+  type: Field
+  source:
+    id: WBLeft
+    path: ''
+    startLine: 4871
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: WBLeft = 1
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.WBThru
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.WBThru
+  id: WBThru
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: WBThru
+  nameWithType: NemaMovementNumbers.WBThru
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.WBThru
+  type: Field
+  source:
+    id: WBThru
+    path: ''
+    startLine: 4872
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: WBThru = 6
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.WBRight
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.WBRight
+  id: WBRight
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: WBRight
+  nameWithType: NemaMovementNumbers.WBRight
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.WBRight
+  type: Field
+  source:
+    id: WBRight
+    path: ''
+    startLine: 4873
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: WBRight = 16
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.NBLeft
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.NBLeft
+  id: NBLeft
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: NBLeft
+  nameWithType: NemaMovementNumbers.NBLeft
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.NBLeft
+  type: Field
+  source:
+    id: NBLeft
+    path: ''
+    startLine: 4874
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: NBLeft = 3
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.NBThru
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.NBThru
+  id: NBThru
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: NBThru
+  nameWithType: NemaMovementNumbers.NBThru
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.NBThru
+  type: Field
+  source:
+    id: NBThru
+    path: ''
+    startLine: 4875
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: NBThru = 8
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.NBRight
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.NBRight
+  id: NBRight
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: NBRight
+  nameWithType: NemaMovementNumbers.NBRight
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.NBRight
+  type: Field
+  source:
+    id: NBRight
+    path: ''
+    startLine: 4876
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: NBRight = 18
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.SBLeft
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.SBLeft
+  id: SBLeft
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: SBLeft
+  nameWithType: NemaMovementNumbers.SBLeft
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.SBLeft
+  type: Field
+  source:
+    id: SBLeft
+    path: ''
+    startLine: 4877
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: SBLeft = 7
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.SBThru
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.SBThru
+  id: SBThru
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: SBThru
+  nameWithType: NemaMovementNumbers.SBThru
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.SBThru
+  type: Field
+  source:
+    id: SBThru
+    path: ''
+    startLine: 4878
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: SBThru = 4
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers.SBRight
+  commentId: F:HCMCalc_UrbanStreets.NemaMovementNumbers.SBRight
+  id: SBRight
+  parent: HCMCalc_UrbanStreets.NemaMovementNumbers
+  langs:
+  - csharp
+  - vb
+  name: SBRight
+  nameWithType: NemaMovementNumbers.SBRight
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers.SBRight
+  type: Field
+  source:
+    id: SBRight
+    path: ''
+    startLine: 4879
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: SBRight = 14
+    return:
+      type: HCMCalc_UrbanStreets.NemaMovementNumbers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.NemaMovementNumbers
+  commentId: T:HCMCalc_UrbanStreets.NemaMovementNumbers
+  parent: HCMCalc_UrbanStreets
+  name: NemaMovementNumbers
+  nameWithType: NemaMovementNumbers
+  fullName: HCMCalc_UrbanStreets.NemaMovementNumbers

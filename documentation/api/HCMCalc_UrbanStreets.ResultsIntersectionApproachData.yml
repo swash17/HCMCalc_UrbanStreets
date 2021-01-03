@@ -1,0 +1,354 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  commentId: T:HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  id: ResultsIntersectionApproachData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor
+  - HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor(System.Int32)
+  - HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime
+  - HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile
+  - HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay
+  - HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS
+  - HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio
+  langs:
+  - csharp
+  - vb
+  name: ResultsIntersectionApproachData
+  nameWithType: ResultsIntersectionApproachData
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  type: Class
+  source:
+    id: ResultsIntersectionApproachData
+    path: ''
+    startLine: 4799
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters for approach results.\n"
+  example: []
+  syntax:
+    content: public class ResultsIntersectionApproachData
+    content.vb: Public Class ResultsIntersectionApproachData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  langs:
+  - csharp
+  - vb
+  name: ResultsIntersectionApproachData()
+  nameWithType: ResultsIntersectionApproachData.ResultsIntersectionApproachData()
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ResultsIntersectionApproachData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4810
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nEmpty constructor that assumes cycle length is equal to an analysis period.\n"
+  example: []
+  syntax:
+    content: public ResultsIntersectionApproachData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor(System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  langs:
+  - csharp
+  - vb
+  name: ResultsIntersectionApproachData(Int32)
+  nameWithType: ResultsIntersectionApproachData.ResultsIntersectionApproachData(Int32)
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ResultsIntersectionApproachData(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4818
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nMain constructor for creating approach results.\n"
+  example: []
+  syntax:
+    content: public ResultsIntersectionApproachData(int cycleLength)
+    parameters:
+    - id: cycleLength
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(cycleLength As Integer)
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio
+  id: vcRatio
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  langs:
+  - csharp
+  - vb
+  name: vcRatio
+  nameWithType: ResultsIntersectionApproachData.vcRatio
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio
+  type: Property
+  source:
+    id: vcRatio
+    path: ''
+    startLine: 4823
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float vcRatio { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property vcRatio As Single
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay
+  id: ControlDelay
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  langs:
+  - csharp
+  - vb
+  name: ControlDelay
+  nameWithType: ResultsIntersectionApproachData.ControlDelay
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay
+  type: Property
+  source:
+    id: ControlDelay
+    path: ''
+    startLine: 4824
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ControlDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ControlDelay As Single
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS
+  id: LOS
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  langs:
+  - csharp
+  - vb
+  name: LOS
+  nameWithType: ResultsIntersectionApproachData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS
+  type: Property
+  source:
+    id: LOS
+    path: ''
+    startLine: 4825
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public string LOS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LOS As String
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime
+  id: AnalysisPeriodTime
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  langs:
+  - csharp
+  - vb
+  name: AnalysisPeriodTime
+  nameWithType: ResultsIntersectionApproachData.AnalysisPeriodTime
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime
+  type: Property
+  source:
+    id: AnalysisPeriodTime
+    path: ''
+    startLine: 4826
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static int AnalysisPeriodTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property AnalysisPeriodTime As Integer
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile
+  commentId: P:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile
+  id: ArrivalFlowProfile
+  parent: HCMCalc_UrbanStreets.ResultsIntersectionApproachData
+  langs:
+  - csharp
+  - vb
+  name: ArrivalFlowProfile
+  nameWithType: ResultsIntersectionApproachData.ArrivalFlowProfile
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile
+  type: Property
+  source:
+    id: ArrivalFlowProfile
+    path: ''
+    startLine: 4827
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[, ] ArrivalFlowProfile { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,]
+    content.vb: Public Property ArrivalFlowProfile As Single(,)
+  overload: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.#ctor
+  name: ResultsIntersectionApproachData
+  nameWithType: ResultsIntersectionApproachData.ResultsIntersectionApproachData
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ResultsIntersectionApproachData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio
+  name: vcRatio
+  nameWithType: ResultsIntersectionApproachData.vcRatio
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.vcRatio
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay
+  name: ControlDelay
+  nameWithType: ResultsIntersectionApproachData.ControlDelay
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ControlDelay
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS
+  name: LOS
+  nameWithType: ResultsIntersectionApproachData.LOS
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.LOS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime
+  name: AnalysisPeriodTime
+  nameWithType: ResultsIntersectionApproachData.AnalysisPeriodTime
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.AnalysisPeriodTime
+- uid: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile
+  name: ArrivalFlowProfile
+  nameWithType: ResultsIntersectionApproachData.ArrivalFlowProfile
+  fullName: HCMCalc_UrbanStreets.ResultsIntersectionApproachData.ArrivalFlowProfile
+- uid: System.Single[,]
+  isExternal: true
+  name: Single[,]
+  nameWithType: Single[,]
+  fullName: System.Single[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: System.Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)

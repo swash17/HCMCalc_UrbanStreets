@@ -1,0 +1,887 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Christian/Source/Repos/HCMCalc_UrbanStreets",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.AccessPointData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.AccessPointData.html",
+          "hash": "9MQG+8OBJV8xrl6Aze66NQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.AnalysisMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.AnalysisMode.html",
+          "hash": "OOqsm9rfcV8sXxd8iRu3dg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ApproachData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ApproachData.html",
+          "hash": "YpTEUsZyP1J/HywNpEsVdQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.AreaType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.AreaType.html",
+          "hash": "VxB1TUgE5y9+gbCuzL3iHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ArterialClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ArterialClass.html",
+          "hash": "t90wpBlO/PLkcjAYy/tGCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ArterialData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ArterialData.html",
+          "hash": "A6wkYeHi6w+zt8xHKyx9jg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.BaseFreeFlowSpeedCalcParameters.html",
+          "hash": "K6Zb97TAAwmE0ao54Lw7Ig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.CalcsArterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.CalcsArterial.html",
+          "hash": "vFkYoE2bu2UpiShkPXrrtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.CalcsFlowProfiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.CalcsFlowProfiles.html",
+          "hash": "0foX7UNTd5rZK5AWT4ooSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.CalcsOriginDestination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.CalcsOriginDestination.html",
+          "hash": "YYCAW5gtmq0tVSxcfMDqsQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.DirectionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.DirectionType.html",
+          "hash": "RsH/irNb9DRM05hhxOfpmA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.html",
+          "hash": "ymSByvD7o7LamJJKFSu5CA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.FFSCalcMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.FFSCalcMethod.html",
+          "hash": "t/I7fILEa9Et/6hIeAuMrg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.FlowProfileParms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.FlowProfileParms.html",
+          "hash": "hSxE4iXoXa11hczy9WP36w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.IntersectionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.IntersectionData.html",
+          "hash": "pmZaTgaR+8LESMAAE9/b1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.LaneData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.LaneData.html",
+          "hash": "Jj/cyEg+EPlM4uKVInKEjg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.LaneGroupData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.LaneGroupData.html",
+          "hash": "jTmdKG+VNhnA5RFjuNIOyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.LaneMovementsAllowed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.LaneMovementsAllowed.html",
+          "hash": "v9ZiazEumyxjhweXVxcN8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.LevelServiceCriteria.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.LevelServiceCriteria.html",
+          "hash": "4OgWjl9T9DW7OhFj7nz6Ug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.LinkData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.LinkData.html",
+          "hash": "6wwslM2r54PUL5Vw8Z5vxQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters.html",
+          "hash": "ceK2HdyIa2SOvqjrtzIS3Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.MedianType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.MedianType.html",
+          "hash": "iw49F7p/nPMRCSEND4Bh8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ModeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ModeType.html",
+          "hash": "WtjfmR+2SiAOI59l472emQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.MovementData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.MovementData.html",
+          "hash": "fbl9CgzCLEb5jA1BJ5iitw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.MovementDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.MovementDirection.html",
+          "hash": "EJHR2t0EWpx+QRe4jdO19A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.MovementDirectionWithMidBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.MovementDirectionWithMidBlock.html",
+          "hash": "RRXhlsHNCGQ6xsbsL1vrfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.NemaMovementNumbers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.NemaMovementNumbers.html",
+          "hash": "+wfgBrIvHWdD3Lkv7b9cLg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.OriginDestinationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.OriginDestinationData.html",
+          "hash": "uHtzKq465fW8xCMI/oNN8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.OutLaneWidth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.OutLaneWidth.html",
+          "hash": "xl/CWik+JKQwkwwOn8zFeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ParkingActivityLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ParkingActivityLevel.html",
+          "hash": "41nl7k/n4+oZNOd/CDY8Eg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.PhaseColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.PhaseColor.html",
+          "hash": "SJ7yy2Jww7DLDHZtc3GbAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.PhasingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.PhasingType.html",
+          "hash": "J5OBoRKQKWIxEOshbb2M7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ProjectData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ProjectData.html",
+          "hash": "Upq7RFz+6Ga1f0AWFeX2Pw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsArterialData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsArterialData.html",
+          "hash": "B4TO+uE89MXZ56BGxsRB7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsAutoArtPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsAutoArtPlan.html",
+          "hash": "8kApjKsEJBGJAhUo0LaeYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsIntersectionApproachData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsIntersectionApproachData.html",
+          "hash": "OVIuB/6aTUa0vkHDse81pA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsIntersectionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsIntersectionData.html",
+          "hash": "A6wKz7rxfOzaF8Q+/sRZvg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsIntersectionLaneGroupData.html",
+          "hash": "VxsMxyLc3/iacwQ8lJATRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsLinkData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsLinkData.html",
+          "hash": "66HY62TQn6rwB4Mg/XeloA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsMultimodalData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsMultimodalData.html",
+          "hash": "krXgLzXGpEri3PvjOnp+yg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ResultsSegmentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ResultsSegmentData.html",
+          "hash": "117tMLO9LP2TuEnxzSS6Nw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SatFlowRateAdjFactors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SatFlowRateAdjFactors.html",
+          "hash": "Kh4ggNnVunx36YHkK/eM/w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SatFlowRateCalculations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SatFlowRateCalculations.html",
+          "hash": "1yoJCdbfRts3jSCLLHEkSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SaturationFlowRateValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SaturationFlowRateValues.html",
+          "hash": "YV/XNVUEhvHysHuBfwV4lw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SegmentCalcs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SegmentCalcs.html",
+          "hash": "fmhYu6/09KTquqOBl9wTrg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SegmentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SegmentData.html",
+          "hash": "6MISb/0eD/vyRx4QrNOlJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SegmentDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SegmentDirection.html",
+          "hash": "WABml89lbxGsyCUhLLe5pA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SequenceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SequenceType.html",
+          "hash": "gbCwJI+2tdARfWPAY1VQJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ServiceVolResultsOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ServiceVolResultsOutput.html",
+          "hash": "bjLWyo10Abo2+aRfMxrm2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ServiceVolumeArterialInputs.html",
+          "hash": "ABONU1d3kxewxYCcjAQXtQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.ServiceVolumes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.ServiceVolumes.html",
+          "hash": "NKsxJKrR/vXvU3iHf2ZMPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SigControlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SigControlType.html",
+          "hash": "d9wE+yEIkKartGKuM+fFVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SignalCalcs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SignalCalcs.html",
+          "hash": "DNDJ9dPSyBQjKtcYq6oWyg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SignalControlParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SignalControlParameters.html",
+          "hash": "4O066C4tyrsWu9FxtKwjzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SignalCycleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SignalCycleData.html",
+          "hash": "ROiwiJmW/C6atVlU6kEyDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SignalPhaseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SignalPhaseData.html",
+          "hash": "5CQRTRhXBkX2RN53u2aUqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.SignalPhaseParms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.SignalPhaseParms.html",
+          "hash": "joPW+KMQ5hKt54XbF28E5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.StudyPeriod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.StudyPeriod.html",
+          "hash": "i9LtgWPKz4ETAhX9x8AeCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.TerrainType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.TerrainType.html",
+          "hash": "gYFbNzYPmR+5HSmiR9EyDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.TimerData.TimerResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.TimerData.TimerResults.html",
+          "hash": "b8PveA6GzU82VKd+ngyEFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.TimerData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.TimerData.html",
+          "hash": "RPM66qEJ5wSZZm6HLjuIrA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.TravelDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.TravelDirection.html",
+          "hash": "npMgwF6Tw5bipEO7NrY8rA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.UnsignalControlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.UnsignalControlType.html",
+          "hash": "sCDZql/LvNvKQVyCYacoMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/api/HCMCalc_UrbanStreets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HCMCalc_UrbanStreets.html",
+          "hash": "IcgdJHgcDcvFUxCpJc8Bgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/examples/examplesMainpage.md",
+      "output": {
+        ".html": {
+          "relative_path": "examples/examplesMainpage.html",
+          "hash": "uqTLCcKPkvxT0ZJgHkIrLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "documentation/images/UrbanStreets.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/UrbanStreets.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "documentation/images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/resources/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "37bUQCd5geI5Ocyjntb/oQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/userguide/userguideMainpage.md",
+      "output": {
+        ".html": {
+          "relative_path": "userguide/userguideMainpage.html",
+          "hash": "ggEWU701KqUJlt/pFDnLNg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 64,
+          "skipped_file_count": 64
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

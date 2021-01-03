@@ -1,0 +1,1274 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  commentId: T:HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  id: SatFlowRateAdjFactors
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.#ctor
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane
+  - HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone
+  langs:
+  - csharp
+  - vb
+  name: SatFlowRateAdjFactors
+  nameWithType: SatFlowRateAdjFactors
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  type: Class
+  source:
+    id: SatFlowRateAdjFactors
+    path: ''
+    startLine: 5601
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters that cover all adjustment factors required for saturation flow rate analysis.\n"
+  example: []
+  syntax:
+    content: public class SatFlowRateAdjFactors
+    content.vb: Public Class SatFlowRateAdjFactors
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.#ctor
+  commentId: M:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: SatFlowRateAdjFactors()
+  nameWithType: SatFlowRateAdjFactors.SatFlowRateAdjFactors()
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SatFlowRateAdjFactors()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5644
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nConstructor for assigning saturation flow rate adjustment factors.\n"
+  example: []
+  syntax:
+    content: public SatFlowRateAdjFactors()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth
+  id: LaneWidth
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: LaneWidth
+  nameWithType: SatFlowRateAdjFactors.LaneWidth
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth
+  type: Property
+  source:
+    id: LaneWidth
+    path: ''
+    startLine: 5664
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LaneWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LaneWidth As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade
+  id: HeavyVehGrade
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: HeavyVehGrade
+  nameWithType: SatFlowRateAdjFactors.HeavyVehGrade
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade
+  type: Property
+  source:
+    id: HeavyVehGrade
+    path: ''
+    startLine: 5665
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float HeavyVehGrade { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property HeavyVehGrade As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking
+  id: Parking
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: Parking
+  nameWithType: SatFlowRateAdjFactors.Parking
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking
+  type: Property
+  source:
+    id: Parking
+    path: ''
+    startLine: 5666
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Parking { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Parking As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage
+  id: BusBlockage
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: BusBlockage
+  nameWithType: SatFlowRateAdjFactors.BusBlockage
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage
+  type: Property
+  source:
+    id: BusBlockage
+    path: ''
+    startLine: 5667
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float BusBlockage { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property BusBlockage As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType
+  id: AreaType
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: AreaType
+  nameWithType: SatFlowRateAdjFactors.AreaType
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType
+  type: Property
+  source:
+    id: AreaType
+    path: ''
+    startLine: 5668
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AreaType { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AreaType As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization
+  id: LaneUtilization
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: LaneUtilization
+  nameWithType: SatFlowRateAdjFactors.LaneUtilization
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization
+  type: Property
+  source:
+    id: LaneUtilization
+    path: ''
+    startLine: 5669
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LaneUtilization { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LaneUtilization As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn
+  id: LeftTurn
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: LeftTurn
+  nameWithType: SatFlowRateAdjFactors.LeftTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn
+  type: Property
+  source:
+    id: LeftTurn
+    path: ''
+    startLine: 5670
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LeftTurn { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LeftTurn As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn
+  id: RightTurn
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: RightTurn
+  nameWithType: SatFlowRateAdjFactors.RightTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn
+  type: Property
+  source:
+    id: RightTurn
+    path: ''
+    startLine: 5671
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RightTurn { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RightTurn As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn
+  id: PedLeftTurn
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: PedLeftTurn
+  nameWithType: SatFlowRateAdjFactors.PedLeftTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn
+  type: Property
+  source:
+    id: PedLeftTurn
+    path: ''
+    startLine: 5672
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PedLeftTurn { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PedLeftTurn As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn
+  id: PedRightTurn
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: PedRightTurn
+  nameWithType: SatFlowRateAdjFactors.PedRightTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn
+  type: Property
+  source:
+    id: PedRightTurn
+    path: ''
+    startLine: 5673
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PedRightTurn { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PedRightTurn As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone
+  id: WorkZone
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: WorkZone
+  nameWithType: SatFlowRateAdjFactors.WorkZone
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone
+  type: Property
+  source:
+    id: WorkZone
+    path: ''
+    startLine: 5674
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float WorkZone { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property WorkZone As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage
+  id: LaneBlockage
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: LaneBlockage
+  nameWithType: SatFlowRateAdjFactors.LaneBlockage
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage
+  type: Property
+  source:
+    id: LaneBlockage
+    path: ''
+    startLine: 5675
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LaneBlockage { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LaneBlockage As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback
+  id: Spillback
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: Spillback
+  nameWithType: SatFlowRateAdjFactors.Spillback
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback
+  type: Property
+  source:
+    id: Spillback
+    path: ''
+    startLine: 5676
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Spillback { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Spillback As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency
+  id: LeftTurnEquivalency
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: LeftTurnEquivalency
+  nameWithType: SatFlowRateAdjFactors.LeftTurnEquivalency
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency
+  type: Property
+  source:
+    id: LeftTurnEquivalency
+    path: ''
+    startLine: 5677
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float LeftTurnEquivalency { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LeftTurnEquivalency As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency
+  id: RightTurnEquivalency
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: RightTurnEquivalency
+  nameWithType: SatFlowRateAdjFactors.RightTurnEquivalency
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency
+  type: Property
+  source:
+    id: RightTurnEquivalency
+    path: ''
+    startLine: 5678
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RightTurnEquivalency { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RightTurnEquivalency As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh
+  id: HeavyVeh
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: HeavyVeh
+  nameWithType: SatFlowRateAdjFactors.HeavyVeh
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh
+  type: Property
+  source:
+    id: HeavyVeh
+    path: ''
+    startLine: 5681
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float HeavyVeh { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property HeavyVeh As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN
+  id: fN
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: fN
+  nameWithType: SatFlowRateAdjFactors.fN
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN
+  type: Property
+  source:
+    id: fN
+    path: ''
+    startLine: 5682
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float fN { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property fN As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation
+  id: fAreaPopulation
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: fAreaPopulation
+  nameWithType: SatFlowRateAdjFactors.fAreaPopulation
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation
+  type: Property
+  source:
+    id: fAreaPopulation
+    path: ''
+    startLine: 5683
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float fAreaPopulation { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property fAreaPopulation As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP
+  id: fTP
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: fTP
+  nameWithType: SatFlowRateAdjFactors.fTP
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP
+  type: Property
+  source:
+    id: fTP
+    path: ''
+    startLine: 5684
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float fTP { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property fTP As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL
+  id: fSL
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: fSL
+  nameWithType: SatFlowRateAdjFactors.fSL
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL
+  type: Property
+  source:
+    id: fSL
+    path: ''
+    startLine: 5685
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float fSL { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property fSL As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol
+  id: Vol
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: Vol
+  nameWithType: SatFlowRateAdjFactors.Vol
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol
+  type: Property
+  source:
+    id: Vol
+    path: ''
+    startLine: 5686
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Vol { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Vol As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop
+  id: Pop
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: Pop
+  nameWithType: SatFlowRateAdjFactors.Pop
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop
+  type: Property
+  source:
+    id: Pop
+    path: ''
+    startLine: 5687
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Pop { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Pop As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay
+  id: fbay
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: fbay
+  nameWithType: SatFlowRateAdjFactors.fbay
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay
+  type: Property
+  source:
+    id: fbay
+    path: ''
+    startLine: 5689
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float fbay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property fbay As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian
+  id: fmedian
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: fmedian
+  nameWithType: SatFlowRateAdjFactors.fmedian
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian
+  type: Property
+  source:
+    id: fmedian
+    path: ''
+    startLine: 5690
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float fmedian { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property fmedian As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane
+  id: WidthOuterLane
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: WidthOuterLane
+  nameWithType: SatFlowRateAdjFactors.WidthOuterLane
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane
+  type: Property
+  source:
+    id: WidthOuterLane
+    path: ''
+    startLine: 5691
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int WidthOuterLane { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WidthOuterLane As Integer
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane
+  id: WidthInnerLane
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: WidthInnerLane
+  nameWithType: SatFlowRateAdjFactors.WidthInnerLane
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane
+  type: Property
+  source:
+    id: WidthInnerLane
+    path: ''
+    startLine: 5692
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int WidthInnerLane { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WidthInnerLane As Integer
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth
+  id: FactLaneWidth
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: FactLaneWidth
+  nameWithType: SatFlowRateAdjFactors.FactLaneWidth
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth
+  type: Property
+  source:
+    id: FactLaneWidth
+    path: ''
+    startLine: 5693
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float FactLaneWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FactLaneWidth As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier
+  id: PctRTMultiplier
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: PctRTMultiplier
+  nameWithType: SatFlowRateAdjFactors.PctRTMultiplier
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier
+  type: Property
+  source:
+    id: PctRTMultiplier
+    path: ''
+    startLine: 5695
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PctRTMultiplier { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PctRTMultiplier As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow
+  id: PermSatFlow
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: PermSatFlow
+  nameWithType: SatFlowRateAdjFactors.PermSatFlow
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow
+  type: Property
+  source:
+    id: PermSatFlow
+    path: ''
+    startLine: 5696
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PermSatFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PermSatFlow As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow
+  id: SharedSatFlow
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: SharedSatFlow
+  nameWithType: SatFlowRateAdjFactors.SharedSatFlow
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow
+  type: Property
+  source:
+    id: SharedSatFlow
+    path: ''
+    startLine: 5697
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SharedSatFlow { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SharedSatFlow As Single
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault
+  commentId: P:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault
+  id: AreaPopulationDefault
+  parent: HCMCalc_UrbanStreets.SatFlowRateAdjFactors
+  langs:
+  - csharp
+  - vb
+  name: AreaPopulationDefault
+  nameWithType: SatFlowRateAdjFactors.AreaPopulationDefault
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault
+  type: Property
+  source:
+    id: AreaPopulationDefault
+    path: ''
+    startLine: 5698
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] AreaPopulationDefault { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property AreaPopulationDefault As Single()
+  overload: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.#ctor
+  name: SatFlowRateAdjFactors
+  nameWithType: SatFlowRateAdjFactors.SatFlowRateAdjFactors
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SatFlowRateAdjFactors
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth
+  name: LaneWidth
+  nameWithType: SatFlowRateAdjFactors.LaneWidth
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneWidth
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade
+  name: HeavyVehGrade
+  nameWithType: SatFlowRateAdjFactors.HeavyVehGrade
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVehGrade
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking
+  name: Parking
+  nameWithType: SatFlowRateAdjFactors.Parking
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Parking
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage
+  name: BusBlockage
+  nameWithType: SatFlowRateAdjFactors.BusBlockage
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.BusBlockage
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType
+  name: AreaType
+  nameWithType: SatFlowRateAdjFactors.AreaType
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaType
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization
+  name: LaneUtilization
+  nameWithType: SatFlowRateAdjFactors.LaneUtilization
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneUtilization
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn
+  name: LeftTurn
+  nameWithType: SatFlowRateAdjFactors.LeftTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurn
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn
+  name: RightTurn
+  nameWithType: SatFlowRateAdjFactors.RightTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurn
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn
+  name: PedLeftTurn
+  nameWithType: SatFlowRateAdjFactors.PedLeftTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedLeftTurn
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn
+  name: PedRightTurn
+  nameWithType: SatFlowRateAdjFactors.PedRightTurn
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PedRightTurn
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone
+  name: WorkZone
+  nameWithType: SatFlowRateAdjFactors.WorkZone
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WorkZone
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage
+  name: LaneBlockage
+  nameWithType: SatFlowRateAdjFactors.LaneBlockage
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LaneBlockage
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback
+  name: Spillback
+  nameWithType: SatFlowRateAdjFactors.Spillback
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Spillback
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency
+  name: LeftTurnEquivalency
+  nameWithType: SatFlowRateAdjFactors.LeftTurnEquivalency
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.LeftTurnEquivalency
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency
+  name: RightTurnEquivalency
+  nameWithType: SatFlowRateAdjFactors.RightTurnEquivalency
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.RightTurnEquivalency
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh
+  name: HeavyVeh
+  nameWithType: SatFlowRateAdjFactors.HeavyVeh
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.HeavyVeh
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN
+  name: fN
+  nameWithType: SatFlowRateAdjFactors.fN
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fN
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation
+  name: fAreaPopulation
+  nameWithType: SatFlowRateAdjFactors.fAreaPopulation
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fAreaPopulation
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP
+  name: fTP
+  nameWithType: SatFlowRateAdjFactors.fTP
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fTP
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL
+  name: fSL
+  nameWithType: SatFlowRateAdjFactors.fSL
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fSL
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol
+  name: Vol
+  nameWithType: SatFlowRateAdjFactors.Vol
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Vol
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop
+  name: Pop
+  nameWithType: SatFlowRateAdjFactors.Pop
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.Pop
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay
+  name: fbay
+  nameWithType: SatFlowRateAdjFactors.fbay
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fbay
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian
+  name: fmedian
+  nameWithType: SatFlowRateAdjFactors.fmedian
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.fmedian
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane
+  name: WidthOuterLane
+  nameWithType: SatFlowRateAdjFactors.WidthOuterLane
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthOuterLane
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane
+  name: WidthInnerLane
+  nameWithType: SatFlowRateAdjFactors.WidthInnerLane
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.WidthInnerLane
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth
+  name: FactLaneWidth
+  nameWithType: SatFlowRateAdjFactors.FactLaneWidth
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.FactLaneWidth
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier
+  name: PctRTMultiplier
+  nameWithType: SatFlowRateAdjFactors.PctRTMultiplier
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PctRTMultiplier
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow
+  name: PermSatFlow
+  nameWithType: SatFlowRateAdjFactors.PermSatFlow
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.PermSatFlow
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow
+  name: SharedSatFlow
+  nameWithType: SatFlowRateAdjFactors.SharedSatFlow
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.SharedSatFlow
+- uid: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault*
+  commentId: Overload:HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault
+  name: AreaPopulationDefault
+  nameWithType: SatFlowRateAdjFactors.AreaPopulationDefault
+  fullName: HCMCalc_UrbanStreets.SatFlowRateAdjFactors.AreaPopulationDefault
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

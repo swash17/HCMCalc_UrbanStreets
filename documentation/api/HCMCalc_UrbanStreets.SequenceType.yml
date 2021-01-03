@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SequenceType
+  commentId: T:HCMCalc_UrbanStreets.SequenceType
+  id: SequenceType
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SequenceType.Lag
+  - HCMCalc_UrbanStreets.SequenceType.Lead
+  - HCMCalc_UrbanStreets.SequenceType.None
+  langs:
+  - csharp
+  - vb
+  name: SequenceType
+  nameWithType: SequenceType
+  fullName: HCMCalc_UrbanStreets.SequenceType
+  type: Enum
+  source:
+    id: SequenceType
+    path: ''
+    startLine: 7082
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public enum SequenceType
+    content.vb: Public Enum SequenceType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.SequenceType.Lead
+  commentId: F:HCMCalc_UrbanStreets.SequenceType.Lead
+  id: Lead
+  parent: HCMCalc_UrbanStreets.SequenceType
+  langs:
+  - csharp
+  - vb
+  name: Lead
+  nameWithType: SequenceType.Lead
+  fullName: HCMCalc_UrbanStreets.SequenceType.Lead
+  type: Field
+  source:
+    id: Lead
+    path: ''
+    startLine: 7084
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Lead = 0
+    return:
+      type: HCMCalc_UrbanStreets.SequenceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.SequenceType.Lag
+  commentId: F:HCMCalc_UrbanStreets.SequenceType.Lag
+  id: Lag
+  parent: HCMCalc_UrbanStreets.SequenceType
+  langs:
+  - csharp
+  - vb
+  name: Lag
+  nameWithType: SequenceType.Lag
+  fullName: HCMCalc_UrbanStreets.SequenceType.Lag
+  type: Field
+  source:
+    id: Lag
+    path: ''
+    startLine: 7085
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Lag = 1
+    return:
+      type: HCMCalc_UrbanStreets.SequenceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.SequenceType.None
+  commentId: F:HCMCalc_UrbanStreets.SequenceType.None
+  id: None
+  parent: HCMCalc_UrbanStreets.SequenceType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: SequenceType.None
+  fullName: HCMCalc_UrbanStreets.SequenceType.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 7086
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: None = 2
+    return:
+      type: HCMCalc_UrbanStreets.SequenceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.SequenceType
+  commentId: T:HCMCalc_UrbanStreets.SequenceType
+  parent: HCMCalc_UrbanStreets
+  name: SequenceType
+  nameWithType: SequenceType
+  fullName: HCMCalc_UrbanStreets.SequenceType

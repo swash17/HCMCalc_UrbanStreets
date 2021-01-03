@@ -1,0 +1,825 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms
+  commentId: T:HCMCalc_UrbanStreets.SignalPhaseParms
+  id: SignalPhaseParms
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SignalPhaseParms.#ctor
+  - HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration
+  - HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut
+  - HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH
+  - HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase
+  - HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet
+  - HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced
+  - HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension
+  - HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase
+  - HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut
+  - HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer
+  - HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer
+  - HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall
+  - HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced
+  - HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime
+  - HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension
+  - HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime
+  - HCMCalc_UrbanStreets.SignalPhaseParms.Temp1
+  - HCMCalc_UrbanStreets.SignalPhaseParms.Temp2
+  - HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio
+  langs:
+  - csharp
+  - vb
+  name: SignalPhaseParms
+  nameWithType: SignalPhaseParms
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms
+  type: Class
+  source:
+    id: SignalPhaseParms
+    path: ''
+    startLine: 1938
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class SignalPhaseParms
+    content.vb: Public Class SignalPhaseParms
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.#ctor
+  commentId: M:HCMCalc_UrbanStreets.SignalPhaseParms.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: SignalPhaseParms()
+  nameWithType: SignalPhaseParms.SignalPhaseParms()
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.SignalPhaseParms()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1961
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalPhaseParms()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut
+  id: ArrivalsToMaxOut
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: ArrivalsToMaxOut
+  nameWithType: SignalPhaseParms.ArrivalsToMaxOut
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut
+  type: Property
+  source:
+    id: ArrivalsToMaxOut
+    path: ''
+    startLine: 1966
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ArrivalsToMaxOut { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ArrivalsToMaxOut As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut
+  id: ExtensionsToMaxOut
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: ExtensionsToMaxOut
+  nameWithType: SignalPhaseParms.ExtensionsToMaxOut
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut
+  type: Property
+  source:
+    id: ExtensionsToMaxOut
+    path: ''
+    startLine: 1967
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ExtensionsToMaxOut { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ExtensionsToMaxOut As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH
+  id: AvgHdwyGivenLessThanMAH
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: AvgHdwyGivenLessThanMAH
+  nameWithType: SignalPhaseParms.AvgHdwyGivenLessThanMAH
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH
+  type: Property
+  source:
+    id: AvgHdwyGivenLessThanMAH
+    path: ''
+    startLine: 1968
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AvgHdwyGivenLessThanMAH { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AvgHdwyGivenLessThanMAH As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.Temp1
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.Temp1
+  id: Temp1
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: Temp1
+  nameWithType: SignalPhaseParms.Temp1
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.Temp1
+  type: Property
+  source:
+    id: Temp1
+    path: ''
+    startLine: 1969
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Temp1 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Temp1 As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.Temp1*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.Temp2
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.Temp2
+  id: Temp2
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: Temp2
+  nameWithType: SignalPhaseParms.Temp2
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.Temp2
+  type: Property
+  source:
+    id: Temp2
+    path: ''
+    startLine: 1970
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float Temp2 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Temp2 As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.Temp2*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime
+  id: QueueClearTime
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: QueueClearTime
+  nameWithType: SignalPhaseParms.QueueClearTime
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime
+  type: Property
+  source:
+    id: QueueClearTime
+    path: ''
+    startLine: 1971
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float QueueClearTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property QueueClearTime As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime
+  id: MaxQueueClearTime
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: MaxQueueClearTime
+  nameWithType: SignalPhaseParms.MaxQueueClearTime
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime
+  type: Property
+  source:
+    id: MaxQueueClearTime
+    path: ''
+    startLine: 1972
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float MaxQueueClearTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MaxQueueClearTime As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension
+  id: ProbOfGreenExtension
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: ProbOfGreenExtension
+  nameWithType: SignalPhaseParms.ProbOfGreenExtension
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension
+  type: Property
+  source:
+    id: ProbOfGreenExtension
+    path: ''
+    startLine: 1973
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ProbOfGreenExtension { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ProbOfGreenExtension As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension
+  id: EquilibGreenExtension
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: EquilibGreenExtension
+  nameWithType: SignalPhaseParms.EquilibGreenExtension
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension
+  type: Property
+  source:
+    id: EquilibGreenExtension
+    path: ''
+    startLine: 1974
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float EquilibGreenExtension { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property EquilibGreenExtension As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall
+  id: GreenCall
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: GreenCall
+  nameWithType: SignalPhaseParms.GreenCall
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall
+  type: Property
+  source:
+    id: GreenCall
+    path: ''
+    startLine: 1975
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GreenCall { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GreenCall As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced
+  id: GreenUnbalanced
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: GreenUnbalanced
+  nameWithType: SignalPhaseParms.GreenUnbalanced
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced
+  type: Property
+  source:
+    id: GreenUnbalanced
+    path: ''
+    startLine: 1976
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float GreenUnbalanced { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GreenUnbalanced As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced
+  id: DurationUnbalanced
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: DurationUnbalanced
+  nameWithType: SignalPhaseParms.DurationUnbalanced
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced
+  type: Property
+  source:
+    id: DurationUnbalanced
+    path: ''
+    startLine: 1977
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DurationUnbalanced { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DurationUnbalanced As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet
+  id: DurationCrossStreet
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: DurationCrossStreet
+  nameWithType: SignalPhaseParms.DurationCrossStreet
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet
+  type: Property
+  source:
+    id: DurationCrossStreet
+    path: ''
+    startLine: 1978
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DurationCrossStreet { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DurationCrossStreet As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration
+  id: AdjustedTimerDuration
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: AdjustedTimerDuration
+  nameWithType: SignalPhaseParms.AdjustedTimerDuration
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration
+  type: Property
+  source:
+    id: AdjustedTimerDuration
+    path: ''
+    startLine: 1979
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AdjustedTimerDuration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AdjustedTimerDuration As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase
+  id: ExtensionByOnePhase
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: ExtensionByOnePhase
+  nameWithType: SignalPhaseParms.ExtensionByOnePhase
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase
+  type: Property
+  source:
+    id: ExtensionByOnePhase
+    path: ''
+    startLine: 1980
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ExtensionByOnePhase { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ExtensionByOnePhase As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio
+  id: VolumeRatio
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: VolumeRatio
+  nameWithType: SignalPhaseParms.VolumeRatio
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio
+  type: Property
+  source:
+    id: VolumeRatio
+    path: ''
+    startLine: 1981
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float VolumeRatio { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property VolumeRatio As Single
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer
+  id: FlowForTimer
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: FlowForTimer
+  nameWithType: SignalPhaseParms.FlowForTimer
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer
+  type: Property
+  source:
+    id: FlowForTimer
+    path: ''
+    startLine: 1982
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] FlowForTimer { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property FlowForTimer As Single()
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer
+  id: FlowXMAHForTimer
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: FlowXMAHForTimer
+  nameWithType: SignalPhaseParms.FlowXMAHForTimer
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer
+  type: Property
+  source:
+    id: FlowXMAHForTimer
+    path: ''
+    startLine: 1983
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] FlowXMAHForTimer { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property FlowXMAHForTimer As Single()
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase
+  commentId: P:HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase
+  id: ConflictingPhase
+  parent: HCMCalc_UrbanStreets.SignalPhaseParms
+  langs:
+  - csharp
+  - vb
+  name: ConflictingPhase
+  nameWithType: SignalPhaseParms.ConflictingPhase
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase
+  type: Property
+  source:
+    id: ConflictingPhase
+    path: ''
+    startLine: 1984
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalPhaseData ConflictingPhase { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SignalPhaseData
+    content.vb: Public Property ConflictingPhase As SignalPhaseData
+  overload: HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.#ctor
+  name: SignalPhaseParms
+  nameWithType: SignalPhaseParms.SignalPhaseParms
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.SignalPhaseParms
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut
+  name: ArrivalsToMaxOut
+  nameWithType: SignalPhaseParms.ArrivalsToMaxOut
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ArrivalsToMaxOut
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut
+  name: ExtensionsToMaxOut
+  nameWithType: SignalPhaseParms.ExtensionsToMaxOut
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionsToMaxOut
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH
+  name: AvgHdwyGivenLessThanMAH
+  nameWithType: SignalPhaseParms.AvgHdwyGivenLessThanMAH
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.AvgHdwyGivenLessThanMAH
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.Temp1*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.Temp1
+  name: Temp1
+  nameWithType: SignalPhaseParms.Temp1
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.Temp1
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.Temp2*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.Temp2
+  name: Temp2
+  nameWithType: SignalPhaseParms.Temp2
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.Temp2
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime
+  name: QueueClearTime
+  nameWithType: SignalPhaseParms.QueueClearTime
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.QueueClearTime
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime
+  name: MaxQueueClearTime
+  nameWithType: SignalPhaseParms.MaxQueueClearTime
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.MaxQueueClearTime
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension
+  name: ProbOfGreenExtension
+  nameWithType: SignalPhaseParms.ProbOfGreenExtension
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ProbOfGreenExtension
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension
+  name: EquilibGreenExtension
+  nameWithType: SignalPhaseParms.EquilibGreenExtension
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.EquilibGreenExtension
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall
+  name: GreenCall
+  nameWithType: SignalPhaseParms.GreenCall
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.GreenCall
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced
+  name: GreenUnbalanced
+  nameWithType: SignalPhaseParms.GreenUnbalanced
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.GreenUnbalanced
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced
+  name: DurationUnbalanced
+  nameWithType: SignalPhaseParms.DurationUnbalanced
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.DurationUnbalanced
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet
+  name: DurationCrossStreet
+  nameWithType: SignalPhaseParms.DurationCrossStreet
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.DurationCrossStreet
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration
+  name: AdjustedTimerDuration
+  nameWithType: SignalPhaseParms.AdjustedTimerDuration
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.AdjustedTimerDuration
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase
+  name: ExtensionByOnePhase
+  nameWithType: SignalPhaseParms.ExtensionByOnePhase
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ExtensionByOnePhase
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio
+  name: VolumeRatio
+  nameWithType: SignalPhaseParms.VolumeRatio
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.VolumeRatio
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer
+  name: FlowForTimer
+  nameWithType: SignalPhaseParms.FlowForTimer
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.FlowForTimer
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer
+  name: FlowXMAHForTimer
+  nameWithType: SignalPhaseParms.FlowXMAHForTimer
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.FlowXMAHForTimer
+- uid: HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase
+  name: ConflictingPhase
+  nameWithType: SignalPhaseParms.ConflictingPhase
+  fullName: HCMCalc_UrbanStreets.SignalPhaseParms.ConflictingPhase
+- uid: HCMCalc_UrbanStreets.SignalPhaseData
+  commentId: T:HCMCalc_UrbanStreets.SignalPhaseData
+  parent: HCMCalc_UrbanStreets
+  name: SignalPhaseData
+  nameWithType: SignalPhaseData
+  fullName: HCMCalc_UrbanStreets.SignalPhaseData

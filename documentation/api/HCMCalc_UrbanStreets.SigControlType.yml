@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SigControlType
+  commentId: T:HCMCalc_UrbanStreets.SigControlType
+  id: SigControlType
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SigControlType.CoordinatedActuated
+  - HCMCalc_UrbanStreets.SigControlType.FullyActuated
+  - HCMCalc_UrbanStreets.SigControlType.Pretimed
+  langs:
+  - csharp
+  - vb
+  name: SigControlType
+  nameWithType: SigControlType
+  fullName: HCMCalc_UrbanStreets.SigControlType
+  type: Enum
+  source:
+    id: SigControlType
+    path: ''
+    startLine: 7088
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public enum SigControlType
+    content.vb: Public Enum SigControlType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.SigControlType.Pretimed
+  commentId: F:HCMCalc_UrbanStreets.SigControlType.Pretimed
+  id: Pretimed
+  parent: HCMCalc_UrbanStreets.SigControlType
+  langs:
+  - csharp
+  - vb
+  name: Pretimed
+  nameWithType: SigControlType.Pretimed
+  fullName: HCMCalc_UrbanStreets.SigControlType.Pretimed
+  type: Field
+  source:
+    id: Pretimed
+    path: ''
+    startLine: 7090
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Pretimed = 0
+    return:
+      type: HCMCalc_UrbanStreets.SigControlType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.SigControlType.CoordinatedActuated
+  commentId: F:HCMCalc_UrbanStreets.SigControlType.CoordinatedActuated
+  id: CoordinatedActuated
+  parent: HCMCalc_UrbanStreets.SigControlType
+  langs:
+  - csharp
+  - vb
+  name: CoordinatedActuated
+  nameWithType: SigControlType.CoordinatedActuated
+  fullName: HCMCalc_UrbanStreets.SigControlType.CoordinatedActuated
+  type: Field
+  source:
+    id: CoordinatedActuated
+    path: ''
+    startLine: 7091
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: CoordinatedActuated = 1
+    return:
+      type: HCMCalc_UrbanStreets.SigControlType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.SigControlType.FullyActuated
+  commentId: F:HCMCalc_UrbanStreets.SigControlType.FullyActuated
+  id: FullyActuated
+  parent: HCMCalc_UrbanStreets.SigControlType
+  langs:
+  - csharp
+  - vb
+  name: FullyActuated
+  nameWithType: SigControlType.FullyActuated
+  fullName: HCMCalc_UrbanStreets.SigControlType.FullyActuated
+  type: Field
+  source:
+    id: FullyActuated
+    path: ''
+    startLine: 7092
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: FullyActuated = 2
+    return:
+      type: HCMCalc_UrbanStreets.SigControlType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.SigControlType
+  commentId: T:HCMCalc_UrbanStreets.SigControlType
+  parent: HCMCalc_UrbanStreets
+  name: SigControlType
+  nameWithType: SigControlType
+  fullName: HCMCalc_UrbanStreets.SigControlType

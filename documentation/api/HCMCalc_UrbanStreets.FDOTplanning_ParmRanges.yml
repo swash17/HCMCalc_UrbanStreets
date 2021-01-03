@@ -1,0 +1,2641 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  commentId: T:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  id: FDOTplanning_ParmRanges
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AreaPopulationDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArrTypeDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArtClassDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusSpanServDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleLengthDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVmin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclLTlaneDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclRTlaneDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSpeedDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCLeftDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016(System.Single)
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.IntWidthDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTbayLenDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTphasing
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MaxSerVol
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MedianDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MidBlockPctTurnsDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumLTLanesDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumRightTurnIslandsDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumThruLanesDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactor
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctHVDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PostedSpeedDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PropSegWithCurbDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SegLengthDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMax
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMin
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SigControlDefault
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshBikePed
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshDelay
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshSpeed
+  - HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.VersionDate
+  langs:
+  - csharp
+  - vb
+  name: FDOTplanning_ParmRanges
+  nameWithType: FDOTplanning_ParmRanges
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  type: Class
+  source:
+    id: FDOTplanning_ParmRanges
+    path: ''
+    startLine: 3216
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class FDOTplanning_ParmRanges
+    content.vb: Public Class FDOTplanning_ParmRanges
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AreaPopulationDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AreaPopulationDefault
+  id: AreaPopulationDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: AreaPopulationDefault
+  nameWithType: FDOTplanning_ParmRanges.AreaPopulationDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AreaPopulationDefault
+  type: Field
+  source:
+    id: AreaPopulationDefault
+    path: ''
+    startLine: 3221
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] AreaPopulationDefault
+    return:
+      type: System.Single[]
+    content.vb: Public AreaPopulationDefault As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArtClassDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArtClassDefault
+  id: ArtClassDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: ArtClassDefault
+  nameWithType: FDOTplanning_ParmRanges.ArtClassDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArtClassDefault
+  type: Field
+  source:
+    id: ArtClassDefault
+    path: ''
+    startLine: 3223
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] ArtClassDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public ArtClassDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTDefault
+  id: AADTDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: AADTDefault
+  nameWithType: FDOTplanning_ParmRanges.AADTDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTDefault
+  type: Field
+  source:
+    id: AADTDefault
+    path: ''
+    startLine: 3224
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public long[] AADTDefault
+    return:
+      type: System.Int64[]
+    content.vb: Public AADTDefault As Long()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactDefault
+  id: KfactDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: KfactDefault
+  nameWithType: FDOTplanning_ParmRanges.KfactDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactDefault
+  type: Field
+  source:
+    id: KfactDefault
+    path: ''
+    startLine: 3225
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] KfactDefault
+    return:
+      type: System.Single[]
+    content.vb: Public KfactDefault As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactDefault
+  id: DfactDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: DfactDefault
+  nameWithType: FDOTplanning_ParmRanges.DfactDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactDefault
+  type: Field
+  source:
+    id: DfactDefault
+    path: ''
+    startLine: 3226
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] DfactDefault
+    return:
+      type: System.Single[]
+    content.vb: Public DfactDefault As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFDefault
+  id: PHFDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PHFDefault
+  nameWithType: FDOTplanning_ParmRanges.PHFDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFDefault
+  type: Field
+  source:
+    id: PHFDefault
+    path: ''
+    startLine: 3227
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PHFDefault
+    return:
+      type: System.Single[]
+    content.vb: Public PHFDefault As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctHVDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctHVDefault
+  id: PctHVDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PctHVDefault
+  nameWithType: FDOTplanning_ParmRanges.PctHVDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctHVDefault
+  type: Field
+  source:
+    id: PctHVDefault
+    path: ''
+    startLine: 3228
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PctHVDefault
+    return:
+      type: System.Single[]
+    content.vb: Public PctHVDefault As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MaxSerVol
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MaxSerVol
+  id: MaxSerVol
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: MaxSerVol
+  nameWithType: FDOTplanning_ParmRanges.MaxSerVol
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MaxSerVol
+  type: Field
+  source:
+    id: MaxSerVol
+    path: ''
+    startLine: 3229
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] MaxSerVol
+    return:
+      type: System.Int32[]
+    content.vb: Public MaxSerVol As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SegLengthDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SegLengthDefault
+  id: SegLengthDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: SegLengthDefault
+  nameWithType: FDOTplanning_ParmRanges.SegLengthDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SegLengthDefault
+  type: Field
+  source:
+    id: SegLengthDefault
+    path: ''
+    startLine: 3233
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] SegLengthDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public SegLengthDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PropSegWithCurbDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PropSegWithCurbDefault
+  id: PropSegWithCurbDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PropSegWithCurbDefault
+  nameWithType: FDOTplanning_ParmRanges.PropSegWithCurbDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PropSegWithCurbDefault
+  type: Field
+  source:
+    id: PropSegWithCurbDefault
+    path: ''
+    startLine: 3234
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PropSegWithCurbDefault
+    return:
+      type: System.Single[]
+    content.vb: Public PropSegWithCurbDefault As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MidBlockPctTurnsDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MidBlockPctTurnsDefault
+  id: MidBlockPctTurnsDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: MidBlockPctTurnsDefault
+  nameWithType: FDOTplanning_ParmRanges.MidBlockPctTurnsDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MidBlockPctTurnsDefault
+  type: Field
+  source:
+    id: MidBlockPctTurnsDefault
+    path: ''
+    startLine: 3235
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] MidBlockPctTurnsDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public MidBlockPctTurnsDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumThruLanesDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumThruLanesDefault
+  id: NumThruLanesDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: NumThruLanesDefault
+  nameWithType: FDOTplanning_ParmRanges.NumThruLanesDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumThruLanesDefault
+  type: Field
+  source:
+    id: NumThruLanesDefault
+    path: ''
+    startLine: 3236
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] NumThruLanesDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public NumThruLanesDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PostedSpeedDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PostedSpeedDefault
+  id: PostedSpeedDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PostedSpeedDefault
+  nameWithType: FDOTplanning_ParmRanges.PostedSpeedDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PostedSpeedDefault
+  type: Field
+  source:
+    id: PostedSpeedDefault
+    path: ''
+    startLine: 3237
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] PostedSpeedDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public PostedSpeedDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSpeedDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSpeedDefault
+  id: FFSpeedDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: FFSpeedDefault
+  nameWithType: FDOTplanning_ParmRanges.FFSpeedDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSpeedDefault
+  type: Field
+  source:
+    id: FFSpeedDefault
+    path: ''
+    startLine: 3238
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] FFSpeedDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public FFSpeedDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MedianDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MedianDefault
+  id: MedianDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: MedianDefault
+  nameWithType: FDOTplanning_ParmRanges.MedianDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.MedianDefault
+  type: Field
+  source:
+    id: MedianDefault
+    path: ''
+    startLine: 3239
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public MedianType[] MedianDefault
+    return:
+      type: HCMCalc_UrbanStreets.MedianType[]
+    content.vb: Public MedianDefault As MedianType()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SigControlDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SigControlDefault
+  id: SigControlDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: SigControlDefault
+  nameWithType: FDOTplanning_ParmRanges.SigControlDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SigControlDefault
+  type: Field
+  source:
+    id: SigControlDefault
+    path: ''
+    startLine: 3243
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SigControlType[] SigControlDefault
+    return:
+      type: HCMCalc_UrbanStreets.SigControlType[]
+    content.vb: Public SigControlDefault As SigControlType()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleLengthDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleLengthDefault
+  id: CycleLengthDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: CycleLengthDefault
+  nameWithType: FDOTplanning_ParmRanges.CycleLengthDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleLengthDefault
+  type: Field
+  source:
+    id: CycleLengthDefault
+    path: ''
+    startLine: 3245
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[, ] CycleLengthDefault
+    return:
+      type: System.Int32[,]
+    content.vb: Public CycleLengthDefault As Integer(,)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArrTypeDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArrTypeDefault
+  id: ArrTypeDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: ArrTypeDefault
+  nameWithType: FDOTplanning_ParmRanges.ArrTypeDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ArrTypeDefault
+  type: Field
+  source:
+    id: ArrTypeDefault
+    path: ''
+    startLine: 3248
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] ArrTypeDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public ArrTypeDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCLeftDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCLeftDefault
+  id: gCLeftDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: gCLeftDefault
+  nameWithType: FDOTplanning_ParmRanges.gCLeftDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCLeftDefault
+  type: Field
+  source:
+    id: gCLeftDefault
+    path: ''
+    startLine: 3250
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] gCLeftDefault
+    return:
+      type: System.Single[]
+    content.vb: Public gCLeftDefault As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTDefault
+  id: PctLTDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PctLTDefault
+  nameWithType: FDOTplanning_ParmRanges.PctLTDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTDefault
+  type: Field
+  source:
+    id: PctLTDefault
+    path: ''
+    startLine: 3251
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] PctLTDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public PctLTDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTDefault
+  id: PctRTDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PctRTDefault
+  nameWithType: FDOTplanning_ParmRanges.PctRTDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTDefault
+  type: Field
+  source:
+    id: PctRTDefault
+    path: ''
+    startLine: 3252
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] PctRTDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public PctRTDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclLTlaneDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclLTlaneDefault
+  id: ExclLTlaneDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: ExclLTlaneDefault
+  nameWithType: FDOTplanning_ParmRanges.ExclLTlaneDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclLTlaneDefault
+  type: Field
+  source:
+    id: ExclLTlaneDefault
+    path: ''
+    startLine: 3253
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool[] ExclLTlaneDefault
+    return:
+      type: System.Boolean[]
+    content.vb: Public ExclLTlaneDefault As Boolean()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTphasing
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTphasing
+  id: LTphasing
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LTphasing
+  nameWithType: FDOTplanning_ParmRanges.LTphasing
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTphasing
+  type: Field
+  source:
+    id: LTphasing
+    path: ''
+    startLine: 3254
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public PhasingType LTphasing
+    return:
+      type: HCMCalc_UrbanStreets.PhasingType
+    content.vb: Public LTphasing As PhasingType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumLTLanesDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumLTLanesDefault
+  id: NumLTLanesDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: NumLTLanesDefault
+  nameWithType: FDOTplanning_ParmRanges.NumLTLanesDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumLTLanesDefault
+  type: Field
+  source:
+    id: NumLTLanesDefault
+    path: ''
+    startLine: 3255
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] NumLTLanesDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public NumLTLanesDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTbayLenDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTbayLenDefault
+  id: LTbayLenDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LTbayLenDefault
+  nameWithType: FDOTplanning_ParmRanges.LTbayLenDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTbayLenDefault
+  type: Field
+  source:
+    id: LTbayLenDefault
+    path: ''
+    startLine: 3256
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] LTbayLenDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public LTbayLenDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclRTlaneDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclRTlaneDefault
+  id: ExclRTlaneDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: ExclRTlaneDefault
+  nameWithType: FDOTplanning_ParmRanges.ExclRTlaneDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ExclRTlaneDefault
+  type: Field
+  source:
+    id: ExclRTlaneDefault
+    path: ''
+    startLine: 3257
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool[] ExclRTlaneDefault
+    return:
+      type: System.Boolean[]
+    content.vb: Public ExclRTlaneDefault As Boolean()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.IntWidthDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.IntWidthDefault
+  id: IntWidthDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: IntWidthDefault
+  nameWithType: FDOTplanning_ParmRanges.IntWidthDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.IntWidthDefault
+  type: Field
+  source:
+    id: IntWidthDefault
+    path: ''
+    startLine: 3258
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] IntWidthDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public IntWidthDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumRightTurnIslandsDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumRightTurnIslandsDefault
+  id: NumRightTurnIslandsDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: NumRightTurnIslandsDefault
+  nameWithType: FDOTplanning_ParmRanges.NumRightTurnIslandsDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumRightTurnIslandsDefault
+  type: Field
+  source:
+    id: NumRightTurnIslandsDefault
+    path: ''
+    startLine: 3259
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] NumRightTurnIslandsDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public NumRightTurnIslandsDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepDefault
+  id: SidePathSepDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: SidePathSepDefault
+  nameWithType: FDOTplanning_ParmRanges.SidePathSepDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepDefault
+  type: Field
+  source:
+    id: SidePathSepDefault
+    path: ''
+    startLine: 3262
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int SidePathSepDefault
+    return:
+      type: System.Int32
+    content.vb: Public SidePathSepDefault As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqDefault
+  id: BusFreqDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: BusFreqDefault
+  nameWithType: FDOTplanning_ParmRanges.BusFreqDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqDefault
+  type: Field
+  source:
+    id: BusFreqDefault
+    path: ''
+    startLine: 3263
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] BusFreqDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public BusFreqDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusSpanServDefault
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusSpanServDefault
+  id: BusSpanServDefault
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: BusSpanServDefault
+  nameWithType: FDOTplanning_ParmRanges.BusSpanServDefault
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusSpanServDefault
+  type: Field
+  source:
+    id: BusSpanServDefault
+    path: ''
+    startLine: 3264
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] BusSpanServDefault
+    return:
+      type: System.Int32[]
+    content.vb: Public BusSpanServDefault As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactor
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactor
+  id: PassLoadFactor
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PassLoadFactor
+  nameWithType: FDOTplanning_ParmRanges.PassLoadFactor
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactor
+  type: Field
+  source:
+    id: PassLoadFactor
+    path: ''
+    startLine: 3265
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PassLoadFactor
+    return:
+      type: System.Single[]
+    content.vb: Public PassLoadFactor As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMin
+  id: CycleMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: CycleMin
+  nameWithType: FDOTplanning_ParmRanges.CycleMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMin
+  type: Field
+  source:
+    id: CycleMin
+    path: ''
+    startLine: 3270
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int CycleMin = 15
+    return:
+      type: System.Int32
+    content.vb: Public Const CycleMin As Integer = 15
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMax
+  id: CycleMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: CycleMax
+  nameWithType: FDOTplanning_ParmRanges.CycleMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.CycleMax
+  type: Field
+  source:
+    id: CycleMax
+    path: ''
+    startLine: 3271
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int CycleMax = 240
+    return:
+      type: System.Int32
+    content.vb: Public Const CycleMax As Integer = 240
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMin
+  id: gCthruMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: gCthruMin
+  nameWithType: FDOTplanning_ParmRanges.gCthruMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMin
+  type: Field
+  source:
+    id: gCthruMin
+    path: ''
+    startLine: 3272
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float gCthruMin = 0.1F
+    return:
+      type: System.Single
+    content.vb: Public Const gCthruMin As Single = 0.1F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMax
+  id: gCthruMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: gCthruMax
+  nameWithType: FDOTplanning_ParmRanges.gCthruMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCthruMax
+  type: Field
+  source:
+    id: gCthruMax
+    path: ''
+    startLine: 3273
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float gCthruMax = 1F
+    return:
+      type: System.Single
+    content.vb: Public Const gCthruMax As Single = 1F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMin
+  id: gCleftMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: gCleftMin
+  nameWithType: FDOTplanning_ParmRanges.gCleftMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMin
+  type: Field
+  source:
+    id: gCleftMin
+    path: ''
+    startLine: 3274
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float gCleftMin = 0.01F
+    return:
+      type: System.Single
+    content.vb: Public Const gCleftMin As Single = 0.01F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMax
+  id: gCleftMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: gCleftMax
+  nameWithType: FDOTplanning_ParmRanges.gCleftMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.gCleftMax
+  type: Field
+  source:
+    id: gCleftMax
+    path: ''
+    startLine: 3275
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float gCleftMax = 0.25F
+    return:
+      type: System.Single
+    content.vb: Public Const gCleftMax As Single = 0.25F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMin
+  id: NumIntThruLanesMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: NumIntThruLanesMin
+  nameWithType: FDOTplanning_ParmRanges.NumIntThruLanesMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMin
+  type: Field
+  source:
+    id: NumIntThruLanesMin
+    path: ''
+    startLine: 3276
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int NumIntThruLanesMin = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const NumIntThruLanesMin As Integer = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMax
+  id: NumIntThruLanesMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: NumIntThruLanesMax
+  nameWithType: FDOTplanning_ParmRanges.NumIntThruLanesMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.NumIntThruLanesMax
+  type: Field
+  source:
+    id: NumIntThruLanesMax
+    path: ''
+    startLine: 3277
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int NumIntThruLanesMax = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const NumIntThruLanesMax As Integer = 4
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMin
+  id: LTBayLenMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LTBayLenMin
+  nameWithType: FDOTplanning_ParmRanges.LTBayLenMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMin
+  type: Field
+  source:
+    id: LTBayLenMin
+    path: ''
+    startLine: 3278
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int LTBayLenMin = 50
+    return:
+      type: System.Int32
+    content.vb: Public Const LTBayLenMin As Integer = 50
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMax
+  id: LTBayLenMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LTBayLenMax
+  nameWithType: FDOTplanning_ParmRanges.LTBayLenMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LTBayLenMax
+  type: Field
+  source:
+    id: LTBayLenMax
+    path: ''
+    startLine: 3279
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int LTBayLenMax = 1600
+    return:
+      type: System.Int32
+    content.vb: Public Const LTBayLenMax As Integer = 1600
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMin
+  id: PctLTMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PctLTMin
+  nameWithType: FDOTplanning_ParmRanges.PctLTMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMin
+  type: Field
+  source:
+    id: PctLTMin
+    path: ''
+    startLine: 3280
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int PctLTMin = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const PctLTMin As Integer = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMax
+  id: PctLTMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PctLTMax
+  nameWithType: FDOTplanning_ParmRanges.PctLTMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctLTMax
+  type: Field
+  source:
+    id: PctLTMax
+    path: ''
+    startLine: 3281
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int PctLTMax = 45
+    return:
+      type: System.Int32
+    content.vb: Public Const PctLTMax As Integer = 45
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMin
+  id: PctRTMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PctRTMin
+  nameWithType: FDOTplanning_ParmRanges.PctRTMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMin
+  type: Field
+  source:
+    id: PctRTMin
+    path: ''
+    startLine: 3282
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int PctRTMin = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const PctRTMin As Integer = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMax
+  id: PctRTMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PctRTMax
+  nameWithType: FDOTplanning_ParmRanges.PctRTMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PctRTMax
+  type: Field
+  source:
+    id: PctRTMax
+    path: ''
+    startLine: 3283
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int PctRTMax = 45
+    return:
+      type: System.Int32
+    content.vb: Public Const PctRTMax As Integer = 45
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMin
+  id: KfactStdMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: KfactStdMin
+  nameWithType: FDOTplanning_ParmRanges.KfactStdMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMin
+  type: Field
+  source:
+    id: KfactStdMin
+    path: ''
+    startLine: 3285
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float KfactStdMin = 9F
+    return:
+      type: System.Single
+    content.vb: Public Const KfactStdMin As Single = 9F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMax
+  id: KfactStdMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: KfactStdMax
+  nameWithType: FDOTplanning_ParmRanges.KfactStdMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactStdMax
+  type: Field
+  source:
+    id: KfactStdMax
+    path: ''
+    startLine: 3286
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float KfactStdMax = 15F
+    return:
+      type: System.Single
+    content.vb: Public Const KfactStdMax As Single = 15F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMin
+  id: KfactOtherMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: KfactOtherMin
+  nameWithType: FDOTplanning_ParmRanges.KfactOtherMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMin
+  type: Field
+  source:
+    id: KfactOtherMin
+    path: ''
+    startLine: 3287
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float KfactOtherMin = 1F
+    return:
+      type: System.Single
+    content.vb: Public Const KfactOtherMin As Single = 1F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMax
+  id: KfactOtherMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: KfactOtherMax
+  nameWithType: FDOTplanning_ParmRanges.KfactOtherMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.KfactOtherMax
+  type: Field
+  source:
+    id: KfactOtherMax
+    path: ''
+    startLine: 3288
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float KfactOtherMax = 15F
+    return:
+      type: System.Single
+    content.vb: Public Const KfactOtherMax As Single = 15F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMin
+  id: DfactMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: DfactMin
+  nameWithType: FDOTplanning_ParmRanges.DfactMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMin
+  type: Field
+  source:
+    id: DfactMin
+    path: ''
+    startLine: 3289
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float DfactMin = 50.1F
+    return:
+      type: System.Single
+    content.vb: Public Const DfactMin As Single = 50.1F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMax
+  id: DfactMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: DfactMax
+  nameWithType: FDOTplanning_ParmRanges.DfactMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DfactMax
+  type: Field
+  source:
+    id: DfactMax
+    path: ''
+    startLine: 3290
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float DfactMax = 100F
+    return:
+      type: System.Single
+    content.vb: Public Const DfactMax As Single = 100F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMin
+  id: PHFMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PHFMin
+  nameWithType: FDOTplanning_ParmRanges.PHFMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMin
+  type: Field
+  source:
+    id: PHFMin
+    path: ''
+    startLine: 3291
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float PHFMin = 0.75F
+    return:
+      type: System.Single
+    content.vb: Public Const PHFMin As Single = 0.75F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMax
+  id: PHFMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PHFMax
+  nameWithType: FDOTplanning_ParmRanges.PHFMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PHFMax
+  type: Field
+  source:
+    id: PHFMax
+    path: ''
+    startLine: 3292
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float PHFMax = 1F
+    return:
+      type: System.Single
+    content.vb: Public Const PHFMax As Single = 1F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMin
+  id: LengthMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LengthMin
+  nameWithType: FDOTplanning_ParmRanges.LengthMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMin
+  type: Field
+  source:
+    id: LengthMin
+    path: ''
+    startLine: 3293
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int LengthMin = 100
+    return:
+      type: System.Int32
+    content.vb: Public Const LengthMin As Integer = 100
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMax
+  id: LengthMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LengthMax
+  nameWithType: FDOTplanning_ParmRanges.LengthMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LengthMax
+  type: Field
+  source:
+    id: LengthMax
+    path: ''
+    startLine: 3294
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int LengthMax = 15840
+    return:
+      type: System.Int32
+    content.vb: Public Const LengthMax As Integer = 15840
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmin
+  id: AADTmin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: AADTmin
+  nameWithType: FDOTplanning_ParmRanges.AADTmin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmin
+  type: Field
+  source:
+    id: AADTmin
+    path: ''
+    startLine: 3295
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int AADTmin = 1000
+    return:
+      type: System.Int32
+    content.vb: Public Const AADTmin As Integer = 1000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmax
+  id: AADTmax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: AADTmax
+  nameWithType: FDOTplanning_ParmRanges.AADTmax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.AADTmax
+  type: Field
+  source:
+    id: AADTmax
+    path: ''
+    startLine: 3296
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int AADTmax = 100000
+    return:
+      type: System.Int32
+    content.vb: Public Const AADTmax As Integer = 100000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVmin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVmin
+  id: DDHVmin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: DDHVmin
+  nameWithType: FDOTplanning_ParmRanges.DDHVmin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVmin
+  type: Field
+  source:
+    id: DDHVmin
+    path: ''
+    startLine: 3297
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int DDHVmin = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const DDHVmin As Integer = 5
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVMax
+  id: DDHVMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: DDHVMax
+  nameWithType: FDOTplanning_ParmRanges.DDHVMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.DDHVMax
+  type: Field
+  source:
+    id: DDHVMax
+    path: ''
+    startLine: 3298
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int DDHVMax = 15000
+    return:
+      type: System.Int32
+    content.vb: Public Const DDHVMax As Integer = 15000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmin
+  id: FFSmin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: FFSmin
+  nameWithType: FDOTplanning_ParmRanges.FFSmin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmin
+  type: Field
+  source:
+    id: FFSmin
+    path: ''
+    startLine: 3299
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int FFSmin = 25
+    return:
+      type: System.Int32
+    content.vb: Public Const FFSmin As Integer = 25
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmax
+  id: FFSmax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: FFSmax
+  nameWithType: FDOTplanning_ParmRanges.FFSmax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.FFSmax
+  type: Field
+  source:
+    id: FFSmax
+    path: ''
+    startLine: 3300
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int FFSmax = 60
+    return:
+      type: System.Int32
+    content.vb: Public Const FFSmax As Integer = 60
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMin
+  id: LaneWidthMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LaneWidthMin
+  nameWithType: FDOTplanning_ParmRanges.LaneWidthMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMin
+  type: Field
+  source:
+    id: LaneWidthMin
+    path: ''
+    startLine: 3302
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int LaneWidthMin = 8
+    return:
+      type: System.Int32
+    content.vb: Public Const LaneWidthMin As Integer = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMax
+  id: LaneWidthMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: LaneWidthMax
+  nameWithType: FDOTplanning_ParmRanges.LaneWidthMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.LaneWidthMax
+  type: Field
+  source:
+    id: LaneWidthMax
+    path: ''
+    startLine: 3303
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int LaneWidthMax = 16
+    return:
+      type: System.Int32
+    content.vb: Public Const LaneWidthMax As Integer = 16
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMin
+  id: SidePathSepMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: SidePathSepMin
+  nameWithType: FDOTplanning_ParmRanges.SidePathSepMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMin
+  type: Field
+  source:
+    id: SidePathSepMin
+    path: ''
+    startLine: 3304
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int SidePathSepMin = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const SidePathSepMin As Integer = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMax
+  id: SidePathSepMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: SidePathSepMax
+  nameWithType: FDOTplanning_ParmRanges.SidePathSepMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.SidePathSepMax
+  type: Field
+  source:
+    id: SidePathSepMax
+    path: ''
+    startLine: 3305
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int SidePathSepMax = 40
+    return:
+      type: System.Int32
+    content.vb: Public Const SidePathSepMax As Integer = 40
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMin
+  id: PassLoadFactMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PassLoadFactMin
+  nameWithType: FDOTplanning_ParmRanges.PassLoadFactMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMin
+  type: Field
+  source:
+    id: PassLoadFactMin
+    path: ''
+    startLine: 3306
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float PassLoadFactMin = 0F
+    return:
+      type: System.Single
+    content.vb: Public Const PassLoadFactMin As Single = 0F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMax
+  id: PassLoadFactMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PassLoadFactMax
+  nameWithType: FDOTplanning_ParmRanges.PassLoadFactMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PassLoadFactMax
+  type: Field
+  source:
+    id: PassLoadFactMax
+    path: ''
+    startLine: 3307
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const float PassLoadFactMax = 3F
+    return:
+      type: System.Single
+    content.vb: Public Const PassLoadFactMax As Single = 3F
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMin
+  id: BusFreqMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: BusFreqMin
+  nameWithType: FDOTplanning_ParmRanges.BusFreqMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMin
+  type: Field
+  source:
+    id: BusFreqMin
+    path: ''
+    startLine: 3308
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int BusFreqMin = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const BusFreqMin As Integer = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMax
+  id: BusFreqMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: BusFreqMax
+  nameWithType: FDOTplanning_ParmRanges.BusFreqMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusFreqMax
+  type: Field
+  source:
+    id: BusFreqMax
+    path: ''
+    startLine: 3309
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int BusFreqMax = 65
+    return:
+      type: System.Int32
+    content.vb: Public Const BusFreqMax As Integer = 65
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMin
+  id: BusServSpanMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: BusServSpanMin
+  nameWithType: FDOTplanning_ParmRanges.BusServSpanMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMin
+  type: Field
+  source:
+    id: BusServSpanMin
+    path: ''
+    startLine: 3310
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int BusServSpanMin = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const BusServSpanMin As Integer = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMax
+  id: BusServSpanMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: BusServSpanMax
+  nameWithType: FDOTplanning_ParmRanges.BusServSpanMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.BusServSpanMax
+  type: Field
+  source:
+    id: BusServSpanMax
+    path: ''
+    startLine: 3311
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int BusServSpanMax = 24
+    return:
+      type: System.Int32
+    content.vb: Public Const BusServSpanMax As Integer = 24
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMin
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMin
+  id: PedSubsegPctMin
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PedSubsegPctMin
+  nameWithType: FDOTplanning_ParmRanges.PedSubsegPctMin
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMin
+  type: Field
+  source:
+    id: PedSubsegPctMin
+    path: ''
+    startLine: 3312
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int PedSubsegPctMin = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const PedSubsegPctMin As Integer = 0
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMax
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMax
+  id: PedSubsegPctMax
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: PedSubsegPctMax
+  nameWithType: FDOTplanning_ParmRanges.PedSubsegPctMax
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.PedSubsegPctMax
+  type: Field
+  source:
+    id: PedSubsegPctMax
+    path: ''
+    startLine: 3313
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const int PedSubsegPctMax = 100
+    return:
+      type: System.Int32
+    content.vb: Public Const PedSubsegPctMax As Integer = 100
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.VersionDate
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.VersionDate
+  id: VersionDate
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: VersionDate
+  nameWithType: FDOTplanning_ParmRanges.VersionDate
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.VersionDate
+  type: Field
+  source:
+    id: VersionDate
+    path: ''
+    startLine: 3315
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public const string VersionDate = "6/29/2020"
+    return:
+      type: System.String
+    content.vb: Public Const VersionDate As String = "6/29/2020"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshDelay
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshDelay
+  id: ThreshDelay
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: ThreshDelay
+  nameWithType: FDOTplanning_ParmRanges.ThreshDelay
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshDelay
+  type: Field
+  source:
+    id: ThreshDelay
+    path: ''
+    startLine: 3318
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] ThreshDelay
+    return:
+      type: System.Int32[]
+    content.vb: Public ThreshDelay As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshSpeed
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshSpeed
+  id: ThreshSpeed
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: ThreshSpeed
+  nameWithType: FDOTplanning_ParmRanges.ThreshSpeed
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshSpeed
+  type: Field
+  source:
+    id: ThreshSpeed
+    path: ''
+    startLine: 3319
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int[] ThreshSpeed
+    return:
+      type: System.Int32[]
+    content.vb: Public ThreshSpeed As Integer()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshBikePed
+  commentId: F:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshBikePed
+  id: ThreshBikePed
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: ThreshBikePed
+  nameWithType: FDOTplanning_ParmRanges.ThreshBikePed
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.ThreshBikePed
+  type: Field
+  source:
+    id: ThreshBikePed
+    path: ''
+    startLine: 3320
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] ThreshBikePed
+    return:
+      type: System.Single[]
+    content.vb: Public ThreshBikePed As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016(System.Single)
+  commentId: M:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016(System.Single)
+  id: GetLOSBoundariesHCM2016(System.Single)
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: GetLOSBoundariesHCM2016(Single)
+  nameWithType: FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016(Single)
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016(System.Single)
+  type: Method
+  source:
+    id: GetLOSBoundariesHCM2016
+    path: ''
+    startLine: 3323
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public void GetLOSBoundariesHCM2016(float baseFreeFlowSpeed)
+    parameters:
+    - id: baseFreeFlowSpeed
+      type: System.Single
+    content.vb: Public Sub GetLOSBoundariesHCM2016(baseFreeFlowSpeed As Single)
+  overload: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  id: GetLOSBoundaries(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: GetLOSBoundaries(AreaType, Int32)
+  nameWithType: FDOTplanning_ParmRanges.GetLOSBoundaries(AreaType, Int32)
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries(HCMCalc_UrbanStreets.AreaType, System.Int32)
+  type: Method
+  source:
+    id: GetLOSBoundaries
+    path: ''
+    startLine: 3384
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public void GetLOSBoundaries(AreaType area, int artClass)
+    parameters:
+    - id: area
+      type: HCMCalc_UrbanStreets.AreaType
+    - id: artClass
+      type: System.Int32
+    content.vb: Public Sub GetLOSBoundaries(area As AreaType, artClass As Integer)
+  overload: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  id: GetLOSBoundariesHCM2000(HCMCalc_UrbanStreets.AreaType,System.Int32)
+  parent: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges
+  langs:
+  - csharp
+  - vb
+  name: GetLOSBoundariesHCM2000(AreaType, Int32)
+  nameWithType: FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000(AreaType, Int32)
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000(HCMCalc_UrbanStreets.AreaType, System.Int32)
+  type: Method
+  source:
+    id: GetLOSBoundariesHCM2000
+    path: ''
+    startLine: 3500
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public void GetLOSBoundariesHCM2000(AreaType area, int artClass)
+    parameters:
+    - id: area
+      type: HCMCalc_UrbanStreets.AreaType
+    - id: artClass
+      type: System.Int32
+    content.vb: Public Sub GetLOSBoundariesHCM2000(area As AreaType, artClass As Integer)
+  overload: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int64[]
+  isExternal: true
+  name: Int64[]
+  nameWithType: Int64[]
+  fullName: System.Int64[]
+  nameWithType.vb: Int64()
+  fullName.vb: System.Int64()
+  name.vb: Int64()
+  spec.csharp:
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.MedianType[]
+  isExternal: true
+  name: MedianType[]
+  nameWithType: MedianType[]
+  fullName: HCMCalc_UrbanStreets.MedianType[]
+  nameWithType.vb: MedianType()
+  fullName.vb: HCMCalc_UrbanStreets.MedianType()
+  name.vb: MedianType()
+  spec.csharp:
+  - uid: HCMCalc_UrbanStreets.MedianType
+    name: MedianType
+    nameWithType: MedianType
+    fullName: HCMCalc_UrbanStreets.MedianType
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: HCMCalc_UrbanStreets.MedianType
+    name: MedianType
+    nameWithType: MedianType
+    fullName: HCMCalc_UrbanStreets.MedianType
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.SigControlType[]
+  isExternal: true
+  name: SigControlType[]
+  nameWithType: SigControlType[]
+  fullName: HCMCalc_UrbanStreets.SigControlType[]
+  nameWithType.vb: SigControlType()
+  fullName.vb: HCMCalc_UrbanStreets.SigControlType()
+  name.vb: SigControlType()
+  spec.csharp:
+  - uid: HCMCalc_UrbanStreets.SigControlType
+    name: SigControlType
+    nameWithType: SigControlType
+    fullName: HCMCalc_UrbanStreets.SigControlType
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: HCMCalc_UrbanStreets.SigControlType
+    name: SigControlType
+    nameWithType: SigControlType
+    fullName: HCMCalc_UrbanStreets.SigControlType
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32[,]
+  isExternal: true
+  name: Int32[,]
+  nameWithType: Int32[,]
+  fullName: System.Int32[,]
+  nameWithType.vb: Int32(,)
+  fullName.vb: System.Int32(,)
+  name.vb: Int32(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: System.Boolean[]
+  isExternal: true
+  name: Boolean[]
+  nameWithType: Boolean[]
+  fullName: System.Boolean[]
+  nameWithType.vb: Boolean()
+  fullName.vb: System.Boolean()
+  name.vb: Boolean()
+  spec.csharp:
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.PhasingType
+  commentId: T:HCMCalc_UrbanStreets.PhasingType
+  parent: HCMCalc_UrbanStreets
+  name: PhasingType
+  nameWithType: PhasingType
+  fullName: HCMCalc_UrbanStreets.PhasingType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016*
+  commentId: Overload:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016
+  name: GetLOSBoundariesHCM2016
+  nameWithType: FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2016
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries*
+  commentId: Overload:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries
+  name: GetLOSBoundaries
+  nameWithType: FDOTplanning_ParmRanges.GetLOSBoundaries
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundaries
+- uid: HCMCalc_UrbanStreets.AreaType
+  commentId: T:HCMCalc_UrbanStreets.AreaType
+  parent: HCMCalc_UrbanStreets
+  name: AreaType
+  nameWithType: AreaType
+  fullName: HCMCalc_UrbanStreets.AreaType
+- uid: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000*
+  commentId: Overload:HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000
+  name: GetLOSBoundariesHCM2000
+  nameWithType: FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000
+  fullName: HCMCalc_UrbanStreets.FDOTplanning_ParmRanges.GetLOSBoundariesHCM2000

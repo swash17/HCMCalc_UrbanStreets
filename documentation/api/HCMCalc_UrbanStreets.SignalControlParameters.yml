@@ -1,0 +1,1084 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SignalControlParameters
+  commentId: T:HCMCalc_UrbanStreets.SignalControlParameters
+  id: SignalControlParameters
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SignalControlParameters.#ctor
+  - HCMCalc_UrbanStreets.SignalControlParameters.#ctor(System.Int32)
+  - HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity
+  - HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay
+  - HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k
+  - HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue
+  - HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen
+  - HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed
+  - HCMCalc_UrbanStreets.SignalControlParameters.H3Stops
+  - HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2
+  - HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops
+  - HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue
+  - HCMCalc_UrbanStreets.SignalControlParameters.kMin
+  - HCMCalc_UrbanStreets.SignalControlParameters.PassageTime
+  - HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp
+  - HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues
+  - HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime
+  - HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime
+  - HCMCalc_UrbanStreets.SignalControlParameters.RedTime
+  - HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3
+  - HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity
+  - HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay
+  - HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops
+  - HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay
+  - HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1
+  - HCMCalc_UrbanStreets.SignalControlParameters.UniformStops
+  - HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I
+  langs:
+  - csharp
+  - vb
+  name: SignalControlParameters
+  nameWithType: SignalControlParameters
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters
+  type: Class
+  source:
+    id: SignalControlParameters
+    path: ''
+    startLine: 1865
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameters related to signalization control.\n"
+  example: []
+  syntax:
+    content: public class SignalControlParameters
+    content.vb: Public Class SignalControlParameters
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.#ctor
+  commentId: M:HCMCalc_UrbanStreets.SignalControlParameters.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: SignalControlParameters()
+  nameWithType: SignalControlParameters.SignalControlParameters()
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SignalControlParameters()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1896
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nParameterless constructor needed for XML de/serialization. This should not be referenced.\n"
+  example: []
+  syntax:
+    content: public SignalControlParameters()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.#ctor(System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SignalControlParameters.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: SignalControlParameters(Int32)
+  nameWithType: SignalControlParameters.SignalControlParameters(Int32)
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SignalControlParameters(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1903
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nInputs parameters for signal control and calculates the platoon ratio based on the arrival type.\n"
+  example: []
+  syntax:
+    content: public SignalControlParameters(int arvType)
+    parameters:
+    - id: arvType
+      type: System.Int32
+    content.vb: Public Sub New(arvType As Integer)
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen
+  id: FlowRateGreen
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: FlowRateGreen
+  nameWithType: SignalControlParameters.FlowRateGreen
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen
+  type: Property
+  source:
+    id: FlowRateGreen
+    path: ''
+    startLine: 1910
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float FlowRateGreen { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FlowRateGreen As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed
+  id: FlowRateRed
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: FlowRateRed
+  nameWithType: SignalControlParameters.FlowRateRed
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed
+  type: Property
+  source:
+    id: FlowRateRed
+    path: ''
+    startLine: 1911
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float FlowRateRed { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FlowRateRed As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.RedTime
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.RedTime
+  id: RedTime
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: RedTime
+  nameWithType: SignalControlParameters.RedTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.RedTime
+  type: Property
+  source:
+    id: RedTime
+    path: ''
+    startLine: 1912
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float RedTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RedTime As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.RedTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime
+  id: QueueClearTime
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: QueueClearTime
+  nameWithType: SignalControlParameters.QueueClearTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime
+  type: Property
+  source:
+    id: QueueClearTime
+    path: ''
+    startLine: 1913
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float QueueClearTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property QueueClearTime As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k
+  id: ControlType_k
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: ControlType_k
+  nameWithType: SignalControlParameters.ControlType_k
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k
+  type: Property
+  source:
+    id: ControlType_k
+    path: ''
+    startLine: 1914
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ControlType_k { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ControlType_k As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.kMin
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.kMin
+  id: kMin
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: kMin
+  nameWithType: SignalControlParameters.kMin
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.kMin
+  type: Property
+  source:
+    id: kMin
+    path: ''
+    startLine: 1915
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float kMin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property kMin As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.kMin*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.PassageTime
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.PassageTime
+  id: PassageTime
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: PassageTime
+  nameWithType: SignalControlParameters.PassageTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.PassageTime
+  type: Property
+  source:
+    id: PassageTime
+    path: ''
+    startLine: 1916
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PassageTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PassageTime As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.PassageTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I
+  id: UpstreamMetering_I
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: UpstreamMetering_I
+  nameWithType: SignalControlParameters.UpstreamMetering_I
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I
+  type: Property
+  source:
+    id: UpstreamMetering_I
+    path: ''
+    startLine: 1917
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float UpstreamMetering_I { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property UpstreamMetering_I As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues
+  id: PlatoonRatioValues
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: PlatoonRatioValues
+  nameWithType: SignalControlParameters.PlatoonRatioValues
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues
+  type: Property
+  source:
+    id: PlatoonRatioValues
+    path: ''
+    startLine: 1918
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[] PlatoonRatioValues { get; set; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public Property PlatoonRatioValues As Single()
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp
+  id: PlatoonRatio_Rp
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: PlatoonRatio_Rp
+  nameWithType: SignalControlParameters.PlatoonRatio_Rp
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp
+  type: Property
+  source:
+    id: PlatoonRatio_Rp
+    path: ''
+    startLine: 1920
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float PlatoonRatio_Rp { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PlatoonRatio_Rp As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime
+  id: QueueServeTime
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: QueueServeTime
+  nameWithType: SignalControlParameters.QueueServeTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime
+  type: Property
+  source:
+    id: QueueServeTime
+    path: ''
+    startLine: 1921
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float QueueServeTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property QueueServeTime As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.UniformStops
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.UniformStops
+  id: UniformStops
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: UniformStops
+  nameWithType: SignalControlParameters.UniformStops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.UniformStops
+  type: Property
+  source:
+    id: UniformStops
+    path: ''
+    startLine: 1922
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float UniformStops { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property UniformStops As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.UniformStops*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops
+  id: IncrementalStops
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: IncrementalStops
+  nameWithType: SignalControlParameters.IncrementalStops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops
+  type: Property
+  source:
+    id: IncrementalStops
+    path: ''
+    startLine: 1923
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float IncrementalStops { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property IncrementalStops As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.H3Stops
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.H3Stops
+  id: H3Stops
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: H3Stops
+  nameWithType: SignalControlParameters.H3Stops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.H3Stops
+  type: Property
+  source:
+    id: H3Stops
+    path: ''
+    startLine: 1924
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float H3Stops { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property H3Stops As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.H3Stops*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue
+  id: InitialQueue
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: InitialQueue
+  nameWithType: SignalControlParameters.InitialQueue
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue
+  type: Property
+  source:
+    id: InitialQueue
+    path: ''
+    startLine: 1925
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float InitialQueue { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property InitialQueue As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue
+  id: FinalQueue
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: FinalQueue
+  nameWithType: SignalControlParameters.FinalQueue
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue
+  type: Property
+  source:
+    id: FinalQueue
+    path: ''
+    startLine: 1926
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float FinalQueue { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FinalQueue As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity
+  id: AvailCapacity
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: AvailCapacity
+  nameWithType: SignalControlParameters.AvailCapacity
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity
+  type: Property
+  source:
+    id: AvailCapacity
+    path: ''
+    startLine: 1927
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AvailCapacity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AvailCapacity As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay
+  id: SaturatedDelay
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: SaturatedDelay
+  nameWithType: SignalControlParameters.SaturatedDelay
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay
+  type: Property
+  source:
+    id: SaturatedDelay
+    path: ''
+    startLine: 1928
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SaturatedDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SaturatedDelay As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity
+  id: SaturatedCapacity
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: SaturatedCapacity
+  nameWithType: SignalControlParameters.SaturatedCapacity
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity
+  type: Property
+  source:
+    id: SaturatedCapacity
+    path: ''
+    startLine: 1929
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SaturatedCapacity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SaturatedCapacity As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops
+  id: SaturatedStops
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: SaturatedStops
+  nameWithType: SignalControlParameters.SaturatedStops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops
+  type: Property
+  source:
+    id: SaturatedStops
+    path: ''
+    startLine: 1930
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SaturatedStops { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SaturatedStops As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1
+  id: UniformDelay_d1
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: UniformDelay_d1
+  nameWithType: SignalControlParameters.UniformDelay_d1
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1
+  type: Property
+  source:
+    id: UniformDelay_d1
+    path: ''
+    startLine: 1931
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float UniformDelay_d1 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property UniformDelay_d1 As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2
+  id: IncrementalDelay_d2
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: IncrementalDelay_d2
+  nameWithType: SignalControlParameters.IncrementalDelay_d2
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2
+  type: Property
+  source:
+    id: IncrementalDelay_d2
+    path: ''
+    startLine: 1932
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float IncrementalDelay_d2 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property IncrementalDelay_d2 As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3
+  id: ResidualDelay_d3
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: ResidualDelay_d3
+  nameWithType: SignalControlParameters.ResidualDelay_d3
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3
+  type: Property
+  source:
+    id: ResidualDelay_d3
+    path: ''
+    startLine: 1933
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float ResidualDelay_d3 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ResidualDelay_d3 As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay
+  id: TotalUniformDelay
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: TotalUniformDelay
+  nameWithType: SignalControlParameters.TotalUniformDelay
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay
+  type: Property
+  source:
+    id: TotalUniformDelay
+    path: ''
+    startLine: 1934
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float TotalUniformDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TotalUniformDelay As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay
+  commentId: P:HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay
+  id: AvgOverallDelay
+  parent: HCMCalc_UrbanStreets.SignalControlParameters
+  langs:
+  - csharp
+  - vb
+  name: AvgOverallDelay
+  nameWithType: SignalControlParameters.AvgOverallDelay
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay
+  type: Property
+  source:
+    id: AvgOverallDelay
+    path: ''
+    startLine: 1935
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float AvgOverallDelay { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AvgOverallDelay As Single
+  overload: HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.#ctor
+  name: SignalControlParameters
+  nameWithType: SignalControlParameters.SignalControlParameters
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SignalControlParameters
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen
+  name: FlowRateGreen
+  nameWithType: SignalControlParameters.FlowRateGreen
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateGreen
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed
+  name: FlowRateRed
+  nameWithType: SignalControlParameters.FlowRateRed
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.FlowRateRed
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.RedTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.RedTime
+  name: RedTime
+  nameWithType: SignalControlParameters.RedTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.RedTime
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime
+  name: QueueClearTime
+  nameWithType: SignalControlParameters.QueueClearTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.QueueClearTime
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k
+  name: ControlType_k
+  nameWithType: SignalControlParameters.ControlType_k
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.ControlType_k
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.kMin*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.kMin
+  name: kMin
+  nameWithType: SignalControlParameters.kMin
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.kMin
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.PassageTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.PassageTime
+  name: PassageTime
+  nameWithType: SignalControlParameters.PassageTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.PassageTime
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I
+  name: UpstreamMetering_I
+  nameWithType: SignalControlParameters.UpstreamMetering_I
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.UpstreamMetering_I
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues
+  name: PlatoonRatioValues
+  nameWithType: SignalControlParameters.PlatoonRatioValues
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatioValues
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp
+  name: PlatoonRatio_Rp
+  nameWithType: SignalControlParameters.PlatoonRatio_Rp
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.PlatoonRatio_Rp
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime
+  name: QueueServeTime
+  nameWithType: SignalControlParameters.QueueServeTime
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.QueueServeTime
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.UniformStops*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.UniformStops
+  name: UniformStops
+  nameWithType: SignalControlParameters.UniformStops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.UniformStops
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops
+  name: IncrementalStops
+  nameWithType: SignalControlParameters.IncrementalStops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalStops
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.H3Stops*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.H3Stops
+  name: H3Stops
+  nameWithType: SignalControlParameters.H3Stops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.H3Stops
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue
+  name: InitialQueue
+  nameWithType: SignalControlParameters.InitialQueue
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.InitialQueue
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue
+  name: FinalQueue
+  nameWithType: SignalControlParameters.FinalQueue
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.FinalQueue
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity
+  name: AvailCapacity
+  nameWithType: SignalControlParameters.AvailCapacity
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.AvailCapacity
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay
+  name: SaturatedDelay
+  nameWithType: SignalControlParameters.SaturatedDelay
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedDelay
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity
+  name: SaturatedCapacity
+  nameWithType: SignalControlParameters.SaturatedCapacity
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedCapacity
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops
+  name: SaturatedStops
+  nameWithType: SignalControlParameters.SaturatedStops
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.SaturatedStops
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1
+  name: UniformDelay_d1
+  nameWithType: SignalControlParameters.UniformDelay_d1
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.UniformDelay_d1
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2
+  name: IncrementalDelay_d2
+  nameWithType: SignalControlParameters.IncrementalDelay_d2
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.IncrementalDelay_d2
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3
+  name: ResidualDelay_d3
+  nameWithType: SignalControlParameters.ResidualDelay_d3
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.ResidualDelay_d3
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay
+  name: TotalUniformDelay
+  nameWithType: SignalControlParameters.TotalUniformDelay
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.TotalUniformDelay
+- uid: HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay
+  name: AvgOverallDelay
+  nameWithType: SignalControlParameters.AvgOverallDelay
+  fullName: HCMCalc_UrbanStreets.SignalControlParameters.AvgOverallDelay

@@ -1,0 +1,572 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SegmentCalcs
+  commentId: T:HCMCalc_UrbanStreets.SegmentCalcs
+  id: SegmentCalcs
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan(System.Single)
+  - HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime(System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime(System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed(System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Single,System.Single,System.Int32,System.Single,System.Boolean,HCMCalc_UrbanStreets.ParkingActivityLevel,System.Single,System.Single)
+  - HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto(System.Single,System.Int32[])
+  - HCMCalc_UrbanStreets.SegmentCalcs.RunningTime(HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters,System.Single,System.Single,HCMCalc_UrbanStreets.AnalysisMode)
+  - HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: SegmentCalcs
+  nameWithType: SegmentCalcs
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs
+  type: Class
+  source:
+    id: SegmentCalcs
+    path: ''
+    startLine: 911
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class SegmentCalcs
+    content.vb: Public Class SegmentCalcs
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: BaseFreeFlowSpeed(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Int32,System.Int32,System.Single,HCMCalc_UrbanStreets.MedianType,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: BaseFreeFlowSpeed(AnalysisMode, AreaType, Int32, Int32, Single, MedianType, Single, Single, Single, Single, Single)
+  nameWithType: SegmentCalcs.BaseFreeFlowSpeed(AnalysisMode, AreaType, Int32, Int32, Single, MedianType, Single, Single, Single, Single, Single)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed(HCMCalc_UrbanStreets.AnalysisMode, HCMCalc_UrbanStreets.AreaType, System.Int32, System.Int32, System.Single, HCMCalc_UrbanStreets.MedianType, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: BaseFreeFlowSpeed
+    path: ''
+    startLine: 914
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static float BaseFreeFlowSpeed(AnalysisMode projectMode, AreaType area, int postedSpeed, int numThruLanes, float linkLengthFt, MedianType median, float propRestrictMedian, float propSegCurbRightSide, float pctOnStreetParking, float numAccessPointsSubDir, float numAccessPointsOppDir)
+    parameters:
+    - id: projectMode
+      type: HCMCalc_UrbanStreets.AnalysisMode
+    - id: area
+      type: HCMCalc_UrbanStreets.AreaType
+    - id: postedSpeed
+      type: System.Int32
+    - id: numThruLanes
+      type: System.Int32
+    - id: linkLengthFt
+      type: System.Single
+    - id: median
+      type: HCMCalc_UrbanStreets.MedianType
+    - id: propRestrictMedian
+      type: System.Single
+    - id: propSegCurbRightSide
+      type: System.Single
+    - id: pctOnStreetParking
+      type: System.Single
+    - id: numAccessPointsSubDir
+      type: System.Single
+    - id: numAccessPointsOppDir
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function BaseFreeFlowSpeed(projectMode As AnalysisMode, area As AreaType, postedSpeed As Integer, numThruLanes As Integer, linkLengthFt As Single, median As MedianType, propRestrictMedian As Single, propSegCurbRightSide As Single, pctOnStreetParking As Single, numAccessPointsSubDir As Single, numAccessPointsOppDir As Single) As Single
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed(System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed(System.Single,System.Single)
+  id: FreeFlowSpeed(System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: FreeFlowSpeed(Single, Single)
+  nameWithType: SegmentCalcs.FreeFlowSpeed(Single, Single)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed(System.Single, System.Single)
+  type: Method
+  source:
+    id: FreeFlowSpeed
+    path: ''
+    startLine: 953
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static float FreeFlowSpeed(float BaseFreeFlowSpeed, float segmentLength)
+    parameters:
+    - id: BaseFreeFlowSpeed
+      type: System.Single
+    - id: segmentLength
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function FreeFlowSpeed(BaseFreeFlowSpeed As Single, segmentLength As Single) As Single
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Single,System.Single,System.Int32,System.Single,System.Boolean,HCMCalc_UrbanStreets.ParkingActivityLevel,System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Single,System.Single,System.Int32,System.Single,System.Boolean,HCMCalc_UrbanStreets.ParkingActivityLevel,System.Single,System.Single)
+  id: GetRunningTimeParms(HCMCalc_UrbanStreets.AnalysisMode,HCMCalc_UrbanStreets.AreaType,System.Single,System.Single,System.Int32,System.Single,System.Boolean,HCMCalc_UrbanStreets.ParkingActivityLevel,System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: GetRunningTimeParms(AnalysisMode, AreaType, Single, Single, Int32, Single, Boolean, ParkingActivityLevel, Single, Single)
+  nameWithType: SegmentCalcs.GetRunningTimeParms(AnalysisMode, AreaType, Single, Single, Int32, Single, Boolean, ParkingActivityLevel, Single, Single)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms(HCMCalc_UrbanStreets.AnalysisMode, HCMCalc_UrbanStreets.AreaType, System.Single, System.Single, System.Int32, System.Single, System.Boolean, HCMCalc_UrbanStreets.ParkingActivityLevel, System.Single, System.Single)
+  type: Method
+  source:
+    id: GetRunningTimeParms
+    path: ''
+    startLine: 962
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public static LinkRunningTimeCalcParameters GetRunningTimeParms(AnalysisMode projectMode, AreaType area, float freeFlowSpeedMPH, float midSegVol, int numSegThruLanes, float segmentLength, bool onStreetParking, ParkingActivityLevel parkingActivity, float numAccessPointsSubDir, float numAccessPointsOppDir)
+    parameters:
+    - id: projectMode
+      type: HCMCalc_UrbanStreets.AnalysisMode
+    - id: area
+      type: HCMCalc_UrbanStreets.AreaType
+    - id: freeFlowSpeedMPH
+      type: System.Single
+    - id: midSegVol
+      type: System.Single
+    - id: numSegThruLanes
+      type: System.Int32
+    - id: segmentLength
+      type: System.Single
+    - id: onStreetParking
+      type: System.Boolean
+    - id: parkingActivity
+      type: HCMCalc_UrbanStreets.ParkingActivityLevel
+    - id: numAccessPointsSubDir
+      type: System.Single
+    - id: numAccessPointsOppDir
+      type: System.Single
+    return:
+      type: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+    content.vb: Public Shared Function GetRunningTimeParms(projectMode As AnalysisMode, area As AreaType, freeFlowSpeedMPH As Single, midSegVol As Single, numSegThruLanes As Integer, segmentLength As Single, onStreetParking As Boolean, parkingActivity As ParkingActivityLevel, numAccessPointsSubDir As Single, numAccessPointsOppDir As Single) As LinkRunningTimeCalcParameters
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.RunningTime(HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters,System.Single,System.Single,HCMCalc_UrbanStreets.AnalysisMode)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.RunningTime(HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters,System.Single,System.Single,HCMCalc_UrbanStreets.AnalysisMode)
+  id: RunningTime(HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters,System.Single,System.Single,HCMCalc_UrbanStreets.AnalysisMode)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: RunningTime(LinkRunningTimeCalcParameters, Single, Single, AnalysisMode)
+  nameWithType: SegmentCalcs.RunningTime(LinkRunningTimeCalcParameters, Single, Single, AnalysisMode)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.RunningTime(HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters, System.Single, System.Single, HCMCalc_UrbanStreets.AnalysisMode)
+  type: Method
+  source:
+    id: RunningTime
+    path: ''
+    startLine: 1033
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the running time for a segment.\n"
+  example: []
+  syntax:
+    content: public static float RunningTime(LinkRunningTimeCalcParameters runningTimeParms, float freeFlowSpeedMPH, float segmentLengthFt, AnalysisMode ProjectAnalMode)
+    parameters:
+    - id: runningTimeParms
+      type: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+      description: ''
+    - id: freeFlowSpeedMPH
+      type: System.Single
+      description: ''
+    - id: segmentLengthFt
+      type: System.Single
+      description: ''
+    - id: ProjectAnalMode
+      type: HCMCalc_UrbanStreets.AnalysisMode
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function RunningTime(runningTimeParms As LinkRunningTimeCalcParameters, freeFlowSpeedMPH As Single, segmentLengthFt As Single, ProjectAnalMode As AnalysisMode) As Single
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.RunningTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan(System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan(System.Single)
+  id: AccessPointsArtPlan(System.Single)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: AccessPointsArtPlan(Single)
+  nameWithType: SegmentCalcs.AccessPointsArtPlan(Single)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan(System.Single)
+  type: Method
+  source:
+    id: AccessPointsArtPlan
+    path: ''
+    startLine: 1053
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the number of access points on a segment depending on the link length.\n"
+  example: []
+  syntax:
+    content: public static float AccessPointsArtPlan(float segmentLength)
+    parameters:
+    - id: segmentLength
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function AccessPointsArtPlan(segmentLength As Single) As Single
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime(System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime(System.Single,System.Single)
+  id: BaseFFTravTime(System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: BaseFFTravTime(Single, Single)
+  nameWithType: SegmentCalcs.BaseFFTravTime(Single, Single)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime(System.Single, System.Single)
+  type: Method
+  source:
+    id: BaseFFTravTime
+    path: ''
+    startLine: 1067
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the base free flow travel time for a segment.\n"
+  example: []
+  syntax:
+    content: public static float BaseFFTravTime(float SegLengthFeet, float BaseFreeFlowSpeed)
+    parameters:
+    - id: SegLengthFeet
+      type: System.Single
+      description: ''
+    - id: BaseFreeFlowSpeed
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function BaseFFTravTime(SegLengthFeet As Single, BaseFreeFlowSpeed As Single) As Single
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime(System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime(System.Single,System.Single)
+  id: FFTravTime(System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: FFTravTime(Single, Single)
+  nameWithType: SegmentCalcs.FFTravTime(Single, Single)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime(System.Single, System.Single)
+  type: Method
+  source:
+    id: FFTravTime
+    path: ''
+    startLine: 1078
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the free flow travel time for a segment.\n"
+  example: []
+  syntax:
+    content: public static float FFTravTime(float SegLengthFeet, float FreeFlowSpeed)
+    parameters:
+    - id: SegLengthFeet
+      type: System.Single
+      description: ''
+    - id: FreeFlowSpeed
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function FFTravTime(SegLengthFeet As Single, FreeFlowSpeed As Single) As Single
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed(System.Single,System.Single)
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed(System.Single,System.Single)
+  id: SegAvgSpeed(System.Single,System.Single)
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: SegAvgSpeed(Single, Single)
+  nameWithType: SegmentCalcs.SegAvgSpeed(Single, Single)
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed(System.Single, System.Single)
+  type: Method
+  source:
+    id: SegAvgSpeed
+    path: ''
+    startLine: 1089
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the average speed for a segment.\n"
+  example: []
+  syntax:
+    content: public static float SegAvgSpeed(float SegLengthFeet, float SegTravTimeSeconds)
+    parameters:
+    - id: SegLengthFeet
+      type: System.Single
+      description: ''
+    - id: SegTravTimeSeconds
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Shared Function SegAvgSpeed(SegLengthFeet As Single, SegTravTimeSeconds As Single) As Single
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto(System.Single,System.Int32[])
+  commentId: M:HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto(System.Single,System.Int32[])
+  id: LOSsegmentAuto(System.Single,System.Int32[])
+  parent: HCMCalc_UrbanStreets.SegmentCalcs
+  langs:
+  - csharp
+  - vb
+  name: LOSsegmentAuto(Single, Int32[])
+  nameWithType: SegmentCalcs.LOSsegmentAuto(Single, Int32[])
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto(System.Single, System.Int32[])
+  type: Method
+  source:
+    id: LOSsegmentAuto
+    path: ''
+    startLine: 1099
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nReturns the LOS for a segment depending on the average speed comapred to the thresholds speeds defined in <param name=\"ParmRanges\" />.\n"
+  example: []
+  syntax:
+    content: public static string LOSsegmentAuto(float AvgSpeed, int[] ThreshSpeed)
+    parameters:
+    - id: AvgSpeed
+      type: System.Single
+      description: ''
+    - id: ThreshSpeed
+      type: System.Int32[]
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function LOSsegmentAuto(AvgSpeed As Single, ThreshSpeed As Integer()) As String
+  overload: HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto*
+  nameWithType.vb: SegmentCalcs.LOSsegmentAuto(Single, Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto(System.Single, System.Int32())
+  name.vb: LOSsegmentAuto(Single, Int32())
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed
+  name: BaseFreeFlowSpeed
+  nameWithType: SegmentCalcs.BaseFreeFlowSpeed
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.BaseFreeFlowSpeed
+- uid: HCMCalc_UrbanStreets.AnalysisMode
+  commentId: T:HCMCalc_UrbanStreets.AnalysisMode
+  parent: HCMCalc_UrbanStreets
+  name: AnalysisMode
+  nameWithType: AnalysisMode
+  fullName: HCMCalc_UrbanStreets.AnalysisMode
+- uid: HCMCalc_UrbanStreets.AreaType
+  commentId: T:HCMCalc_UrbanStreets.AreaType
+  parent: HCMCalc_UrbanStreets
+  name: AreaType
+  nameWithType: AreaType
+  fullName: HCMCalc_UrbanStreets.AreaType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.MedianType
+  commentId: T:HCMCalc_UrbanStreets.MedianType
+  parent: HCMCalc_UrbanStreets
+  name: MedianType
+  nameWithType: MedianType
+  fullName: HCMCalc_UrbanStreets.MedianType
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed
+  name: FreeFlowSpeed
+  nameWithType: SegmentCalcs.FreeFlowSpeed
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.FreeFlowSpeed
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms
+  name: GetRunningTimeParms
+  nameWithType: SegmentCalcs.GetRunningTimeParms
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.GetRunningTimeParms
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.ParkingActivityLevel
+  commentId: T:HCMCalc_UrbanStreets.ParkingActivityLevel
+  parent: HCMCalc_UrbanStreets
+  name: ParkingActivityLevel
+  nameWithType: ParkingActivityLevel
+  fullName: HCMCalc_UrbanStreets.ParkingActivityLevel
+- uid: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  commentId: T:HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+  parent: HCMCalc_UrbanStreets
+  name: LinkRunningTimeCalcParameters
+  nameWithType: LinkRunningTimeCalcParameters
+  fullName: HCMCalc_UrbanStreets.LinkRunningTimeCalcParameters
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.RunningTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.RunningTime
+  name: RunningTime
+  nameWithType: SegmentCalcs.RunningTime
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.RunningTime
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan
+  name: AccessPointsArtPlan
+  nameWithType: SegmentCalcs.AccessPointsArtPlan
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.AccessPointsArtPlan
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime
+  name: BaseFFTravTime
+  nameWithType: SegmentCalcs.BaseFFTravTime
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.BaseFFTravTime
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime
+  name: FFTravTime
+  nameWithType: SegmentCalcs.FFTravTime
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.FFTravTime
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed
+  name: SegAvgSpeed
+  nameWithType: SegmentCalcs.SegAvgSpeed
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.SegAvgSpeed
+- uid: HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto*
+  commentId: Overload:HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto
+  name: LOSsegmentAuto
+  nameWithType: SegmentCalcs.LOSsegmentAuto
+  fullName: HCMCalc_UrbanStreets.SegmentCalcs.LOSsegmentAuto
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.PhaseColor
+  commentId: T:HCMCalc_UrbanStreets.PhaseColor
+  id: PhaseColor
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.PhaseColor.AllRed
+  - HCMCalc_UrbanStreets.PhaseColor.Green
+  - HCMCalc_UrbanStreets.PhaseColor.Yellow
+  langs:
+  - csharp
+  - vb
+  name: PhaseColor
+  nameWithType: PhaseColor
+  fullName: HCMCalc_UrbanStreets.PhaseColor
+  type: Enum
+  source:
+    id: PhaseColor
+    path: ''
+    startLine: 7076
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public enum PhaseColor
+    content.vb: Public Enum PhaseColor
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: HCMCalc_UrbanStreets.PhaseColor.Green
+  commentId: F:HCMCalc_UrbanStreets.PhaseColor.Green
+  id: Green
+  parent: HCMCalc_UrbanStreets.PhaseColor
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: PhaseColor.Green
+  fullName: HCMCalc_UrbanStreets.PhaseColor.Green
+  type: Field
+  source:
+    id: Green
+    path: ''
+    startLine: 7078
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Green = 0
+    return:
+      type: HCMCalc_UrbanStreets.PhaseColor
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.PhaseColor.Yellow
+  commentId: F:HCMCalc_UrbanStreets.PhaseColor.Yellow
+  id: Yellow
+  parent: HCMCalc_UrbanStreets.PhaseColor
+  langs:
+  - csharp
+  - vb
+  name: Yellow
+  nameWithType: PhaseColor.Yellow
+  fullName: HCMCalc_UrbanStreets.PhaseColor.Yellow
+  type: Field
+  source:
+    id: Yellow
+    path: ''
+    startLine: 7079
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: Yellow = 1
+    return:
+      type: HCMCalc_UrbanStreets.PhaseColor
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: HCMCalc_UrbanStreets.PhaseColor.AllRed
+  commentId: F:HCMCalc_UrbanStreets.PhaseColor.AllRed
+  id: AllRed
+  parent: HCMCalc_UrbanStreets.PhaseColor
+  langs:
+  - csharp
+  - vb
+  name: AllRed
+  nameWithType: PhaseColor.AllRed
+  fullName: HCMCalc_UrbanStreets.PhaseColor.AllRed
+  type: Field
+  source:
+    id: AllRed
+    path: ''
+    startLine: 7080
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: AllRed = 2
+    return:
+      type: HCMCalc_UrbanStreets.PhaseColor
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: HCMCalc_UrbanStreets.PhaseColor
+  commentId: T:HCMCalc_UrbanStreets.PhaseColor
+  parent: HCMCalc_UrbanStreets
+  name: PhaseColor
+  nameWithType: PhaseColor
+  fullName: HCMCalc_UrbanStreets.PhaseColor

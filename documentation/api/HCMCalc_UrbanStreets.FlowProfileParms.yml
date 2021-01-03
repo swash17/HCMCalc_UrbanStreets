@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.FlowProfileParms
+  commentId: T:HCMCalc_UrbanStreets.FlowProfileParms
+  id: FlowProfileParms
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.FlowProfileParms.#ctor
+  - HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile
+  - HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec
+  - HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes
+  - HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile
+  - HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes
+  - HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec
+  - HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes
+  - HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate
+  langs:
+  - csharp
+  - vb
+  name: FlowProfileParms
+  nameWithType: FlowProfileParms
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms
+  type: Class
+  source:
+    id: FlowProfileParms
+    path: ''
+    startLine: 514
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  summary: "\nContains the Discharge and Projected Flow Profiles, as well as several variables used in their calculations. These profiles are used in platoon dispersion calculations.\n"
+  example: []
+  syntax:
+    content: public class FlowProfileParms
+    content.vb: Public Class FlowProfileParms
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.#ctor
+  commentId: M:HCMCalc_UrbanStreets.FlowProfileParms.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: FlowProfileParms()
+  nameWithType: FlowProfileParms.FlowProfileParms()
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.FlowProfileParms()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 516
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public FlowProfileParms()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile
+  id: DischargeFlowProfile
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: DischargeFlowProfile
+  nameWithType: FlowProfileParms.DischargeFlowProfile
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile
+  type: Property
+  source:
+    id: DischargeFlowProfile
+    path: ''
+    startLine: 530
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[, ] DischargeFlowProfile { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,]
+    content.vb: Public Property DischargeFlowProfile As Single(,)
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile
+  id: ProjectedFlowProfile
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: ProjectedFlowProfile
+  nameWithType: FlowProfileParms.ProjectedFlowProfile
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile
+  type: Property
+  source:
+    id: ProjectedFlowProfile
+    path: ''
+    startLine: 532
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float[, ] ProjectedFlowProfile { get; set; }
+    parameters: []
+    return:
+      type: System.Single[,]
+    content.vb: Public Property ProjectedFlowProfile As Single(,)
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate
+  id: WeightedDischargeFlowRate
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: WeightedDischargeFlowRate
+  nameWithType: FlowProfileParms.WeightedDischargeFlowRate
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate
+  type: Property
+  source:
+    id: WeightedDischargeFlowRate
+    path: ''
+    startLine: 534
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float WeightedDischargeFlowRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property WeightedDischargeFlowRate As Single
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec
+  id: DischargeFlowRateVehPerSec
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: DischargeFlowRateVehPerSec
+  nameWithType: FlowProfileParms.DischargeFlowRateVehPerSec
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec
+  type: Property
+  source:
+    id: DischargeFlowRateVehPerSec
+    path: ''
+    startLine: 535
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float DischargeFlowRateVehPerSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DischargeFlowRateVehPerSec As Single
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec
+  id: SatFlowRateVehPerSec
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: SatFlowRateVehPerSec
+  nameWithType: FlowProfileParms.SatFlowRateVehPerSec
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec
+  type: Property
+  source:
+    id: SatFlowRateVehPerSec
+    path: ''
+    startLine: 536
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public float SatFlowRateVehPerSec { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SatFlowRateVehPerSec As Single
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes
+  id: LeftMovementLaneGroupLanes
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: LeftMovementLaneGroupLanes
+  nameWithType: FlowProfileParms.LeftMovementLaneGroupLanes
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes
+  type: Property
+  source:
+    id: LeftMovementLaneGroupLanes
+    path: ''
+    startLine: 537
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int LeftMovementLaneGroupLanes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property LeftMovementLaneGroupLanes As Integer
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes
+  id: ThroughMovementLaneGroupLanes
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: ThroughMovementLaneGroupLanes
+  nameWithType: FlowProfileParms.ThroughMovementLaneGroupLanes
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes
+  type: Property
+  source:
+    id: ThroughMovementLaneGroupLanes
+    path: ''
+    startLine: 538
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int ThroughMovementLaneGroupLanes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ThroughMovementLaneGroupLanes As Integer
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes
+  commentId: P:HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes
+  id: RightMovementLaneGroupLanes
+  parent: HCMCalc_UrbanStreets.FlowProfileParms
+  langs:
+  - csharp
+  - vb
+  name: RightMovementLaneGroupLanes
+  nameWithType: FlowProfileParms.RightMovementLaneGroupLanes
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes
+  type: Property
+  source:
+    id: RightMovementLaneGroupLanes
+    path: ''
+    startLine: 539
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int RightMovementLaneGroupLanes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RightMovementLaneGroupLanes As Integer
+  overload: HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.#ctor
+  name: FlowProfileParms
+  nameWithType: FlowProfileParms.FlowProfileParms
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.FlowProfileParms
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile
+  name: DischargeFlowProfile
+  nameWithType: FlowProfileParms.DischargeFlowProfile
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowProfile
+- uid: System.Single[,]
+  isExternal: true
+  name: Single[,]
+  nameWithType: Single[,]
+  fullName: System.Single[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: System.Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile
+  name: ProjectedFlowProfile
+  nameWithType: FlowProfileParms.ProjectedFlowProfile
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.ProjectedFlowProfile
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate
+  name: WeightedDischargeFlowRate
+  nameWithType: FlowProfileParms.WeightedDischargeFlowRate
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.WeightedDischargeFlowRate
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec
+  name: DischargeFlowRateVehPerSec
+  nameWithType: FlowProfileParms.DischargeFlowRateVehPerSec
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.DischargeFlowRateVehPerSec
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec
+  name: SatFlowRateVehPerSec
+  nameWithType: FlowProfileParms.SatFlowRateVehPerSec
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.SatFlowRateVehPerSec
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes
+  name: LeftMovementLaneGroupLanes
+  nameWithType: FlowProfileParms.LeftMovementLaneGroupLanes
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.LeftMovementLaneGroupLanes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes
+  name: ThroughMovementLaneGroupLanes
+  nameWithType: FlowProfileParms.ThroughMovementLaneGroupLanes
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.ThroughMovementLaneGroupLanes
+- uid: HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes*
+  commentId: Overload:HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes
+  name: RightMovementLaneGroupLanes
+  nameWithType: FlowProfileParms.RightMovementLaneGroupLanes
+  fullName: HCMCalc_UrbanStreets.FlowProfileParms.RightMovementLaneGroupLanes

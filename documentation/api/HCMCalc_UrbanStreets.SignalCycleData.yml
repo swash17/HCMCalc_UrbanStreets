@@ -1,0 +1,518 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMCalc_UrbanStreets.SignalCycleData
+  commentId: T:HCMCalc_UrbanStreets.SignalCycleData
+  id: SignalCycleData
+  parent: HCMCalc_UrbanStreets
+  children:
+  - HCMCalc_UrbanStreets.SignalCycleData.#ctor
+  - HCMCalc_UrbanStreets.SignalCycleData.#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32)
+  - HCMCalc_UrbanStreets.SignalCycleData.#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})
+  - HCMCalc_UrbanStreets.SignalCycleData.ControlType
+  - HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec
+  - HCMCalc_UrbanStreets.SignalCycleData.ForceMode
+  - HCMCalc_UrbanStreets.SignalCycleData.OffsetSec
+  - HCMCalc_UrbanStreets.SignalCycleData.Phases
+  - HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID
+  - HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint
+  langs:
+  - csharp
+  - vb
+  name: SignalCycleData
+  nameWithType: SignalCycleData
+  fullName: HCMCalc_UrbanStreets.SignalCycleData
+  type: Class
+  source:
+    id: SignalCycleData
+    path: ''
+    startLine: 7095
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public class SignalCycleData
+    content.vb: Public Class SignalCycleData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: HCMCalc_UrbanStreets.SignalCycleData.#ctor
+  commentId: M:HCMCalc_UrbanStreets.SignalCycleData.#ctor
+  id: '#ctor'
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: SignalCycleData()
+  nameWithType: SignalCycleData.SignalCycleData()
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.SignalCycleData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 7105
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalCycleData()
+    content.vb: Public Sub New
+  overload: HCMCalc_UrbanStreets.SignalCycleData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})
+  commentId: M:HCMCalc_UrbanStreets.SignalCycleData.#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})
+  id: '#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32,System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData})'
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: SignalCycleData(SigControlType, Int32, List<SignalPhaseData>)
+  nameWithType: SignalCycleData.SignalCycleData(SigControlType, Int32, List<SignalPhaseData>)
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.SignalCycleData(HCMCalc_UrbanStreets.SigControlType, System.Int32, System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 7112
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalCycleData(SigControlType controlType, int cycleLengthSec, List<SignalPhaseData> Phases)
+    parameters:
+    - id: controlType
+      type: HCMCalc_UrbanStreets.SigControlType
+    - id: cycleLengthSec
+      type: System.Int32
+    - id: Phases
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    content.vb: Public Sub New(controlType As SigControlType, cycleLengthSec As Integer, Phases As List(Of SignalPhaseData))
+  overload: HCMCalc_UrbanStreets.SignalCycleData.#ctor*
+  nameWithType.vb: SignalCycleData.SignalCycleData(SigControlType, Int32, List(Of SignalPhaseData))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: HCMCalc_UrbanStreets.SignalCycleData.SignalCycleData(HCMCalc_UrbanStreets.SigControlType, System.Int32, System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData))
+  name.vb: SignalCycleData(SigControlType, Int32, List(Of SignalPhaseData))
+- uid: HCMCalc_UrbanStreets.SignalCycleData.#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32)
+  commentId: M:HCMCalc_UrbanStreets.SignalCycleData.#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32)
+  id: '#ctor(HCMCalc_UrbanStreets.SigControlType,System.Int32)'
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: SignalCycleData(SigControlType, Int32)
+  nameWithType: SignalCycleData.SignalCycleData(SigControlType, Int32)
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.SignalCycleData(HCMCalc_UrbanStreets.SigControlType, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 7120
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SignalCycleData(SigControlType controlType, int cycleLengthSec)
+    parameters:
+    - id: controlType
+      type: HCMCalc_UrbanStreets.SigControlType
+    - id: cycleLengthSec
+      type: System.Int32
+    content.vb: Public Sub New(controlType As SigControlType, cycleLengthSec As Integer)
+  overload: HCMCalc_UrbanStreets.SignalCycleData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec
+  commentId: P:HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec
+  id: CycleLengthSec
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: CycleLengthSec
+  nameWithType: SignalCycleData.CycleLengthSec
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec
+  type: Property
+  source:
+    id: CycleLengthSec
+    path: ''
+    startLine: 7128
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int CycleLengthSec { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CycleLengthSec As Integer
+  overload: HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ControlType
+  commentId: P:HCMCalc_UrbanStreets.SignalCycleData.ControlType
+  id: ControlType
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: ControlType
+  nameWithType: SignalCycleData.ControlType
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ControlType
+  type: Property
+  source:
+    id: ControlType
+    path: ''
+    startLine: 7129
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public SigControlType ControlType { get; set; }
+    parameters: []
+    return:
+      type: HCMCalc_UrbanStreets.SigControlType
+    content.vb: Public Property ControlType As SigControlType
+  overload: HCMCalc_UrbanStreets.SignalCycleData.ControlType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID
+  commentId: P:HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID
+  id: ReferencePhaseID
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: ReferencePhaseID
+  nameWithType: SignalCycleData.ReferencePhaseID
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID
+  type: Property
+  source:
+    id: ReferencePhaseID
+    path: ''
+    startLine: 7130
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int ReferencePhaseID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReferencePhaseID As Integer
+  overload: HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.OffsetSec
+  commentId: P:HCMCalc_UrbanStreets.SignalCycleData.OffsetSec
+  id: OffsetSec
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: OffsetSec
+  nameWithType: SignalCycleData.OffsetSec
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.OffsetSec
+  type: Property
+  source:
+    id: OffsetSec
+    path: ''
+    startLine: 7131
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int OffsetSec { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property OffsetSec As Integer
+  overload: HCMCalc_UrbanStreets.SignalCycleData.OffsetSec*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ForceMode
+  commentId: P:HCMCalc_UrbanStreets.SignalCycleData.ForceMode
+  id: ForceMode
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: ForceMode
+  nameWithType: SignalCycleData.ForceMode
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ForceMode
+  type: Property
+  source:
+    id: ForceMode
+    path: ''
+    startLine: 7132
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public bool ForceMode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ForceMode As Boolean
+  overload: HCMCalc_UrbanStreets.SignalCycleData.ForceMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint
+  commentId: P:HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint
+  id: ReferencePoint
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: ReferencePoint
+  nameWithType: SignalCycleData.ReferencePoint
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint
+  type: Property
+  source:
+    id: ReferencePoint
+    path: ''
+    startLine: 7133
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public int ReferencePoint { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReferencePoint As Integer
+  overload: HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: HCMCalc_UrbanStreets.SignalCycleData.Phases
+  commentId: P:HCMCalc_UrbanStreets.SignalCycleData.Phases
+  id: Phases
+  parent: HCMCalc_UrbanStreets.SignalCycleData
+  langs:
+  - csharp
+  - vb
+  name: Phases
+  nameWithType: SignalCycleData.Phases
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.Phases
+  type: Property
+  source:
+    id: Phases
+    path: ''
+    startLine: 7134
+  assemblies:
+  - cs.temp.dll
+  namespace: HCMCalc_UrbanStreets
+  syntax:
+    content: public List<SignalPhaseData> Phases { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+    content.vb: Public Property Phases As List(Of SignalPhaseData)
+  overload: HCMCalc_UrbanStreets.SignalCycleData.Phases*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: HCMCalc_UrbanStreets
+  commentId: N:HCMCalc_UrbanStreets
+  name: HCMCalc_UrbanStreets
+  nameWithType: HCMCalc_UrbanStreets
+  fullName: HCMCalc_UrbanStreets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMCalc_UrbanStreets.SignalCycleData.#ctor*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.#ctor
+  name: SignalCycleData
+  nameWithType: SignalCycleData.SignalCycleData
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.SignalCycleData
+- uid: HCMCalc_UrbanStreets.SigControlType
+  commentId: T:HCMCalc_UrbanStreets.SigControlType
+  parent: HCMCalc_UrbanStreets
+  name: SigControlType
+  nameWithType: SigControlType
+  fullName: HCMCalc_UrbanStreets.SigControlType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+  commentId: T:System.Collections.Generic.List{HCMCalc_UrbanStreets.SignalPhaseData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<SignalPhaseData>
+  nameWithType: List<SignalPhaseData>
+  fullName: System.Collections.Generic.List<HCMCalc_UrbanStreets.SignalPhaseData>
+  nameWithType.vb: List(Of SignalPhaseData)
+  fullName.vb: System.Collections.Generic.List(Of HCMCalc_UrbanStreets.SignalPhaseData)
+  name.vb: List(Of SignalPhaseData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HCMCalc_UrbanStreets.SignalPhaseData
+    name: SignalPhaseData
+    nameWithType: SignalPhaseData
+    fullName: HCMCalc_UrbanStreets.SignalPhaseData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HCMCalc_UrbanStreets.SignalPhaseData
+    name: SignalPhaseData
+    nameWithType: SignalPhaseData
+    fullName: HCMCalc_UrbanStreets.SignalPhaseData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec
+  name: CycleLengthSec
+  nameWithType: SignalCycleData.CycleLengthSec
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.CycleLengthSec
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ControlType*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.ControlType
+  name: ControlType
+  nameWithType: SignalCycleData.ControlType
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ControlType
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID
+  name: ReferencePhaseID
+  nameWithType: SignalCycleData.ReferencePhaseID
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ReferencePhaseID
+- uid: HCMCalc_UrbanStreets.SignalCycleData.OffsetSec*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.OffsetSec
+  name: OffsetSec
+  nameWithType: SignalCycleData.OffsetSec
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.OffsetSec
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ForceMode*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.ForceMode
+  name: ForceMode
+  nameWithType: SignalCycleData.ForceMode
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ForceMode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint
+  name: ReferencePoint
+  nameWithType: SignalCycleData.ReferencePoint
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.ReferencePoint
+- uid: HCMCalc_UrbanStreets.SignalCycleData.Phases*
+  commentId: Overload:HCMCalc_UrbanStreets.SignalCycleData.Phases
+  name: Phases
+  nameWithType: SignalCycleData.Phases
+  fullName: HCMCalc_UrbanStreets.SignalCycleData.Phases
