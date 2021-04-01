@@ -83,6 +83,8 @@ namespace HCMCalc_UrbanStreets
         float[,] _projectedFlowProfile;
         float _smoothingFactor;
         int _platoonArrivalTime;
+        float _midblockEnteringVolVehPerHr;
+        float _midblockExitingVolVehPerHr;
 
         /// <summary>
         /// Constructor required for creating the results for a link.
@@ -129,5 +131,13 @@ namespace HCMCalc_UrbanStreets
         public float[,] ProjectedFlowProfile { get => _projectedFlowProfile; set => _projectedFlowProfile = value; }
         public float SmoothingFactor { get => _smoothingFactor; set => _smoothingFactor = value; }
         public int PlatoonArrivalTime { get => _platoonArrivalTime; set => _platoonArrivalTime = value; }
+        /// <summary>
+        /// The volume entering the midblock, in veh/h.
+        /// </summary>
+        public float MidblockEnteringVolVehPerHr { get => _midblockEnteringVolVehPerHr; set => _midblockEnteringVolVehPerHr = value; }
+        /// <summary>
+        /// The volume exiting the midblock, in veh/h.
+        /// </summary>
+        public float MidblockExitingVolVehPerHr { get => _midblockExitingVolVehPerHr; set => _midblockExitingVolVehPerHr = value; }
     }
 }

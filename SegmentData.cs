@@ -63,6 +63,8 @@ namespace HCMCalc_UrbanStreets
         public SegmentData()
         {
             //Parameterless constructor needed for XML de/serialization
+            _thresholds = new ThresholdData();
+            _results = new ResultsSegmentData();
         }
 
         /// <summary>
@@ -125,8 +127,7 @@ namespace HCMCalc_UrbanStreets
         long _AADT;
         float _ddhv;
         float _adjDDHV;    //segment demand after accounting for reduced demand from upstream intersection due to left turn spillover
-        float _midblockEnteringVolVehPerHr;
-        float _midblockExitingVolVehPerHr;
+        
         int _numLanes;
         int _numThruLanes;
         int _postSpeedMPH;
@@ -264,15 +265,7 @@ namespace HCMCalc_UrbanStreets
         /// <summary>
         /// The incline of the link, entered as a percentage (+/- 0-100).
         /// </summary>
-        public float PctGrade { get => _pctGrade; set => _pctGrade = value; }
-        /// <summary>
-        /// The volume entering the midblock, in veh/h.
-        /// </summary>
-        public float MidblockEnteringVolVehPerHr { get => _midblockEnteringVolVehPerHr; set => _midblockEnteringVolVehPerHr = value; }
-        /// <summary>
-        /// The volume exiting the midblock, in veh/h.
-        /// </summary>
-        public float MidblockExitingVolVehPerHr { get => _midblockExitingVolVehPerHr; set => _midblockExitingVolVehPerHr = value; }
+        public float PctGrade { get => _pctGrade; set => _pctGrade = value; }        
         /// <summary>
         /// The amount of access points, with the first bound [0] being the analysis direction and the second bound [1] being the opposing direction.
         /// </summary>
@@ -318,7 +311,7 @@ namespace HCMCalc_UrbanStreets
         /// </summary>
         public AccessPointData()
         {
-            
+            _arrivalFlowRate = new float[2,0];
         }
 
         /// <summary>

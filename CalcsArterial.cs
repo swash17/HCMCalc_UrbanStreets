@@ -50,7 +50,6 @@ namespace HCMCalc_UrbanStreets
 
                     if (Arterial.Segments.IndexOf(segment) > 0)
                     {
-                        
                         if (Project.AnalMode == AnalysisMode.Operations)
                         {
                             segment.Link.Results.BaseFreeFlowSpeed = SegmentCalcs.BaseFreeFlowSpeed(Project.AnalMode, Arterial.Area, segment.Link.PostSpeedMPH, segment.Link.NumLanes, segment.Link.LengthFt, segment.Link.MedType, segment.Link.PropRestrictMedian, segment.Link.PropCurbRightSide, segment.Link.PctOnStreetParking, segment.Link.AccessPoints.Count, segment.Link.AccessPoints.Count);
@@ -148,6 +147,7 @@ namespace HCMCalc_UrbanStreets
                                 else
                                     laneGroup.PortionOnGreen = 0;
                             }
+                            
                             if (Project.AnalMode == AnalysisMode.Operations && (laneGroup.NemaMvmtID == outputMovementsArray[0] || laneGroup.NemaMvmtID == outputMovementsArray[1] || laneGroup.NemaMvmtID == outputMovementsArray[2]))
                             {
                                 if (Arterial.Segments.IndexOf(segment) > 0)
@@ -185,7 +185,6 @@ namespace HCMCalc_UrbanStreets
                             else if (Project.AnalMode == AnalysisMode.Planning)
                                 laneGroup.AnalysisResults.SatFlowRate = SatFlowRateCalculations.Planning(Project.Mode, Arterial.Area, segment.Link.OutsideLaneWidth, 12, laneGroup.DemandVolumeVehPerHr, laneGroup.PctHeavyVehicles, laneGroup.NumLanes, segment.Link.MedType, segment.Link.PostSpeedMPH, approach.LeftTurnBayExists, approach.RightTurnBayExists, approach.PctLeftTurns, approach.PctRightTurns, segment.Intersection.Signal.CycleLengthSec, segment.Link.PctGrade, laneGroup.BaseSatFlow);
 
-
                             laneGroup.SignalPhase.gC = laneGroup.SignalPhase.GreenEffectiveSec / segment.Intersection.Signal.CycleLengthSec; //Equation 19-16
 
                             laneGroup.AnalysisResults.CapacityPerLane = SignalCalcs.Capacity(laneGroup.AnalysisResults.SatFlowRate.AdjustedValueVehHrLane, laneGroup.SignalPhase.gC, laneGroup.NumLanes);
@@ -221,18 +220,21 @@ namespace HCMCalc_UrbanStreets
 
                     //if (segment.Intersection.Signal.ControlType != SigControlType.Pretimed)
                     //{
-                        //segment.Intersection.Signal.Phases = SignalCalcs.ComputeQAPolygon(segment.Intersection.Signal.Phases, segment.Intersection.Signal.CycleLengthSec);
-                        //segment.Intersection.Signal.Phases = SignalCalcs.VolumeComputations(segment.Intersection.Signal.Phases);
-                        //segment.Intersection.Signal.Phases = SignalCalcs.MaximumAllowableHeadway(segment.Intersection.Signal.Phases, segment.Link.PostSpeedMPH);
-                        //segment.Intersection.Signal.Phases = SignalCalcs.ComputeEquivalentMaxGreen(segment.Intersection);
-                        //segment.Intersection.Signal.Phases = SignalCalcs.ComputeAveragePhaseDuration(segment.Intersection.Signal.Phases, segment.Intersection.Signal.CycleLengthSec);
+                    //segment.Intersection.Signal.Phases = SignalCalcs.ComputeQAPolygon(segment.Intersection.Signal.Phases, segment.Intersection.Signal.CycleLengthSec);
+                    //segment.Intersection.Signal.Phases = SignalCalcs.VolumeComputations(segment.Intersection.Signal.Phases);
+                    //segment.Intersection.Signal.Phases = SignalCalcs.MaximumAllowableHeadway(segment.Intersection.Signal.Phases, segment.Link.PostSpeedMPH);
+                    //segment.Intersection.Signal.Phases = SignalCalcs.ComputeEquivalentMaxGreen(segment.Intersection);
+                    //segment.Intersection.Signal.Phases = SignalCalcs.ComputeAveragePhaseDuration(segment.Intersection.Signal.Phases, segment.Intersection.Signal.CycleLengthSec);
                     //}
 
                     foreach (AccessPointData accessPoint in segment.Link.AccessPoints)
                     {
-                        accessPoint.ArrivalFlowRate = CalcsFlowProfiles.ComputeConflictFlowRate(segment, accessPoint, segment.Intersection.Approaches[(int)Arterial.AnalysisTravelDir], outputMovementsArray, segDirection);
-                        accessPoint.BlockTime = CalcsFlowProfiles.ComputeBlockTime(segment, accessPoint);
-                        accessPoint.PortionTimeBlocked = CalcsFlowProfiles.ComputePortionTimeBlocked(segment, accessPoint);
+                        if (segment.Id > 0) //SSW: added 4/1/21, review
+                        {
+                            accessPoint.ArrivalFlowRate = CalcsFlowProfiles.ComputeConflictFlowRate(segment, accessPoint, segment.Intersection.Approaches[(int)Arterial.AnalysisTravelDir], outputMovementsArray, segDirection);
+                            accessPoint.BlockTime = CalcsFlowProfiles.ComputeBlockTime(segment, accessPoint);
+                            accessPoint.PortionTimeBlocked = CalcsFlowProfiles.ComputePortionTimeBlocked(segment, accessPoint);
+                        }
                     }
 
                     segment.Results.TravelTime = segment.Link.Results.RunTimeSec + AnalysisLaneGroupControlDelay;
@@ -300,5 +302,64 @@ namespace HCMCalc_UrbanStreets
                     AccessPoint.Location = 1 - AccessPoint.Location;
             }
         }
+
+        public static void IntersectionCalcs(IntersectionData intersection, AreaType area)
+        {
+            foreach (ApproachData approach in intersection.Approaches)
+            {
+                foreach (LaneGroupData laneGroup in approach.LaneGroups)
+                {
+                    if (laneGroup.Type == LaneMovementsAllowed.LeftOnly || laneGroup.Type == LaneMovementsAllowed.ThruAndLeftTurnBay)
+                    {
+                        approach.LeftTurnBayExists = true;
+                    }
+                    else if (laneGroup.Type == LaneMovementsAllowed.RightOnly || laneGroup.Type == LaneMovementsAllowed.ThruAndRightTurnBay)
+                    {
+                        approach.RightTurnBayExists = true;
+                    }
+                }
+
+                approach.Results = new ResultsIntersectionApproachData(intersection.Signal.CycleLengthSec);
+                approach.Results.ControlDelay = 0;
+                approach.DemandVolume = 0;
+
+                foreach (LaneGroupData laneGroup in approach.LaneGroups)
+                {
+                    laneGroup.AnalysisResults = new ResultsIntersectionLaneGroupData();
+
+                    if (laneGroup.DischargeVolume > 0)
+                        laneGroup.PortionOnGreen = Math.Min(Math.Min(laneGroup.PlatoonRatio, 2) * laneGroup.SignalPhase.GreenEffectiveSec / intersection.Signal.CycleLengthSec, 1); // includes green
+                    else
+                        laneGroup.PortionOnGreen = 0;
+
+                    laneGroup.AnalysisResults.SatFlowRate = SatFlowRateCalculations.HCM2016(area, laneGroup.NumLanes, 12, laneGroup.PctHeavyVehicles, laneGroup.Type, laneGroup.PctLeftTurns, laneGroup.PctRightTurns, approach.PctGrade, laneGroup.BaseSatFlow);
+
+                    laneGroup.SignalPhase.gC = laneGroup.SignalPhase.GreenEffectiveSec / intersection.Signal.CycleLengthSec; //Equation 19-16
+
+                    laneGroup.AnalysisResults.CapacityPerLane = SignalCalcs.Capacity(laneGroup.AnalysisResults.SatFlowRate.AdjustedValueVehHrLane, laneGroup.SignalPhase.gC, laneGroup.NumLanes);
+                    laneGroup.AnalysisResults.vcRatio = SignalCalcs.vcRatio(laneGroup.AnalysisFlowRate, laneGroup.AnalysisResults.CapacityPerLane);
+
+                    laneGroup.AnalysisResults.OverCap = SignalCalcs.OverCapacityCheck(laneGroup.AnalysisResults.vcRatio, laneGroup.PeakHourFactor);
+
+                    //if (laneGroup.AnalysisResults.OverCap)
+                    //    Arterial.OverCapacity = true;                    
+
+                    ThresholdData LOSthresholds = new ThresholdData(area);
+
+                    float PrevVC = 0;
+                    laneGroup.AnalysisResults.SignalControlParms = SignalCalcs.SigDelay(intersection.Signal.ControlType, intersection.Signal.CycleLengthSec, laneGroup.SignalPhase.gC, laneGroup.ArvType, laneGroup.AnalysisFlowRate, laneGroup.AnalysisResults.SatFlowRate.AdjustedValueVehHrLane, laneGroup.NumLanes, laneGroup.AnalysisResults.CapacityPerLane, laneGroup.AnalysisResults.vcRatio, PrevVC, laneGroup.PortionOnGreen, laneGroup.NemaMvmtID);
+                    laneGroup.AnalysisResults.LOS = SignalCalcs.LOSintersection(laneGroup.AnalysisResults.SignalControlParms.AvgOverallDelay, LOSthresholds.Delay);     //determine intersection LOS, as a function of signal delay                    
+
+                    approach.Results.ControlDelay += (laneGroup.AnalysisFlowRate * laneGroup.AnalysisResults.SignalControlParms.AvgOverallDelay) / approach.DemandVolume;
+                    approach.DemandVolume += laneGroup.AnalysisFlowRate;
+
+                }
+
+                intersection.DemandVolumeVehPerHr += approach.DemandVolume;
+                intersection.Results.ControlDelay += ((approach.Results.ControlDelay * approach.DemandVolume) / intersection.DemandVolumeVehPerHr);
+            }
+        }
+
+
     }
 }

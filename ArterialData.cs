@@ -38,6 +38,12 @@ namespace HCMCalc_UrbanStreets
         // Urban Core
     }
 
+    public enum ArterialClass
+    {
+        ClassI = 0,
+        ClassII = 1
+    }
+
     /// <summary>
     /// The travel direction for multiple objects; Index 0 is North and then iterates clockwise.
     /// </summary>

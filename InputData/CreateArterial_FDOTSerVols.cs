@@ -23,7 +23,7 @@ namespace HCMCalc_UrbanStreets
                 case AreaType.LargeUrbanized: // Urbanized: Tables 1, 4, 7
                     switch (ArtClass)
                     {
-                        case ArterialClass.Class_I:
+                        case ArterialClass.ClassI:
                             SerVolTableSingleLane.Roadway = new RoadwayData(45, 50, MedianType.None, TerrainType.Level, true, false, 2, 5, 2);
                             SerVolTableSingleLane.Traffic = new TrafficData(0.09f, 0.55f, 1.0f, 1950, 1.0f, 12, 12);
                             SerVolTableSingleLane.Signal = new SignalData(4, 3, SigControlType.CoordinatedActuated, 120, 0.44f);
@@ -32,7 +32,7 @@ namespace HCMCalc_UrbanStreets
                             SerVolTableMultiLane.Traffic = new TrafficData(0.09f, 0.56f, 1.0f, 1950, 1.0f, 12, 12);
                             SerVolTableMultiLane.Signal = new SignalData(4, 3, SigControlType.CoordinatedActuated, 150, 0.45f);
                             break;
-                        case ArterialClass.Class_II:
+                        case ArterialClass.ClassII:
                             SerVolTableSingleLane.Roadway = new RoadwayData(30, 35, MedianType.None, TerrainType.Level, true, false, 1.9f, 11, 2);
                             SerVolTableSingleLane.Traffic = new TrafficData(0.09f, 0.565f, 1.0f, 1950, 1.0f, 12, 12);
                             SerVolTableSingleLane.Signal = new SignalData(10, 4, SigControlType.CoordinatedActuated, 120, 0.44f);
@@ -46,7 +46,7 @@ namespace HCMCalc_UrbanStreets
                 case AreaType.Transitioning: // Transitioning / Urban: Tables 2, 5, 8
                     switch (ArtClass)
                     {
-                        case ArterialClass.Class_I:
+                        case ArterialClass.ClassI:
                             SerVolTableSingleLane.Roadway = new RoadwayData(45, 50, MedianType.None, TerrainType.Level, true, false, 1.8f, 6, 2);
                             SerVolTableSingleLane.Traffic = new TrafficData(0.09f, 0.55f, 1.0f, 1950, 2.0f, 12, 12);
                             SerVolTableSingleLane.Signal = new SignalData(5, 4, SigControlType.CoordinatedActuated, 120, 0.44f);
@@ -55,7 +55,7 @@ namespace HCMCalc_UrbanStreets
                             SerVolTableMultiLane.Traffic = new TrafficData(0.09f, 0.57f, 1.0f, 1950, 3.0f, 12, 12);
                             SerVolTableMultiLane.Signal = new SignalData(4, 3, SigControlType.CoordinatedActuated, 150, 0.45f);
                             break;
-                        case ArterialClass.Class_II:
+                        case ArterialClass.ClassII:
                             SerVolTableSingleLane.Roadway = new RoadwayData(30, 35, MedianType.None, TerrainType.Level, true, false, 2, 11, 2);
                             SerVolTableSingleLane.Traffic = new TrafficData(0.09f, 0.57f, 1.0f, 1950, 2.0f, 12, 12);
                             SerVolTableSingleLane.Signal = new SignalData(10, 4, SigControlType.CoordinatedActuated, 120, 0.44f);
@@ -234,7 +234,7 @@ namespace HCMCalc_UrbanStreets
 
             SignalCycleData newSignalData = new SignalCycleData(SigControlType.CoordinatedActuated, cycleLengthSec, Phases);
 
-            IntersectionData newIntersection = new IntersectionData(1, ArtAreaType, ArterialClass.Class_I, newApproaches, newSignalData, ProjAnalMode);
+            IntersectionData newIntersection = new IntersectionData(1, ArtAreaType, ArterialClass.ClassI, newApproaches, newSignalData, ProjAnalMode);
 
             return newIntersection;
         }

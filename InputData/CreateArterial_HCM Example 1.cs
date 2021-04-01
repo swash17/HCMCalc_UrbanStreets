@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
+
 
 /* Analysis Facility Details:
 
@@ -103,7 +103,6 @@ WBT: 720
 namespace HCMCalc_UrbanStreets
 {
 
-
     public class CreateArterial_HCMExample1
     {
 
@@ -138,7 +137,7 @@ namespace HCMCalc_UrbanStreets
 
             newIntersection = CreateIntersection(Timers, numLanes, ProjectAnalMode, 60);
             newLink = new LinkData(0, numLanes, 35, 0.94f, MedianType.None);
-            Segments.Add(new SegmentData(0, newLink, newIntersection, upstreamIntersectionWidth));
+            Segments.Add(new SegmentData(0, newLink, newIntersection, AreaType.LargeUrbanized, newLink.PostSpeedMPH + 5, upstreamIntersectionWidth));
             upstreamIntersectionWidth = newIntersection.CrossStreetWidth;
             Segments[0].Link.AccessPoints.Add(CreateAPIntersection(1f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
             Segments[0].Link.AccessPoints.Add(CreateAPIntersection(2f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
@@ -156,7 +155,7 @@ namespace HCMCalc_UrbanStreets
 
             newIntersection = CreateIntersection(Timers, numLanes, ProjectAnalMode, 60);
             newLink = new LinkData(1320 - upstreamIntersectionWidth, numLanes, 35, 0.94f, MedianType.None);
-            Segments.Add(new SegmentData(1, newLink, newIntersection, upstreamIntersectionWidth));
+            Segments.Add(new SegmentData(1, newLink, newIntersection, AreaType.LargeUrbanized, newLink.PostSpeedMPH + 5, upstreamIntersectionWidth));
             upstreamIntersectionWidth = newIntersection.CrossStreetWidth;
             Segments[1].Link.AccessPoints.Add(CreateAPIntersection(1f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
             Segments[1].Link.AccessPoints.Add(CreateAPIntersection(2f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
@@ -174,7 +173,7 @@ namespace HCMCalc_UrbanStreets
 
             newIntersection = CreateIntersection(Timers, numLanes, ProjectAnalMode, 60);
             newLink = new LinkData(1320 - upstreamIntersectionWidth, numLanes, 35, 0.94f, MedianType.None);
-            Segments.Add(new SegmentData(2, newLink, newIntersection, upstreamIntersectionWidth));
+            Segments.Add(new SegmentData(2, newLink, newIntersection, AreaType.LargeUrbanized, newLink.PostSpeedMPH + 5, upstreamIntersectionWidth));
             upstreamIntersectionWidth = newIntersection.CrossStreetWidth;
             Segments[2].Link.AccessPoints.Add(CreateAPIntersection(1f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
             Segments[2].Link.AccessPoints.Add(CreateAPIntersection(2f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
@@ -192,7 +191,7 @@ namespace HCMCalc_UrbanStreets
 
             newIntersection = CreateIntersection(Timers, numLanes, ProjectAnalMode, 60);
             newLink = new LinkData(1320 - upstreamIntersectionWidth, numLanes, 35, 0.94f, MedianType.None);
-            Segments.Add(new SegmentData(3, newLink, newIntersection, upstreamIntersectionWidth));
+            Segments.Add(new SegmentData(3, newLink, newIntersection, AreaType.LargeUrbanized, newLink.PostSpeedMPH + 5, upstreamIntersectionWidth));
             upstreamIntersectionWidth = newIntersection.CrossStreetWidth;
             Segments[3].Link.AccessPoints.Add(CreateAPIntersection(1f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
             Segments[3].Link.AccessPoints.Add(CreateAPIntersection(2f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
@@ -210,7 +209,7 @@ namespace HCMCalc_UrbanStreets
 
             newIntersection = CreateIntersection(Timers, numLanes, ProjectAnalMode, 60);
             newLink = new LinkData(660 - upstreamIntersectionWidth, numLanes, 30, 0.88f, MedianType.None);
-            Segments.Add(new SegmentData(4, newLink, newIntersection, upstreamIntersectionWidth));
+            Segments.Add(new SegmentData(4, newLink, newIntersection, AreaType.LargeUrbanized, newLink.PostSpeedMPH + 5, upstreamIntersectionWidth));
             upstreamIntersectionWidth = newIntersection.CrossStreetWidth;
             Segments[4].Link.AccessPoints.Add(CreateAPIntersection(1f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
             Segments[4].Link.AccessPoints.Add(CreateAPIntersection(2f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
@@ -232,7 +231,7 @@ namespace HCMCalc_UrbanStreets
             Segments[5].Link.AccessPoints.Add(CreateAPIntersection(1f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
             Segments[5].Link.AccessPoints.Add(CreateAPIntersection(2f / 3f, Segments[0].Intersection.Signal.CycleLengthSec));
             
-            ArterialData newArterial = new ArterialData(AreaType.LargeUrbanized, ArterialClass.Class_I, TravelDirection.Eastbound, Segments);
+            ArterialData newArterial = new ArterialData(AreaType.LargeUrbanized, ArterialClass.ClassI, TravelDirection.Eastbound, Segments);
             ChangeArterialVolume(ref newArterial, analysisDirectionDemandVol);
 
             // Calcs Arterial code
@@ -306,8 +305,7 @@ namespace HCMCalc_UrbanStreets
                     Approach.PctRightTurns = (demandVolumesRight[travelDirectionIndex] / totalDemand) * 100;
 
                     foreach (LaneGroupData LaneGroup in Approach.LaneGroups)
-                    {
-                        
+                    {                        
                         if (LaneGroup.Type == LaneMovementsAllowed.LeftOnly)
                         {
                             LaneGroup.DischargeVolume = demandVolumesLeft[travelDirectionIndex];
@@ -339,6 +337,7 @@ namespace HCMCalc_UrbanStreets
 
             return newAP;
         }
+
         public static List<LaneData> CreateLanes(int numLanes, int MoveIdStartingIndex)
         {
             List<LaneData> newLanes = new List<LaneData>();
@@ -359,9 +358,9 @@ namespace HCMCalc_UrbanStreets
             }
             return newLanes;
         }
+
         public static IntersectionData CreateIntersection(List<TimerData> Timers, int numThruLanes, AnalysisMode ProjectAnalMode, int crossStreetWidth)
-        {
-            
+        {            
             List<ApproachData> newApproaches = new List<ApproachData>();
             List<LaneGroupData> newLaneGroups = new List<LaneGroupData>();
             List<LaneData> newLanes;
@@ -402,8 +401,7 @@ namespace HCMCalc_UrbanStreets
             newLaneGroups.Add(new LaneGroupData(1, "NB Thru+Right", LaneMovementsAllowed.ThruRightShared, NemaMovementNumbers.NBThru, TravelDirection.Northbound, newLanes, NBTSignalPhase, arvType: 3));
             newLanes = CreateLanes(numThruLanes, numThruLanes);
             newLaneGroups.Add(new LaneGroupData(2, "NB Left", LaneMovementsAllowed.LeftOnly, NemaMovementNumbers.NBLeft, TravelDirection.Northbound, newLanes, NBLSignalPhase, arvType: 3));
-            newApproaches.Add(new ApproachData(1, TravelDirection.Northbound, "NB", 0, newLaneGroups));
-            
+            newApproaches.Add(new ApproachData(1, TravelDirection.Northbound, "NB", 0, newLaneGroups));            
 
             newLaneGroups = new List<LaneGroupData>();
             newLanes = CreateLanes(numThruLanes, 0);
@@ -418,8 +416,7 @@ namespace HCMCalc_UrbanStreets
             newLaneGroups.Add(new LaneGroupData(1, "SB Thru+Right", LaneMovementsAllowed.ThruRightShared, NemaMovementNumbers.SBThru, TravelDirection.Southbound, newLanes, SBTSignalPhase, arvType: 3));
             newLanes = CreateLanes(numThruLanes, numThruLanes);
             newLaneGroups.Add(new LaneGroupData(2, "SB Left", LaneMovementsAllowed.LeftOnly, NemaMovementNumbers.SBLeft, TravelDirection.Southbound, newLanes, SBLSignalPhase, arvType: 3));
-            newApproaches.Add(new ApproachData(3, TravelDirection.Southbound, "SB", 0, newLaneGroups));
-            
+            newApproaches.Add(new ApproachData(3, TravelDirection.Southbound, "SB", 0, newLaneGroups));            
 
             newLaneGroups = new List<LaneGroupData>();
             newLanes = CreateLanes(numThruLanes, 0);
@@ -430,7 +427,7 @@ namespace HCMCalc_UrbanStreets
 
             SignalCycleData newSignalData = new SignalCycleData(SigControlType.Pretimed, 124, Phases);
 
-            IntersectionData newIntersection = new IntersectionData(1, AreaType.LargeUrbanized, ArterialClass.Class_I, newApproaches, newSignalData, ProjectAnalMode, crossStreetWidth);
+            IntersectionData newIntersection = new IntersectionData(1, AreaType.LargeUrbanized, ArterialClass.ClassI, newApproaches, newSignalData, ProjectAnalMode, crossStreetWidth);
 
             return newIntersection;
         }

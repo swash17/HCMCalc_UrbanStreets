@@ -186,7 +186,7 @@ namespace HCMCalc_UrbanStreets
         float _detectorLength;
         float[] _demandVolumeAdjByMovement;
         int _arvType;
-        SignalPhaseData _signalPhase;
+        SignalPhaseData _signalPhase;  //circular reference, as SignalPhaseData contains a field for LaneGroupData
         [XmlIgnore]
         int _baseSatFlow = 1950;
 

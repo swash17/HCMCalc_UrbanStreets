@@ -5,21 +5,17 @@ using System.Collections.Generic;
 
 namespace HCMCalc_UrbanStreets
 {
-    public enum ArterialClass
-    {
-        Class_I = 0,
-        Class_II = 1
-    }
+
     /// <summary>
     /// Contains the volume, in both directions or the peak direction, and the AADT for all LOS levels and number of lanes for an arterial.
     /// </summary>
     public class ServiceVolumes
     {
         /**** Fields ****/
-        int[,] _pkDirVol = new int[5, 5]; //6 and 7
-        int[,] _bothDirVol = new int[5, 5];
-        int[,] _aadt = new int[5, 5];
-        bool[,] _found = new bool[5, 5];
+        int[,] _pkDirVol;
+        int[,] _bothDirVol;
+        int[,] _aadt;
+        bool[,] _found;
         float _testParameterValue;
         string _testParameterLabel;
         AreaType _serVolAreaType;
@@ -28,43 +24,34 @@ namespace HCMCalc_UrbanStreets
         /**** Constructors ****/
         public ServiceVolumes()
         {
-
+            _pkDirVol = new int[5, 5];
+            _bothDirVol = new int[5, 5];
+            _aadt = new int[5, 5];
+            _found = new bool[5, 5];
         }
 
         public ServiceVolumes(float testParameterValue, string testParameterLabel, AreaType serVolAreaType, ArterialClass artClass)
         {
+            _pkDirVol = new int[5, 5];
+            _bothDirVol = new int[5, 5];
+            _aadt = new int[5, 5];
+            _found = new bool[5, 5];
             _testParameterValue = testParameterValue;
             _testParameterLabel = testParameterLabel;
             _serVolAreaType = serVolAreaType;
             _class = artClass;
-    }
+        }
 
         /**** Properties ****/
-        public int[,] PkDirVol
-        {
-            get { return _pkDirVol; }
-            set { _pkDirVol = value; }
-        }
-        public int[,] BothDirVol
-        {
-            get { return _bothDirVol; }
-            set { _bothDirVol = value; }
-        }
-        public int[,] AADT
-        {
-            get { return _aadt; }
-            set { _aadt = value; }
-        }
-        public bool[,] Found
-        {
-            get { return _found; }
-            set { _found = value; }
-        }
-
+        public int[,] PkDirVol { get => _pkDirVol; set => _pkDirVol = value; }
+        public int[,] BothDirVol { get => _bothDirVol; set => _bothDirVol = value; }
+        public int[,] AADT { get => _aadt; set => _aadt = value; }
+        public bool[,] Found { get => _found; set => _found = value; }
         public float TestParameterValue { get => _testParameterValue; set => _testParameterValue = value; }
         public string TestParameterLabel { get => _testParameterLabel; set => _testParameterLabel = value; }
         public AreaType SerVolAreaType { get => _serVolAreaType; set => _serVolAreaType = value; }
         public ArterialClass Class { get => _class; set => _class = value; }
+
     }
 
     /// <summary>
@@ -123,7 +110,7 @@ namespace HCMCalc_UrbanStreets
             _effGreenLeft = (0.1f * _cycleLengthSec);
             _medType = MedianType.None;
             _turnBayLeftLengthFeet = 235;
-            _arterialClass = ArterialClass.Class_I;
+            _arterialClass = ArterialClass.ClassI;
             _analysisTravelDir = TravelDirection.Eastbound;
             _areaType = AreaType.LargeUrbanized;
             _propCurbRightSide = 0.94f;

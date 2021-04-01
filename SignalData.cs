@@ -103,7 +103,7 @@ namespace HCMCalc_UrbanStreets
         SequenceType _sequence;
 
         TimerData _timer;
-        LaneGroupData _associatedLaneGroup;
+        LaneGroupData _associatedLaneGroup;  //circular reference, as LaneGroupData contains a field for SignalPhaseData
 
         float _yellowSec;
         float _allRedSec;
@@ -158,7 +158,8 @@ namespace HCMCalc_UrbanStreets
         public TimerData Timer { get => _timer; set => _timer = value; }
         public float PassTime { get => _passTime; set => _passTime = value; }
         public float RedEffectiveSec { get => _effectiveRedSec; set => _effectiveRedSec = value; }
-        [XmlIgnore]
+
+        //[XmlIgnore]  //commenting this line exposed the circular reference between SignalPhaseData and LaneGroupData
         public LaneGroupData AssociatedLaneGroup { get => _associatedLaneGroup; set => _associatedLaneGroup = value; }
         public NemaMovementNumbers NemaMvmtId { get => _nemaMvmtId; set => _nemaMvmtId = value; }
     }

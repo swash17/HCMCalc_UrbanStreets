@@ -138,7 +138,7 @@ namespace HCMCalc_UrbanStreets
                             case "ArterialClass_HCM":
                                 Art.Classification = (ArterialClass)xtr.ReadElementContentAsInt();
                                 if ((int)Art.Classification > 2)   //code to handle legacy projects that used 4 classes
-                                    Art.Classification = ArterialClass.Class_II;
+                                    Art.Classification = ArterialClass.ClassII;
                                 break;
                             case "ArtLength":
                                 Art.LengthMiles = xtr.ReadElementContentAsFloat();

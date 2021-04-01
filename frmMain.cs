@@ -10,14 +10,14 @@ namespace HCMCalc_UrbanStreets
     public partial class frmMain : Form
     {
         ProjectData Project;
-        //ArterialData[] Art = new ArterialData[1];
         ArterialData Art;
         List<SerVolTablesByClass> SerVolTables = new List<SerVolTablesByClass>();
 
         FileInputOutput FileIO = new FileInputOutput();
 
-        string InputFilesFolder = "";
         string OutputFilesFolder = "";
+        string BatchInputFilesFolder = "";
+        string BatchOutputFilesFolder = "";
 
         BackgroundWorker bgwReadBatchFiles;
         BackgroundWorker bgwRunLOSanalysis;
@@ -179,48 +179,88 @@ namespace HCMCalc_UrbanStreets
             //ArterialData newArterial = CreateArterial.NewArterial();
 
             //Art = CreateArterial2.NewArterial();
-            Art = CreateArterial_HCMExample1.NewArterial(Project.AnalMode, 100);
+            Art = CreateArterial_HCMExample1.NewArterial(Project.AnalMode, 800);
 
             //Change file path/name as appropriate
             //Project.FileName = @"X:\OneDrive\Software Projects\HCM-CALC\_DataFiles\HCM\Urban Streets\HCMExample1.xml";
-            Project.FileName = @"C:\Users\Christian\source\repos\HCMCalc_UrbanStreets\bin\Output\HCMExample1.xml";
+            //Project.FileName = @"C:\Users\Christian\source\repos\HCMCalc_UrbanStreets\bin\Output\HCMExample1.xml";
+            if (OutputFilesFolder == "")
+                Project.FileName = "HCMExample1.xml";
+            else
+                Project.FileName = OutputFilesFolder + "\\HCMExample1.xml";
             FileInputOutput2.SerializeArterialData(Project.FileName, Art);
         }
 
-        private void btnSelectDataFolder_Click(object sender, EventArgs e)
+        private void btnOutputFilesFolder_Click(object sender, EventArgs e)
         {
-            //lblStatus.Text = "";
+            OutputFilesFolder = SelectFolder();
+            txtOutputFilesFolder.Text = OutputFilesFolder;
+        }
+        
+        private void txtOutputFilesFolder_Validating(object sender, CancelEventArgs e)
+        {
+            if (!Directory.Exists(txtOutputFilesFolder.Text))
+            {
+                e.Cancel = true;
+                MessageBox.Show("Specified folder was not found on this computer.", "Folder Path Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtOutputFilesFolder_Validated(object sender, EventArgs e)
+        {
+            OutputFilesFolder = txtOutputFilesFolder.Text;
+        }
+
+        private void btnSelectBatchInputFilesFolder_Click(object sender, EventArgs e)
+        {            
+            BatchInputFilesFolder = SelectFolder();
+            txtBatchInputFilesFolder.Text = BatchInputFilesFolder;              
+        }
+
+        private void btnSelectBatchOutputFilesFolder_Click(object sender, EventArgs e)
+        {
+            BatchOutputFilesFolder = SelectFolder();
+            txtBatchOutputFilesFolder.Text = BatchOutputFilesFolder;
+        }
+
+        private void txtBatchInputFilesFolder_Validating(object sender, CancelEventArgs e)
+        {
+            if (!Directory.Exists(txtOutputFilesFolder.Text))
+            {
+                e.Cancel = true;
+                MessageBox.Show("Specified folder was not found on this computer.", "Folder Path Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtBatchInputFilesFolder_Validated(object sender, EventArgs e)
+        {
+            BatchInputFilesFolder = txtBatchInputFilesFolder.Text;
+        }                
+
+        private void txtBatchOutputFilesFolder_Validating(object sender, CancelEventArgs e)
+        {
+            if (!Directory.Exists(txtOutputFilesFolder.Text))
+            {
+                e.Cancel = true;
+                MessageBox.Show("Specified folder was not found on this computer.", "Folder Path Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtBatchOutputFilesFolder_Validated(object sender, EventArgs e)
+        {
+            BatchOutputFilesFolder = txtBatchOutputFilesFolder.Text;
+        }
+
+        private string SelectFolder()
+        {
             //this.dlgFolderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.dlgFolderBrowser.RootFolder = Environment.SpecialFolder.Desktop;  // MyComputer;  'MyComputer' does not show network drives
             dlgFolderBrowser.ShowDialog();
-            //SourceDir = @"C:\My Documents\Projects\NCHRP 3-87\CapacityDataProcessor\Toronto Data for PLM Pilot";
-            InputFilesFolder = dlgFolderBrowser.SelectedPath;
-            txtInputFilesFolder.Text = InputFilesFolder;
+            return dlgFolderBrowser.SelectedPath;
 
             //System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(InputFilesFolder);
-            //int totalFiles = dir.GetFiles().Length;  
+            //int totalFiles = dir.GetFiles().Length;
         }
-
-        private void btnSelectOutputFolder_Click(object sender, EventArgs e)
-        {
-            this.dlgFolderBrowser.RootFolder = Environment.SpecialFolder.Desktop;
-            dlgFolderBrowser.ShowDialog();
-            //SourceDir = @"C:\My Documents\Projects\NCHRP 3-87\CapacityDataProcessor\Toronto Data for PLM Pilot";
-            OutputFilesFolder = dlgFolderBrowser.SelectedPath;
-            txtReportFilesFolder.Text = OutputFilesFolder;
-        }
-
-        private void txtInputFilesFolder_TextChanged(object sender, EventArgs e)
-        {
-            InputFilesFolder = txtInputFilesFolder.Text;
-        }
-
-        private void txtReportFilesFolder_TextChanged(object sender, EventArgs e)
-        {
-            OutputFilesFolder = txtReportFilesFolder.Text;
-        }
-
-
 
         // Service volume calculations -------------------------------------------------------------------------------------
 
@@ -333,10 +373,10 @@ namespace HCMCalc_UrbanStreets
 
         private void ProcessBatchFiles()  //(BackgroundWorker backWorker)
         {
-            if (InputFilesFolder != "")
+            if (BatchInputFilesFolder != "")
             {
                 string FilenameExtension = "";
-                string[] fileEntries = Directory.GetFiles(InputFilesFolder);  // "*.*", SearchOption.AllDirectories);
+                string[] fileEntries = Directory.GetFiles(BatchInputFilesFolder);  // "*.*", SearchOption.AllDirectories);
                 int totalFiles = 0; // = fileEntries.Length;
                 int processingFile = 0;
 
@@ -450,5 +490,18 @@ namespace HCMCalc_UrbanStreets
                 }
             }
         }
+
+        private void btnCreateIntersection_Click(object sender, EventArgs e)
+        {
+            Project = new ProjectData();
+            //IntersectionData Intx = CreateSignalizedIntx.NewIntersection();
+
+            //Change file path/name as appropriate
+            //Project.FileName = @"X:\OneDrive\Software Projects\HCM-CALC\_DataFiles\HCM\Urban Streets\HCMExample1.xml";
+            //Project.FileName = @"C:\Users\Christian\source\repos\HCMCalc_UrbanStreets\bin\Output\HCMExample1.xml";
+            Project.FileName = OutputFilesFolder + "\\HCMExample1.xml";
+            FileInputOutput2.SerializeArterialData(Project.FileName, Art);
+        }
+
     }
 }

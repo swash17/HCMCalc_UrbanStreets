@@ -6,28 +6,35 @@ namespace HCMCalc_UrbanStreets
 {
     class ThresholdData
     {
-        int[] _Speed;
-        int[] _Delay;
+        int[] _speed;
+        int[] _delay;
 
         public ThresholdData()
         {
-            _Speed = new int[5];
-            _Delay = new int[5];
+            _speed = new int[5];
+            _delay = new int[5];
+        }
+
+        public ThresholdData(AreaType SerVolAreaType)
+        {
+            //signalized intersection delay thresholds only
+            //to-do: maybe incorporate into IntersectionData class instead of SegmentData class
+            _speed = new int[5];
+            Delay = GetLOSBoundaries_Delay(SerVolAreaType);
         }
 
         public ThresholdData(AreaType SerVolAreaType, int baseFreeFlowSpeed)
         {
-            _Speed = new int[5];
-            _Delay = new int[5];
+            _speed = new int[5];
+            _delay = new int[5];
 
             Speed = GetLOSBoundaries_Speed(baseFreeFlowSpeed);
             Delay = GetLOSBoundaries_Delay(SerVolAreaType);
         }
 
 
-
-        public int[] Speed { get => _Speed; set => _Speed = value; }
-        public int[] Delay { get => _Delay; set => _Delay = value; }
+        public int[] Speed { get => _speed; set => _speed = value; }
+        public int[] Delay { get => _delay; set => _delay = value; }
 
         public int[] GetLOSBoundaries_Speed(float baseFreeFlowSpeed, AnalysisMode AnalMode = AnalysisMode.Planning)
         {

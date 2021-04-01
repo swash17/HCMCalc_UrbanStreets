@@ -34,14 +34,14 @@
             this.btnCreateArterial = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtReportFilesFolder = new System.Windows.Forms.TextBox();
-            this.txtInputFilesFolder = new System.Windows.Forms.TextBox();
+            this.txtBatchOutputFilesFolder = new System.Windows.Forms.TextBox();
+            this.txtBatchInputFilesFolder = new System.Windows.Forms.TextBox();
             this.lblPercentage = new System.Windows.Forms.Label();
             this.lblComplete = new System.Windows.Forms.Label();
             this.progBarBatch = new System.Windows.Forms.ProgressBar();
-            this.btnSelectOutputFolder = new System.Windows.Forms.Button();
+            this.btnSelectBatchOutputFilesFolder = new System.Windows.Forms.Button();
             this.btnProcessFiles = new System.Windows.Forms.Button();
-            this.btnSelectDataFolder = new System.Windows.Forms.Button();
+            this.btnSelectBatchInputFilesFolder = new System.Windows.Forms.Button();
             this.dlgFolderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.btnCalcServiceVols = new System.Windows.Forms.Button();
             this.cboTestParameter = new System.Windows.Forms.ComboBox();
@@ -55,15 +55,24 @@
             this.progBarSerVols = new System.Windows.Forms.ProgressBar();
             this.lblPctSerVols = new System.Windows.Forms.Label();
             this.lblTestParm = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtOutputFilesFolder = new System.Windows.Forms.TextBox();
+            this.btnOutputFilesFolder = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnCreateIntersection = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnReadFile
             // 
-            this.btnReadFile.Location = new System.Drawing.Point(53, 88);
+            this.btnReadFile.Location = new System.Drawing.Point(24, 99);
+            this.btnReadFile.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnReadFile.Name = "btnReadFile";
-            this.btnReadFile.Size = new System.Drawing.Size(142, 39);
+            this.btnReadFile.Size = new System.Drawing.Size(146, 45);
             this.btnReadFile.TabIndex = 0;
             this.btnReadFile.Text = "Read File";
             this.btnReadFile.UseVisualStyleBackColor = true;
@@ -71,9 +80,10 @@
             // 
             // btnCalcResults
             // 
-            this.btnCalcResults.Location = new System.Drawing.Point(242, 22);
+            this.btnCalcResults.Location = new System.Drawing.Point(213, 33);
+            this.btnCalcResults.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcResults.Name = "btnCalcResults";
-            this.btnCalcResults.Size = new System.Drawing.Size(142, 39);
+            this.btnCalcResults.Size = new System.Drawing.Size(148, 45);
             this.btnCalcResults.TabIndex = 1;
             this.btnCalcResults.Text = "Calculate LOS";
             this.btnCalcResults.UseVisualStyleBackColor = true;
@@ -81,9 +91,10 @@
             // 
             // btnWriteFile
             // 
-            this.btnWriteFile.Location = new System.Drawing.Point(242, 88);
+            this.btnWriteFile.Location = new System.Drawing.Point(213, 99);
+            this.btnWriteFile.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnWriteFile.Name = "btnWriteFile";
-            this.btnWriteFile.Size = new System.Drawing.Size(142, 39);
+            this.btnWriteFile.Size = new System.Drawing.Size(148, 45);
             this.btnWriteFile.TabIndex = 2;
             this.btnWriteFile.Text = "Write Results to File";
             this.btnWriteFile.UseVisualStyleBackColor = true;
@@ -91,9 +102,10 @@
             // 
             // btnCreateArterial
             // 
-            this.btnCreateArterial.Location = new System.Drawing.Point(54, 22);
+            this.btnCreateArterial.Location = new System.Drawing.Point(24, 33);
+            this.btnCreateArterial.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCreateArterial.Name = "btnCreateArterial";
-            this.btnCreateArterial.Size = new System.Drawing.Size(142, 39);
+            this.btnCreateArterial.Size = new System.Drawing.Size(146, 45);
             this.btnCreateArterial.TabIndex = 3;
             this.btnCreateArterial.Text = "Create Arterial";
             this.btnCreateArterial.UseVisualStyleBackColor = true;
@@ -102,17 +114,19 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtReportFilesFolder);
-            this.groupBox1.Controls.Add(this.txtInputFilesFolder);
+            this.groupBox1.Controls.Add(this.txtBatchOutputFilesFolder);
+            this.groupBox1.Controls.Add(this.txtBatchInputFilesFolder);
             this.groupBox1.Controls.Add(this.lblPercentage);
             this.groupBox1.Controls.Add(this.lblComplete);
             this.groupBox1.Controls.Add(this.progBarBatch);
-            this.groupBox1.Controls.Add(this.btnSelectOutputFolder);
+            this.groupBox1.Controls.Add(this.btnSelectBatchOutputFilesFolder);
             this.groupBox1.Controls.Add(this.btnProcessFiles);
-            this.groupBox1.Controls.Add(this.btnSelectDataFolder);
-            this.groupBox1.Location = new System.Drawing.Point(12, 174);
+            this.groupBox1.Controls.Add(this.btnSelectBatchInputFilesFolder);
+            this.groupBox1.Location = new System.Drawing.Point(22, 453);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(692, 277);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox1.Size = new System.Drawing.Size(807, 320);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Batch Processing";
@@ -120,36 +134,42 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 31);
+            this.label1.Location = new System.Drawing.Point(34, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(478, 13);
+            this.label1.Size = new System.Drawing.Size(541, 15);
             this.label1.TabIndex = 61;
             this.label1.Text = "Use buttons to select input and output folder(s), or copy and paste folder path d" +
     "irectly into textboxes.";
             // 
-            // txtReportFilesFolder
+            // txtBatchOutputFilesFolder
             // 
-            this.txtReportFilesFolder.Location = new System.Drawing.Point(219, 128);
-            this.txtReportFilesFolder.Multiline = true;
-            this.txtReportFilesFolder.Name = "txtReportFilesFolder";
-            this.txtReportFilesFolder.Size = new System.Drawing.Size(452, 42);
-            this.txtReportFilesFolder.TabIndex = 60;
-            this.txtReportFilesFolder.TextChanged += new System.EventHandler(this.txtReportFilesFolder_TextChanged);
+            this.txtBatchOutputFilesFolder.Location = new System.Drawing.Point(255, 148);
+            this.txtBatchOutputFilesFolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBatchOutputFilesFolder.Multiline = true;
+            this.txtBatchOutputFilesFolder.Name = "txtBatchOutputFilesFolder";
+            this.txtBatchOutputFilesFolder.Size = new System.Drawing.Size(527, 48);
+            this.txtBatchOutputFilesFolder.TabIndex = 60;
+            this.txtBatchOutputFilesFolder.Validating += new System.ComponentModel.CancelEventHandler(this.txtBatchOutputFilesFolder_Validating);
+            this.txtBatchOutputFilesFolder.Validated += new System.EventHandler(this.txtBatchOutputFilesFolder_Validated);
             // 
-            // txtInputFilesFolder
+            // txtBatchInputFilesFolder
             // 
-            this.txtInputFilesFolder.Location = new System.Drawing.Point(219, 63);
-            this.txtInputFilesFolder.Multiline = true;
-            this.txtInputFilesFolder.Name = "txtInputFilesFolder";
-            this.txtInputFilesFolder.Size = new System.Drawing.Size(452, 42);
-            this.txtInputFilesFolder.TabIndex = 59;
-            this.txtInputFilesFolder.TextChanged += new System.EventHandler(this.txtInputFilesFolder_TextChanged);
+            this.txtBatchInputFilesFolder.Location = new System.Drawing.Point(255, 73);
+            this.txtBatchInputFilesFolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBatchInputFilesFolder.Multiline = true;
+            this.txtBatchInputFilesFolder.Name = "txtBatchInputFilesFolder";
+            this.txtBatchInputFilesFolder.Size = new System.Drawing.Size(527, 48);
+            this.txtBatchInputFilesFolder.TabIndex = 59;
+            this.txtBatchInputFilesFolder.Validating += new System.ComponentModel.CancelEventHandler(this.txtBatchInputFilesFolder_Validating);
+            this.txtBatchInputFilesFolder.Validated += new System.EventHandler(this.txtBatchInputFilesFolder_Validated);
             // 
             // lblPercentage
             // 
             this.lblPercentage.AutoSize = true;
-            this.lblPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPercentage.Location = new System.Drawing.Point(225, 246);
+            this.lblPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPercentage.Location = new System.Drawing.Point(262, 284);
+            this.lblPercentage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPercentage.Name = "lblPercentage";
             this.lblPercentage.Size = new System.Drawing.Size(25, 15);
             this.lblPercentage.TabIndex = 58;
@@ -158,8 +178,9 @@
             // lblComplete
             // 
             this.lblComplete.AutoSize = true;
-            this.lblComplete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComplete.Location = new System.Drawing.Point(262, 246);
+            this.lblComplete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblComplete.Location = new System.Drawing.Point(306, 284);
+            this.lblComplete.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblComplete.Name = "lblComplete";
             this.lblComplete.Size = new System.Drawing.Size(60, 15);
             this.lblComplete.TabIndex = 57;
@@ -167,47 +188,52 @@
             // 
             // progBarBatch
             // 
-            this.progBarBatch.Location = new System.Drawing.Point(219, 190);
+            this.progBarBatch.Location = new System.Drawing.Point(255, 219);
+            this.progBarBatch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.progBarBatch.Name = "progBarBatch";
-            this.progBarBatch.Size = new System.Drawing.Size(452, 42);
+            this.progBarBatch.Size = new System.Drawing.Size(527, 48);
             this.progBarBatch.TabIndex = 56;
             this.progBarBatch.UseWaitCursor = true;
             // 
-            // btnSelectOutputFolder
+            // btnSelectBatchOutputFilesFolder
             // 
-            this.btnSelectOutputFolder.Location = new System.Drawing.Point(21, 128);
-            this.btnSelectOutputFolder.Name = "btnSelectOutputFolder";
-            this.btnSelectOutputFolder.Size = new System.Drawing.Size(169, 42);
-            this.btnSelectOutputFolder.TabIndex = 53;
-            this.btnSelectOutputFolder.Text = "Select Output Folder...";
-            this.btnSelectOutputFolder.UseVisualStyleBackColor = true;
-            this.btnSelectOutputFolder.Click += new System.EventHandler(this.btnSelectOutputFolder_Click);
+            this.btnSelectBatchOutputFilesFolder.Location = new System.Drawing.Point(24, 148);
+            this.btnSelectBatchOutputFilesFolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSelectBatchOutputFilesFolder.Name = "btnSelectBatchOutputFilesFolder";
+            this.btnSelectBatchOutputFilesFolder.Size = new System.Drawing.Size(197, 48);
+            this.btnSelectBatchOutputFilesFolder.TabIndex = 53;
+            this.btnSelectBatchOutputFilesFolder.Text = "Select Output Folder...";
+            this.btnSelectBatchOutputFilesFolder.UseVisualStyleBackColor = true;
+            this.btnSelectBatchOutputFilesFolder.Click += new System.EventHandler(this.btnSelectBatchOutputFilesFolder_Click);
             // 
             // btnProcessFiles
             // 
-            this.btnProcessFiles.Location = new System.Drawing.Point(21, 190);
+            this.btnProcessFiles.Location = new System.Drawing.Point(24, 219);
+            this.btnProcessFiles.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnProcessFiles.Name = "btnProcessFiles";
-            this.btnProcessFiles.Size = new System.Drawing.Size(169, 42);
+            this.btnProcessFiles.Size = new System.Drawing.Size(197, 48);
             this.btnProcessFiles.TabIndex = 52;
             this.btnProcessFiles.Text = "Process Input Files";
             this.btnProcessFiles.UseVisualStyleBackColor = true;
             this.btnProcessFiles.Click += new System.EventHandler(this.btnProcessBatchFiles_Click);
             // 
-            // btnSelectDataFolder
+            // btnSelectBatchInputFilesFolder
             // 
-            this.btnSelectDataFolder.Location = new System.Drawing.Point(21, 63);
-            this.btnSelectDataFolder.Name = "btnSelectDataFolder";
-            this.btnSelectDataFolder.Size = new System.Drawing.Size(169, 42);
-            this.btnSelectDataFolder.TabIndex = 51;
-            this.btnSelectDataFolder.Text = "Select Input Files Folder...";
-            this.btnSelectDataFolder.UseVisualStyleBackColor = true;
-            this.btnSelectDataFolder.Click += new System.EventHandler(this.btnSelectDataFolder_Click);
+            this.btnSelectBatchInputFilesFolder.Location = new System.Drawing.Point(24, 73);
+            this.btnSelectBatchInputFilesFolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSelectBatchInputFilesFolder.Name = "btnSelectBatchInputFilesFolder";
+            this.btnSelectBatchInputFilesFolder.Size = new System.Drawing.Size(197, 48);
+            this.btnSelectBatchInputFilesFolder.TabIndex = 51;
+            this.btnSelectBatchInputFilesFolder.Text = "Select Input Files Folder...";
+            this.btnSelectBatchInputFilesFolder.UseVisualStyleBackColor = true;
+            this.btnSelectBatchInputFilesFolder.Click += new System.EventHandler(this.btnSelectBatchInputFilesFolder_Click);
             // 
             // btnCalcServiceVols
             // 
-            this.btnCalcServiceVols.Location = new System.Drawing.Point(167, 32);
+            this.btnCalcServiceVols.Location = new System.Drawing.Point(195, 37);
+            this.btnCalcServiceVols.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcServiceVols.Name = "btnCalcServiceVols";
-            this.btnCalcServiceVols.Size = new System.Drawing.Size(142, 39);
+            this.btnCalcServiceVols.Size = new System.Drawing.Size(166, 45);
             this.btnCalcServiceVols.TabIndex = 5;
             this.btnCalcServiceVols.Text = "Calc Service Volumes";
             this.btnCalcServiceVols.UseVisualStyleBackColor = true;
@@ -224,9 +250,10 @@
             "Base Sat Flow",
             "Segment Length",
             "Posted Speed"});
-            this.cboTestParameter.Location = new System.Drawing.Point(335, 35);
+            this.cboTestParameter.Location = new System.Drawing.Point(391, 40);
+            this.cboTestParameter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboTestParameter.Name = "cboTestParameter";
-            this.cboTestParameter.Size = new System.Drawing.Size(121, 21);
+            this.cboTestParameter.Size = new System.Drawing.Size(140, 23);
             this.cboTestParameter.TabIndex = 6;
             this.cboTestParameter.SelectedValueChanged += new System.EventHandler(this.cboTestParameter_Changed);
             // 
@@ -243,18 +270,21 @@
             this.groupBox2.Controls.Add(this.lblTestParm);
             this.groupBox2.Controls.Add(this.cboTestParameter);
             this.groupBox2.Controls.Add(this.btnCalcServiceVols);
-            this.groupBox2.Location = new System.Drawing.Point(423, 22);
+            this.groupBox2.Location = new System.Drawing.Point(22, 268);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(590, 146);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox2.Size = new System.Drawing.Size(688, 168);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Service Volume Calculations";
             // 
             // btnReadFileSerVols
             // 
-            this.btnReadFileSerVols.Location = new System.Drawing.Point(19, 80);
+            this.btnReadFileSerVols.Location = new System.Drawing.Point(22, 92);
+            this.btnReadFileSerVols.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnReadFileSerVols.Name = "btnReadFileSerVols";
-            this.btnReadFileSerVols.Size = new System.Drawing.Size(142, 39);
+            this.btnReadFileSerVols.Size = new System.Drawing.Size(166, 45);
             this.btnReadFileSerVols.TabIndex = 8;
             this.btnReadFileSerVols.Text = "Read Service Volume Input Data";
             this.btnReadFileSerVols.UseVisualStyleBackColor = true;
@@ -262,9 +292,10 @@
             // 
             // btnWriteSerVolInputs
             // 
-            this.btnWriteSerVolInputs.Location = new System.Drawing.Point(19, 32);
+            this.btnWriteSerVolInputs.Location = new System.Drawing.Point(22, 37);
+            this.btnWriteSerVolInputs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnWriteSerVolInputs.Name = "btnWriteSerVolInputs";
-            this.btnWriteSerVolInputs.Size = new System.Drawing.Size(142, 39);
+            this.btnWriteSerVolInputs.Size = new System.Drawing.Size(166, 45);
             this.btnWriteSerVolInputs.TabIndex = 8;
             this.btnWriteSerVolInputs.Text = "Write Service Volume Input Data";
             this.btnWriteSerVolInputs.UseVisualStyleBackColor = true;
@@ -273,51 +304,57 @@
             // lblIteration
             // 
             this.lblIteration.AutoSize = true;
-            this.lblIteration.Location = new System.Drawing.Point(468, 83);
+            this.lblIteration.Location = new System.Drawing.Point(546, 96);
+            this.lblIteration.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIteration.Name = "lblIteration";
-            this.lblIteration.Size = new System.Drawing.Size(85, 13);
+            this.lblIteration.Size = new System.Drawing.Size(97, 15);
             this.lblIteration.TabIndex = 64;
             this.lblIteration.Text = "Current Iteration:";
             // 
             // lblUpperBound
             // 
             this.lblUpperBound.AutoSize = true;
-            this.lblUpperBound.Location = new System.Drawing.Point(480, 32);
+            this.lblUpperBound.Location = new System.Drawing.Point(560, 37);
+            this.lblUpperBound.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUpperBound.Name = "lblUpperBound";
-            this.lblUpperBound.Size = new System.Drawing.Size(73, 13);
+            this.lblUpperBound.Size = new System.Drawing.Size(80, 15);
             this.lblUpperBound.TabIndex = 63;
             this.lblUpperBound.Text = "Upper Bound:";
             // 
             // lblLowerBound
             // 
             this.lblLowerBound.AutoSize = true;
-            this.lblLowerBound.Location = new System.Drawing.Point(480, 16);
+            this.lblLowerBound.Location = new System.Drawing.Point(560, 18);
+            this.lblLowerBound.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLowerBound.Name = "lblLowerBound";
-            this.lblLowerBound.Size = new System.Drawing.Size(73, 13);
+            this.lblLowerBound.Size = new System.Drawing.Size(80, 15);
             this.lblLowerBound.TabIndex = 62;
             this.lblLowerBound.Text = "Lower Bound:";
             // 
             // lblStep
             // 
             this.lblStep.AutoSize = true;
-            this.lblStep.Location = new System.Drawing.Point(521, 48);
+            this.lblStep.Location = new System.Drawing.Point(608, 55);
+            this.lblStep.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStep.Name = "lblStep";
-            this.lblStep.Size = new System.Drawing.Size(32, 13);
+            this.lblStep.Size = new System.Drawing.Size(33, 15);
             this.lblStep.TabIndex = 61;
             this.lblStep.Text = "Step:";
             // 
             // progBarSerVols
             // 
-            this.progBarSerVols.Location = new System.Drawing.Point(195, 99);
+            this.progBarSerVols.Location = new System.Drawing.Point(227, 114);
+            this.progBarSerVols.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.progBarSerVols.Name = "progBarSerVols";
-            this.progBarSerVols.Size = new System.Drawing.Size(358, 25);
+            this.progBarSerVols.Size = new System.Drawing.Size(418, 29);
             this.progBarSerVols.TabIndex = 60;
             // 
             // lblPctSerVols
             // 
             this.lblPctSerVols.AutoSize = true;
-            this.lblPctSerVols.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPctSerVols.Location = new System.Drawing.Point(559, 104);
+            this.lblPctSerVols.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPctSerVols.Location = new System.Drawing.Point(652, 120);
+            this.lblPctSerVols.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPctSerVols.Name = "lblPctSerVols";
             this.lblPctSerVols.Size = new System.Drawing.Size(25, 15);
             this.lblPctSerVols.TabIndex = 59;
@@ -326,30 +363,103 @@
             // lblTestParm
             // 
             this.lblTestParm.AutoSize = true;
-            this.lblTestParm.Location = new System.Drawing.Point(332, 16);
+            this.lblTestParm.Location = new System.Drawing.Point(387, 18);
+            this.lblTestParm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTestParm.Name = "lblTestParm";
-            this.lblTestParm.Size = new System.Drawing.Size(79, 13);
+            this.lblTestParm.Size = new System.Drawing.Size(84, 15);
             this.lblTestParm.TabIndex = 7;
             this.lblTestParm.Text = "Test Parameter";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnReadFile);
+            this.groupBox3.Controls.Add(this.btnCalcResults);
+            this.groupBox3.Controls.Add(this.btnCreateArterial);
+            this.groupBox3.Controls.Add(this.btnWriteFile);
+            this.groupBox3.Location = new System.Drawing.Point(22, 90);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(405, 168);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Arterial Level of Service";
+            // 
+            // txtOutputFilesFolder
+            // 
+            this.txtOutputFilesFolder.Location = new System.Drawing.Point(250, 33);
+            this.txtOutputFilesFolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtOutputFilesFolder.Multiline = true;
+            this.txtOutputFilesFolder.Name = "txtOutputFilesFolder";
+            this.txtOutputFilesFolder.Size = new System.Drawing.Size(617, 34);
+            this.txtOutputFilesFolder.TabIndex = 61;
+            this.txtOutputFilesFolder.Validating += new System.ComponentModel.CancelEventHandler(this.txtOutputFilesFolder_Validating);
+            this.txtOutputFilesFolder.Validated += new System.EventHandler(this.txtOutputFilesFolder_Validated);
+            // 
+            // btnOutputFilesFolder
+            // 
+            this.btnOutputFilesFolder.Location = new System.Drawing.Point(26, 33);
+            this.btnOutputFilesFolder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnOutputFilesFolder.Name = "btnOutputFilesFolder";
+            this.btnOutputFilesFolder.Size = new System.Drawing.Size(197, 34);
+            this.btnOutputFilesFolder.TabIndex = 60;
+            this.btnOutputFilesFolder.Text = "Select Output Files Folder...";
+            this.btnOutputFilesFolder.UseVisualStyleBackColor = true;
+            this.btnOutputFilesFolder.Click += new System.EventHandler(this.btnOutputFilesFolder_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(254, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(500, 15);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Use button to select folder for output files, or copy and paste folder path direc" +
+    "tly into textbox.";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnCreateIntersection);
+            this.groupBox4.Location = new System.Drawing.Point(456, 90);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(447, 168);
+            this.groupBox4.TabIndex = 63;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Isolated Signal Level of Service";
+            // 
+            // btnCreateIntersection
+            // 
+            this.btnCreateIntersection.Location = new System.Drawing.Point(27, 33);
+            this.btnCreateIntersection.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCreateIntersection.Name = "btnCreateIntersection";
+            this.btnCreateIntersection.Size = new System.Drawing.Size(146, 45);
+            this.btnCreateIntersection.TabIndex = 4;
+            this.btnCreateIntersection.Text = "Create Intersection";
+            this.btnCreateIntersection.UseVisualStyleBackColor = true;
+            this.btnCreateIntersection.Click += new System.EventHandler(this.btnCreateIntersection_Click);
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 460);
+            this.ClientSize = new System.Drawing.Size(1196, 785);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtOutputFilesFolder);
+            this.Controls.Add(this.btnOutputFilesFolder);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnCreateArterial);
-            this.Controls.Add(this.btnWriteFile);
-            this.Controls.Add(this.btnCalcResults);
-            this.Controls.Add(this.btnReadFile);
             this.Controls.Add(this.groupBox2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmMain";
-            this.Text = "HCM-CALC: Urban Streets Analysis Methodology";
+            this.Text = "HCM-CALC: Urban Streets Analysis Methodology (Ver: 4/1/21)";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -363,12 +473,12 @@
         private System.Windows.Forms.Label lblPercentage;
         private System.Windows.Forms.Label lblComplete;
         private System.Windows.Forms.ProgressBar progBarBatch;
-        private System.Windows.Forms.Button btnSelectOutputFolder;
+        private System.Windows.Forms.Button btnSelectBatchOutputFilesFolder;
         private System.Windows.Forms.Button btnProcessFiles;
-        private System.Windows.Forms.Button btnSelectDataFolder;
+        private System.Windows.Forms.Button btnSelectBatchInputFilesFolder;
         private System.Windows.Forms.FolderBrowserDialog dlgFolderBrowser;
-        private System.Windows.Forms.TextBox txtReportFilesFolder;
-        private System.Windows.Forms.TextBox txtInputFilesFolder;
+        private System.Windows.Forms.TextBox txtBatchOutputFilesFolder;
+        private System.Windows.Forms.TextBox txtBatchInputFilesFolder;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCalcServiceVols;
         private System.Windows.Forms.ComboBox cboTestParameter;
@@ -382,6 +492,12 @@
         private System.Windows.Forms.Label lblIteration;
         private System.Windows.Forms.Button btnWriteSerVolInputs;
         private System.Windows.Forms.Button btnReadFileSerVols;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtOutputFilesFolder;
+        private System.Windows.Forms.Button btnOutputFilesFolder;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnCreateIntersection;
     }
 }
 

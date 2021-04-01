@@ -19,7 +19,7 @@ namespace HCMCalc_UrbanStreets
                     SerVolTablesByClass TablesForClass = new SerVolTablesByClass();
                     foreach (ArterialClass artClass in Enum.GetValues(typeof(ArterialClass)))
                     {
-                        if (!(areaType == AreaType.RuralDeveloped && artClass == ArterialClass.Class_II)) // Ignore Class II Rural since it doesn't exist
+                        if (!(areaType == AreaType.RuralDeveloped && artClass == ArterialClass.ClassII)) // Ignore Class II Rural since it doesn't exist
                         {
                             TablesForClass.SerVolTablesMultiLane.Add(CreateArterial_FDOTSerVols.CreateServiceVolTableFDOT(areaType, artClass));
                         }
