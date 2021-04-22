@@ -52,7 +52,10 @@ namespace HCMCalc_UrbanStreets
             foreach (SignalPhaseData Phase in analysisSegment.Intersection.Signal.Phases)
             {
                 TimerData Timer = Phase.Timer;
-                LaneGroupData analysisLaneGroup = Phase.AssociatedLaneGroup;
+                //LaneGroupData analysisLaneGroup = Phase.AssociatedLaneGroup;
+                //SSW Revised 4/21/21
+                LaneGroupData analysisLaneGroup = MovementData.GetLaneGroupFromNemaMovementNumber(analysisSegment.Intersection, Phase.NemaMvmtId); //or should this be 'Phase.NemaPhaseId'?
+
                 Timer.Results.Movement = dischargeMovementsArray.Select((NemaMvmtID, index) => new { NemaMvmtID, index }).FirstOrDefault(x => x.NemaMvmtID.Equals(Phase.NemaMvmtId))?.index ?? -1;
                 int Movement = Timer.Results.Movement;
 

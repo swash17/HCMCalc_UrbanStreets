@@ -275,7 +275,10 @@ namespace HCMCalc_UrbanStreets
 
         //Actuated Signal Timing Methods
 
-        public static SignalPhaseData QAP_ProtectedLane(int CycleLengthSec, int Movement, SignalPhaseData Phase)
+        //public static SignalPhaseData QAP_ProtectedLane(int CycleLengthSec, int Movement, SignalPhaseData Phase)
+        public static SignalPhaseData QAP_ProtectedLane(int CycleLengthSec, int Movement, LaneGroupData laneGroup)
+        //SSW Revised 4/21/21
+        //Changed everything that was previously "Phase." to "laneGroup." or "laneGroup.SignalPhase", and "Phase.AssociatedLaneGroup." to "laneGroup."
         {
             float LaneVolume;
             float phaseCapacity;
@@ -283,34 +286,37 @@ namespace HCMCalc_UrbanStreets
             float QueAtEnd = 0;
             float TimeToClear = 0;
 
-            Phase.RedEffectiveSec = Math.Max(CycleLengthSec - Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec, 0);
+            laneGroup.SignalPhase.RedEffectiveSec = Math.Max(CycleLengthSec - laneGroup.SignalPhase.GreenEffectiveSec, 0);
 
-            phaseCapacity = Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec / CycleLengthSec * Phase.AssociatedLaneGroup.AnalysisResults.SatFlowRate.AdjustedValueVehHrLane; // veh/h/ln
-            LaneVolume = Math.Min(Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[Movement] / Phase.AssociatedLaneGroup.Lanes.Count, phaseCapacity);
-            Phase.AssociatedLaneGroup.AnalysisResults.CapacityPerLane = phaseCapacity * Phase.AssociatedLaneGroup.Lanes.Count; // veh/h
+            phaseCapacity = laneGroup.SignalPhase.GreenEffectiveSec / CycleLengthSec * laneGroup.AnalysisResults.SatFlowRate.AdjustedValueVehHrLane; // veh/h/ln
+            LaneVolume = Math.Min(laneGroup.DemandVolumeVehPerHrSplit[Movement] / laneGroup.Lanes.Count, phaseCapacity);
+            laneGroup.AnalysisResults.CapacityPerLane = phaseCapacity * laneGroup.Lanes.Count; // veh/h
 
             // Flow rate on red and green, veh/s/ln
-            if (Phase.RedEffectiveSec > 0)
-                Phase.Timer.RedFlow = (1 - Phase.AssociatedLaneGroup.PortionOnGreen) * LaneVolume / 3600 * CycleLengthSec / Phase.RedEffectiveSec;
+            if (laneGroup.SignalPhase.RedEffectiveSec > 0)
+                laneGroup.SignalPhase.Timer.RedFlow = (1 - laneGroup.PortionOnGreen) * LaneVolume / 3600 * CycleLengthSec / laneGroup.SignalPhase.RedEffectiveSec;
             else
-                Phase.Timer.RedFlow = 0;
-            if (Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec > 0)
-                Phase.Timer.GreenFlow = Phase.AssociatedLaneGroup.PortionOnGreen * LaneVolume / 3600 * CycleLengthSec / Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec;
+                laneGroup.SignalPhase.Timer.RedFlow = 0;
+            if (laneGroup.SignalPhase.GreenEffectiveSec > 0)
+                laneGroup.SignalPhase.Timer.GreenFlow = laneGroup.PortionOnGreen * LaneVolume / 3600 * CycleLengthSec / laneGroup.SignalPhase.GreenEffectiveSec;
             else
-                Phase.Timer.GreenFlow = 0;
+                laneGroup.SignalPhase.Timer.GreenFlow = 0;
 
-            QueueStatusChange(0, (0 - Phase.Timer.RedFlow), Phase.RedEffectiveSec, ref Que_r, ref TimeToClear);
+            QueueStatusChange(0, (0 - laneGroup.SignalPhase.Timer.RedFlow), laneGroup.SignalPhase.RedEffectiveSec, ref Que_r, ref TimeToClear);
 
             // Time required for left-turn queue service during protected phase, g_s, s
-            Phase.AssociatedLaneGroup.AnalysisResults.DischargeVolume = Phase.AssociatedLaneGroup.AnalysisResults.SatFlowRate.AdjustedValueVehHrLane / 3600 - Phase.Timer.GreenFlow;
-            QueueStatusChange(Que_r, Phase.AssociatedLaneGroup.AnalysisResults.DischargeVolume, Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec, ref QueAtEnd, ref TimeToClear);
-            Phase.Timer.QueueServeTime = TimeToClear;
-            Phase.Timer.QueueClearTime = TimeToClear;
+            laneGroup.AnalysisResults.DischargeVolume = laneGroup.AnalysisResults.SatFlowRate.AdjustedValueVehHrLane / 3600 - laneGroup.SignalPhase.Timer.GreenFlow;
+            QueueStatusChange(Que_r, laneGroup.AnalysisResults.DischargeVolume, laneGroup.SignalPhase.GreenEffectiveSec, ref QueAtEnd, ref TimeToClear);
+            laneGroup.SignalPhase.Timer.QueueServeTime = TimeToClear;
+            laneGroup.SignalPhase.Timer.QueueClearTime = TimeToClear;
             
-            return Phase;
+            return laneGroup.SignalPhase;
         }
 
-        public static SignalPhaseData QAP_ProtectedSharedLane(int CycleLengthSec, SignalPhaseData Phase)
+        //public static SignalPhaseData QAP_ProtectedSharedLane(int CycleLengthSec, SignalPhaseData Phase)
+        //SSW Revised 4/21/21
+        //Changed everything that was previously "Phase." to "laneGroup." or "laneGroup.SignalPhase", and "Phase.AssociatedLaneGroup." to "laneGroup."
+        public static SignalPhaseData QAP_ProtectedSharedLane(int CycleLengthSec, LaneGroupData laneGroup)
         {
             float LaneVolume;
             float PortionOnGreenFlow;
@@ -320,93 +326,100 @@ namespace HCMCalc_UrbanStreets
             float Que_r = 0;
 
             //APPLICABLE TO SPLIT PHASING
-            Phase.RedEffectiveSec = Math.Max(CycleLengthSec - Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec, 0);
+            //Phase.RedEffectiveSec = Math.Max(CycleLengthSec - Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec, 0);
+            laneGroup.SignalPhase.RedEffectiveSec = Math.Max(CycleLengthSec - laneGroup.SignalPhase.GreenEffectiveSec, 0);
 
             /*AvailGreen = Timer.Duration - Timer.Intergreen;
             if ((Timer.MaxGreen > AvailGreen) & (Phase.NemaPhaseId != 2 & Phase.NemaPhaseId != 6))
                 AvailGreen = Timer.MaxGreen;
             AvailGreen -= Phase.StartUpLostTimeSec + Phase.EndUseSec;*/
 
-            if (Phase.AssociatedLaneGroup.Type == LaneMovementsAllowed.ThruAndRightTurnBay || Phase.AssociatedLaneGroup.Type == LaneMovementsAllowed.ThruRightShared) // T+R, OUTSIDE SHARED LANE ANALYSIS
+            if (laneGroup.Type == LaneMovementsAllowed.ThruAndRightTurnBay || laneGroup.Type == LaneMovementsAllowed.ThruRightShared) // T+R, OUTSIDE SHARED LANE ANALYSIS
             {
-                LaneVolume = Math.Min(Phase.AssociatedLaneGroup.DemandVolumeVehPerHr, Phase.GreenEffectiveSec / CycleLengthSec * Phase.AssociatedLaneGroup.BaseSatFlow); // veh/h/ln
+                LaneVolume = Math.Min(laneGroup.DemandVolumeVehPerHr, laneGroup.SignalPhase.GreenEffectiveSec / CycleLengthSec * laneGroup.BaseSatFlow); // veh/h/ln
 
                 // Flow rate on red and green, veh/s/ln
-                PortionOnGreenFlow = ((Phase.AssociatedLaneGroup.DemandVolumeVehPerHr - Phase.AssociatedLaneGroup.DemandVolumeVehPerHr) * Phase.AssociatedLaneGroup.PortionOnGreen + Phase.AssociatedLaneGroup.DemandVolumeVehPerHr * Phase.AssociatedLaneGroup.PortionOnGreen) / (Phase.AssociatedLaneGroup.DemandVolumeVehPerHr + 0.001f);
+                PortionOnGreenFlow = ((laneGroup.DemandVolumeVehPerHr - laneGroup.DemandVolumeVehPerHr) * laneGroup.PortionOnGreen + laneGroup.DemandVolumeVehPerHr * laneGroup.PortionOnGreen) / (laneGroup.DemandVolumeVehPerHr + 0.001f);
 
-                if (Phase.RedEffectiveSec > 0)
-                    Phase.Timer.RedFlow = (1 - PortionOnGreenFlow) * LaneVolume / 3600 * CycleLengthSec / Phase.RedEffectiveSec;
+                if (laneGroup.SignalPhase.RedEffectiveSec > 0)
+                    laneGroup.SignalPhase.Timer.RedFlow = (1 - PortionOnGreenFlow) * LaneVolume / 3600 * CycleLengthSec / laneGroup.SignalPhase.RedEffectiveSec;
                 else
-                    Phase.Timer.RedFlow = 0;
-                if (Phase.GreenEffectiveSec > 0)
-                    Phase.Timer.GreenFlow = PortionOnGreenFlow * LaneVolume / 3600 * CycleLengthSec / Phase.GreenEffectiveSec;
+                    laneGroup.SignalPhase.Timer.RedFlow = 0;
+                if (laneGroup.SignalPhase.GreenEffectiveSec > 0)
+                    laneGroup.SignalPhase.Timer.GreenFlow = PortionOnGreenFlow * LaneVolume / 3600 * CycleLengthSec / laneGroup.SignalPhase.GreenEffectiveSec;
                 else
-                    Phase.Timer.GreenFlow = 0;
+                    laneGroup.SignalPhase.Timer.GreenFlow = 0;
 
-                QueueStatusChange(0, (0 - Phase.Timer.RedFlow), Phase.RedEffectiveSec, ref Que_r, ref TimeToClear);
-                Phase.AssociatedLaneGroup.AnalysisResults.DischargeVolume = Phase.AssociatedLaneGroup.BaseSatFlow / 3600 - Phase.Timer.GreenFlow;
-                QueueStatusChange(Que_r, Phase.AssociatedLaneGroup.AnalysisResults.DischargeVolume, Phase.GreenEffectiveSec, ref QueAtEnd, ref TimeToClear);
-                Phase.Timer.QueueServeTime = TimeToClear;
-                Phase.Timer.QueueClearTime = TimeToClear;
+                QueueStatusChange(0, (0 - laneGroup.SignalPhase.Timer.RedFlow), laneGroup.SignalPhase.RedEffectiveSec, ref Que_r, ref TimeToClear);
+                laneGroup.AnalysisResults.DischargeVolume = laneGroup.BaseSatFlow / 3600 - laneGroup.SignalPhase.Timer.GreenFlow;
+                QueueStatusChange(Que_r, laneGroup.AnalysisResults.DischargeVolume, laneGroup.SignalPhase.GreenEffectiveSec, ref QueAtEnd, ref TimeToClear);
+                laneGroup.SignalPhase.Timer.QueueServeTime = TimeToClear;
+                laneGroup.SignalPhase.Timer.QueueClearTime = TimeToClear;
 
             }
             else // T,  MIDDLE THROUGH LANE(S) ANALYSIS
             {
-                LaneVolume = Math.Min(Phase.AssociatedLaneGroup.DemandVolumeVehPerHr / Phase.AssociatedLaneGroup.Lanes.Count, Phase.GreenEffectiveSec / CycleLengthSec * Phase.AssociatedLaneGroup.BaseSatFlow); // veh/h/ln
+                LaneVolume = Math.Min(laneGroup.DemandVolumeVehPerHr / laneGroup.Lanes.Count, laneGroup.SignalPhase.GreenEffectiveSec / CycleLengthSec * laneGroup.BaseSatFlow); // veh/h/ln
 
-                if (Phase.RedEffectiveSec > 0)
-                    Phase.Timer.RedFlow = (1 - Phase.AssociatedLaneGroup.PortionOnGreen) * LaneVolume / 3600 * CycleLengthSec / Phase.RedEffectiveSec;
+                if (laneGroup.SignalPhase.RedEffectiveSec > 0)
+                    laneGroup.SignalPhase.Timer.RedFlow = (1 - laneGroup.PortionOnGreen) * LaneVolume / 3600 * CycleLengthSec / laneGroup.SignalPhase.RedEffectiveSec;
                 else
-                    Phase.Timer.RedFlow = 0;
-                if (Phase.GreenEffectiveSec > 0)
-                    Phase.Timer.GreenFlow = Phase.AssociatedLaneGroup.PortionOnGreen * LaneVolume / 3600 * CycleLengthSec / Phase.GreenEffectiveSec;
+                    laneGroup.SignalPhase.Timer.RedFlow = 0;
+                if (laneGroup.SignalPhase.GreenEffectiveSec > 0)
+                    laneGroup.SignalPhase.Timer.GreenFlow = laneGroup.PortionOnGreen * LaneVolume / 3600 * CycleLengthSec / laneGroup.SignalPhase.GreenEffectiveSec;
                 else
-                    Phase.Timer.GreenFlow = 0;
+                    laneGroup.SignalPhase.Timer.GreenFlow = 0;
 
-                QueueStatusChange(0, (0 - Phase.Timer.RedFlow), Phase.RedEffectiveSec, ref Que_r, ref TimeToClear);
-                Phase.AssociatedLaneGroup.AnalysisResults.DischargeVolume = Phase.AssociatedLaneGroup.BaseSatFlow / 3600 - Phase.Timer.GreenFlow;
-                QueueStatusChange(Que_r, Phase.AssociatedLaneGroup.AnalysisResults.DischargeVolume, Phase.GreenEffectiveSec, ref QueAtEnd, ref TimeToClear);
-                Phase.Timer.QueueServeTime = TimeToClear;
-                Phase.Timer.QueueClearTime = TimeToClear;
+                QueueStatusChange(0, (0 - laneGroup.SignalPhase.Timer.RedFlow), laneGroup.SignalPhase.RedEffectiveSec, ref Que_r, ref TimeToClear);
+                laneGroup.AnalysisResults.DischargeVolume = laneGroup.BaseSatFlow / 3600 - laneGroup.SignalPhase.Timer.GreenFlow;
+                QueueStatusChange(Que_r, laneGroup.AnalysisResults.DischargeVolume, laneGroup.SignalPhase.GreenEffectiveSec, ref QueAtEnd, ref TimeToClear);
+                laneGroup.SignalPhase.Timer.QueueServeTime = TimeToClear;
+                laneGroup.SignalPhase.Timer.QueueClearTime = TimeToClear;
             }
 
             //CALCULATE MOVEMENT CAPACITY
-            Phase.AssociatedLaneGroup.AnalysisResults.CapacityPerLane = Phase.GreenEffectiveSec * Phase.Timer.MvmtSatFlow[2] / (CycleLengthSec * Phase.AssociatedLaneGroup.Lanes.Count);
+            laneGroup.AnalysisResults.CapacityPerLane = laneGroup.SignalPhase.GreenEffectiveSec * laneGroup.SignalPhase.Timer.MvmtSatFlow[2] / (CycleLengthSec * laneGroup.Lanes.Count);
 
-            ApproachCapacity = Phase.GreenEffectiveSec * Phase.AssociatedLaneGroup.BaseSatFlow * Phase.AssociatedLaneGroup.Lanes.Count / CycleLengthSec;
-            Phase.AssociatedLaneGroup.AnalysisResults.CapacityPerLane = ApproachCapacity - Phase.AssociatedLaneGroup.AnalysisResults.CapacityPerLane;
-            return Phase;
+            ApproachCapacity = laneGroup.SignalPhase.GreenEffectiveSec * laneGroup.BaseSatFlow * laneGroup.Lanes.Count / CycleLengthSec;
+            laneGroup.AnalysisResults.CapacityPerLane = ApproachCapacity - laneGroup.AnalysisResults.CapacityPerLane;
+            return laneGroup.SignalPhase;
         }
 
-        public static List<SignalPhaseData> ComputeQAPolygon(List<SignalPhaseData> Phases, int CycleLengthSec)
+        public static List<SignalPhaseData> ComputeQAPolygon(List<SignalPhaseData> Phases, int CycleLengthSec, IntersectionData intersection)        
         {
             for (int PhaseIndex = 0; PhaseIndex < Phases.Count; PhaseIndex++)
             {
                 SignalPhaseData Phase = Phases[PhaseIndex];
-                if (Phase.AssociatedLaneGroup.Lanes.Count > 0)
+
+                //SSW Revised 4/21/21
+                LaneGroupData laneGroup = MovementData.GetLaneGroupFromNemaMovementNumber(intersection, Phase.NemaMvmtId); //or should this be 'Phase.NemaPhaseId'?
+
+                if (laneGroup.Lanes.Count > 0)
                 {
-                    Phase.GreenEffectiveSec = Math.Max(Phase.Timer.Duration - Phase.Timer.IntergreenTimeSec - Phase.AssociatedLaneGroup.SignalPhase.StartUpLostTimeSec + Phase.AssociatedLaneGroup.SignalPhase.EndUseSec, 0.1f);
+                    //Phase.GreenEffectiveSec = Math.Max(Phase.Timer.Duration - Phase.Timer.IntergreenTimeSec - Phase.AssociatedLaneGroup.SignalPhase.StartUpLostTimeSec + Phase.AssociatedLaneGroup.SignalPhase.EndUseSec, 0.1f);
+                    //SSW Revised 4/21/21
+                    Phase.GreenEffectiveSec = Math.Max(Phase.Timer.Duration - Phase.Timer.IntergreenTimeSec - Phase.StartUpLostTimeSec + Phase.EndUseSec, 0.1f);
 
                     if (Phase.Phasing == PhasingType.Protected) // PROTECTED LEFT MODE, CASE 2: L:x:x (Analysis Lane Group: Left)
                     {
-                        Phase = QAP_ProtectedLane(CycleLengthSec, 0, Phase);
+                        Phase = QAP_ProtectedLane(CycleLengthSec, 0, laneGroup);
                     }
                     else if (Phase.Phasing == PhasingType.ThruAndRight) //THROUGH-RIGHT MOVEMENTS ON APPROACHES WITH PROTECTED OR PROTECTED-PERMITTED LEFT MODE //through and right turn movements (no lefts) 
                     {
-                        if (Phase.AssociatedLaneGroup.Type == LaneMovementsAllowed.ThruAndRightTurnBay) // CASE 3:   x:_:R or x:T:R
+                        if (laneGroup.Type == LaneMovementsAllowed.ThruAndRightTurnBay) // CASE 3:   x:_:R or x:T:R
                         {
-                            Phase = QAP_ProtectedLane(CycleLengthSec, 1, Phase);
-                            Phase = QAP_ProtectedLane(CycleLengthSec, 2, Phase); // R
+                            Phase = QAP_ProtectedLane(CycleLengthSec, 1, laneGroup);
+                            Phase = QAP_ProtectedLane(CycleLengthSec, 2, laneGroup); // R
                         }
-                        else if (Phase.AssociatedLaneGroup.Type != LaneMovementsAllowed.ThruAndRightTurnBay) // CASE 4:  x:T:T+R  or  x:T:_  or  x:_:T+R
+                        else if (laneGroup.Type != LaneMovementsAllowed.ThruAndRightTurnBay) // CASE 4:  x:T:T+R  or  x:T:_  or  x:_:T+R
                         {
-                            if (Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[2] > 0) // T:T+R  or  _:T+R
+                            if (laneGroup.DemandVolumeVehPerHrSplit[2] > 0) // T:T+R  or  _:T+R
                             {
-                                Phase = QAP_ProtectedSharedLane(CycleLengthSec, Phase);
+                                Phase = QAP_ProtectedSharedLane(CycleLengthSec, laneGroup);
                             }
                             else
                             {
-                                Phase = QAP_ProtectedLane(CycleLengthSec, 1, Phase);
+                                Phase = QAP_ProtectedLane(CycleLengthSec, 1, laneGroup);
                             }
                         }
                     }
@@ -428,7 +441,7 @@ namespace HCMCalc_UrbanStreets
             if (QueAtEnd < 0) { QueAtEnd = 0; }
         }
 
-        public static List<SignalPhaseData> VolumeComputations(List<SignalPhaseData> Phases)
+        public static List<SignalPhaseData> VolumeComputations(List<SignalPhaseData> Phases, IntersectionData intersection)
         {
             SignalPhaseData ConcurrentPhase;
             float Denominator;
@@ -439,23 +452,26 @@ namespace HCMCalc_UrbanStreets
 
             foreach (SignalPhaseData Phase in Phases)
             {
+                //SSW Revised 4/21/21
+                LaneGroupData laneGroup = MovementData.GetLaneGroupFromNemaMovementNumber(intersection, Phase.NemaMvmtId); //or should this be 'Phase.NemaPhaseId'?
+
                 TimerData Timer = Phase.Timer;
                 int phaseIndex = Phases.IndexOf(Phase);
                 for (int LaneGroupIndex = 0; LaneGroupIndex < 3; LaneGroupIndex++)
                 {
-                    if (Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] > 0)
+                    if (laneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] > 0)
                     {
-                        if (Phase.AssociatedLaneGroup.Lanes.Count == 1)
+                        if (laneGroup.Lanes.Count == 1)
                         {
                             Timer.Delta[LaneGroupIndex] = 1.5f;
                             Timer.BunchFactor[LaneGroupIndex] = 0.6f;
                         }
-                        else if (Phase.AssociatedLaneGroup.Lanes.Count == 2)
+                        else if (laneGroup.Lanes.Count == 2)
                         {
                             Timer.Delta[LaneGroupIndex] = 0.5f;
                             Timer.BunchFactor[LaneGroupIndex] = 0.5f;
                         }
-                        else if (Phase.AssociatedLaneGroup.Lanes.Count > 2)
+                        else if (laneGroup.Lanes.Count > 2)
                         {
                             Timer.Delta[LaneGroupIndex] = 0.5f;
                             Timer.BunchFactor[LaneGroupIndex] = 0.8f;
@@ -470,15 +486,15 @@ namespace HCMCalc_UrbanStreets
                         Timer.PortionFree[LaneGroupIndex] = (float)Math.Exp(-1 * Timer.BunchFactor[LaneGroupIndex] * Timer.Delta[LaneGroupIndex] * Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600);
 
                         //Eq. 31-4 denominator
-                        Denominator = 1 - Timer.Delta[LaneGroupIndex] * Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600;
+                        Denominator = 1 - Timer.Delta[LaneGroupIndex] * laneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600;
 
                         //Eq. 31-4
                         if (Denominator > 0)
-                            Timer.UnbunchedFlow[LaneGroupIndex] = Timer.PortionFree[LaneGroupIndex] * Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600 / Denominator;
+                            Timer.UnbunchedFlow[LaneGroupIndex] = Timer.PortionFree[LaneGroupIndex] * laneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600 / Denominator;
                         else
                             Timer.UnbunchedFlow[LaneGroupIndex] = 99;
 
-                        Timer.PhaseFlowRate[LaneGroupIndex] = Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600;    //veh/s
+                        Timer.PhaseFlowRate[LaneGroupIndex] = laneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600;    //veh/s
                     }
                 }
             }
@@ -877,7 +893,7 @@ namespace HCMCalc_UrbanStreets
                         //both phases
                         if (Timer.PhaseParms.Temp2 > Timer.PhaseParms.Temp1)
                         {
-                            Timer.PhaseParms.DurationUnbalanced -= - Timer.GreenExtension; // subtract out extension time
+                            Timer.PhaseParms.DurationUnbalanced -= -Timer.GreenExtension; // subtract out extension time
                             //See discussion for Step N, page 31-19 (Draft Version 6.1)
                             Timer.PhaseParms.VolumeRatio = (Timer.UnbunchedFlow[1] + Timer.UnbunchedFlow[2] + Timer.UnbunchedFlow[3]) / Timer.UnbunchedFlow[0];
                             Timer.PhaseParms.ExtensionByOnePhase = Timer.PhaseParms.Temp2 - Timer.PhaseParms.Temp1;
@@ -957,7 +973,7 @@ namespace HCMCalc_UrbanStreets
         public static SignalPhaseData GetPhaseFromMovement(List<SignalPhaseData> Phases, NemaMovementNumbers NemaMoveNum)
         {
             foreach (SignalPhaseData Phase in Phases)
-                if (Phase.AssociatedLaneGroup.NemaMvmtID == NemaMoveNum)
+                if (Phase.NemaMvmtId == NemaMoveNum)
                     return Phase;
 
             return null;

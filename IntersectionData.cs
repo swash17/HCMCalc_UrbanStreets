@@ -218,7 +218,7 @@ namespace HCMCalc_UrbanStreets
         /// <param name="arvType"></param>
         public LaneGroupData(int id, string label, LaneMovementsAllowed type, NemaMovementNumbers nemaMvmtId, TravelDirection travDir, List<LaneData> lanes, SignalPhaseData signalPhasing, float pctLeftTurns = 0, float pctRightTurns = 0, int arvType = 3)
         {
-            signalPhasing.AssociatedLaneGroup = this;
+            //signalPhasing.AssociatedLaneGroup = this;
 
             _id = id;
             _label = label;

@@ -160,7 +160,7 @@ namespace HCMCalc_UrbanStreets
         public float RedEffectiveSec { get => _effectiveRedSec; set => _effectiveRedSec = value; }
 
         //[XmlIgnore]  //commenting this line exposed the circular reference between SignalPhaseData and LaneGroupData
-        public LaneGroupData AssociatedLaneGroup { get => _associatedLaneGroup; set => _associatedLaneGroup = value; }
+        //public LaneGroupData AssociatedLaneGroup { get => _associatedLaneGroup; set => _associatedLaneGroup = value; }
         public NemaMovementNumbers NemaMvmtId { get => _nemaMvmtId; set => _nemaMvmtId = value; }
     }
     
