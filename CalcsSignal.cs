@@ -278,7 +278,7 @@ namespace HCMCalc_UrbanStreets
         //public static SignalPhaseData QAP_ProtectedLane(int CycleLengthSec, int Movement, SignalPhaseData Phase)
         public static SignalPhaseData QAP_ProtectedLane(int CycleLengthSec, int Movement, LaneGroupData laneGroup)
         //SSW Revised 4/21/21
-        //Changed everything that was previously "Phase." to "laneGroup." or "laneGroup.SignalPhase", and "Phase.AssociatedLaneGroup." to "laneGroup."
+        //Changed everything that was previously "Phase." to "laneGroup." or "laneGroup.SignalPhase", and "Phase.AssociatedLaneGroup(Intersection)." to "laneGroup."
         {
             float LaneVolume;
             float phaseCapacity;
@@ -315,7 +315,7 @@ namespace HCMCalc_UrbanStreets
 
         //public static SignalPhaseData QAP_ProtectedSharedLane(int CycleLengthSec, SignalPhaseData Phase)
         //SSW Revised 4/21/21
-        //Changed everything that was previously "Phase." to "laneGroup." or "laneGroup.SignalPhase", and "Phase.AssociatedLaneGroup." to "laneGroup."
+        //Changed everything that was previously "Phase." to "laneGroup." or "laneGroup.SignalPhase", and "Phase.AssociatedLaneGroup(Intersection)." to "laneGroup."
         public static SignalPhaseData QAP_ProtectedSharedLane(int CycleLengthSec, LaneGroupData laneGroup)
         {
             float LaneVolume;
@@ -326,7 +326,7 @@ namespace HCMCalc_UrbanStreets
             float Que_r = 0;
 
             //APPLICABLE TO SPLIT PHASING
-            //Phase.RedEffectiveSec = Math.Max(CycleLengthSec - Phase.AssociatedLaneGroup.SignalPhase.GreenEffectiveSec, 0);
+            //Phase.RedEffectiveSec = Math.Max(CycleLengthSec - Phase.AssociatedLaneGroup(Intersection).SignalPhase.GreenEffectiveSec, 0);
             laneGroup.SignalPhase.RedEffectiveSec = Math.Max(CycleLengthSec - laneGroup.SignalPhase.GreenEffectiveSec, 0);
 
             /*AvailGreen = Timer.Duration - Timer.Intergreen;
@@ -396,7 +396,7 @@ namespace HCMCalc_UrbanStreets
 
                 if (laneGroup.Lanes.Count > 0)
                 {
-                    //Phase.GreenEffectiveSec = Math.Max(Phase.Timer.Duration - Phase.Timer.IntergreenTimeSec - Phase.AssociatedLaneGroup.SignalPhase.StartUpLostTimeSec + Phase.AssociatedLaneGroup.SignalPhase.EndUseSec, 0.1f);
+                    //Phase.GreenEffectiveSec = Math.Max(Phase.Timer.Duration - Phase.Timer.IntergreenTimeSec - Phase.AssociatedLaneGroup(Intersection).SignalPhase.StartUpLostTimeSec + Phase.AssociatedLaneGroup(Intersection).SignalPhase.EndUseSec, 0.1f);
                     //SSW Revised 4/21/21
                     Phase.GreenEffectiveSec = Math.Max(Phase.Timer.Duration - Phase.Timer.IntergreenTimeSec - Phase.StartUpLostTimeSec + Phase.EndUseSec, 0.1f);
 
@@ -441,7 +441,7 @@ namespace HCMCalc_UrbanStreets
             if (QueAtEnd < 0) { QueAtEnd = 0; }
         }
 
-        public static List<SignalPhaseData> VolumeComputations(List<SignalPhaseData> Phases, IntersectionData intersection)
+        public static List<SignalPhaseData> VolumeComputations(List<SignalPhaseData> Phases, IntersectionData Intersection)
         {
             SignalPhaseData ConcurrentPhase;
             float Denominator;
@@ -453,7 +453,7 @@ namespace HCMCalc_UrbanStreets
             foreach (SignalPhaseData Phase in Phases)
             {
                 //SSW Revised 4/21/21
-                LaneGroupData laneGroup = MovementData.GetLaneGroupFromNemaMovementNumber(intersection, Phase.NemaMvmtId); //or should this be 'Phase.NemaPhaseId'?
+                LaneGroupData laneGroup = MovementData.GetLaneGroupFromNemaMovementNumber(Intersection, Phase.NemaMvmtId); //or should this be 'Phase.NemaPhaseId'?
 
                 TimerData Timer = Phase.Timer;
                 int phaseIndex = Phases.IndexOf(Phase);
@@ -483,7 +483,7 @@ namespace HCMCalc_UrbanStreets
                         }
 
                         //Eq. 31-5
-                        Timer.PortionFree[LaneGroupIndex] = (float)Math.Exp(-1 * Timer.BunchFactor[LaneGroupIndex] * Timer.Delta[LaneGroupIndex] * Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600);
+                        Timer.PortionFree[LaneGroupIndex] = (float)Math.Exp(-1 * Timer.BunchFactor[LaneGroupIndex] * Timer.Delta[LaneGroupIndex] * Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600);
 
                         //Eq. 31-4 denominator
                         Denominator = 1 - Timer.Delta[LaneGroupIndex] * laneGroup.DemandVolumeVehPerHrSplit[LaneGroupIndex] / 3600;
@@ -511,7 +511,7 @@ namespace HCMCalc_UrbanStreets
 
                 for (int LaneGroup = 0; LaneGroup < 3; LaneGroup++)
                 {
-                    if (Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroup] > 0)
+                    if (Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[LaneGroup] > 0)
                     {
                         Timer.Delta[0] += Timer.Delta[LaneGroup] * Timer.UnbunchedFlow[LaneGroup];
                         Timer.PortionFree[0] *= Timer.PortionFree[LaneGroup];
@@ -528,7 +528,7 @@ namespace HCMCalc_UrbanStreets
                     if (phaseIndex == 7) { ConcurrentPhase = Phases[3]; }
                     for (int LaneGroup = 1; LaneGroup <= 3; LaneGroup++)
                     {
-                        if (ConcurrentPhase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[LaneGroup] > 0)
+                        if (ConcurrentPhase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[LaneGroup] > 0)
                         {
                             Timer.Delta[0] += ConcurrentPhase.Timer.Delta[LaneGroup] * ConcurrentPhase.Timer.UnbunchedFlow[LaneGroup];
                             Timer.PortionFree[0] *= ConcurrentPhase.Timer.PortionFree[LaneGroup];
@@ -545,17 +545,17 @@ namespace HCMCalc_UrbanStreets
             foreach (SignalPhaseData Phase in Phases)
             {
                 TimerData Timer = Phase.Timer;
-                if (Phase.AssociatedLaneGroup.Type == LaneMovementsAllowed.LeftOnly) // Timer serves left only, and in an exclusive lane
+                if (Phase.AssociatedLaneGroup(Intersection).Type == LaneMovementsAllowed.LeftOnly) // Timer serves left only, and in an exclusive lane
                 {
-                    Phase.AssociatedLaneGroup.DemandVolumeVehPerHr = Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[0];
+                    Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHr = Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[0];
                 }
-                else if (Phase.AssociatedLaneGroup.Type == LaneMovementsAllowed.ThruAndRightTurnBay || Phase.AssociatedLaneGroup.Type == LaneMovementsAllowed.ThruRightShared) // Timer serves through and right only
+                else if (Phase.AssociatedLaneGroup(Intersection).Type == LaneMovementsAllowed.ThruAndRightTurnBay || Phase.AssociatedLaneGroup(Intersection).Type == LaneMovementsAllowed.ThruRightShared) // Timer serves through and right only
                 {
-                    Phase.AssociatedLaneGroup.DemandVolumeVehPerHr = Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[1] + Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[2];
+                    Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHr = Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[1] + Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[2];
                 }
-                else if (Phase.AssociatedLaneGroup.Type == LaneMovementsAllowed.All) // Timer serves left, thru, and right; with left-turns served in Permissive mode or with Split phasing
+                else if (Phase.AssociatedLaneGroup(Intersection).Type == LaneMovementsAllowed.All) // Timer serves left, thru, and right; with left-turns served in Permissive mode or with Split phasing
                 {
-                    Phase.AssociatedLaneGroup.DemandVolumeVehPerHr = Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[0] + Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[1] + Phase.AssociatedLaneGroup.DemandVolumeVehPerHrSplit[2];
+                    Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHr = Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[0] + Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[1] + Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHrSplit[2];
                 }
             }
 
@@ -574,15 +574,15 @@ namespace HCMCalc_UrbanStreets
                 if (phaseIndex == 6) { ConcurrentPhase = Phases[3]; }
                 if (phaseIndex == 7) { ConcurrentPhase = Phases[3]; }
 
-                if (Phase.AssociatedLaneGroup.SignalPhase.DualEntryMode == true)
-                    Timer.CallingFlow = (Phase.AssociatedLaneGroup.DemandVolumeVehPerHr + ConcurrentPhase.AssociatedLaneGroup.DemandVolumeVehPerHr + Phases[phaseIndex-1].AssociatedLaneGroup.DemandVolumeVehPerHr) / 3600;
+                if (Phase.AssociatedLaneGroup(Intersection).SignalPhase.DualEntryMode == true)
+                    Timer.CallingFlow = (Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHr + ConcurrentPhase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHr + Phases[phaseIndex-1].AssociatedLaneGroup(Intersection).DemandVolumeVehPerHr) / 3600;
                 else
-                    Timer.CallingFlow = Phase.AssociatedLaneGroup.DemandVolumeVehPerHr / 3600;
+                    Timer.CallingFlow = Phase.AssociatedLaneGroup(Intersection).DemandVolumeVehPerHr / 3600;
             }
             return Phases;
         }
 
-        public static List<SignalPhaseData> MaximumAllowableHeadway(List<SignalPhaseData> Phases, int PostedSpeed)
+        public static List<SignalPhaseData> MaximumAllowableHeadway(List<SignalPhaseData> Phases, int PostedSpeed, IntersectionData Intersection)
         {
             SignalPhaseParms SigParms = new SignalPhaseParms();
 
@@ -591,11 +591,11 @@ namespace HCMCalc_UrbanStreets
                 TimerData Timer = Phase.Timer;
                 int phaseIndex = Phases.IndexOf(Phase);
 
-                if ((Phase.AssociatedLaneGroup.Lanes.Count > 0) & (Phase.NemaPhaseId != 2 & Phase.NemaPhaseId != 6))
+                if ((Phase.AssociatedLaneGroup(Intersection).Lanes.Count > 0) & (Phase.NemaPhaseId != 2 & Phase.NemaPhaseId != 6))
                 {
                     // Don't compute MAH for coordinated phases
-                    float MAH_Left = GetMaxAllowableHeadway(PostedSpeed, Phase.AssociatedLaneGroup);
-                    float MAH_Left_Adj = (Phase.AssociatedLaneGroup.AnalysisResults.SatFlowRate.AdjFact.LeftTurnEquivalency - 1) * 3600 / Phase.AssociatedLaneGroup.AnalysisResults.SatFlowRate.BaseValuePCHrLane;
+                    float MAH_Left = GetMaxAllowableHeadway(PostedSpeed, Phase.AssociatedLaneGroup(Intersection));
+                    float MAH_Left_Adj = (Phase.AssociatedLaneGroup(Intersection).AnalysisResults.SatFlowRate.AdjFact.LeftTurnEquivalency - 1) * 3600 / Phase.AssociatedLaneGroup(Intersection).AnalysisResults.SatFlowRate.BaseValuePCHrLane;
 
                     if (Phase.Phasing == PhasingType.Protected) // CASE 2: L:x:x
                     {
@@ -756,13 +756,13 @@ namespace HCMCalc_UrbanStreets
                     if (Intersection.Signal.ForceMode == true) // FIXED FORCE MODE
                         Timer.MaxGreen = (Timer.EndWindow - PreviousTimer.EndTime + Intersection.Signal.CycleLengthSec) % Intersection.Signal.CycleLengthSec;
                     else // FLOATING FORCE MODE
-                        Timer.MaxGreen = Phase.AssociatedLaneGroup.SignalPhase.Splits - Phase.AssociatedLaneGroup.SignalPhase.Timer.IntergreenTimeSec;
+                        Timer.MaxGreen = Phase.AssociatedLaneGroup(Intersection).SignalPhase.Splits - Phase.AssociatedLaneGroup(Intersection).SignalPhase.Timer.IntergreenTimeSec;
                 }
             }
             return Phases;
         }
 
-        public static List<SignalPhaseData> ComputeAveragePhaseDuration(List<SignalPhaseData> Phases, int CycleLengthSec)
+        public static List<SignalPhaseData> ComputeAveragePhaseDuration(List<SignalPhaseData> Phases, int CycleLengthSec, IntersectionData Intersection)
         {
             // Method Parms
             // Delta = Delta_i, either 1.5 or 0.5, see variable definitions for Eq. 31-5, set in VolumeComputations method
@@ -806,7 +806,7 @@ namespace HCMCalc_UrbanStreets
                     Timer.PhaseParms.MaxQueueClearTime = 0;
                     foreach (int moveDir in Enum.GetValues(typeof(MovementDirection)))
                     {
-                        if (Phase.AssociatedLaneGroup.DetectorLength > 0) // Only movements with detection can extent the phase
+                        if (Phase.AssociatedLaneGroup(Intersection).DetectorLength > 0) // Only movements with detection can extent the phase
                             Timer.PhaseParms.QueueClearTime = Timer.MaxQueueClearTime + Phase.StartUpLostTimeSec;
                         else // No movement assigned to this lane group
                             Timer.PhaseParms.QueueClearTime = 0;

@@ -311,7 +311,7 @@ namespace HCMCalc_UrbanStreets
         /// </summary>
         public AccessPointData()
         {
-            _arrivalFlowRate = new float[2,0];
+            _arrivalFlowRate = new float[2,124]; // Temporary, need to serialize this properly
         }
 
         /// <summary>
