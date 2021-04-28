@@ -101,6 +101,7 @@ namespace HCMCalc_UrbanStreets
         public ArterialData()
         {
             //Parameterless constructor needed for XML de/serialization
+            _thresholds = new ThresholdData();
         }
 
         /// <summary>

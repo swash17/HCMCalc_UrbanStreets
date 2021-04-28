@@ -242,6 +242,7 @@ namespace HCMCalc_UrbanStreets
 
                     if (segment.Results.AverageSpeed < Arterial.Results.CritSpeed)
                         Arterial.Results.CritSpeed = segment.Results.AverageSpeed;    //save lowest segment speed to use for arterial speed if an intersection v/c is greater than 1/PHF
+                    segment.Thresholds = new ThresholdData(Arterial.Area, segment.Link.PostSpeedMPH);
                     segment.Link.Results.LOS = SegmentCalcs.LOSsegmentAuto(segment.Results.AverageSpeed, segment.Thresholds.Speed);
                     //Art.Results.BaseFreeFlowTravelTime += segment.Link.Results.BaseFreeFlowTravelTime;
                     //Art.Results.FreeFlowTravelTime += segment.Link.Results.FreeFlowTravelTime;
